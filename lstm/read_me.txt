@@ -1,0 +1,2 @@
+train_label与test_label分别为训练集和测试集，为pkl文件
+存储格式：list of list,元素中每个list存储一个句子，句子的词和label用元组表示

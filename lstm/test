@@ -1,0 +1,9659 @@
+最近	nt	O	B-start_date
+上海	ns	S-Ns	B-start_city
+到	v	O	O
+厦门	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+最	d	O	B-cost_relative
+便宜	a	O	I-cost_relative
+的	u	O	O
+是	v	O	O
+多少	r	O	O
+？	wp	O	O
+
+查找	v	O	O
+明天	nt	O	B-start_date
+贵阳	ns	S-Ns	B-start_city
+到	v	O	O
+厦门	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+从	p	O	O
+宜宾	ns	S-Ns	B-start_city
+到	p	O	O
+杭州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+长沙	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+长沙	ns	S-Ns	B-start_city
+去	v	O	O
+北海	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+请问	v	O	O
+一下	m	O	O
+从	p	O	O
+深圳	ns	B-Ns	B-start_city
+宝安	ns	I-Ns	B-start_airport
+机场	n	E-Ns	I-start_airport
+到	v	O	O
+重庆	ns	S-Ns	B-arrival_city
+。	wp	O	O
+
+去	v	O	O
+上海	ns	B-Ns	B-arrival_city
+浦东	ns	I-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+。	wp	O	O
+
+嗯	o	O	O
+，	wp	O	O
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+温州	ns	S-Ns	B-start_city
+到	v	O	O
+成都	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+给	p	O	O
+我	r	O	O
+订	v	O	O
+一	m	O	O
+张	q	O	O
+明天	nt	O	B-start_date
+去	v	O	O
+重庆	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+到	p	O	O
+洛杉矶	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+25	m	O	B-start_date
+号	q	O	I-start_date
+洛阳	ns	S-Ns	B-start_city
+到	v	O	O
+深圳	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+兰州	ns	S-Ns	B-start_city
+到	v	O	O
+南京	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+到	p	O	O
+美国	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+明天	nt	O	B-start_date
+广州	ns	S-Ns	B-start_city
+把	p	O	O
+无锡	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+成都	ns	S-Ns	B-start_city
+到	p	O	O
+三亚	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+我	r	O	O
+要	v	O	O
+订	v	O	O
+明天	nt	O	B-start_date
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+查	v	O	O
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+兰州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+从	p	O	O
+东莞	ns	S-Ns	B-start_city
+到	p	O	O
+四川	ns	S-Ns	B-arrival_city
+了	u	O	O
+，	wp	O	O
+我	r	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+重庆	ns	S-Ns	B-start_city
+江北	nl	O	B-start_airport
+机场	n	O	I-start_airport
+去	v	O	O
+潼南	ns	S-Ns	B-arrival_city
+怎么	r	O	O
+走	v	O	O
+最	d	O	O
+早	a	O	O
+到达	v	O	O
+
+嗖	o	O	O
+一下	m	O	O
+从	p	O	O
+宁夏	ns	S-Ns	B-start_city
+到	p	O	O
+杭州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+首都	n	B-Ns	B-start_airport
+机场	n	E-Ns	I-start_airport
+的	u	O	O
+天气	n	O	O
+
+我	r	O	O
+，	wp	O	O
+明天	nt	O	B-start_date
+上	nd	O	O
+飞机	n	O	O
+。	wp	O	O
+
+天津	ns	S-Ns	B-arrival_city
+到站	n	O	O
+航班	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+筛选	v	O	O
+五月份	nt	O	B-start_date
+温州	ns	S-Ns	B-start_city
+至	p	O	O
+贵阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+最低价	n	O	O
+。	wp	O	O
+
+天津	ns	S-Ns	B-start_city
+飞往	v	O	O
+牡丹江	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+查	v	O	O
+一	m	O	O
+下	q	O	O
+成都	ns	S-Ns	B-start_city
+到	p	O	O
+桂林	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+厦门	ns	B-Ns	B-start_city
+厦门	ns	E-Ns	I-start_city
+到	v	O	O
+徐州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+26日	nt	O	B-start_date
+从	p	O	O
+合肥	ns	S-Ns	B-start_city
+到	p	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+6月	nt	O	B-start_date
+6号	nt	O	I-start_date
+，	wp	O	O
+乌鲁木齐	ns	S-Ns	B-start_city
+到	v	O	O
+伊利	nz	O	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+温州	ns	S-Ns	B-start_city
+到	p	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+从	p	O	O
+苏州	ns	S-Ns	B-start_city
+到	p	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+明天	nt	O	B-start_date
+从	p	O	O
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+后天	nt	O	B-start_date
+从	p	O	O
+郑州	ns	S-Ns	B-start_city
+，	wp	O	O
+到	p	O	O
+海南	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+昆明	ns	S-Ns	B-arrival_city
+多少	r	O	O
+的	u	O	O
+飞机票	n	O	O
+？	wp	O	O
+
+29	m	O	B-start_date
+号	q	O	I-start_date
+长春	ns	S-Ns	B-start_city
+到	v	O	O
+南京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+查	v	O	O
+一	m	O	O
+查	v	O	O
+明天	nt	O	B-start_date
+三亚	ns	S-Ns	B-start_city
+至	p	O	O
+长沙	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+从	p	O	O
+乌鲁木齐	ns	S-Ns	B-start_city
+到	v	O	O
+西安	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+看	v	O	O
+一下	m	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+贵阳	ns	S-Ns	B-start_city
+到	v	O	O
+遵义	ns	S-Ns	B-arrival_city
+航班	n	O	O
+
+找	v	O	O
+一下	m	O	O
+新郑	ns	S-Ns	B-arrival_airport
+机场	n	O	I-arrival_airport
+。	wp	O	O
+
+这里	r	O	O
+到	v	O	O
+，	wp	O	O
+佛山	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+还有	v	O	O
+没	d	O	O
+有	v	O	O
+？	wp	O	O
+
+广州	ns	S-Ns	B-start_city
+至	p	O	O
+长沙	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+合肥	ns	S-Ns	B-start_city
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+后天	n	O	B-start_date
+的	u	O	O
+。	wp	O	O
+
+从	p	O	O
+济南	ns	B-Ns	B-start_airport
+机场	n	E-Ns	I-start_airport
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+南	nd	O	O
+站	n	O	O
+，	wp	O	O
+坐	v	O	O
+地铁	n	O	O
+怎么	r	O	O
+走	v	O	O
+？	wp	O	O
+
+你	r	O	O
+给	p	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+为	v	O	O
+好	a	O	O
+的	u	O	O
+日本	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+今天	nt	O	B-start_date
+晚上	nt	O	B-start_time
+去	v	O	O
+飞机	n	O	O
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+。	wp	O	O
+
+给	p	O	O
+我	r	O	O
+看	v	O	O
+一下	m	O	O
+明天	nt	O	B-start_date
+十一点	m	O	B-start_time
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+晚上	nt	O	B-start_time
+重庆	ns	S-Ns	B-start_city
+飞往	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+，	wp	O	O
+h	ws	O	O
+u7162	ws	O	O
+现在	nt	O	O
+起飞	v	O	O
+了	u	O	O
+没	v	O	O
+啊	u	O	O
+？	wp	O	O
+
+去	v	O	O
+大连	ns	S-Ns	B-arrival_city
+最	d	O	B-cost_relative
+便宜	a	O	I-cost_relative
+的	u	O	O
+飞机票	n	O	O
+是	v	O	O
+多少	r	O	O
+钱	n	O	O
+呢	u	O	O
+？	wp	O	O
+
+4月	nt	O	B-start_date
+29号	nt	O	I-start_date
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+重庆	ns	S-Ns	B-arrival_city
+的	u	O	O
+最	d	O	B-cost_relative
+便宜	a	O	I-cost_relative
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+南宁	ns	S-Ns	B-start_city
+到	v	O	O
+九黄	ns	S-Ns	B-arrival_airport
+机场	n	O	I-arrival_airport
+航班	n	O	O
+。	wp	O	O
+
+我	r	O	O
+要	v	O	O
+去	v	O	O
+上海	ns	B-Ns	B-arrival_city
+浦东	ns	I-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+。	wp	O	O
+
+甘肃	ns	B-Ns	B-start_city
+兰州	ns	I-Ns	B-start_airport
+国际	n	I-Ns	I-start_airport
+机场	n	E-Ns	I-start_airport
+到	v	O	O
+城关区	ns	S-Ns	B-arrival_city
+还有	v	O	O
+多	d	O	O
+远	a	O	O
+？	wp	O	O
+
+无锡	ns	S-Ns	B-start_city
+硕放	v	O	B-start_airport
+机场	n	O	I-start_airport
+到	p	O	O
+江西	ns	B-Ns	B-arrival_city
+南昌	ns	I-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+。	wp	O	O
+
+无锡	ns	S-Ns	B-start_city
+硕放	v	O	B-start_airport
+机场	n	O	I-start_airport
+到	p	O	O
+南昌	ns	B-Ns	B-arrival_city
+宏图	n	I-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+我	r	O	O
+lover	ws	O	O
+，	wp	O	O
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+从	p	O	O
+南京	ns	S-Ns	B-start_city
+到	p	O	O
+她	r	O	O
+似的	u	O	O
+，	wp	O	O
+机票	n	O	O
+，	wp	O	O
+啊	u	O	O
+！	wp	O	O
+
+春熙路	ns	S-Ns	B-start_city
+到	v	O	O
+双流	ns	B-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+。	wp	O	O
+
+深圳	ns	S-Ns	B-start_city
+北	nd	O	O
+到	p	O	O
+昆明	ns	B-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+。	wp	O	O
+
+我	r	O	O
+是	v	O	O
+杭州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+深圳	ns	B-Ns	B-start_city
+宝安	ns	I-Ns	B-start_airport
+机场	n	E-Ns	I-start_airport
+到	v	O	O
+东莞	ns	S-Ns	B-arrival_city
+候机楼	n	O	O
+的	u	O	O
+汽车	n	O	O
+班次	n	O	O
+。	wp	O	O
+
+这里	r	O	O
+到	v	O	O
+北京	ns	B-Ns	B-arrival_city
+首都	n	I-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+有	v	O	O
+多	d	O	O
+远	a	O	O
+？	wp	O	O
+
+要	v	O	O
+，	wp	O	O
+查看	v	O	O
+您	r	O	O
+知道	v	O	O
+咸阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+，	wp	O	O
+飞机票	n	O	O
+航班	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+从	p	O	O
+上海	ns	S-Ns	B-start_city
+到	p	O	O
+北京部	ns	S-Ns	B-arrival_city
+航班	n	O	O
+行	v	O	O
+了	u	O	O
+啥	r	O	O
+也	d	O	O
+没	d	O	O
+说	v	O	O
+啊	u	O	O
+！	wp	O	O
+
+机场路	n	O	O
+10月	nt	O	B-start_date
+14日	nt	O	I-start_date
+的	u	O	O
+录音	v	O	O
+。	wp	O	O
+
+聊	v	O	O
+点	n	O	O
+和	c	O	O
+三点	nt	O	B-start_time
+的	u	O	O
+时候	n	O	O
+机票	n	O	O
+都	d	O	O
+
+从	p	O	O
+南中轴路	ns	S-Ns	B-start_city
+到	p	O	O
+兴义	ns	B-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+怎么	r	O	O
+走	v	O	O
+？	wp	O	O
+
+4月	nt	O	B-start_date
+26号	nt	O	I-start_date
+开	v	O	O
+往	p	O	O
+上海	ns	S-Ns	B-start_city
+菜	n	O	O
+浦东	ns	S-Ns	B-arrival_city
+开	v	O	O
+往	p	O	O
+北	nd	O	O
+的	u	O	O
+日本	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+有	v	O	O
+几	m	O	O
+架	q	O	O
+？	wp	O	O
+
+深圳	ns	B-Ns	B-start_airport
+机场	n	E-Ns	I-start_airport
+至	p	O	O
+北京	ns	B-Ns	B-arrival_city
+五环	ns	I-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+。	wp	O	O
+
+正在	d	O	O
+计划	v	O	O
+一	m	O	O
+场	q	O	O
+说	v	O	O
+走	v	O	O
+就	d	O	O
+走	v	O	O
+的	u	O	O
+旅行	v	O	O
+呢	u	O	O
+，	wp	O	O
+要不	c	O	O
+一起	d	O	O
+吧	u	O	O
+，	wp	O	O
+试	v	O	O
+着	u	O	O
+对	p	O	O
+我	r	O	O
+说	v	O	O
+北京	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+到	p	O	O
+武汉	ns	B-Ns	B-start_city
+天河	nz	I-Ns	B-start_airport
+机场	n	E-Ns	I-start_airport
+多	d	O	O
+长	a	O	O
+时间	n	O	O
+？	wp	O	O
+
+叫	v	O	O
+明天	nt	O	B-start_date
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+东莞	ns	S-Ns	B-start_city
+叫	v	O	O
+伦敦	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+最	d	O	O
+短	a	O	O
+要	v	O	O
+多少	r	O	O
+小时	n	O	O
+侯	nh	S-Nh	O
+对	p	O	O
+花	v	O	O
+多少	r	O	O
+都	d	O	O
+行	a	O	O
+。	wp	O	O
+
+从	p	O	O
+花都	n	O	B-start_city
+到	v	O	O
+，	wp	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+你	r	O	O
+，	wp	O	O
+操	v	O	O
+你	r	O	O
+空灵	a	O	O
+，	wp	O	O
+长水	ns	S-Ns	B-start_airport
+机场	n	O	I-start_airport
+到	v	O	O
+曲靖市	ns	S-Ns	B-arrival_city
+怎么	r	O	O
+走	v	O	O
+？	wp	O	O
+
+给	p	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+从	p	O	O
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+，	wp	O	O
+美国	ns	S-Ns	B-arrival_city
+杏仁	n	O	I-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+长水	ns	B-Ns	B-start_airport
+机场	n	E-Ns	I-start_airport
+在	p	O	O
+哪里	r	O	O
+？	wp	O	O
+
+从	p	O	O
+昆明	ns	S-Ns	B-start_city
+到	p	O	O
+上海	ns	S-Ns	B-arrival_city
+，	wp	O	O
+虹桥	ns	B-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+的	u	O	O
+机票	n	O	O
+是	v	O	O
+多少	r	O	O
+无业	n	O	O
+二	m	O	B-start_date
+号	q	O	I-start_date
+跟	p	O	O
+一	m	O	O
+号	q	O	O
+。	wp	O	O
+
+你	r	O	O
+邦	n	O	O
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+坐	v	O	O
+飞机	n	O	O
+多少	r	O	O
+钱	n	O	O
+一个	m	O	O
+？	wp	O	O
+
+给	p	O	O
+我	r	O	O
+找	v	O	O
+一	m	O	O
+套	q	O	O
+给	v	O	O
+我	r	O	O
+，	wp	O	O
+办	v	O	O
+一	m	O	O
+张	q	O	O
+去	v	O	O
+美国	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+我	r	O	O
+要	v	O	O
+去	v	O	O
+广州	ns	B-Ns	B-arrival_city
+白云	ns	I-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+。	wp	O	O
+
+一般	a	O	O
+是	v	O	O
+谁	r	O	O
+对	p	O	O
+我	r	O	O
+说	v	O	O
+北京	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+深圳	ns	B-Ns	B-start_city
+宝安	ns	I-Ns	B-start_airport
+机场	n	E-Ns	I-start_airport
+到	v	O	O
+东莞	ns	S-Ns	B-arrival_city
+候机楼	n	O	O
+的	u	O	O
+车次	n	O	O
+。	wp	O	O
+
+中国	ns	S-Ns	B-start_city
+到	p	O	O
+天堂	n	O	O
+的	u	O	O
+飞机票	n	O	O
+是	v	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+福州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+查	v	O	O
+一下	m	O	O
+有	v	O	O
+没	d	O	O
+有	v	O	O
+订阅	v	O	O
+成功	a	O	O
+？	wp	O	O
+
+请问	v	O	O
+去	v	O	O
+哥伦布	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+几	m	O	O
+点	q	O	O
+起飞	v	O	O
+？	wp	O	O
+
+应该	v	O	O
+是	v	O	O
+坐	v	O	O
+飞机	n	O	O
+去	v	O	O
+重庆	ns	S-Ns	B-arrival_city
+，	wp	O	O
+从	p	O	O
+重庆	ns	S-Ns	B-start_city
+坐船	v	O	O
+回	v	O	O
+宜昌	ns	S-Ns	B-arrival_city
+来	v	O	O
+玩	v	O	O
+喔	u	O	O
+。	wp	O	O
+
+到	p	O	O
+济宁	ns	B-Ni	B-arrival_city
+纸坊	nz	I-Ni	B-arrival_airport
+飞机场	n	E-Ni	I-arrival_airport
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+百度	nz	O	O
+搜索	v	O	O
+我	r	O	O
+要	v	O	O
+去	v	O	O
+虹桥	ns	B-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+。	wp	O	O
+
+老韩	nh	S-Nh	O
+去	v	O	O
+潮汕	ns	B-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+。	wp	O	O
+
+从	p	O	O
+这里	r	O	B-start_city
+到	p	O	O
+井冈山	ns	S-Ns	B-arrival_airport
+机场	n	O	I-arrival_airport
+有	v	O	O
+多	d	O	O
+远	a	O	O
+？	wp	O	O
+
+从	p	O	O
+松江区	ns	B-Ns	B-start_city
+泗泾镇	ns	E-Ns	I-start_city
+做	v	O	O
+地铁	n	O	O
+到	v	O	O
+浦东	ns	B-Ns	B-arrival_airport
+国际	n	I-Ns	I-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+放	v	O	O
+几	m	O	O
+号	q	O	O
+线	n	O	O
+？	wp	O	O
+给	v	O	O
+。	wp	O	O
+
+黄泥磅	nh	S-Nh	B-start_city
+到	v	O	O
+江北	nl	O	B-arrival_airport
+机场	n	O	I-arrival_airport
+。	wp	O	O
+
+我	r	O	O
+说	v	O	O
+啊	u	O	O
+你	r	O	O
+能	v	O	O
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+从	p	O	O
+，	wp	O	O
+西宁	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+火车	n	O	O
+吗	u	O	O
+？	wp	O	O
+飞雪	n	O	O
+，	wp	O	O
+我	r	O	O
+没有	d	O	O
+明天	nt	O	B-start_date
+，	wp	O	O
+武汉	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+我	r	O	O
+要	v	O	O
+订	v	O	O
+一	m	O	O
+张	q	O	O
+去	v	O	O
+啦	u	O	O
+，	wp	O	O
+法	j	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+你好	i	O	O
+，	wp	O	O
+我	r	O	O
+要	v	O	O
+飞往	v	O	O
+澳门	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+从	p	O	O
+哪里	r	O	O
+安检	j	O	O
+。	wp	O	O
+
+上海	ns	B-Ns	B-start_city
+虹桥	ns	I-Ns	B-start_airport
+机场	n	E-Ns	I-start_airport
+到	p	O	O
+上海	ns	S-Ns	B-arrival_city
+喜来登	v	O	O
+酒店	n	O	O
+怎么	r	O	O
+走	v	O	O
+？	wp	O	O
+
+曲阜	ns	S-Ns	B-start_city
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+松江区	ns	B-Ns	B-start_city
+泗泾镇	ns	E-Ns	I-start_city
+坐	v	O	O
+高铁	n	O	O
+到	v	O	O
+浦东	ns	B-Ns	B-arrival_airport
+国际	n	I-Ns	I-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+怎么	r	O	O
+走	v	O	O
+？	wp	O	O
+
+从	p	O	O
+咸阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+联盟	n	O	O
+一路	m	O	O
+怎么	r	O	O
+去	v	O	O
+西安	ns	S-Ns	B-arrival_city
+的	u	O	O
+机场	n	O	O
+？	wp	O	O
+
+5月	nt	O	B-start_date
+10号	nt	O	I-start_date
+有	v	O	O
+没	d	O	O
+有	v	O	O
+飞往	v	O	O
+武汉	ns	S-Ns	B-arrival_city
+的	u	O	O
+一	m	O	O
+班	q	O	O
+航班	n	O	O
+。	wp	O	O
+
+去	v	O	O
+厦门	ns	S-Ns	B-arrival_city
+的	u	O	O
+车	n	O	O
+机票	n	O	O
+是	v	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+你好	i	O	O
+，	wp	O	O
+我	r	O	O
+要	v	O	O
+飞往	v	O	O
+澳门	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+从	p	O	O
+哪里	r	O	O
+安安检	j	O	O
+。	wp	O	O
+
+凌	v	O	O
+到	v	O	O
+泰国	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+从	p	O	O
+深圳	ns	S-Ns	B-start_airport
+机场	n	O	I-start_airport
+到	v	O	O
+深圳	ns	S-Ns	B-arrival_city
+北	nd	O	O
+要	v	O	O
+坐	v	O	O
+什么	r	O	O
+车	n	O	O
+？	wp	O	O
+
+合肥	ns	S-Ns	B-start_city
+至	v	O	O
+，	wp	O	O
+重庆	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+啊	u	O	O
+！	wp	O	O
+
+和顺	ns	S-Ns	B-start_city
+到	v	O	O
+广州	ns	B-Ns	B-arrival_city
+白云	ns	I-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+路线	n	O	O
+规划	n	O	O
+。	wp	O	O
+
+我	r	O	O
+要	v	O	O
+去	v	O	O
+重庆	ns	S-Ns	B-arrival_city
+两	m	O	B-arrival_airport
+路	q	O	I-arrival_airport
+机场	n	O	I-arrival_airport
+。	wp	O	O
+
+都	d	O	O
+日本	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+看	v	O	O
+一下	m	O	O
+去	v	O	O
+广州	ns	B-Ns	B-arrival_city
+白云	ns	I-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+怎么	r	O	O
+走	v	O	O
+啊	u	O	O
+？	wp	O	O
+
+我	r	O	O
+想	v	O	O
+问	v	O	O
+你	r	O	O
+从	p	O	O
+百色	ns	S-Ns	B-start_city
+去	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+有	v	O	O
+没	d	O	O
+有	v	O	O
+？	wp	O	O
+
+从	p	O	O
+西直门	ns	S-Ns	B-start_city
+到	p	O	O
+首都	n	B-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+。	wp	O	O
+
+福州	ns	S-Ns	B-start_city
+到	v	O	O
+西安	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+是	v	O	O
+多少	r	O	O
+个	q	O	O
+月	n	O	O
+五号	n	O	O
+。	wp	O	O
+
+嗯	o	O	O
+，	wp	O	O
+查	v	O	O
+揭阳	v	O	O
+，	wp	O	O
+老	a	O	O
+南宁	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+航班	n	O	O
+。	wp	O	O
+
+你	r	O	O
+，	wp	O	O
+从	p	O	O
+昆明	ns	B-Ns	B-start_city
+长水	ns	I-Ns	B-start_airport
+机场	n	E-Ns	I-start_airport
+到	v	O	O
+曲靖市	ns	S-Ns	B-arrival_city
+怎么	r	O	O
+走	v	O	O
+？	wp	O	O
+
+到	p	O	O
+虹桥	ns	B-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+。	wp	O	O
+
+武汉	ns	B-Ns	B-start_city
+金家镇	ns	E-Ns	I-start_city
+离	v	O	O
+天河	ns	B-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+多	d	O	O
+远	a	O	O
+
+嚣张	a	O	O
+小三	n	O	O
+有	v	O	O
+没	d	O	O
+有	v	O	O
+飞往	v	O	O
+黎平	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+？	wp	O	O
+
+烟台	ns	S-Ns	B-start_airport
+飞机场	n	O	I-start_airport
+到	v	O	O
+莱阳	ns	S-Ns	B-arrival_city
+有	v	O	O
+多	d	O	O
+远	a	O	O
+啊	u	O	O
+？	wp	O	O
+
+昆明	ns	B-Ns	B-start_city
+国际	n	I-Ns	B-start_airport
+机场	n	E-Ns	I-start_airport
+。	wp	O	O
+
+沂水	ns	B-Ns	B-start_city
+和顺	ns	E-Ns	B-start_city
+到	v	O	O
+广州	ns	B-Ns	B-arrival_city
+白云	ns	I-Ns	B-arrival_airport
+国际	n	I-Ns	I-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+。	wp	O	O
+
+就是	v	O	O
+这样	r	O	O
+的	u	O	O
+，	wp	O	O
+你	r	O	O
+可以	v	O	O
+说话	v	O	O
+，	wp	O	O
+明天	nt	O	B-start_date
+从	p	O	O
+北京	ns	S-Ns	B-start_city
+飞往	v	O	O
+上海	ns	B-Ns	B-arrival_city
+虹桥	ns	E-Ns	B-arrival_airport
+的	u	O	O
+机票	n	O	O
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+。	wp	O	O
+
+寮步	v	S-Ns	B-start_city
+到	v	O	O
+广州	ns	S-Ns	B-arrival_airport
+飞机场	n	O	I-arrival_airport
+有	v	O	O
+多	d	O	O
+远	a	O	O
+？	wp	O	O
+
+惠州	ns	S-Ns	B-start_city
+到	v	O	O
+杭州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+唐山	ns	B-Ns	B-start_city
+三女河	ns	I-Ns	B-start_airport
+机场	n	E-Ns	I-start_airport
+。	wp	O	O
+
+订	v	O	O
+一	m	O	O
+张	q	O	O
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+，	wp	O	O
+一	m	O	O
+。	wp	O	O
+
+去	v	O	O
+常州	ns	S-Ns	B-arrival_airport
+飞机场	n	O	I-arrival_airport
+怎么	r	O	O
+走	v	O	O
+？	wp	O	O
+
+系	v	O	O
+日本	ns	S-Ns	B-arrival_city
+旅游	v	O	O
+的	u	O	O
+机票	n	O	O
+多少	r	O	O
+钱	n	O	O
+北京	ns	S-Ns	B-start_city
+到	v	O	O
+日本	ns	S-Ns	B-arrival_city
+？	wp	O	O
+
+沈阳	ns	S-Ns	B-start_city
+治沙	v	O	O
+元埔	ns	S-Ns	B-arrival_city
+有	v	O	O
+飞机	n	O	O
+吗	u	O	O
+？	wp	O	O
+
+他	r	O	O
+探头	v	O	O
+哈尔滨	ns	S-Ns	B-start_city
+到	v	O	O
+邢台	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+今年	nt	O	B-start_date
+飞机	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+搜索	v	O	O
+一下	m	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+六点	nt	O	B-start_time
+到	v	O	I-start_time
+十点	n	O	I-start_time
+的	u	O	O
+。	wp	O	O
+
+他	r	O	O
+喜欢	v	O	O
+去	v	O	O
+成都	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+群	n	O	O
+从	p	O	O
+上海	ns	S-Ns	B-start_city
+到	p	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+重庆	ns	B-Ns	B-start_city
+巫山	ns	I-Ns	B-start_airport
+机场	n	E-Ns	I-start_airport
+什么	r	O	O
+时候	n	O	O
+开通	v	O	O
+？	wp	O	O
+
+萧山	ns	S-Ns	B-start_city
+至	p	O	O
+黎平	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+有	v	O	O
+没	d	O	O
+有	v	O	O
+？	wp	O	O
+
+昆明	ns	B-Ni	B-start_airport
+机场	n	E-Ni	I-start_airport
+到	v	O	O
+西站	n	O	O
+
+长	a	O	O
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+厦门	ns	S-Ns	B-arrival_city
+嘅	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+自	p	O	O
+海南	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+查看	v	O	O
+宁波	ns	S-Ns	B-start_city
+到	v	O	O
+日本	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+都	d	O	O
+到	v	O	O
+昆明	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+他们	r	O	O
+去	v	O	O
+美国	ns	S-Ns	B-arrival_city
+乘	v	O	O
+飞机	n	O	O
+。	wp	O	O
+
+两百	m	O	O
+张	q	O	O
+是	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+行	v	O	O
+，	wp	O	O
+你	r	O	O
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+酷航	v	O	O
+的	u	O	O
+8月	nt	O	B-start_date
+3	m	O	I-start_date
+号	q	O	I-start_date
+飞	nh	S-Nh	O
+的	u	O	O
+一直	d	O	O
+到	v	O	O
+提虫子	n	O	O
+从	p	O	O
+新加坡	ns	S-Ns	B-start_city
+到	p	O	O
+天宇	n	O	O
+飞机	n	O	O
+。	wp	O	O
+
+我	r	O	O
+要	v	O	O
+一直	d	O	O
+到	p	O	O
+昨日	nt	O	B-start_date
+的	u	O	O
+飞机票	n	O	O
+看看	v	O	O
+有	v	O	O
+没	d	O	O
+有	v	O	O
+？	wp	O	O
+
+可	c	O	O
+搜	v	O	O
+到	v	O	O
+乌鲁木齐	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+了	u	O	O
+。	wp	O	O
+
+从	p	O	O
+甲子	n	O	B-start_city
+到	p	O	O
+昆明	ns	S-Ns	B-arrival_city
+，	wp	O	O
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+二	m	O	O
+，	wp	O	O
+郑州	ns	S-Ns	B-start_city
+到	v	O	O
+成都	ns	S-Ns	B-arrival_city
+机票	n	O	O
+。	wp	O	O
+
+库尔勒	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+江苏省	ns	S-Ns	B-start_city
+有	v	O	O
+什么	r	O	O
+地方	n	O	O
+做	v	O	O
+飞机	n	O	O
+到	v	O	O
+赤峰	ns	S-Ns	B-arrival_city
+的	u	O	O
+。	wp	O	O
+
+从	p	O	O
+青岛	ns	S-Ns	B-start_city
+到	p	O	O
+福州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+是	v	O	O
+几	m	O	O
+点	q	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+你	r	O	O
+？	wp	O	O
+
+上海	ns	S-Ns	B-start_city
+自	r	O	O
+，	wp	O	O
+深圳	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+一	m	O	O
+，	wp	O	O
+虹桥	ns	S-Ns	B-start_airport
+机场	n	O	I-start_airport
+到	p	O	O
+苏州	ns	S-Ns	B-arrival_city
+的	u	O	O
+火车	n	O	O
+今天	nt	O	B-start_date
+的	u	O	O
+。	wp	O	O
+
+去	v	O	O
+日本	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+紧张	a	O	O
+。	wp	O	O
+
+好好	d	O	O
+去	v	O	O
+济宁	ns	B-Ns	B-arrival_city
+曲阜	ns	I-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+。	wp	O	O
+
+太原	ns	S-Ns	B-start_city
+至	p	O	O
+徐州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+罗马	ns	S-Ns	B-start_city
+要	v	O	O
+帮	v	O	O
+我	r	O	O
+炒股	v	O	O
+。	wp	O	O
+
+深圳	ns	S-Ns	B-arrival_city
+之	u	O	O
+四	m	O	O
+，	wp	O	O
+南通	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+给	p	O	O
+我	r	O	O
+吓	v	O	O
+查	v	O	O
+一下	m	O	O
+哈尔滨	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+厨房	n	O	O
+石家庄	ns	S-Ns	B-start_city
+到	p	O	O
+昆明	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+石家庄	ns	S-Ns	B-start_city
+到	p	O	O
+石家庄	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+云南	ns	S-Ns	B-start_city
+的	u	O	O
+温州	ns	S-Ns	B-start_city
+至	p	O	O
+云南	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+多少	r	O	O
+钱	n	O	O
+一	m	O	O
+张	q	O	O
+？	wp	O	O
+
+飞机票	n	O	O
+阿克苏	ns	S-Ns	B-start_city
+到	v	O	O
+乌鲁木齐	ns	S-Ns	B-arrival_city
+的	u	O	O
+。	wp	O	O
+
+然后	c	O	O
+到	v	O	O
+安铺	v	O	O
+到	v	O	O
+乌鲁木齐	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+从	p	O	O
+长春	ns	S-Ns	B-start_city
+坐	v	O	O
+飞机	n	O	O
+飞	v	O	O
+到	v	O	O
+拉萨	ns	S-Ns	B-arrival_city
+需要	v	O	O
+几	m	O	O
+个	q	O	O
+小时	n	O	O
+呀	u	O	O
+？	wp	O	O
+
+五	m	O	B-start_date
+号	q	O	I-start_date
+坐	v	O	O
+飞机	n	O	O
+从	p	O	O
+伦敦	ns	S-Ns	B-start_city
+到	v	O	O
+。	wp	O	O
+
+翻译	v	O	O
+本次	r	O	O
+航班	n	O	O
+即将	d	O	O
+降落	v	O	O
+在	p	O	O
+长水	ns	B-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+。	wp	O	O
+
+长沙市	ns	B-Ns	B-start_city
+黄花	ns	I-Ns	B-start_airport
+机场	n	E-Ns	I-start_airport
+电话	n	O	O
+。	wp	O	O
+
+给	p	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+陈建湖	nh	S-Nh	O
+网	n	O	O
+长沙	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+听到	v	O	O
+，	wp	O	O
+青岛	ns	S-Ns	B-start_city
+到	v	O	O
+天堂	n	O	O
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+后天	nt	O	B-start_date
+从	p	O	O
+地球	n	O	O
+到	p	O	O
+火星	n	O	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+他	r	O	O
+说	v	O	O
+我	r	O	O
+要	v	O	O
+去	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+你	r	O	O
+帮	v	O	O
+东莞	ns	S-Ns	B-arrival_city
+坐	v	O	O
+飞机	n	O	O
+多少	r	O	O
+钱	n	O	O
+一个	m	O	O
+？	wp	O	O
+
+我	r	O	O
+要	v	O	O
+去	v	O	O
+南京	ns	B-Ns	B-arrival_city
+禄口	ns	I-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查询	v	O	O
+，	wp	O	O
+阿川	ns	S-Ns	B-arrival_city
+沙道	n	O	O
+，	wp	O	O
+嗯	e	O	O
+，	wp	O	O
+大理	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+周贤	nh	S-Nh	O
+正	d	O	O
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+有	v	O	O
+飞机	n	O	O
+么	u	O	O
+？	wp	O	O
+
+萧山	ns	S-Ns	B-start_city
+至	p	O	O
+黎平	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+有	v	O	O
+没	d	O	O
+有	v	O	O
+？	wp	O	O
+
+哈尔滨	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+到	p	O	O
+无锡	ns	S-Ns	B-arrival_airport
+飞机场	n	O	I-arrival_airport
+。	wp	O	O
+
+凡发	nh	S-Nh	O
+几	m	O	O
+张	q	O	O
+去	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+明天	nt	O	B-start_date
+。	wp	O	O
+
+海口	ns	B-Ns	B-start_city
+米兰	ns	I-Ns	B-start_airport
+机场	n	E-Ns	I-start_airport
+到	v	O	O
+古镇镇	n	S-Ns	B-arrival_city
+不	d	O	O
+用	v	O	O
+积攒	v	O	O
+。	wp	O	O
+
+温州	ns	S-Ns	B-start_city
+至	p	O	O
+杭州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+兰州	ns	S-Ns	B-start_city
+到	p	O	O
+厦门	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+重庆	ns	S-Ns	B-start_city
+到	p	O	O
+，	wp	O	O
+福州	ns	S-Ns	B-arrival_city
+的	u	O	O
+菜	n	O	O
+，	wp	O	O
+为	p	O	O
+机票	n	O	O
+是	v	O	O
+多少	r	O	O
+？	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查询	v	O	O
+一下	m	O	O
+从	p	O	O
+昆明	ns	S-Ns	B-start_city
+到	p	O	O
+西安	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+我	r	O	O
+要	v	O	O
+去	v	O	O
+杭州市	ns	B-Ns	B-arrival_city
+萧山市	ns	I-Ns	I-arrival_city
+国际	n	I-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+。	wp	O	O
+
+今天	nt	O	B-start_date
+去	v	O	O
+了	u	O	O
+海南	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+州	n	O	O
+到	v	O	O
+深圳	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+齐齐哈尔	ns	S-Ns	B-start_city
+至	p	O	O
+输入	v	O	O
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+嗯	o	O	O
+，	wp	O	O
+到	v	O	O
+衡水	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+到	p	O	O
+三亚	ns	S-Ns	B-arrival_city
+飞机	n	O	O
+。	wp	O	O
+
+嗯	o	O	O
+，	wp	O	O
+先	d	O	O
+去	v	O	O
+北京	ns	S-Ns	B-arrival_city
+，	wp	O	O
+不	d	O	O
+坐	v	O	O
+上午	nt	O	B-start_date
+的	u	O	O
+火车	n	O	O
+，	wp	O	O
+嗯	e	O	O
+，	wp	O	O
+在	p	O	O
+买	v	O	O
+票	n	O	O
+坐	v	O	O
+上	v	O	O
+飞机	n	O	O
+然后	c	O	O
+，	wp	O	O
+直接	a	O	O
+的	u	O	O
+吧	u	O	O
+！	wp	O	O
+
+我	r	O	O
+想	v	O	O
+问	v	O	O
+一下	m	O	O
+从	p	O	O
+杭州	ns	S-Ns	B-start_city
+到	p	O	O
+稻城	n	O	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+什么	r	O	O
+时候	n	O	O
+可以	v	O	O
+开通	v	O	O
+？	wp	O	O
+
+深圳	ns	S-Ns	B-start_city
+，	wp	O	O
+资	n	O	O
+，	wp	O	O
+南通	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+大同	ns	S-Ns	B-start_city
+坐	v	O	O
+飞机	n	O	O
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+株洲	ns	S-Ns	B-start_city
+到	v	O	O
+天津	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+找	v	O	O
+一下	m	O	O
+，	wp	O	O
+从	p	O	O
+贵州	ns	S-Ns	B-start_city
+飞往	v	O	O
+南京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+的	u	O	O
+，	wp	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+成都	ns	S-Ns	B-start_city
+到	p	O	O
+青岛	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+可	c	O	O
+输入	v	O	O
+到	v	O	O
+乌鲁木齐	ns	S-Ns	B-arrival_city
+的	u	O	O
+时候	n	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+我	r	O	O
+到	v	O	O
+乌鲁木齐	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+5月	nt	O	B-start_date
+8	m	O	I-start_date
+号	q	O	I-start_date
+哈尔滨	ns	S-Ns	B-start_city
+到	v	O	O
+丽江	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+长沙	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+义乌	ns	S-Ns	B-start_city
+到	v	O	O
+毕节	ns	S-Ns	B-arrival_city
+飞机	n	O	O
+票	n	O	O
+多少	r	O	O
+？	wp	O	O
+
+成都	ns	S-Ns	B-start_city
+有	v	O	O
+没	d	O	O
+有	v	O	O
+直接	a	O	O
+到	v	O	O
+南宁	ns	S-Ns	B-arrival_city
+的	u	O	O
+？	wp	O	O
+飞机	n	O	O
+。	wp	O	O
+
+给	p	O	O
+我	r	O	O
+买	v	O	O
+一	m	O	O
+张	q	O	O
+西安	ns	S-Ns	B-start_city
+到	v	O	O
+三亚	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+查	v	O	O
+一	m	O	O
+查	v	O	O
+长沙	ns	S-Ns	B-start_city
+到	v	O	O
+浙江	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+西安	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+可	d	O	O
+不	d	O	O
+可以	v	O	O
+直	d	O	O
+飞	v	O	O
+香港	ns	B-Ns	B-arrival_airport
+机场	n	E-Ns	O
+。	wp	O	O
+
+刚	d	O	O
+到	v	O	O
+浙江	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+郑州	ns	S-Ns	B-start_city
+到	v	O	O
+乌鲁木齐	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+是	v	O	O
+到	v	O	O
+萧山	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+南宁	ns	S-Ns	B-start_city
+到	v	O	O
+宜春	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+，	wp	O	O
+好	a	O	O
+。	wp	O	O
+
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+最低	a	O	O
+飞机	n	O	O
+票价	n	O	O
+是	v	O	O
+多少	r	O	O
+？	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+订	v	O	O
+份	q	O	O
+深圳	ns	S-Ns	B-start_city
+到	v	O	O
+成都	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+北京	ns	S-Ns	B-start_city
+往返	v	O	O
+深圳	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+上海	ns	S-Ns	B-start_city
+到	p	O	O
+广元	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+嗯	o	O	O
+，	wp	O	O
+盐城	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+发	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+打开	v	O	O
+盐城	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+济南	ns	S-Ns	B-start_city
+到	p	O	O
+福州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+山东	ns	B-Ns	B-start_city
+济南	ns	E-Ns	I-start_city
+到	v	O	O
+海南	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+10月	nt	O	B-start_date
+1号	nt	O	I-start_date
+上海	ns	S-Ns	B-start_city
+到	p	O	O
+郑州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+10月	nt	O	B-start_date
+7	m	O	I-start_date
+号	q	O	I-start_date
+郑州	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+双流	ns	B-Ns	B-start_airport
+机场	n	E-Ns	I-start_airport
+到	v	O	O
+乐至县	ns	S-Ns	B-arrival_city
+怎么	r	O	O
+走	v	O	O
+？	wp	O	O
+
+明天	nt	O	B-start_date
+，	wp	O	O
+飞机	n	O	O
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+。	wp	O	O
+
+为	v	O	O
+，	wp	O	O
+才	d	O	O
+可	v	O	O
+查看	v	O	O
+您	r	O	O
+知道	v	O	O
+咸阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+，	wp	O	O
+价	n	O	O
+多	a	O	O
+钱	n	O	O
+。	wp	O	O
+
+帮忙	v	O	O
+查	v	O	O
+一	m	O	O
+查	v	O	O
+拉萨	ns	S-Ns	B-start_city
+至	p	O	O
+襄阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+杭州	ns	S-Ns	B-start_city
+出发	v	O	O
+的	u	O	O
+特价	n	O	O
+机票	n	O	O
+。	wp	O	O
+
+查看	v	O	O
+从	p	O	O
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+哈尔滨	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+5月	nt	O	B-start_date
+1号	nt	O	I-start_date
+南宁	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+韩国	ns	S-Ns	B-start_city
+代购	v	O	O
+是	v	O	O
+汕头	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+6月	nt	O	B-start_date
+20	m	O	I-start_date
+号	q	O	I-start_date
+从	p	O	O
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+武汉	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+给	p	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+到	v	O	O
+深圳	ns	B-Ns	B-arrival_city
+到达州	ns	E-Ns	I-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+北京	ns	S-Ns	B-start_city
+到	v	O	O
+海口	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+长沙	ns	S-Ns	B-start_city
+至	p	O	O
+西安	ns	S-Ns	B-arrival_city
+4月	nt	O	B-start_date
+28日	nt	O	I-start_date
+航班	n	O	O
+。	wp	O	O
+
+我	r	O	O
+看到	v	O	O
+海南	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+飞飞	v	O	O
+，	wp	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+石家庄	ns	S-Ns	B-start_city
+到	p	O	O
+日本	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+从	p	O	O
+石家庄	ns	S-Ns	B-start_city
+到	p	O	O
+澳大利亚	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+北京	ns	S-Ns	B-start_city
+飞机	n	O	O
+往返	v	O	O
+深圳	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+南通	ns	S-Ns	B-start_city
+到	p	O	O
+深圳	ns	S-Ns	B-arrival_city
+，	wp	O	O
+的	u	O	O
+飞机票	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+明天	nt	O	B-start_date
+成都	ns	S-Ns	B-start_city
+到	p	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+，	wp	O	O
+啊	u	O	O
+！	wp	O	O
+
+有	v	O	O
+没	d	O	O
+有	v	O	O
+从	p	O	O
+通辽	ns	S-Ns	B-start_city
+到	p	O	O
+山东	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+长沙	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+多少	r	O	O
+钱	n	O	O
+一	m	O	O
+张	q	O	O
+？	wp	O	O
+
+从	p	O	O
+湖南	ns	B-Ns	B-start_city
+巨州	ns	E-Ns	I-start_city
+飞往	v	O	O
+乌鲁木齐	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+是	v	O	O
+多少	r	O	O
+？	wp	O	O
+
+成都	ns	S-Ns	B-start_city
+到	p	O	O
+西藏	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+上海	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+揭阳	ns	S-Ns	B-start_city
+至	p	O	O
+南宁	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+金	nh	S-Nh	O
+你	r	O	O
+在	p	O	O
+给	p	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+从	p	O	O
+安顺	ns	S-Ns	B-start_city
+去	v	O	O
+正业	n	O	B-arrival_city
+有	v	O	O
+没	d	O	O
+有	v	O	O
+飞机票	n	O	O
+？	wp	O	O
+
+我	r	O	O
+要	v	O	O
+上	v	O	O
+杭州	ns	S-Ns	B-arrival_city
+坐	v	O	O
+飞机	n	O	O
+得	v	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+南京	ns	S-Ns	B-start_city
+有	v	O	O
+没	d	O	O
+有	v	O	O
+飞往	v	O	O
+徐州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+？	wp	O	O
+
+上海	ns	S-Ns	B-start_city
+有	v	O	O
+没	d	O	O
+有	v	O	O
+飞往	v	O	O
+徐州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+？	wp	O	O
+
+从	p	O	O
+济南	ns	S-Ns	B-start_city
+到	p	O	O
+赤峰	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+，	wp	O	O
+赤峰	ns	S-Ns	B-start_city
+围绕	v	O	O
+，	wp	O	O
+爱	v	O	O
+。	wp	O	O
+
+济南	ns	S-Ns	B-start_city
+到	v	O	O
+成都	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+从	p	O	O
+东营	ns	S-Ns	B-start_city
+到	p	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+今年	nt	O	B-start_date
+6月	nt	O	I-start_date
+18号	nt	O	I-start_date
+从	p	O	O
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+武汉	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+惠州	ns	S-Ns	B-start_city
+30	m	O	B-start_date
+号	q	O	I-start_date
+有	v	O	O
+没	d	O	O
+有	v	O	O
+到	v	O	O
+成都	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+？	wp	O	O
+
+成都	ns	S-Ns	B-start_city
+到	p	O	O
+郑州	ns	S-Ns	B-arrival_city
+机票	n	O	O
+
+去	v	O	O
+美国	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+要	v	O	O
+多少	r	O	O
+钱	n	O	O
+一	m	O	O
+张	q	O	O
+？	wp	O	O
+
+5月	nt	O	B-start_date
+1	m	O	I-start_date
+号	q	O	I-start_date
+晋江	ns	S-Ns	B-start_city
+到	v	O	O
+香港	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+云南	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+广州	ns	S-Ns	B-start_city
+到	v	O	O
+，	wp	O	O
+北京	ns	S-Ns	B-arrival_city
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+草丛	n	O	O
+欠	v	O	O
+到	v	O	O
+，	wp	O	O
+从	p	O	O
+圈	n	O	O
+到	v	O	O
+福建	ns	S-Ns	B-arrival_city
+的	u	O	O
+，	wp	O	O
+飞机票	n	O	O
+是	v	O	O
+多少	r	O	O
+元	q	O	O
+？	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+从	p	O	O
+广州	ns	B-Ns	B-start_city
+白云	ns	I-Ns	B-start_airport
+机场	n	E-Ns	I-start_airport
+去	v	O	O
+海南	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+从	p	O	O
+郑州	ns	S-Ns	B-start_city
+到	p	O	O
+民权	n	O	B-arrival_city
+有	v	O	O
+飞机	n	O	O
+没	v	O	O
+？	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+2015年	nt	O	B-start_date
+5月	nt	O	I-start_date
+5	m	O	I-start_date
+号	q	O	I-start_date
+银川	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+今年	nt	O	B-start_date
+从	p	O	O
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+武汉	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+6月	nt	O	B-start_date
+18	m	O	I-start_date
+号	q	O	I-start_date
+的	u	O	O
+。	wp	O	O
+
+腾冲	v	O	B-start_city
+到	v	O	O
+浙江	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+是	v	O	O
+多少	r	O	O
+？	wp	O	O
+
+从	p	O	O
+银川	ns	S-Ns	B-start_city
+到	p	O	O
+乌鲁木齐	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+几	m	O	O
+点	q	O	O
+开	v	O	O
+？	wp	O	O
+
+29	m	O	B-start_date
+号	q	O	I-start_date
+从	p	O	O
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+南昌	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+29日	nt	O	B-start_date
+从	p	O	O
+徐州	ns	S-Ns	B-start_city
+到	p	O	O
+济南	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+29日	nt	O	B-start_date
+成都	ns	S-Ns	B-start_city
+到	p	O	O
+济南	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+芜湖	ns	S-Ns	B-start_city
+到	v	O	O
+黄石	ns	S-Ns	B-arrival_city
+的	u	O	O
+打折	v	O	O
+机票	n	O	O
+。	wp	O	O
+
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+南昌	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+
+北京	ns	S-Ns	B-start_city
+到	v	O	O
+海口	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+是	v	O	O
+多少	r	O	O
+？	wp	O	O
+
+明天	nt	O	B-start_date
+厦门	ns	S-Ns	B-start_city
+到	p	O	O
+昆明	ns	S-Ns	B-arrival_city
+的	u	O	O
+，	wp	O	O
+航班	n	O	O
+。	wp	O	O
+
+我	r	O	O
+想	v	O	O
+查	v	O	O
+一下	m	O	O
+明天	nt	O	B-start_date
+去	v	O	O
+法国	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+从	p	O	O
+天津	ns	S-Ns	B-start_city
+到	p	O	O
+乌鲁木齐	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+要	v	O	O
+5月	nt	O	B-start_date
+7	m	O	I-start_date
+号	q	O	I-start_date
+的	u	O	O
+。	wp	O	O
+
+厦门	ns	S-Ns	B-start_city
+到	v	O	O
+哈尔滨	ns	S-Ns	B-arrival_city
+特价	n	O	O
+机票	n	O	O
+。	wp	O	O
+
+温州	ns	S-Ns	B-start_city
+至	p	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+是	v	O	O
+多少	r	O	O
+？	wp	O	O
+
+郑州	ns	S-Ns	B-start_city
+，	wp	O	O
+到	p	O	O
+成都	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+明天	nt	O	B-start_date
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+景德镇	ns	S-Ns	B-start_city
+到	v	O	O
+婺源	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+北京	ns	S-Ns	B-start_city
+到	v	O	O
+东京	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+北京	ns	S-Ns	B-start_city
+到	v	O	O
+地狱	n	O	Oy
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+柳州	ns	S-Ns	B-start_city
+的	u	O	O
+四川	ns	B-Ns	B-arrival_city
+绵阳	ns	E-Ns	I-arrival_city
+的	u	O	O
+飞机	n	O	O
+
+明天	nt	O	B-start_date
+哈尔滨	ns	S-Ns	B-start_city
+到	p	O	O
+曼谷	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+29日	nt	O	B-start_date
+重庆	ns	S-Ns	B-start_city
+到	v	O	O
+济南	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+南京	ns	S-Ns	B-start_city
+到	v	O	O
+山东	ns	B-Ns	B-arrival_city
+威海	ns	E-Ns	I-arrival_city
+飞机票	n	O	O
+
+从	p	O	O
+上海	ns	S-Ns	B-start_city
+到	p	O	O
+昆明	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+贵阳	ns	S-Ns	B-start_city
+到	v	O	O
+郑州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+四川	ns	B-Ns	B-start_city
+成都	ns	E-Ns	B-start_city
+到	p	O	O
+河南	ns	B-Ns	B-arrival_city
+郑州	ns	E-Ns	I-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+我	r	O	O
+想	v	O	O
+订	v	O	O
+一	m	O	O
+张	q	O	O
+5月	nt	O	B-start_date
+32号	nt	O	I-start_date
+去	v	O	O
+深圳	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+从	p	O	O
+银川	ns	S-Ns	B-start_city
+到	p	O	O
+乌鲁木齐	ns	S-Ns	B-arrival_city
+有	v	O	O
+哪些	r	O	O
+航班	n	O	O
+？	wp	O	O
+
+查询	v	O	O
+温州	ns	S-Ns	B-start_city
+到	v	O	O
+b	ws	O	O
+级	n	O	O
+得	u	O	O
+飞机	n	O	O
+有	v	O	O
+没	d	O	O
+有	v	O	O
+？	wp	O	O
+
+中国	ns	S-Ns	B-start_city
+到	p	O	O
+韩国	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+从	p	O	O
+福州	ns	S-Ns	B-start_city
+到	p	O	O
+长沙	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+给	p	O	O
+我	r	O	O
+订	v	O	O
+一	m	O	O
+天	q	O	O
+明天	nt	O	B-start_date
+到	v	O	O
+日本	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+有	v	O	O
+没	d	O	O
+有	v	O	O
+小凡	nh	S-Nh	O
+的	u	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+我	r	O	O
+从	p	O	O
+中国	ns	S-Ns	B-start_city
+驻	v	O	O
+古	j	O	O
+飞机	n	O	O
+到	v	O	O
+美国	ns	S-Ns	B-arrival_city
+要	v	O	O
+多	d	O	O
+长	a	O	O
+时间	n	O	O
+？	wp	O	O
+
+查	v	O	O
+文静	a	O	O
+重庆	ns	S-Ns	B-start_city
+到	v	O	O
+南宁	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+查	v	O	O
+明天	nt	O	B-start_date
+重庆	ns	S-Ns	B-start_city
+到	p	O	O
+南宁	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+池州	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+张家界	ns	S-Ns	B-start_city
+到	p	O	O
+昆明	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+航班	n	O	O
+，	wp	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+北京	ns	S-Ns	B-start_city
+到	v	O	O
+长春	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+西安	ns	S-Ns	B-start_airport
+机场	n	O	I-start_airport
+到	v	O	O
+钟楼	n	O	O
+。	wp	O	O
+
+从	p	O	O
+郑州	ns	S-Ns	B-start_city
+到	p	O	O
+南宁	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+泸州	ns	S-Ns	B-start_city
+到	p	O	O
+福建	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+是	v	O	O
+多少	r	O	O
+？	wp	O	O
+
+昆明	ns	S-Ns	B-start_city
+到	v	O	O
+宁波	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+日本	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+飞机	n	O	O
+啊	u	O	O
+！	wp	O	O
+
+啊	e	O	O
+，	wp	O	O
+深圳	ns	S-Ns	B-start_city
+，	wp	O	O
+子	n	O	O
+，	wp	O	O
+南通	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+航班	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+济南	ns	S-Ns	B-start_city
+到	v	O	O
+费集	ns	S-Ns	B-arrival_city
+安	v	O	O
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+请	v	O	O
+查	v	O	O
+一下	m	O	O
+，	wp	O	O
+福州	ns	S-Ns	B-start_city
+到	v	O	O
+贵阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+那个	r	O	O
+飞机票	n	O	O
+多少	r	O	O
+？	wp	O	O
+
+武汉	ns	S-Ns	B-start_city
+到	v	O	O
+海南	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+从	p	O	O
+石家庄	ns	S-Ns	B-start_city
+到	p	O	O
+云南	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+福州	ns	S-Ns	B-start_city
+飞	v	O	O
+杭州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+看看	v	O	O
+5月	nt	O	B-start_date
+5	m	O	I-start_date
+号	q	O	I-start_date
+去	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+30	m	O	B-start_date
+号	q	O	I-start_date
+文山	nh	S-Nh	B-start_city
+到	v	O	O
+昆明	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+中国	ns	S-Ns	B-start_city
+到	p	O	O
+日本	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+长治	ns	S-Ns	B-start_city
+到	v	O	O
+南京	ns	S-Ns	B-arrival_city
+4月	nt	O	B-start_date
+29	m	O	I-start_date
+号	q	O	I-start_date
+的	u	O	O
+航班	n	O	O
+有	v	O	O
+吗	u	O	O
+？	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+郑州	ns	S-Ns	B-start_city
+到	v	O	O
+贵阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+搜索	v	O	O
+从	p	O	O
+昆航	j	O	O
+从	p	O	O
+杭州	ns	B-Ns	B-start_city
+萧山	ns	I-Ns	B-start_airport
+国际	n	I-Ns	I-start_airport
+机场	n	E-Ns	I-start_airport
+到	p	O	O
+昆明	ns	B-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+。	wp	O	O
+
+从	p	O	O
+上海	ns	S-Ns	B-start_city
+到	p	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+刚	d	O	O
+到	v	O	O
+海南	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+也	d	O	O
+关于	p	O	O
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+从	p	O	O
+南宁	ns	S-Ns	B-start_city
+去	v	O	O
+纽约	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+西宁	ns	S-Ns	B-arrival_city
+的	u	O	O
+低价	n	O	O
+机票	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+预订	v	O	O
+北京	ns	S-Ns	B-start_city
+到	v	O	O
+济南	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+温州	ns	S-Ns	B-start_city
+到	v	O	O
+毕节	ns	S-Ns	B-arrival_city
+飞机	n	O	O
+有	v	O	O
+没	d	O	O
+有	v	O	O
+？	wp	O	O
+
+大力	d	O	O
+到	v	O	O
+日本	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+从	p	O	O
+意大利	ns	S-Ns	B-start_city
+开	v	O	O
+往	p	O	O
+日本	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+明天	nt	O	B-start_date
+西安	ns	S-Ns	B-start_city
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+上海	ns	S-Ns	B-start_city
+到	p	O	O
+昆明	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+，	wp	O	O
+那么	r	O	O
+多	a	O	O
+瓶	q	O	O
+瓶	n	O	O
+，	wp	O	O
+这	r	O	O
+。	wp	O	O
+
+有	v	O	O
+没	d	O	O
+有	v	O	O
+襄樊	ns	S-Ns	B-start_city
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+襄樊	ns	S-Ns	B-start_city
+到	v	O	O
+，	wp	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+襄樊	ns	S-Ns	B-start_city
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+西安	ns	S-Ns	B-start_city
+到	v	O	O
+榆林	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+广州	ns	S-Ns	B-start_city
+至	p	O	O
+铜仁	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+我	r	O	O
+想	v	O	O
+找	v	O	O
+一下	m	O	O
+五月	nt	O	B-start_date
+，	wp	O	O
+32	m	O	B-start_date
+号	q	O	I-start_date
+去	v	O	O
+吃	v	O	O
+的	u	O	O
+你	r	O	O
+机票	n	O	O
+。	wp	O	O
+
+长治	ns	S-Ns	B-start_city
+到	v	O	O
+南京	ns	S-Ns	B-arrival_city
+有	v	O	O
+航班	n	O	O
+吗	u	O	O
+？	wp	O	O
+
+请	v	O	O
+帮	v	O	O
+我	r	O	O
+查询	v	O	O
+一下	m	O	O
+去	v	O	O
+法国	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+好	a	O	O
+吗	u	O	O
+？	wp	O	O
+
+给	p	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+上海	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+大后天	nt	O	B-start_date
+上海	ns	S-Ns	B-start_city
+到	p	O	O
+郑州	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+好	a	O	O
+飞机票	n	O	O
+到	v	O	O
+阿克苏	ns	S-Ns	B-start_city
+到	v	O	O
+乌鲁木齐	ns	S-Ns	B-arrival_city
+的	u	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+去	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+达州	ns	S-Ns	B-start_city
+可以	v	O	O
+，	wp	O	O
+坐	v	O	O
+飞机	n	O	O
+到	v	O	O
+成都	ns	S-Ns	B-arrival_city
+吗	u	O	O
+？	wp	O	O
+
+最近	nt	O	B-start_date
+上海	ns	S-Ns	B-start_city
+到	v	O	O
+厦门	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+最	d	O	B-cost_relative
+便宜	a	O	I-cost_relative
+的	u	O	O
+是	v	O	O
+多少	r	O	O
+？	wp	O	O
+
+要	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+什么	r	O	O
+航班	n	O	O
+？	wp	O	O
+
+5月	nt	O	B-start_date
+1日	nt	O	I-start_date
+重庆	ns	S-Ns	B-start_city
+到	v	O	O
+济南	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+后天	n	O	B-start_date
+，	wp	O	O
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+从	p	O	O
+兰州	ns	S-Ns	B-start_city
+到	p	O	O
+攀枝花	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+啊	u	O	O
+！	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+景德镇	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+从	p	O	O
+上海	ns	S-Ns	B-start_city
+飞往	v	O	O
+长治	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+哈尔滨	ns	S-Ns	B-start_city
+到	v	O	O
+三亚	ns	S-Ns	B-arrival_city
+往返	v	O	O
+机票	n	O	O
+。	wp	O	O
+
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+伊宁市	ns	S-Ns	B-start_city
+到	v	O	O
+乌鲁木齐	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+最近	nt	O	B-start_date
+去	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+昨天	nt	O	B-start_date
+晚上	nt	O	B-start_time
+国航	j	O	B-airline
+到	v	O	O
+，	wp	O	O
+曼谷	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+到	v	O	O
+了	u	O	O
+吗	u	O	O
+？	wp	O	O
+
+5月	nt	O	B-start_date
+1号	nt	O	I-start_date
+上海	ns	S-Ns	B-start_city
+至	p	O	O
+佛山	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+最近	nt	O	B-start_date
+去	v	O	O
+三亚	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+，	wp	O	O
+我	r	O	O
+。	wp	O	O
+
+长沙	ns	S-Ns	B-start_city
+到	v	O	O
+，	wp	O	O
+铜仁	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+长沙	ns	S-Ns	B-start_city
+到	p	O	O
+凤凰	ns	S-Ns	B-arrival_city
+古城	n	O	O
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+长沙	ns	S-Ns	B-start_city
+到	p	O	O
+西宁	ns	S-Ns	B-arrival_city
+航班	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+帮	v	O	O
+我	r	O	O
+确认	v	O	O
+一下	m	O	O
+明天	nt	O	B-start_date
+有	v	O	O
+没	d	O	O
+有	v	O	O
+，	wp	O	O
+飞机	n	O	O
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+了	u	O	O
+？	wp	O	O
+
+嗯	e	O	O
+，	wp	O	O
+我	r	O	O
+承认	v	O	O
+想	v	O	O
+后天	nt	O	B-start_date
+从	p	O	O
+成都	ns	S-Ns	B-start_city
+到	p	O	O
+丽江	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+的	u	O	O
+价格	n	O	O
+是	v	O	O
+多少	r	O	O
+？	wp	O	O
+
+现在	nt	O	O
+有	v	O	O
+飞机	n	O	O
+去	v	O	O
+西安	ns	S-Ns	B-arrival_city
+吗	u	O	O
+？	wp	O	O
+
+万州	ns	S-Ns	B-start_city
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+机票	n	O	O
+
+万州	ns	S-Ns	B-start_city
+到	p	O	O
+重庆	ns	S-Ns	B-arrival_city
+机票	n	O	O
+
+帮	v	O	O
+我	r	O	O
+看	v	O	O
+一下	m	O	O
+从	p	O	O
+这里	r	O	B-start_city
+到	p	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+有	v	O	O
+没	d	O	O
+有	v	O	O
+？	wp	O	O
+
+怎么	r	O	O
+到	v	O	O
+宝安	ns	B-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+从	p	O	O
+偃师	ns	S-Ns	B-start_city
+到	p	O	O
+杭州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+明天	nt	O	B-start_date
+金华	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+重庆	ns	S-Ns	B-start_city
+到	v	O	O
+湛江	ns	S-Ns	B-arrival_city
+28	m	O	B-start_date
+号	q	O	I-start_date
+的	u	O	O
+机票	n	O	O
+是	v	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+伊宁市	ns	S-Ns	B-start_city
+到	v	O	O
+成都	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+订	v	O	O
+一	m	O	O
+张	q	O	O
+西安	ns	S-Ns	B-start_city
+去	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+星期一	nt	O	B-start_date
+，	wp	O	O
+104	m	O	O
+到	v	O	O
+成都	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+104	m	O	O
+到	v	O	O
+成都	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+伊宁市	ns	S-Ns	B-start_city
+到	v	O	O
+成都	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+明天	nt	O	B-start_date
+伊宁市	ns	S-Ns	B-start_city
+到	v	O	O
+成都	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+痛苦	a	O	O
+，	wp	O	O
+郑州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+明天	nt	O	B-start_date
+到	v	O	O
+1104	m	O	O
+到	v	O	O
+成都	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+从	p	O	O
+昆明	ns	S-Ns	B-start_city
+飞往	v	O	O
+郑州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+飞机票	n	O	O
+西安	ns	S-Ns	B-start_city
+到	v	O	O
+厦门	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+，	wp	O	O
+温州	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+广州	ns	S-Ns	B-start_city
+广	a	O	O
+武汉	ns	S-Ns	B-arrival_city
+飞机	n	O	O
+
+北京	ns	S-Ns	B-start_city
+的	u	O	O
+贵阳	ns	S-Ns	B-start_city
+到	v	O	O
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+5月	nt	O	B-start_date
+1	m	O	I-start_date
+以后	nd	O	I-start_date
+，	wp	O	O
+台州	ns	S-Ns	B-start_city
+到	v	O	O
+昆明	ns	S-Ns	B-arrival_city
+，	wp	O	O
+飞机	n	O	O
+有	v	O	O
+。	wp	O	O
+
+从	p	O	O
+路桥	ns	S-Ns	B-start_city
+坐	v	O	O
+飞机	n	O	O
+到	v	O	O
+贵阳	ns	S-Ns	B-arrival_city
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+长春	ns	S-Ns	B-start_city
+到	p	O	O
+昆明	ns	S-Ns	B-arrival_city
+飞机	n	O	O
+。	wp	O	O
+
+大连	ns	S-Ns	B-start_city
+到	v	O	O
+大理	ns	S-Ns	B-arrival_city
+飞机	n	O	O
+。	wp	O	O
+
+我	r	O	O
+到	v	O	O
+云南	ns	S-Ns	B-arrival_city
+飞机票	n	O	O
+怎么	r	O	O
+做	v	O	O
+？	wp	O	O
+
+到	p	O	O
+云南	ns	B-Ni	B-arrival_city
+飞机票	n	E-Ni	O
+在	p	O	O
+哪里	r	O	O
+坐	v	O	O
+方便	a	O	O
+？	wp	O	O
+
+飞机票	n	O	O
+济南	ns	S-Ns	B-start_city
+坐	v	O	O
+上	nd	O	O
+。	wp	O	O
+
+西安	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+长沙	ns	S-Ns	B-start_city
+到	v	O	O
+西安	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+后天	nt	O	B-start_date
+最	d	O	O
+早	a	O	O
+的	u	O	O
+到	v	O	O
+沈阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+广州	ns	S-Ns	B-start_city
+到	v	O	O
+，	wp	O	O
+泰国	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+还有	v	O	O
+吗	u	O	O
+？	wp	O	O
+
+长沙	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+坐	v	O	O
+飞机	n	O	O
+要	v	O	O
+多久	r	O	O
+？	wp	O	O
+
+泉州	ns	S-Ns	B-arrival_city
+机场	n	O	Ot
+航班	n	O	O
+
+昆明	ns	S-Ns	B-start_city
+到	v	O	O
+哈尔滨	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+5月	nt	O	B-start_date
+2	m	O	I-start_date
+号	q	O	I-start_date
+长沙	ns	S-Ns	B-start_city
+到	v	O	O
+重庆	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+深圳	ns	S-Ns	B-start_city
+到	p	O	O
+重庆	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+泉州	ns	S-Ns	B-start_city
+到	v	O	O
+绵阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+
+今天	nt	O	B-start_date
+广州	ns	S-Ns	B-start_city
+去	v	O	O
+了	u	O	O
+俄罗斯	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+是	v	O	O
+几点钟	n	O	O
+啊	u	O	O
+？	wp	O	O
+
+泉州	ns	B-Ns	B-start_city
+晋江	ns	E-Ns	I-start_city
+到	v	O	O
+绵	ns	B-Ns	B-arrival_city
+成都	ns	E-Ns	I-arrival_city
+的	u	O	O
+航班	n	O	O
+
+上海	ns	S-Ns	B-start_city
+到	p	O	O
+佛山	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+新疆	ns	S-Ns	B-start_city
+到	v	O	O
+吴兰州	ns	S-Ns	B-arrival_city
+的	u	O	O
+，	wp	O	O
+飞机票	n	O	O
+，	wp	O	O
+啥	r	O	O
+时候	n	O	O
+最	d	O	B-cost_relative
+便宜	a	O	I-cost_relative
+？	wp	O	O
+
+查看	v	O	O
+一下	m	O	O
+兰州	ns	S-Ns	B-start_city
+到	v	O	O
+新疆	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+成都	ns	S-Ns	B-start_city
+到	p	O	O
+南宁	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+深圳	ns	S-Ns	B-start_city
+到	v	O	O
+纽约	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+成都	ns	S-Ns	B-start_city
+到	p	O	O
+三亚	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+啊	u	O	O
+，	wp	O	O
+26	m	O	B-start_date
+号	q	O	I-start_date
+，	wp	O	O
+贵州	ns	B-Ni	B-arrival_city
+荔波	ns	I-Ni	O
+航班	n	E-Ni	O
+是	v	O	O
+几	m	O	O
+点	q	O	O
+？	wp	O	O
+
+一	m	O	O
+，	wp	O	O
+上海	ns	S-Ns	B-arrival_city
+飞机	n	O	O
+票	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+想	v	O	O
+问问	v	O	O
+呗	u	O	O
+！	wp	O	O
+
+万州	ns	S-Ns	B-start_city
+到	v	O	O
+青海	ns	S-Ns	B-arrival_city
+机票	n	O	O
+
+福州	ns	S-Ns	B-start_city
+至	p	O	O
+太原	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+临沂	ns	S-Ns	B-start_city
+到	v	O	O
+成都	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+今天	nt	O	B-start_date
+温州	ns	S-Ns	B-start_city
+到	v	O	O
+烟台	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+有	v	O	O
+没	d	O	O
+有	v	O	O
+？	wp	O	O
+
+宜春	ns	S-Ns	B-start_city
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+明天	nt	O	B-start_date
+北京	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+煮	v	O	O
+好	a	O	O
+到	v	O	O
+南昌	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+香港	ns	S-Ns	B-start_city
+到	v	O	O
+新加坡	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+搜索	v	O	O
+西安	ns	S-Ns	B-start_city
+到	v	O	O
+，	wp	O	O
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+，	wp	O	O
+航班	n	O	O
+。	wp	O	O
+
+请	v	O	O
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+海口	ns	S-Ns	B-start_city
+南	nd	O	O
+港	j	O	O
+的	u	O	O
+航班	n	O	O
+时间	n	O	O
+了	u	O	O
+。	wp	O	O
+
+贵阳	ns	B-Ns	B-start_city
+贵阳	ns	E-Ns	I-start_city
+有	v	O	O
+没	d	O	O
+有	v	O	O
+飞机	n	O	O
+跑	v	O	O
+到	v	O	O
+蒙古	ns	S-Ns	B-arrival_city
+啊	u	O	O
+？	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+我	r	O	O
+温州	ns	S-Ns	B-start_city
+到	v	O	O
+我	r	O	O
+贵阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+和田	ns	S-Ns	B-start_city
+到	p	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+晋江	ns	S-Ns	B-start_city
+到	v	O	O
+绵阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+
+5月	nt	O	B-start_date
+7	m	O	I-start_date
+号	q	O	I-start_date
+从	p	O	O
+重庆	ns	S-Ns	B-start_city
+飞	v	O	O
+长沙	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查询	v	O	O
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+雅加达	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+我	r	O	O
+查查	v	O	O
+杭州	ns	S-Ns	B-start_city
+到	v	O	O
+惠州	ns	S-Ns	B-arrival_city
+的	u	O	O
+灰机票	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查查	v	O	O
+杭州	ns	S-Ns	B-start_city
+到	v	O	O
+惠州	ns	S-Ns	B-arrival_city
+的	u	O	O
+灰	n	O	O
+机票	n	O	O
+几	m	O	O
+点	q	O	O
+？	wp	O	O
+
+又	d	O	O
+由于	p	O	O
+遵义	ns	S-Ns	B-start_city
+到	v	O	O
+三亚	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+制造	v	O	O
+专业	n	O	O
+的	u	O	O
+三亚	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+宜兴	ns	S-Ns	B-start_city
+到	v	O	O
+广州	ns	B-Ni	B-arrival_city
+银狐	nz	I-Ni	O
+机票	n	E-Ni	O
+。	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+海口	ns	S-Ns	B-start_city
+到	v	O	O
+郑州	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+查	v	O	O
+下	v	O	O
+明天	nt	O	B-start_date
+到	v	O	O
+青岛	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+周五	nt	O	B-start_date
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+一下	m	O	O
+西安	ns	S-Ns	B-start_city
+飞往	v	O	O
+三亚	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+福州	ns	S-Ns	B-arrival_city
+机票	n	O	O
+的	u	O	O
+。	wp	O	O
+
+他	r	O	O
+在	p	O	O
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+北京	ns	S-Ns	B-start_city
+到	v	O	O
+合肥	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+邦	n	O	O
+达到	v	O	O
+成都	ns	S-Ns	B-arrival_city
+机票	n	O	O
+。	wp	O	O
+
+有	v	O	O
+没	d	O	O
+有	v	O	O
+上海	ns	S-Ns	B-arrival_city
+大	a	O	O
+？	wp	O	O
+嗯	o	O	O
+昆明	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+上海	ns	S-Ns	B-start_city
+到	p	O	O
+昆明	ns	S-Ns	B-arrival_city
+，	wp	O	O
+飞机票	n	O	O
+是	v	O	O
+多少	r	O	O
+？	wp	O	O
+
+七月份	nt	O	B-start_date
+从文	nh	S-Nh	O
+杭州	ns	S-Ns	B-start_city
+到	v	O	O
+广元	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+上海	ns	S-Ns	B-start_city
+到	v	O	O
+深圳	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+请问	v	O	O
+一下	m	O	O
+，	wp	O	O
+期待	v	O	O
+重	a	O	O
+，	wp	O	O
+温州	ns	S-Ns	B-start_city
+到	v	O	O
+贵阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+是	v	O	O
+多少	r	O	O
+？	wp	O	O
+
+最后	nd	O	O
+一	m	O	O
+班	q	O	O
+到达	v	O	O
+南昌	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+兰州	ns	S-Ns	B-start_city
+到	v	O	O
+新疆	ns	S-Ns	B-arrival_city
+，	wp	O	O
+最近	nt	O	O
+哪	r	O	O
+一	m	O	O
+段	q	O	O
+时间	n	O	O
+飞机票	n	O	O
+最	d	O	B-cost_relative
+便宜	a	O	I-cost_relative
+？	wp	O	O
+
+明天	nt	O	B-start_date
+到	v	O	O
+昆明	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+德州	ns	S-Ns	B-start_city
+到	v	O	O
+，	wp	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+从	p	O	O
+深圳	ns	S-Ns	B-start_city
+到	p	O	O
+美国	ns	S-Ns	B-arrival_city
+要	v	O	O
+多久	r	O	O
+坐	v	O	O
+飞机	n	O	O
+？	wp	O	O
+
+深圳	ns	S-Ns	B-start_city
+东	nd	O	O
+到	v	O	O
+美国	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+从	p	O	O
+温州	ns	S-Ns	B-start_city
+到	p	O	O
+贵阳	ns	S-Ns	B-arrival_city
+最低	a	O	O
+的	u	O	O
+机票	n	O	O
+是	v	O	O
+多少	r	O	O
+？	wp	O	O
+
+查询	v	O	O
+上海	ns	S-Ns	B-start_city
+到	p	O	O
+丽江	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+天津	ns	S-Ns	B-start_city
+到	p	O	O
+齐市	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+多少	r	O	O
+钱	n	O	O
+
+万州	ns	S-Ns	B-start_city
+到	v	O	O
+广西	ns	S-Ns	B-arrival_city
+机票	n	O	O
+
+离	v	O	O
+咸宁	ns	S-Ns	B-start_city
+到	v	O	O
+天堂	n	O	O
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+明天	nt	O	B-start_date
+有	v	O	O
+没有	d	O	O
+到	v	O	O
+南宁	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+？	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+从	p	O	O
+三亚	ns	S-Ns	B-start_city
+到	p	O	O
+郑州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+a	ws	O	O
+从	p	O	O
+深圳	ns	S-Ns	B-start_city
+到	p	O	O
+美国	ns	S-Ns	B-arrival_city
+的	u	O	O
+，	wp	O	O
+我	r	O	O
+坐	v	O	O
+飞机	n	O	O
+。	wp	O	O
+
+厦门	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+飞机票	n	O	O
+。	wp	O	O
+
+那	c	O	O
+你	r	O	O
+就	d	O	O
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+北京	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+日本	ns	S-Ns	B-arrival_city
+，	wp	O	O
+东京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+安徽	ns	B-Ni	B-start_city
+新桥	ns	I-Ni	B-start_airport
+机场	n	E-Ni	I-start_airport
+到	p	O	O
+重庆	ns	S-Ns	B-arrival_city
+5月	nt	O	B-start_date
+1日	nt	O	I-start_date
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+最	d	O	O
+早	a	O	O
+一	m	O	O
+班	q	O	O
+到达	v	O	O
+南昌	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+从	p	O	O
+乌鲁木齐	ns	S-Ns	B-start_city
+到	p	O	O
+拉萨	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+多少	r	O	O
+公里	q	O	O
+？	wp	O	O
+
+乌鲁木齐	ns	S-Ns	B-start_city
+到	v	O	O
+拉萨	ns	S-Ns	B-arrival_city
+的	u	O	O
+，	wp	O	O
+航班	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+从	p	O	O
+乌鲁木齐	ns	S-Ns	B-start_city
+到	p	O	O
+喀什	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+后天	nt	O	B-start_date
+成都	ns	S-Ns	B-start_city
+到	p	O	O
+丽江	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+有	v	O	O
+哪些	r	O	O
+航班	n	O	O
+还要	v	O	O
+多少	r	O	O
+价格	n	O	O
+查	v	O	O
+一下	m	O	O
+。	wp	O	O
+
+从	p	O	O
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+成都	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+万州	ns	S-Ns	B-start_city
+到	p	O	O
+长沙	ns	S-Ns	B-arrival_city
+机票	n	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+，	wp	O	O
+从	p	O	O
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+恢复	v	O	O
+执行	v	O	O
+了	u	O	O
+两	m	O	O
+趟	q	O	O
+航班	n	O	O
+滞留	v	O	O
+的	u	O	O
+旅客	n	O	O
+26	m	O	B-start_date
+号	q	O	I-start_date
+早上	nt	O	B-start_time
+去	v	O	O
+南	nd	O	O
+昆明	ns	B-Ns	B-arrival_city
+长水	ns	I-Ns	B-arrival_airport
+国际	n	I-Ns	I-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+。	wp	O	O
+
+昆明	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+要	v	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+给	p	O	O
+我	r	O	O
+查查	v	O	O
+广州	ns	S-Ns	B-start_city
+到	v	O	O
+西安	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+贵阳	ns	S-Ns	B-arrival_city
+飞机票	n	O	O
+。	wp	O	O
+
+一	m	O	O
+，	wp	O	O
+你	r	O	O
+，	wp	O	O
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+明天	nt	O	B-start_date
+，	wp	O	O
+嘉兴	ns	S-Ns	B-start_city
+到	v	O	O
+四川	ns	S-Ns	B-arrival_city
+到	v	O	O
+，	wp	O	O
+机票	n	O	O
+。	wp	O	O
+
+上海	ns	B-Ni	B-start_city
+虹桥	ns	I-Ni	B-start_airport
+高铁站	n	E-Ni	I-start_airport
+有	v	O	O
+没	d	O	O
+有	v	O	O
+到	v	O	O
+浦东	ns	B-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+的	u	O	O
+高铁	n	O	O
+。	wp	O	O
+
+明	nt	O	B-start_date
+到	p	O	O
+郑州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+明天	nt	O	B-start_date
+到	v	O	O
+合肥	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+成都	ns	S-Ns	B-start_city
+飞	v	O	O
+，	wp	O	O
+呼和浩特	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+，	wp	O	O
+今天	nt	O	B-start_date
+几	m	O	O
+点	q	O	O
+到	v	O	O
+？	wp	O	O
+
+郑州	ns	S-Ns	B-start_city
+到	p	O	O
+昆明	ns	S-Ns	B-arrival_city
+飞机票	n	O	O
+。	wp	O	O
+
+武汉	ns	S-Ns	B-start_city
+到	v	O	O
+兰州	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+上海	ns	S-Ns	B-start_city
+到	v	O	O
+广西	ns	S-Ns	B-arrival_city
+，	wp	O	O
+北海	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+我	r	O	O
+要	v	O	O
+第一	m	O	O
+张	q	O	O
+去	v	O	O
+拉萨	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+你	r	O	O
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一	m	O	O
+查	v	O	O
+温州	ns	S-Ns	B-start_city
+到	p	O	O
+知道	v	O	O
+那个	r	O	O
+新郑	ns	B-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+的	u	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+5月	nt	O	B-start_date
+11日	nt	O	I-start_date
+银川	ns	S-Ns	B-start_city
+至	p	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+下周五	nt	O	B-start_date
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+，	wp	O	O
+机票	n	O	O
+。	wp	O	O
+
+海口	ns	S-Ns	B-start_city
+到	v	O	O
+郑州	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+从	p	O	O
+济南	ns	S-Ns	B-start_city
+到	p	O	O
+青岛	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+要	v	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+我	r	O	O
+想	v	O	O
+揍	v	O	O
+飞机	n	O	O
+去	v	O	O
+深圳	ns	S-Ns	B-arrival_city
+。	wp	O	O
+
+南京	ns	S-Ns	B-start_city
+到	v	O	O
+重庆	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+今天	nt	O	B-start_date
+到	v	O	O
+昆明	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+银川	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+查询	v	O	O
+一下	m	O	O
+从	p	O	O
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+重庆	ns	S-Ns	B-arrival_city
+，	wp	O	O
+这	r	O	O
+几	m	O	O
+天	q	O	O
+机票	n	O	O
+。	wp	O	O
+
+从	p	O	O
+宁波	ns	S-Ns	B-start_city
+到	p	O	O
+沈阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+5月	nt	O	B-start_date
+7	m	O	I-start_date
+号	q	O	I-start_date
+长沙	ns	S-Ns	B-start_city
+飞	v	O	O
+西安	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+你好	i	O	O
+，	wp	O	O
+讨厌	v	O	O
+好	a	O	O
+才	d	O	O
+来	v	O	O
+听到	v	O	O
+，	wp	O	O
+贵阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+专机	n	O	O
+从	p	O	O
+杭州	ns	S-Ns	B-start_city
+到	p	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+明	nt	O	B-start_date
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+机票	n	O	O
+。	wp	O	O
+
+郑州	ns	S-Ns	B-start_city
+到	v	O	O
+海口	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+上海	ns	S-Ns	B-start_city
+到	p	O	O
+昆明	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+上海	ns	S-Ns	B-start_city
+到	p	O	O
+昆明	ns	S-Ns	B-arrival_city
+机票	n	O	O
+多少	r	O	O
+钱	n	O	O
+
+查	v	O	O
+一下	m	O	O
+五一	nt	O	B-start_date
+期间	nd	O	O
+洛阳	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+延安	ns	S-Ns	B-start_city
+到	p	O	O
+无锡	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+天津	ns	S-Ns	B-start_city
+到	p	O	O
+青岛	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+河南	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+你	r	O	O
+从	p	O	O
+上海	ns	S-Ns	B-start_city
+到	p	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+太原	ns	S-Ns	B-start_city
+至	p	O	O
+成都	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+秦皇岛	ns	S-Ns	B-start_city
+有	v	O	O
+到	v	O	O
+青岛	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+吗	u	O	O
+？	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+明天	nt	O	B-start_date
+揭阳	ns	S-Ns	B-start_city
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+，	wp	O	O
+啊	u	O	O
+，	wp	O	O
+啊	e	O	O
+，	wp	O	O
+我	r	O	O
+。	wp	O	O
+
+重庆	ns	S-Ns	B-start_city
+到	v	O	O
+秀山	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+北京	ns	S-Ns	B-start_city
+到	v	O	O
+哈尔滨	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+厦门	ns	S-Ns	B-start_city
+到	p	O	O
+重庆	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+查	v	O	O
+上海	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+，	wp	O	O
+明天	nt	O	B-start_date
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+成都	ns	S-Ns	B-start_city
+到	p	O	O
+玉树	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+是	v	O	O
+几	m	O	O
+点	q	O	O
+？	wp	O	O
+
+北京	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+价格	n	O	O
+。	wp	O	O
+
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+成都	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+哈尔滨	ns	S-Ns	B-start_city
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+郑州	ns	S-Ns	B-start_city
+到	v	O	O
+绵阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+乌鲁木齐	ns	S-Ns	B-start_city
+到	v	O	O
+重庆	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+徐州	ns	S-Ns	B-start_city
+到	v	O	O
+南京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+五月份	nt	O	B-start_date
+打折	v	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+从	p	O	O
+南通	ns	S-Ns	B-start_city
+到	p	O	O
+商丘	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+从	p	O	O
+南京	ns	S-Ns	B-start_city
+到	p	O	O
+郑州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+洛阳	ns	S-Ns	B-start_city
+到	v	O	O
+深圳	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+长沙	ns	S-Ns	B-start_city
+至	p	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+明天	nt	O	B-start_date
+海口	ns	S-Ns	B-start_city
+到	v	O	O
+西安	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+重庆	ns	S-Ns	B-start_city
+到	v	O	O
+拉萨	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+啊	e	O	O
+给	p	O	O
+我	r	O	O
+说	v	O	O
+一下	m	O	O
+现在	nt	O	B-start_date
+北京	ns	B-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+的	u	O	O
+情况	n	O	O
+。	wp	O	O
+
+从	p	O	O
+武汉	ns	S-Ns	B-start_city
+到	p	O	O
+昆明	ns	S-Ns	B-arrival_city
+，	wp	O	O
+飞机	n	O	O
+票	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+今	nt	O	B-start_date
+从	p	O	O
+天津	ns	S-Ns	B-start_city
+去	v	O	O
+合肥	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一	m	O	O
+件	q	O	O
+，	wp	O	O
+明天	nt	O	B-start_date
+有	v	O	O
+没	d	O	O
+有	v	O	O
+到	v	O	O
+深圳	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+给	p	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+北京	ns	S-Ns	B-start_city
+到	v	O	O
+广东	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+嗯	o	O	O
+，	wp	O	O
+五月	nt	O	B-start_date
+4月	nt	O	I-start_date
+30	m	O	I-start_date
+号	q	O	I-start_date
+呼市	j	O	O
+去	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+贵阳	ns	S-Ns	B-start_city
+到	v	O	O
+杭州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+后天	nt	O	B-start_date
+广州	ns	S-Ns	B-start_city
+至	p	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+多少	r	O	O
+钱	n	O	O
+一	m	O	O
+张	q	O	O
+票	n	O	O
+。	wp	O	O
+
+这	r	O	O
+是	v	O	O
+太原	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+5月	nt	O	B-start_date
+1号	nt	O	I-start_date
+的	u	O	O
+哈尔滨	ns	S-Ns	B-start_city
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+北京	ns	S-Ns	B-start_city
+到	v	O	O
+广西	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+西安	ns	S-Ns	B-start_city
+到	v	O	O
+兰州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+我	r	O	O
+要	v	O	O
+哈尔滨	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+订	v	O	O
+票	n	O	O
+电话	n	O	O
+。	wp	O	O
+
+上海	ns	S-Ns	B-start_city
+飞往	v	O	O
+武汉	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+北京	ns	S-Ns	B-start_city
+到	v	O	O
+连云港	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+郑州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+晋江	ns	S-Ns	B-start_city
+到	v	O	O
+绵阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+
+的	u	O	O
+，	wp	O	O
+郑州	ns	S-Ns	B-start_city
+到	v	O	O
+云南	ns	S-Ns	B-arrival_city
+，	wp	O	O
+昆明	ns	S-Ns	B-arrival_city
+，	wp	O	O
+飞机	n	O	O
+。	wp	O	O
+
+请	v	O	O
+查询	v	O	O
+桑德	nh	S-Nh	B-start_city
+到	v	O	O
+西安	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+广州	ns	S-Ns	B-start_city
+坐	v	O	O
+飞机	n	O	O
+到	v	O	O
+贵阳	ns	S-Ns	B-arrival_city
+要	v	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+我	r	O	O
+想	v	O	O
+订	v	O	O
+从	p	O	O
+上海	ns	S-Ns	B-start_city
+到	p	O	O
+北京	ns	S-Ns	B-arrival_city
+，	wp	O	O
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+泉州	ns	B-Ns	B-start_city
+晋江	ns	I-Ns	B-start_airport
+机场	n	E-Ns	I-start_airport
+到	v	O	O
+绵阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+
+查询	v	O	O
+徐州	ns	S-Ns	B-start_city
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+福州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+5月	nt	O	B-start_date
+1号	nt	O	I-start_date
+长沙	ns	S-Ns	B-start_city
+到	v	O	O
+重庆	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+价格	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+从	p	O	O
+昆明	ns	S-Ns	B-start_city
+到	p	O	O
+成都	ns	S-Ns	B-arrival_city
+飞机票	n	O	O
+，	wp	O	O
+二	m	O	O
+。	wp	O	O
+
+成都	ns	S-Ns	B-start_city
+到	p	O	O
+深圳	ns	S-Ns	B-arrival_city
+机票	n	O	O
+。	wp	O	O
+
+遵义	ns	S-Ns	B-start_city
+到	v	O	O
+三亚	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+兰州	ns	S-Ns	B-start_city
+到	p	O	O
+厦门	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+从	p	O	O
+济南	ns	S-Ns	B-start_city
+到	p	O	O
+成都	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+长沙	ns	S-Ns	B-start_city
+到	v	O	O
+深圳	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+5月	nt	O	B-start_date
+1号	nt	O	I-start_date
+常熟	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+明天	nt	O	B-start_date
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+回	v	O	O
+石家庄	ns	S-Ns	B-arrival_city
+
+郑州	ns	S-Ns	B-start_city
+到	v	O	O
+缅甸	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+从	p	O	O
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+日本	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+合肥	ns	S-Ns	B-start_city
+到	v	O	O
+厦门	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+明天	nt	O	B-start_date
+早上	nt	O	B-start_time
+十	m	O	I-start_time
+点	q	O	I-start_time
+去	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+商丘	ns	S-Ns	B-start_city
+到	v	O	O
+新郑	ns	S-Ns	B-arrival_airport
+机场	n	O	I-arrival_airport
+大巴	n	O	O
+。	wp	O	O
+
+农村	n	O	O
+长春	ns	S-Ns	B-start_city
+到	p	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+还有	v	O	O
+吗	u	O	O
+？	wp	O	O
+
+从	p	O	O
+武汉	ns	S-Ns	B-start_city
+来	v	O	O
+，	wp	O	O
+飞机票	n	O	O
+到	v	O	O
+昆明	ns	S-Ns	B-arrival_city
+。	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+昭通	ns	S-Ns	B-start_city
+到	v	O	O
+昆明	ns	S-Ns	B-arrival_city
+了	u	O	O
+，	wp	O	O
+机票	n	O	O
+。	wp	O	O
+
+西安	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+5月	nt	O	B-start_date
+2	m	O	I-start_date
+号	q	O	I-start_date
+的	u	O	O
+。	wp	O	O
+
+4月	nt	O	B-start_date
+29号	nt	O	I-start_date
+有	v	O	O
+没	d	O	O
+有	v	O	O
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+义乌	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+丽江	ns	S-Ns	B-start_city
+到	v	O	O
+西安	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+嗯	o	O	O
+，	wp	O	O
+州	n	O	O
+到	p	O	O
+金华	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+一	m	O	O
+，	wp	O	O
+杭州	ns	S-Ns	B-start_city
+到	v	O	O
+青岛	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+一	m	O	O
+，	wp	O	O
+北京	ns	S-Ns	B-start_city
+到	v	O	O
+鹤岗	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+查看	v	O	O
+我	r	O	O
+明天	nt	O	B-start_date
+下午	nt	O	B-start_time
+从	p	O	O
+下午	nt	O	B-start_time
+五点	nt	O	I-start_time
+从	p	O	O
+上海	ns	S-Ns	B-start_city
+到	p	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+查	v	O	O
+上海	ns	S-Ns	B-start_city
+，	wp	O	O
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+，	wp	O	O
+明天	nt	O	B-start_date
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+秦皇岛	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+秦皇岛	ns	S-Ns	B-start_city
+到	p	O	O
+昆明	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+昆明	ns	S-Ns	B-start_city
+到	v	O	O
+福州	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+华节	nt	O	B-start_date
+到	v	O	O
+深圳	ns	B-Ni	B-arrival_city
+宝安	ns	I-Ni	B-arrival_airport
+机场	n	I-Ni	I-arrival_airport
+
+海口	ns	S-Ns	B-start_city
+到	v	O	O
+太原	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+福州	ns	S-Ns	B-start_city
+去	v	O	O
+泰国	ns	S-Ns	B-arrival_city
+的	u	O	O
+，	wp	O	O
+机票	n	O	O
+。	wp	O	O
+
+呼和浩特	ns	S-Ns	B-start_city
+站	v	O	O
+到	v	O	O
+白塔	n	O	B-arrival_airport
+机场	n	O	I-arrival_airport
+多	d	O	O
+远	a	O	O
+
+天津	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+上海	ns	B-Ns	B-start_city
+浦东	ns	I-Ns	B-start_airport
+国际	n	I-Ns	I-start_airport
+机场	n	E-Ns	I-start_airport
+到	v	O	O
+四川	ns	B-Ns	B-arrival_city
+南充	ns	E-Ns	I-arrival_city
+的	u	O	O
+飞机	n	O	O
+航班	n	O	O
+，	wp	O	O
+五	m	O	O
+。	wp	O	O
+
+从	p	O	O
+宁波	ns	S-Ns	B-start_city
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+飞雄	ns	S-Ns	B-start_airport
+机场	n	O	I-start_airport
+到	v	O	O
+宝安	ns	B-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+
+他	r	O	O
+去	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+我	r	O	O
+要	v	O	O
+去	v	O	O
+北京	ns	S-Ns	B-arrival_city
+你	r	O	O
+帮	v	O	O
+我	r	O	O
+订	v	O	O
+一	m	O	O
+张	q	O	O
+机票	n	O	O
+好	a	O	O
+吗	u	O	O
+？	wp	O	O
+
+后天	n	O	O
+有	v	O	O
+没	d	O	O
+有	v	O	O
+揭阳	ns	S-Ns	B-start_city
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+3893	m	O	O
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+阜阳	ns	S-Ns	B-start_city
+到	v	O	O
+宁波	ns	S-Ns	B-arrival_city
+的	u	O	O
+火车	n	O	O
+飞机	n	O	O
+有	v	O	O
+没	d	O	O
+有	v	O	O
+，	wp	O	O
+你	r	O	O
+？	wp	O	O
+啊	u	O	O
+！	wp	O	O
+
+杭州	ns	S-Ns	B-start_city
+到	v	O	O
+深圳	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+南昌	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+成都	ns	S-Ns	B-start_city
+至	p	O	O
+太原	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+六盘水	ns	S-Ns	B-start_city
+到	v	O	O
+海口	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+桂林	ns	S-Ns	B-start_city
+到	v	O	O
+哈尔滨	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+是	v	O	O
+多少	r	O	O
+钱	n	O	O
+呢	u	O	O
+？	wp	O	O
+
+桂林	ns	S-Ns	B-start_city
+到	v	O	O
+哈尔滨	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+今天	nt	O	B-start_date
+有	v	O	O
+，	wp	O	O
+有	v	O	O
+几	m	O	O
+次	q	O	O
+航班	n	O	O
+呢	u	O	O
+？	wp	O	O
+
+我	r	O	O
+要	v	O	O
+查	v	O	O
+去	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+上海	ns	B-Ns	B-start_city
+虹桥	ns	E-Ns	B-start_airport
+有	v	O	O
+没	d	O	O
+有	v	O	O
+到	v	O	O
+浦东	ns	B-Ns	B-arrival_airport
+国际	n	I-Ns	I-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+的	u	O	O
+地铁	n	O	O
+？	wp	O	O
+
+今天	nt	O	B-start_date
+成都	ns	S-Ns	B-start_city
+到	p	O	O
+温州	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+有	v	O	O
+哪些	r	O	O
+？	wp	O	O
+
+天津	ns	S-Ns	B-start_city
+飞机	n	O	O
+到	v	O	O
+南充	ns	S-Ns	B-arrival_city
+呢	u	O	O
+！	wp	O	O
+
+北京	ns	S-Ns	B-start_city
+的	u	O	O
+飞机	n	O	O
+飞	v	O	O
+到	v	O	O
+南昌	ns	S-Ns	B-arrival_city
+呢	u	O	O
+！	wp	O	O
+
+哈尔滨	ns	S-Ns	B-start_city
+到	p	O	O
+郑州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+成都	ns	S-Ns	B-start_city
+到	p	O	O
+深圳	ns	S-Ns	B-arrival_city
+航班	n	O	O
+查询	v	O	O
+。	wp	O	O
+
+宜春	ns	B-Ns	B-arrival_city
+机场	n	E-Ns	O
+的	u	O	O
+飞机	n	O	O
+航班	n	O	O
+。	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+明天	nt	O	B-start_date
+郑州	ns	S-Ns	B-start_city
+到	p	O	O
+南宁	ns	B-Ns	B-arrival_city
+南宁	ns	E-Ns	I-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+香港	ns	B-Ns	B-start_city
+大屿山	ns	I-Ns	B-start_airport
+国际	n	I-Ns	I-start_airport
+机场	n	E-Ns	I-start_airport
+到	v	O	O
+新加坡	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+萧山	ns	S-Ns	B-start_airport
+机场	n	O	I-start_airport
+到	v	O	O
+贵阳	ns	B-Ns	B-arrival_city
+龙洞堡	ns	I-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+。	wp	O	O
+
+去	v	O	O
+大连	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+都	d	O	O
+有	v	O	O
+几	m	O	O
+点	q	O	O
+的	u	O	O
+？	wp	O	O
+
+南京	ns	S-Ns	B-start_city
+有	v	O	O
+没	d	O	O
+有	v	O	O
+到	v	O	O
+泰国	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+啊	u	O	O
+！	wp	O	O
+
+合肥	ns	S-Ns	B-start_city
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+特价票	n	O	O
+。	wp	O	O
+
+西安	ns	S-Ns	B-start_city
+到	v	O	O
+大连	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+从	p	O	O
+兰州	ns	S-Ns	B-start_city
+到	p	O	O
+厦门	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+西安	ns	S-Ns	B-start_city
+到	v	O	O
+榆林	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+深圳	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+多少	r	O	O
+钱	n	O	O
+一	m	O	O
+炮	n	O	O
+？	wp	O	O
+
+长沙	ns	S-Ns	B-start_city
+至	p	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+今天	nt	O	B-start_date
+郑州	ns	S-Ns	B-start_city
+到	v	O	O
+深圳	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+南通	ns	S-Ns	B-start_city
+至	p	O	O
+深圳	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+曲靖	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+那个	r	O	O
+机票	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+我	r	O	O
+查询	v	O	O
+厦门	ns	S-Ns	B-start_city
+到	v	O	O
+合肥	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+九江	ns	S-Ns	B-start_city
+能	v	O	O
+坐	v	O	O
+飞机	n	O	O
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+吗	u	O	O
+？	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+五月	nt	O	B-start_date
+二	m	O	I-start_date
+号	q	O	I-start_date
+合肥	ns	S-Ns	B-start_city
+到	v	O	O
+晋江	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+
+井冈山	ns	S-Ns	B-start_airport
+机场	n	O	I-start_airport
+一个	m	O	O
+月	n	O	O
+有	v	O	O
+几	m	O	O
+个	q	O	O
+航班	n	O	O
+起降	v	O	O
+。	wp	O	O
+
+坐	v	O	O
+飞机	n	O	O
+去	v	O	O
+三亚	ns	S-Ns	B-arrival_city
+需要	v	O	O
+多	d	O	O
+长	a	O	O
+时间	n	O	O
+？	wp	O	O
+
+索马里	ns	S-Ns	B-start_city
+到	v	O	O
+美国	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+新政	n	O	B-start_city
+到	v	O	O
+深圳	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+最	d	O	O
+是	v	O	O
+飞机	n	O	O
+我	r	O	O
+哪	r	O	O
+有	v	O	O
+那么	r	O	O
+简单	a	O	O
+，	wp	O	O
+我	r	O	O
+就	d	O	O
+上	v	O	O
+韩国	ns	S-Ns	B-arrival_city
+了	u	O	O
+呢	u	O	O
+！	wp	O	O
+
+萧山	ns	S-Ns	B-start_city
+到	v	O	O
+重庆	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+驻马店	ns	S-Ns	B-start_city
+到	v	O	O
+郑州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+真	d	O	O
+长沙	ns	S-Ns	B-start_city
+到	v	O	O
+海口	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+深圳	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+南京	ns	S-Ns	B-start_city
+到	v	O	O
+杭州	ns	B-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+有	v	O	O
+多少	r	O	O
+公里	q	O	O
+？	wp	O	O
+
+设定	v	O	O
+明天	nt	O	B-start_date
+从	p	O	O
+武汉	ns	S-Ns	B-start_city
+回到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+机票	n	O	O
+。	wp	O	O
+
+武汉	ns	S-Ns	B-start_city
+到	v	O	O
+大连	ns	S-Ns	B-arrival_city
+航班	n	O	O
+最近	nt	O	O
+时间	n	O	O
+最	d	O	B-cost_relative
+便宜	a	O	I-cost_relative
+价格	n	O	O
+。	wp	O	O
+
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+成都	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+明天	nt	O	B-start_date
+从	p	O	O
+旁观	ns	S-Ns	B-start_city
+到	p	O	O
+红果	n	O	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+湛江	ns	S-Ns	B-start_city
+至	p	O	O
+成都	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+乌鲁木齐	ns	S-Ns	B-start_city
+到	v	O	O
+重庆	ns	S-Ns	B-arrival_city
+5月	nt	O	B-start_date
+20	m	O	I-start_date
+号	q	O	I-start_date
+的	u	O	O
+胡	nh	S-Nh	O
+飞机票	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+西安	ns	S-Ns	B-start_city
+到	p	O	O
+乌鲁木齐	ns	S-Ns	B-arrival_city
+的	u	O	O
+特价	n	O	O
+机票	n	O	O
+。	wp	O	O
+
+查	v	O	O
+后天	n	O	O
+了	u	O	O
+，	wp	O	O
+嗯	e	O	O
+，	wp	O	O
+乌鲁木齐	ns	S-Ns	B-start_city
+到	v	O	O
+重庆	ns	S-Ns	B-arrival_city
+5月	nt	O	B-start_date
+10	m	O	I-start_date
+号	q	O	I-start_date
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+湛江	ns	S-Ns	B-start_city
+坐	v	O	O
+飞机	n	O	O
+到	v	O	O
+成都市	ns	S-Ns	B-arrival_city
+要	v	O	O
+多少	r	O	O
+时间	n	O	O
+？	wp	O	O
+
+南充	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+天津	ns	S-Ns	B-start_city
+去	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+查	v	O	O
+火车票	n	O	O
+查	v	O	O
+飞机票	n	O	O
+，	wp	O	O
+重庆	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+深圳	ns	S-Ns	B-arrival_city
+机场	n	O	O
+，	wp	O	O
+啊	u	O	O
+，	wp	O	O
+啊	u	O	O
+，	wp	O	O
+啊	e	O	O
+，	wp	O	O
+我	r	O	O
+，	wp	O	O
+的	u	O	O
+。	wp	O	O
+
+不	d	O	O
+，	wp	O	O
+重庆	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+5月	nt	O	B-start_date
+1	m	O	I-start_date
+号	q	O	I-start_date
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+广东	ns	S-Ns	B-start_city
+到	v	O	O
+成都	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+太原	ns	S-Ns	B-start_city
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+从	p	O	O
+长春	ns	S-Ns	B-start_city
+到	p	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+明天	nt	O	B-start_date
+的	u	O	O
+。	wp	O	O
+
+从	p	O	O
+杭州	ns	S-Ns	B-start_city
+坐	v	O	O
+飞机	n	O	O
+到	v	O	O
+贵阳	ns	S-Ns	B-arrival_city
+需要	v	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+昆明	ns	S-Ns	B-arrival_city
+飞机	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+昆明	ns	S-Ns	B-start_city
+到	v	O	O
+郑州	ns	S-Ns	B-arrival_city
+飞机	n	O	O
+。	wp	O	O
+
+5月	nt	O	B-start_date
+1	m	O	I-start_date
+号	q	O	I-start_date
+成都	ns	S-Ns	B-start_city
+到	p	O	O
+温州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+5月	nt	O	B-start_date
+1	m	O	I-start_date
+号	q	O	I-start_date
+古	a	O	O
+沉船	n	O	O
+都	d	O	O
+到	v	O	O
+九江	ns	S-Ns	B-arrival_city
+了	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+到	p	O	O
+伦敦	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+攀枝花	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+武汉	ns	S-Ns	B-start_city
+到	v	O	O
+大连	ns	S-Ns	B-arrival_city
+航班	n	O	O
+。	wp	O	O
+
+楼盘	n	O	O
+虽	c	O	O
+到	v	O	O
+海口	ns	S-Ns	B-arrival_city
+飞机票	n	O	O
+好多	m	O	O
+钱	n	O	O
+。	wp	O	O
+
+绍兴	ns	S-Ns	B-start_city
+，	wp	O	O
+重庆	ns	S-Ns	B-start_city
+到	v	O	O
+萧山	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+给	p	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+明天	nt	O	B-start_date
+烟台	ns	S-Ns	B-start_city
+，	wp	O	O
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+我	r	O	O
+要	v	O	O
+订	v	O	O
+一	m	O	O
+张	q	O	O
+去	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+从	p	O	O
+福建	ns	B-Ns	B-start_city
+厦门	ns	E-Ns	I-start_city
+到	v	O	O
+厦门	ns	S-Ns	B-start_city
+到	v	O	O
+四川	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+新	a	O	O
+锦江	ns	S-Ns	B-start_city
+到	v	O	O
+合肥	ns	B-Ns	B-arrival_airport
+机场	n	I-Ns	I-arrival_airport
+新桥	ns	I-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+。	wp	O	O
+
+从	p	O	O
+重庆	ns	S-Ns	B-start_city
+到	p	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+是	v	O	O
+多少	r	O	O
+？	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+5月	nt	O	B-start_date
+1号	nt	O	I-start_date
+到	v	O	O
+合肥	ns	S-Ns	B-start_city
+到	v	O	O
+晋江	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+5月	nt	O	B-start_date
+1	m	O	I-start_date
+号	q	O	I-start_date
+重庆	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+搜索	v	O	O
+西安	ns	S-Ns	B-start_city
+到	p	O	O
+乌鲁木齐	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+湛江市	ns	S-Ns	B-start_city
+至	p	O	O
+成都	ns	S-Ns	B-arrival_city
+，	wp	O	O
+是	v	O	O
+多少	r	O	O
+公里	q	O	O
+航班	n	O	O
+。	wp	O	O
+
+邯郸	ns	S-Ns	B-arrival_city
+飞机票	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+成都	ns	S-Ns	B-start_city
+到	p	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+泉州	ns	B-Ns	B-start_city
+晋江	ns	I-Ns	B-start_airport
+机场	n	E-Ns	I-start_airport
+航班	n	O	O
+
+厦门	ns	B-Ns	B-start_airport
+机场	n	E-Ns	I-start_airport
+的	u	O	O
+航班	n	O	O
+
+从	p	O	O
+桂林	ns	S-Ns	B-start_city
+到	p	O	O
+四川	ns	B-Ns	B-arrival_city
+成都	ns	E-Ns	I-arrival_city
+的	u	O	O
+飞机票	n	O	O
+
+今天	nt	O	B-start_date
+有	v	O	O
+没	d	O	O
+有	v	O	O
+去	v	O	O
+郑州	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+？	wp	O	O
+
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+重庆	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+现在	nt	O	O
+是	v	O	O
+多少	r	O	O
+钱	n	O	O
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+。	wp	O	O
+
+兰州	ns	S-Ns	B-start_city
+到	v	O	O
+合肥	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查查	v	O	O
+天津	ns	S-Ns	B-start_city
+到	v	O	O
+深圳	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+厦门	ns	S-Ns	B-start_city
+到	v	O	O
+绵阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+
+查询	v	O	O
+明天	nt	O	B-start_date
+首都	n	B-Ns	B-start_airport
+机场	n	E-Ns	I-start_airport
+到	v	O	O
+杭州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+到	p	O	O
+美国	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+早上	nt	O	B-start_time
+飞机	n	O	O
+。	wp	O	O
+
+乌鲁木齐	ns	S-Ns	B-start_city
+到	v	O	O
+成都	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+价格	n	O	O
+是	v	O	O
+多少	r	O	O
+？	wp	O	O
+
+谈	v	O	O
+啥	r	O	O
+个子	n	O	O
+哪	r	O	O
+知道	v	O	O
+西安	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+不妨	d	O	O
+发	v	O	O
+几	m	O	O
+张	q	O	O
+至	p	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+南京	ns	S-Ns	B-start_city
+去	v	O	O
+南京	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+明天	nt	O	B-start_date
+。	wp	O	O
+
+查询	v	O	O
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+福州	ns	S-Ns	B-arrival_city
+飞机	n	O	O
+。	wp	O	O
+
+再	d	O	O
+经	p	O	O
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+厦门	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查询	v	O	O
+，	wp	O	O
+5月	nt	O	B-start_date
+6号	nt	O	I-start_date
+，	wp	O	O
+从	p	O	O
+广州	ns	S-Ns	B-start_city
+，	wp	O	O
+起飞	v	O	O
+到	v	O	O
+，	wp	O	O
+雅加达	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+深圳	ns	S-Ns	B-start_city
+到	p	O	O
+成都	ns	S-Ns	B-arrival_city
+机票	n	O	O
+。	wp	O	O
+
+南京	ns	S-Ns	B-start_city
+到	p	O	O
+昆明	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+是	v	O	O
+多少	r	O	O
+？	wp	O	O
+
+查询	v	O	O
+一下	m	O	O
+郑州	ns	S-Ns	B-start_city
+到	v	O	O
+张家界	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+昆明	ns	S-Ns	B-start_city
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+哈尔滨	ns	S-Ns	B-start_city
+到	v	O	O
+桂林	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+
+到	p	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+还是	d	O	O
+看看	v	O	O
+机票	n	O	O
+吧	u	O	O
+嗯	o	O	O
+，	wp	O	O
+北京	ns	S-Ns	B-start_city
+到	v	O	O
+贵阳	ns	S-Ns	B-arrival_city
+。	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+明天	nt	O	B-start_date
+去	v	O	O
+深圳	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+上海	ns	S-Ns	B-arrival_city
+新外间	n	O	O
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+长沙	ns	S-Ns	B-start_city
+至	p	O	O
+深圳	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+一下	m	O	O
+吕梁	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+5月	nt	O	B-start_date
+1号	nt	O	I-start_date
+长沙	ns	S-Ns	B-start_city
+，	wp	O	O
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+明天	nt	O	B-start_date
+去	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+我	r	O	O
+要	v	O	O
+回	v	O	O
+定州	ns	S-Ns	B-arrival_city
+帮	v	O	O
+我	r	O	O
+查查	v	O	O
+飞机	n	O	O
+。	wp	O	O
+
+从	p	O	O
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+日本	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+有	v	O	O
+吗	u	O	O
+？	wp	O	O
+
+5月	nt	O	B-start_date
+3	m	O	I-start_date
+号	q	O	I-start_date
+库尔乐	nh	S-Nh	B-start_city
+到	v	O	O
+乌鲁木齐	ns	S-Ns	B-arrival_city
+的	u	O	O
+，	wp	O	O
+飞机票	n	O	O
+最低	a	O	O
+价格	n	O	O
+。	wp	O	O
+
+天津	ns	S-Ns	B-start_city
+到	p	O	O
+新疆	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+明天	nt	O	B-start_date
+有	v	O	O
+没	d	O	O
+有	v	O	O
+揭阳	ns	S-Ns	B-start_city
+飞	v	O	O
+广州	ns	S-Ns	B-arrival_city
+航班	n	O	O
+号	n	O	O
+西站	n	O	O
+3893	m	O	O
+的	u	O	O
+。	wp	O	O
+
+广州	ns	B-Ns	B-start_city
+白云	ns	I-Ns	B-start_airport
+机场	n	E-Ns	I-start_airport
+到	v	O	O
+北京	ns	B-Ns	B-arrival_city
+机场	n	E-Ns	O
+什么	r	O	O
+时候	n	O	O
+开	v	O	O
+？	wp	O	O
+
+给	p	O	O
+我	r	O	O
+订	v	O	O
+一	m	O	O
+张	q	O	O
+石家庄	ns	S-Ns	B-start_city
+飞往	v	O	O
+上海	ns	S-Ns	B-arrival_city
+九点半	nt	O	B-start_time
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+无锡	ns	S-Ns	B-start_city
+到	v	O	O
+新加坡	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+明天	nt	O	B-start_date
+有	v	O	O
+没	d	O	O
+有	v	O	O
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+义乌	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+明天	nt	O	B-start_date
+上午	nt	O	B-start_time
+九点半	nt	O	I-start_time
+提醒	v	O	O
+我	r	O	O
+去	v	O	O
+虹桥	ns	B-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+。	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+，	wp	O	O
+重庆	ns	S-Ns	B-start_city
+到	v	O	O
+萧山	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+从	p	O	O
+上海	ns	S-Ns	B-start_city
+到	p	O	O
+北京	ns	S-Ns	B-arrival_city
+明天	nt	O	B-start_date
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+5月	nt	O	B-start_date
+1	m	O	I-start_date
+号	q	O	I-start_date
+成都	ns	S-Ns	B-start_city
+到	p	O	O
+夹江	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+郑州	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+是	v	O	O
+多少	r	O	O
+？	wp	O	O
+
+南阳	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+长沙	ns	B-Ns	B-arrival_city
+国际	n	I-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+雇员	n	O	O
+飞机场	n	O	O
+，	wp	O	O
+飞机	n	O	O
+现在	nt	O	O
+飞往	v	O	O
+银川	ns	S-Ns	B-arrival_city
+是	v	O	O
+几	m	O	O
+点	q	O	O
+？	wp	O	O
+
+沈阳	ns	S-Ns	B-start_city
+到	v	O	O
+大理	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+揭阳	v	O	B-start_city
+到	v	O	O
+大理	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查询	v	O	O
+5月	nt	O	B-start_date
+1	m	O	I-start_date
+号	q	O	I-start_date
+合肥	ns	S-Ns	B-start_city
+到	v	O	O
+晋江	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查询	v	O	O
+5月	nt	O	B-start_date
+20	m	O	I-start_date
+号	q	O	I-start_date
+，	wp	O	O
+阜阳	ns	S-Ns	B-start_city
+到	p	O	O
+晋江	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+南昌	ns	S-Ns	B-start_city
+到	v	O	O
+，	wp	O	O
+浦江	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+上海	ns	S-Ns	B-start_city
+到	p	O	O
+宜宾	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+是	v	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+南非	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+有	v	O	O
+吗	u	O	O
+？	wp	O	O
+现在	nt	O	O
+。	wp	O	O
+
+长白山	ns	S-Ns	B-start_city
+到	v	O	O
+海上	nl	O	O
+玩	v	O	O
+的	u	O	O
+航班	n	O	O
+看看	v	O	O
+。	wp	O	O
+
+从	p	O	O
+桂林	ns	S-Ns	B-start_city
+到	p	O	O
+哈尔滨	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+，	wp	O	O
+有	v	O	O
+几	m	O	O
+次	q	O	O
+好	a	O	O
+慢	a	O	O
+呢	u	O	O
+？	wp	O	O
+
+搜索	v	O	O
+4月	nt	O	B-start_date
+29	m	O	I-start_date
+号	q	O	I-start_date
+重庆	ns	S-Ns	B-start_city
+到	v	O	O
+南宁	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+上海	ns	S-Ns	B-start_city
+到	v	O	O
+重庆	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+查询嗯	v	O	O
+，	wp	O	O
+深圳	ns	S-Ns	B-start_city
+到	p	O	O
+南宁	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+重庆	ns	S-Ns	B-start_city
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+几	m	O	O
+点	q	O	O
+了	u	O	O
+？	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+有	v	O	O
+没	d	O	O
+有	v	O	O
+？	wp	O	O
+从	p	O	O
+南通	ns	S-Ns	B-start_city
+到	p	O	O
+菏泽	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+查	v	O	O
+下	v	O	O
+海口	ns	S-Ns	B-start_city
+到	v	O	O
+郑州	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+从	p	O	O
+雁山	ns	S-Ns	B-start_city
+立交	v	O	O
+桥头	nl	O	O
+，	wp	O	O
+永强	ns	B-Ns	B-start_airport
+机场	n	E-Ns	I-start_airport
+，	wp	O	O
+做	v	O	O
+。	wp	O	O
+
+有	v	O	O
+没	d	O	O
+有	v	O	O
+从	p	O	O
+上海	ns	S-Ns	B-start_city
+到	p	O	O
+郴州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+啊	u	O	O
+！	wp	O	O
+
+太原	ns	S-Ns	B-start_city
+到	v	O	O
+西安	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+厦门	ns	S-Ns	B-start_city
+到	v	O	O
+绵阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+重庆	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+4月	nt	O	B-start_date
+29日	nt	O	I-start_date
+从	p	O	O
+上海	ns	S-Ns	B-start_city
+到	p	O	O
+宜宾	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+是	v	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+查	v	O	O
+下	v	O	O
+赤峰	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+济南	ns	S-Ns	B-start_city
+到	v	O	O
+萧山	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+查	v	O	O
+一下	m	O	O
+。	wp	O	O
+
+重庆	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+头等舱	n	O	O
+。	wp	O	O
+
+美女	n	O	O
+明天	nt	O	B-start_date
+我	r	O	O
+坐	v	O	O
+飞机	n	O	O
+没有	d	O	O
+坐	v	O	O
+飞机	n	O	O
+坐	v	O	O
+飞机	n	O	O
+去	v	O	O
+北京	ns	S-Ns	B-arrival_city
+。	wp	O	O
+
+查询	v	O	O
+从	p	O	O
+深圳	ns	S-Ns	B-start_city
+到	p	O	O
+南宁	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+明天	nt	O	B-start_date
+明天	nt	O	B-start_date
+长春	ns	S-Ns	B-start_city
+到	p	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+合肥	ns	S-Ns	B-start_city
+到	p	O	O
+哈尔滨	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+给	p	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+西安	ns	S-Ns	B-start_city
+到	v	O	O
+南通	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+号	n	O	O
+。	wp	O	O
+
+给	p	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+14	m	O	B-start_date
+号	q	O	I-start_date
+，	wp	O	O
+到	v	O	O
+南通	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查查	v	O	O
+杭州	ns	S-Ns	B-start_city
+到	v	O	O
+惠州	ns	S-Ns	B-arrival_city
+的	u	O	O
+惠	v	O	O
+机票	n	O	O
+几	m	O	O
+点	q	O	O
+？	wp	O	O
+
+听	v	O	O
+着	u	O	O
+明天	nt	O	B-start_date
+去	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+南昌	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+离	p	O	O
+北京	ns	S-Ns	B-arrival_city
+最	d	O	O
+早	a	O	O
+一	m	O	O
+班	q	O	O
+的	u	O	O
+飞机	n	O	O
+是	v	O	O
+多少	r	O	O
+？	wp	O	O
+
+昆明	ns	S-Ns	B-start_city
+到	v	O	O
+广西	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+
+长春	ns	S-Ns	B-start_city
+到	p	O	O
+龙嘉	ns	B-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+的	u	O	O
+火车	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+从	p	O	O
+哈尔滨	ns	S-Ns	B-start_city
+到	p	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+29	m	O	B-start_date
+号	q	O	I-start_date
+到	v	O	O
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+西宁	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+查	v	O	O
+烟台	ns	S-Ns	B-start_city
+到	v	O	O
+香港	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+无锡	ns	S-Ns	B-start_city
+到	v	O	O
+兰州	ns	S-Ns	B-arrival_city
+乘	p	O	O
+飞机	n	O	O
+多	d	O	O
+长	a	O	O
+时间	n	O	O
+？	wp	O	O
+
+南宁	ns	S-Ns	B-start_city
+到	v	O	O
+深圳	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+你	r	O	O
+给	p	O	O
+我	r	O	O
+再	d	O	O
+给	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+北京	ns	S-Ns	B-start_city
+到	v	O	O
+香港	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+晋江	ns	S-Ns	B-start_city
+到	p	O	O
+重庆	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+从	p	O	O
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+成都	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+5月	nt	O	B-start_date
+7	m	O	I-start_date
+号	q	O	I-start_date
+重庆	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+，	wp	O	O
+去	v	O	O
+。	wp	O	O
+
+5月	nt	O	B-start_date
+7	m	O	I-start_date
+号	q	O	I-start_date
+重庆	ns	S-Ns	B-start_city
+到	v	O	O
+长沙	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+去	v	O	O
+新疆	ns	S-Ns	B-arrival_city
+机票	n	O	O
+大概	d	O	O
+要	v	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+5月	nt	O	B-start_date
+2	m	O	I-start_date
+号	q	O	I-start_date
+，	wp	O	O
+长沙	ns	S-Ns	B-start_city
+飞	v	O	O
+重庆	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+荣昌	nh	S-Nh	B-start_city
+到	v	O	O
+江北	nl	O	B-arrival_airport
+机场	n	O	I-arrival_airport
+
+查询	v	O	O
+广东	ns	S-Ns	B-start_city
+到	v	O	O
+柳州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+南宁	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+昆明	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+杨	nh	S-Nh	B-start_city
+到	v	O	O
+泰国	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+你	r	O	O
+，	wp	O	O
+邯郸	ns	S-Ns	B-arrival_city
+飞机票	n	O	O
+。	wp	O	O
+
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+新疆	ns	S-Ns	B-arrival_city
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+机票	n	O	O
+？	wp	O	O
+
+江西	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+石家庄	ns	S-Ns	B-start_city
+飞	v	O	O
+深圳	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+我	r	O	O
+鸡巴	i	O	O
+。	wp	O	O
+
+马来西亚	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+去	v	O	O
+哪儿	r	O	O
+了	u	O	O
+？	wp	O	O
+
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+去	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+去	v	O	O
+美国	ns	S-Ns	B-arrival_city
+制造	v	O	O
+的	u	O	O
+飞机	n	O	O
+几	m	O	O
+点	q	O	O
+？	wp	O	O
+
+是	v	O	O
+，	wp	O	O
+查询	v	O	O
+北京	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+明天	nt	O	B-start_date
+从	p	O	O
+深圳	ns	S-Ns	B-start_city
+到	p	O	O
+南宁	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+重庆	ns	S-Ns	B-start_city
+飞往	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+又	d	O	O
+有	v	O	O
+多少	r	O	O
+？	wp	O	O
+
+重庆	ns	S-Ns	B-start_city
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+有	v	O	O
+几	m	O	O
+点	q	O	O
+的	u	O	O
+？	wp	O	O
+
+今天	nt	O	B-start_date
+晚上	nt	O	B-start_time
+还有	v	O	O
+没	d	O	O
+有	v	O	O
+机票	n	O	O
+回	v	O	O
+云南	ns	S-Ns	B-arrival_city
+的	u	O	O
+？	wp	O	O
+
+查看	v	O	O
+深圳	ns	S-Ns	B-start_city
+到	v	O	O
+三亚	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+，	wp	O	O
+十四	m	O	O
+多少	r	O	O
+钱	n	O	O
+现在	nt	O	O
+？	wp	O	O
+
+给	p	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+去	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+订	v	O	O
+一	m	O	O
+张	q	O	O
+明天	nt	O	B-start_date
+回	v	O	O
+，	wp	O	O
+我	r	O	O
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+杭州	ns	S-Ns	B-start_city
+到	v	O	O
+昆明	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+明天	nt	O	B-start_date
+太原	ns	S-Ns	B-start_city
+到	v	O	O
+杭州	ns	S-Ns	B-arrival_city
+飞机	n	O	O
+
+重庆	ns	S-Ns	B-start_city
+到	v	O	O
+杭州	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+哪个	r	O	O
+公司	n	O	O
+做	v	O	O
+。	wp	O	O
+
+5月	nt	O	B-start_date
+1号	nt	O	I-start_date
+厦门	ns	S-Ns	B-start_city
+到	v	O	O
+桂林	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+上海	ns	S-Ns	B-start_city
+有	v	O	O
+飞往	v	O	O
+阜阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+吗	u	O	O
+？	wp	O	O
+
+在	p	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+明天	nt	O	B-start_date
+的	u	O	O
+。	wp	O	O
+
+4月	nt	O	B-start_date
+28	m	O	I-start_date
+号	q	O	I-start_date
+济南	ns	S-Ns	B-start_city
+到	v	O	O
+三亚	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+西安	ns	S-Ns	B-start_city
+到	p	O	O
+长沙	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+今天	nt	O	B-start_date
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+明天	nt	O	B-start_date
+有	v	O	O
+什么	r	O	O
+飞机	n	O	O
+从	p	O	O
+海口	ns	S-Ns	B-start_city
+飞	v	O	O
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+。	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+烟台	ns	S-Ns	B-start_city
+到	v	O	O
+长沙	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+长治	ns	S-Ns	B-start_city
+飞机	n	O	O
+到	v	O	O
+厦门	ns	S-Ns	B-arrival_city
+多少	r	O	O
+钱	n	O	O
+
+查	v	O	O
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+襄阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+到	v	O	O
+内蒙古	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+明天	nt	O	B-start_date
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+西藏	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+到	v	O	O
+四川	ns	B-Ns	B-arrival_city
+南充	ns	E-Ns	I-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+四川	ns	B-Ns	B-start_city
+南充	ns	E-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+六	m	O	B-start_date
+号	q	O	I-start_date
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+长治	ns	S-Ns	B-start_city
+到	v	O	O
+天津	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+洛阳	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+信息	n	O	O
+。	wp	O	O
+
+帮忙	v	O	O
+查	v	O	O
+一下	m	O	O
+青岛	ns	S-Ns	B-start_city
+到	v	O	O
+乌鲁木齐	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+，	wp	O	O
+今天	nt	O	B-start_date
+晚上	nt	O	B-start_time
+上海	ns	B-Ns	B-start_city
+虹桥	ns	E-Ns	B-start_airport
+到	p	O	O
+长沙	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+5月	nt	O	B-start_date
+1	m	O	I-start_date
+号	q	O	I-start_date
+成都	ns	S-Ns	B-start_city
+回	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+南充	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+美国	ns	S-Ns	B-start_city
+到	v	O	O
+韩国	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+茶席	n	O	O
+慕容	nh	S-Nh	O
+从	p	O	O
+中国	ns	S-Ns	B-start_city
+到	p	O	O
+法国	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+今天	nt	O	B-start_date
+机票	n	O	O
+最低	a	O	O
+价格	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+，	wp	O	O
+后天	nt	O	B-start_date
+昆明	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+乌鲁木齐	ns	S-Ns	B-start_city
+到	p	O	O
+四川	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+石家庄	ns	S-Ns	B-start_city
+飞	v	O	O
+深圳	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+给	p	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+6月	nt	O	B-start_date
+3号	nt	O	I-start_date
+济南	ns	S-Ns	B-start_city
+到	v	O	O
+鸡西	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+去	v	O	O
+庆阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+几	m	O	O
+时	n	O	O
+开	v	O	O
+。	wp	O	O
+
+兰州	ns	S-Ns	B-start_city
+至	p	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+，	wp	O	O
+机票	n	O	O
+。	wp	O	O
+
+昆明	ns	S-Ns	B-start_city
+到	v	O	O
+海南	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+你	r	O	O
+啥	r	O	O
+时候	n	O	O
+西安	ns	S-Ns	B-start_city
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+哎	e	O	O
+，	wp	O	O
+我	r	O	O
+妈	n	O	O
+一起	d	O	O
+坐	v	O	O
+飞机	n	O	O
+去	v	O	O
+北京	ns	S-Ns	B-arrival_city
+。	wp	O	O
+
+5月	nt	O	B-start_date
+20	m	O	I-start_date
+号	q	O	I-start_date
+深圳	ns	S-Ns	B-start_city
+飞	v	O	O
+上海	ns	S-Ns	B-arrival_city
+航班	n	O	O
+。	wp	O	O
+
+包头	ns	S-Ns	B-start_city
+到	v	O	O
+杭州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+大概	d	O	O
+是	v	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+但	c	O	O
+泉州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+去	v	O	O
+美国	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+要	v	O	O
+多少	r	O	O
+少元	n	O	O
+。	wp	O	O
+
+从	p	O	O
+长春	ns	S-Ns	B-start_city
+到	p	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+后天	n	O	B-start_date
+的	u	O	O
+。	wp	O	O
+
+成都	ns	S-Ns	B-start_city
+到	p	O	O
+新疆	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+济南	ns	S-Ns	B-start_city
+到	v	O	O
+杭州	ns	S-Ns	B-arrival_city
+飞机	n	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+那样	r	O	O
+到	v	O	O
+郑州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+兰州	ns	S-Ns	B-start_city
+到	p	O	O
+重庆	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+饶平	v	O	B-start_city
+到	v	O	O
+常州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+晋江	ns	S-Ns	B-arrival_airport
+机场	n	O	I-arrival_airport
+航班	n	O	O
+
+我	r	O	O
+问	v	O	O
+的	u	O	O
+是	v	O	O
+你	r	O	O
+乌鲁木齐	ns	S-Ns	B-start_city
+到	v	O	O
+成都	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+将	d	O	O
+格	i	O	O
+。	wp	O	O
+
+武汉	ns	S-Ns	B-start_city
+到	v	O	O
+兰州	ns	S-Ns	B-arrival_city
+机票	n	O	O
+，	wp	O	O
+我	r	O	O
+看	v	O	O
+我	r	O	O
+语音	n	O	O
+一下	m	O	O
+看看	v	O	O
+有	v	O	O
+没	d	O	O
+有	v	O	O
+。	wp	O	O
+
+武汉	ns	S-Ns	B-start_city
+到	v	O	O
+呼和浩特	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+我	r	O	O
+在	p	O	O
+哪	r	O	O
+考	v	O	O
+西安	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+给	p	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+五月份	nt	O	B-start_date
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+4月	nt	O	B-start_date
+28	m	O	I-start_date
+号	q	O	I-start_date
+，	wp	O	O
+长沙	ns	S-Ns	B-start_city
+飞	v	O	O
+重庆	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+，	wp	O	O
+啊	u	O	O
+！	wp	O	O
+
+虹桥	ns	S-Ns	B-start_city
+到	v	O	O
+无锡	ns	S-Ns	B-arrival_city
+机票	n	O	O
+阿	j	O	O
+火车票	n	O	O
+。	wp	O	O
+
+今天	nt	O	B-start_date
+萧山	ns	S-Ns	B-start_city
+到	p	O	O
+南昌	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+浙江	ns	S-Ns	B-start_city
+哪里	r	O	O
+有	v	O	O
+到	v	O	O
+永州	ns	S-Ns	B-arrival_city
+去	v	O	O
+的	u	O	O
+机票	n	O	O
+，	wp	O	O
+一	m	O	O
+。	wp	O	O
+
+芷江	ns	S-Ns	B-start_city
+到	v	O	O
+长沙	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+
+4月	nt	O	B-start_date
+28	m	O	I-start_date
+号	q	O	I-start_date
+上海	ns	S-Ns	B-start_city
+到	v	O	O
+重庆	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+丽江	ns	S-Ns	B-start_city
+到	v	O	O
+郑州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+成都	ns	S-Ns	B-start_city
+到	p	O	O
+桂林	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+上海	ns	S-Ns	B-start_city
+去	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+石家庄	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+有	v	O	O
+没	d	O	O
+有	v	O	O
+？	wp	O	O
+
+马官桥	ns	S-Ns	B-start_city
+到	v	O	O
+桃仙	ns	B-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+的	u	O	O
+导航	v	O	O
+，	wp	O	O
+我	r	O	O
+。	wp	O	O
+
+长沙	ns	S-Ns	B-start_city
+到	v	O	O
+西双版纳	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+
+查询	v	O	O
+后天	n	O	B-start_date
+厦门	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+4月	nt	O	B-start_date
+28号	nt	O	I-start_date
+，	wp	O	O
+济南	ns	S-Ns	B-start_city
+到	v	O	O
+海口	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+乌兰浩特	nh	S-Nh	B-start_city
+到	v	O	O
+呼和浩特	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+上海	ns	S-Ns	B-start_city
+飞	v	O	O
+南昌	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+龙港	ns	S-Ns	B-start_city
+到	v	O	O
+阜阳	ns	S-Ns	B-arrival_city
+飞机	n	O	O
+
+金边	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+一下	m	O	O
+明天	nt	O	B-start_date
+广州	ns	S-Ns	B-start_city
+至	p	O	O
+南京	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+有	v	O	O
+没	d	O	O
+有	v	O	O
+？	wp	O	O
+
+无锡	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+机票	n	O	O
+，	wp	O	O
+啊	u	O	O
+！	wp	O	O
+
+专家	n	O	O
+治	v	O	O
+成都	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+是	v	O	O
+多少	r	O	O
+钱	n	O	O
+机票	n	O	O
+。	wp	O	O
+
+你	r	O	O
+就	p	O	O
+你	r	O	O
+就	d	O	O
+坐	v	O	O
+飞机	n	O	O
+去	v	O	O
+北京	ns	S-Ns	B-arrival_city
+。	wp	O	O
+
+广西	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+我	r	O	O
+寻思	v	O	O
+查	v	O	O
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+南京	ns	S-Ns	B-start_city
+到	v	O	O
+镇江	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+有	v	O	O
+没	d	O	O
+有	v	O	O
+明天	nt	O	B-start_date
+到	v	O	O
+武汉	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+订	v	O	O
+一	m	O	O
+张	q	O	O
+去	v	O	O
+拉萨	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+上海	ns	S-Ns	B-start_city
+到	p	O	O
+乌鲁木齐	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+广东	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+30	m	O	B-start_date
+号	q	O	I-start_date
+呼和浩特	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+明天	nt	O	B-start_date
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+包头	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+今天	nt	O	B-start_date
+杭州	ns	S-Ns	B-start_city
+到	v	O	O
+南昌	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+去	v	O	O
+泰国	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+明天	nt	O	B-start_date
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查查	v	O	O
+洪州	ns	S-Ns	B-start_city
+到	v	O	O
+惠州	ns	S-Ns	B-arrival_city
+的	u	O	O
+惠机票	n	O	O
+。	wp	O	O
+
+杭州	ns	S-Ns	B-start_city
+到	v	O	O
+惠州	ns	S-Ns	B-arrival_city
+都	d	O	O
+不	d	O	O
+回	v	O	O
+机票	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查询	v	O	O
+一下	m	O	O
+4月	nt	O	B-start_date
+30	m	O	I-start_date
+号	q	O	I-start_date
+桂林	ns	S-Ns	B-start_city
+飞往	v	O	O
+三亚	ns	S-Ns	B-arrival_city
+机票	n	O	O
+。	wp	O	O
+
+5月	nt	O	B-start_date
+1号	nt	O	I-start_date
+南昌	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+多少	r	O	O
+？	wp	O	O
+
+5月	nt	O	B-start_date
+2	m	O	I-start_date
+号	q	O	I-start_date
+南昌	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+票价	n	O	O
+。	wp	O	O
+
+西安	ns	S-Ns	B-start_city
+到	v	O	O
+大连	ns	S-Ns	B-arrival_city
+的	u	O	O
+火车	n	O	O
+飞机	n	O	O
+票	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+从	p	O	O
+沈阳	ns	B-Ns	B-start_city
+桃仙	ns	I-Ns	B-start_airport
+机场	n	E-Ns	I-start_airport
+，	wp	O	O
+去	v	O	O
+通辽市	ns	S-Ns	B-arrival_city
+。	wp	O	O
+
+你好	i	O	O
+，	wp	O	O
+从	p	O	O
+重庆	ns	S-Ns	B-start_city
+飞往	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+下周五	nt	O	B-start_date
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+明天	nt	O	B-start_date
+昆明	ns	S-Ns	B-start_city
+到	v	O	O
+南京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+从	p	O	O
+南安	ns	B-Ns	B-start_city
+唐山	ns	E-Ns	I-start_city
+到	v	O	O
+南京	ns	B-Ns	B-arrival_city
+成都	ns	E-Ns	I-arrival_city
+的	u	O	O
+飞机	n	O	O
+掉	v	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+唐	nt	O	O
+唐山	ns	S-Ns	B-start_city
+到	v	O	O
+成都	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+差生	n	O	O
+五一游	ns	B-Ns	O
+合肥	ns	E-Ns	B-start_city
+至	p	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+她	r	O	O
+穿衣	v	O	O
+北京	ns	S-Ns	B-arrival_city
+最	d	O	O
+早	a	O	O
+的	u	O	O
+一	m	O	O
+班	q	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+重庆	ns	S-Ns	B-start_city
+到	v	O	O
+杭州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+哪个	r	O	O
+航空	n	O	O
+公司	n	O	O
+最	d	O	B-cost_relative
+便宜	a	O	I-cost_relative
+？	wp	O	O
+
+济南	ns	S-Ns	B-start_city
+到	v	O	O
+三亚	ns	S-Ns	B-arrival_city
+的	u	O	O
+，	wp	O	O
+飞机	n	O	O
+。	wp	O	O
+
+杭州	ns	S-Ns	B-start_city
+东	nd	O	O
+怎么	r	O	O
+去	v	O	O
+萧山	ns	S-Ns	B-arrival_airport
+机场	n	O	I-arrival_airport
+
+查询	v	O	O
+从	p	O	O
+长春	ns	S-Ns	B-start_city
+到	p	O	O
+龙嘉	ns	B-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+的	u	O	O
+。	wp	O	O
+
+查询	v	O	O
+济宁	ns	S-Ns	B-start_city
+到	v	O	O
+石家庄	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+龙岗	ns	S-Ns	B-start_city
+到	v	O	O
+沈阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+龙岗	ns	S-Ns	B-start_city
+到	v	O	O
+阜阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+龙岗	ns	S-Ns	B-start_city
+到	v	O	O
+阜阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+你	r	O	O
+？	wp	O	O
+
+北京	ns	S-Ns	B-start_city
+到	v	O	O
+合肥	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+龙岗	ns	S-Ns	B-start_city
+到	v	O	O
+沈阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+要	v	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+南京	ns	S-Ns	B-start_city
+，	wp	O	O
+到	p	O	O
+海口	ns	S-Ns	B-arrival_city
+的	u	O	O
+，	wp	O	O
+飞机	n	O	O
+。	wp	O	O
+
+至	p	O	O
+南通	ns	S-Ns	B-arrival_city
+飞机	n	O	O
+。	wp	O	O
+
+到	p	O	O
+上海	ns	S-Ns	B-arrival_city
+今天	nt	O	B-start_date
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+北京	ns	S-Ns	B-start_city
+至	p	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+郑州	ns	S-Ns	B-start_city
+到	v	O	O
+杭州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+到	p	O	O
+河南	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+29	m	O	B-start_date
+号	q	O	I-start_date
+到	v	O	O
+河南	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+内蒙古	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+到	v	O	O
+北京	ns	B-Ns	B-arrival_city
+北京	ns	E-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+明天	nt	O	B-start_date
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+福州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+的	u	O	O
+火车票	n	O	O
+啊	u	O	O
+！	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+温州	ns	S-Ns	B-start_city
+到	v	O	O
+阜阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+哈尔滨	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+浦东	ns	S-Ns	B-start_city
+鸡	n	O	O
+浦东	ns	S-Ns	B-start_airport
+机场	n	O	I-start_airport
+到	v	O	O
+南充	ns	B-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+的	u	O	O
+，	wp	O	O
+机票	n	O	O
+。	wp	O	O
+
+明天	nt	O	B-start_date
+从	p	O	O
+合肥	ns	S-Ns	B-start_city
+到	p	O	O
+石家庄	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+看	v	O	O
+四月	nt	O	B-start_date
+三十日	nt	O	I-start_date
+长沙	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+机票	n	O	O
+
+今天	nt	O	B-start_date
+晚上	nt	O	B-start_time
+上海	ns	B-Ns	B-start_city
+虹桥	ns	E-Ns	B-start_airport
+到	p	O	O
+长沙	ns	S-Ns	B-arrival_city
+火车	n	O	O
+飞机	n	O	O
+。	wp	O	O
+
+南昌	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+我	r	O	O
+想	v	O	O
+买	v	O	O
+一	m	O	O
+张	q	O	O
+沈阳	ns	S-Ns	B-start_city
+到	v	O	O
+南昌	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+买	v	O	O
+一	m	O	O
+张	q	O	O
+沈阳	ns	S-Ns	B-start_city
+到	v	O	O
+大连	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+给	p	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+，	wp	O	O
+嗯	e	O	O
+6月	nt	O	B-start_date
+3号	nt	O	I-start_date
+济南	ns	S-Ns	B-start_city
+到	v	O	O
+绩溪	ns	S-Ns	B-arrival_city
+的	u	O	O
+胡	nh	S-Nh	O
+飞机票	n	O	O
+。	wp	O	O
+
+上海	ns	S-Ns	B-start_city
+至	p	O	O
+西安	ns	S-Ns	B-arrival_city
+航班	n	O	O
+。	wp	O	O
+
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+邯郸	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+晋江	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+上海	ns	S-Ns	B-start_city
+到	p	O	O
+海南	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+明天	nt	O	B-start_date
+几	m	O	O
+点	q	O	O
+钟哟	n	O	O
+？	wp	O	O
+
+西安	ns	S-Ns	B-start_city
+到	p	O	O
+庆阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+iPhone	ws	O	O
+那个	r	O	O
+机票	n	O	O
+欧洲	ns	S-Ns	B-arrival_city
+货	n	O	O
+哦	u	O	O
+。	wp	O	O
+
+郑州	ns	S-Ns	B-arrival_city
+机票	n	O	O
+多少	r	O	O
+？	wp	O	O
+
+哈尔滨	ns	S-Ns	B-start_city
+到	v	O	O
+北海八	m	O	O
+号	q	O	O
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+上海	ns	S-Ns	B-start_city
+到	p	O	O
+沈阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+明天	nt	O	B-start_date
+重庆	ns	S-Ns	B-start_city
+到	v	O	O
+浙江	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+4月	nt	O	B-start_date
+29	m	O	I-start_date
+号	q	O	I-start_date
+温州	ns	S-Ns	B-start_city
+到	v	O	O
+深圳	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+的	u	O	O
+航班	n	O	O
+杭州	ns	S-Ns	B-start_city
+到	v	O	O
+桐城人	n	O	O
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+家乡	n	O	O
+飞机	n	O	O
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+杭州	ns	S-Ns	B-start_city
+到	v	O	O
+铜仁	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+连云港	ns	S-Ns	B-start_city
+起飞	v	O	O
+的	u	O	O
+航班	n	O	O
+有	v	O	O
+哪些	r	O	O
+？	wp	O	O
+
+连云港	ns	S-Ns	B-start_city
+机场	n	O	O
+有	v	O	O
+哪些	r	O	O
+航班	n	O	O
+？	wp	O	O
+
+从	p	O	O
+北京	ns	S-Ns	B-start_city
+飞往	v	O	O
+成都	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+到	p	O	O
+重庆	ns	S-Ns	B-arrival_city
+明天	nt	O	B-start_date
+的	u	O	O
+机票	n	O	O
+怎么	r	O	O
+订	v	O	O
+？	wp	O	O
+
+今天	nt	O	B-start_date
+有	v	O	O
+几	m	O	O
+班	q	O	O
+从	p	O	O
+深圳	ns	S-Ns	B-start_city
+来	v	O	O
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+淮南	ns	S-Ns	B-start_city
+新	a	O	O
+锦江	ns	S-Ns	B-arrival_city
+到	v	O	O
+合机场	n	O	O
+
+西安	ns	S-Ns	B-start_city
+到	p	O	O
+西宁	ns	S-Ns	B-arrival_city
+航班	n	O	O
+。	wp	O	O
+
+贵阳	ns	S-Ns	B-start_city
+到	v	O	O
+揭阳	ns	B-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+的	u	O	O
+开以	v	O	O
+北京	ns	S-Ns	B-arrival_city
+要	v	O	O
+多	d	O	O
+长	a	O	O
+时间	n	O	O
+？	wp	O	O
+
+南昌	ns	S-Ns	B-start_city
+到	v	O	O
+福建	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+贵阳	ns	B-Ns	B-start_airport
+机场	n	E-Ns	I-start_airport
+到	v	O	O
+潮汕	ns	B-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+要	v	O	O
+多	d	O	O
+长	a	O	O
+时间	n	O	O
+？	wp	O	O
+
+西宁	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+宁波	ns	S-Ns	B-start_city
+到	v	O	O
+长沙	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+要	v	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+大连	ns	S-Ns	B-start_city
+到	v	O	O
+香港	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+还有	v	O	O
+没	d	O	O
+有	v	O	O
+飞机	n	O	O
+好	a	O	O
+吗	u	O	O
+？	wp	O	O
+海珠	n	O	O
+号码	n	O	O
+惠州	ns	S-Ns	B-arrival_city
+号码	n	O	O
+。	wp	O	O
+
+南阳	ns	S-Ns	B-start_city
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+，	wp	O	O
+航班	n	O	O
+。	wp	O	O
+
+六月	nt	O	B-start_date
+18号	nt	O	I-start_date
+从	p	O	O
+西安	ns	S-Ns	B-start_city
+到	p	O	O
+张掖	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+
+查询	v	O	O
+从	p	O	O
+日本	ns	S-Ns	B-start_city
+到	p	O	O
+韩国	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+去	v	O	O
+龙嘉	ns	B-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+的	u	O	O
+火车	n	O	O
+
+hello	ws	O	O
+how	ws	O	O
+，	wp	O	O
+沈阳	ns	S-Ns	B-start_city
+会	v	O	O
+无锡	ns	S-Ns	B-arrival_city
+航班	n	O	O
+号	n	O	O
+是	v	O	O
+多少	r	O	O
+？	wp	O	O
+
+使用	v	O	O
+一下	m	O	O
+语音	n	O	O
+命令	n	O	O
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+北京	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+火车	n	O	O
+航班	n	O	O
+。	wp	O	O
+
+今天	nt	O	B-start_date
+沈阳	ns	S-Ns	B-start_city
+飞	v	O	O
+无锡	ns	S-Ns	B-arrival_city
+航班	n	O	O
+ZH9750	ws	O	O
+动态	n	O	O
+
+来	v	O	O
+一	d	O	O
+打	v	O	O
+都	d	O	O
+广州	ns	S-Ns	B-start_city
+上	v	O	O
+榜	n	O	O
+昨天	nt	O	O
+到	p	O	O
+今天	nt	O	B-start_date
+为止	v	O	O
+已经	d	O	O
+有	v	O	O
+两	m	O	O
+个	q	O	O
+航班	n	O	O
+已经	d	O	O
+从	p	O	O
+加德满都	ns	S-Ns	B-start_city
+起飞	v	O	O
+到	v	O	O
+广州	ns	S-Ns	B-arrival_city
+了	u	O	O
+。	wp	O	O
+
+武汉	ns	S-Ns	B-start_city
+飞往	v	O	O
+珠海	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+大概	d	O	O
+是	v	O	O
+多少	r	O	O
+？	wp	O	O
+
+一	d	O	O
+查	v	O	O
+杭州	ns	S-Ns	B-start_city
+到	p	O	O
+昆明	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+查询	v	O	O
+四月份	nt	O	B-start_date
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+桂林	ns	S-Ns	B-arrival_city
+打折	v	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+还是	d	O	O
+没	v	O	O
+那么	r	O	O
+好	a	O	O
+吗	u	O	O
+？	wp	O	O
+你	r	O	O
+都	d	O	O
+没	d	O	O
+跟	p	O	O
+我	r	O	O
+说	v	O	O
+住	v	O	O
+北京	ns	S-Ns	B-start_city
+到	v	O	O
+贵阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+多少	r	O	O
+钱	n	O	O
+呢	u	O	O
+？	wp	O	O
+
+我	r	O	O
+想	v	O	O
+坐	v	O	O
+飞机	n	O	O
+去	v	O	O
+汕头	ns	S-Ns	B-arrival_city
+。	wp	O	O
+
+我	r	O	O
+要	v	O	O
+到	v	O	O
+泰国	ns	S-Ns	B-arrival_city
+看	v	O	O
+人妖	n	O	O
+看	v	O	O
+人妖	n	O	O
+帮	v	O	O
+我	r	O	O
+订	v	O	O
+一	m	O	O
+张	q	O	O
+飞	v	O	O
+比	v	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+4月	nt	O	B-start_date
+29	m	O	I-start_date
+号	q	O	I-start_date
+，	wp	O	O
+徐州	ns	S-Ns	B-start_city
+到	v	O	O
+，	wp	O	O
+海口	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+石家庄	ns	S-Ns	B-start_city
+到	p	O	O
+重庆	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+泸州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+温州	ns	S-Ns	B-start_city
+到	p	O	O
+贵阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+明天	nt	O	B-start_date
+有	v	O	O
+没	d	O	O
+有	v	O	O
+一	m	O	O
+班	q	O	O
+揭阳	ns	S-Ns	B-start_city
+飞	v	O	O
+广州	ns	S-Ns	B-arrival_city
+，	wp	O	O
+然后	c	O	O
+中	nd	O	O
+转	v	O	O
+到	v	O	O
+义乌	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+重庆	ns	S-Ns	B-start_city
+到	v	O	O
+杭州	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+青岛	ns	S-Ns	B-start_city
+到	v	O	O
+杭州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+看	v	O	O
+一下	m	O	O
+从	p	O	O
+广州	ns	S-Ns	B-start_city
+去	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+海口	ns	S-Ns	B-start_city
+到	v	O	O
+成都	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+重庆	ns	S-Ns	B-start_city
+到	v	O	O
+深圳	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+给	p	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+运城	ns	S-Ns	B-start_city
+到	v	O	O
+成都	ns	B-Ns	B-arrival_city
+双流	ns	I-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+的	u	O	O
+飞机票	n	O	O
+啊	u	O	O
+！	wp	O	O
+
+加德满都	ns	S-Ns	B-start_city
+飞	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+是	v	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+我	r	O	O
+要	v	O	O
+查	v	O	O
+太原	ns	S-Ns	B-start_city
+到	p	O	O
+重庆	ns	S-Ns	B-arrival_city
+的	u	O	O
+打折	v	O	O
+机票	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+南阳	ns	S-Ns	B-start_city
+到	v	O	O
+郑州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+问	v	O	O
+我	r	O	O
+九寨	ns	S-Ns	B-arrival_city
+航班	n	O	O
+
+从	p	O	O
+合肥	ns	S-Ns	B-start_city
+去	v	O	O
+哈尔滨	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+帮	v	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+到	p	O	O
+重庆	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+从	p	O	O
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+曼谷	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+长春	ns	S-Ns	B-start_city
+到	p	O	O
+北京	ns	S-Ns	B-arrival_city
+后天	n	O	O
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+从	p	O	O
+北京	ns	S-Ns	B-start_city
+西	nd	O	O
+到	v	O	O
+昆明	ns	S-Ns	B-arrival_city
+的	u	O	O
+火车	n	O	O
+航班	n	O	O
+。	wp	O	O
+
+今天	nt	O	B-start_date
+去	v	O	O
+三亚	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+是	v	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+昆明	ns	S-Ns	B-start_city
+到	v	O	O
+马尔代夫	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+
+查询	v	O	O
+从	p	O	O
+太原	ns	S-Ns	B-start_city
+到	p	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+沈阳	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+
+广州	ns	S-Ns	B-start_city
+至	p	O	O
+湖南	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+兰州	ns	S-Ns	B-start_city
+到	p	O	O
+南昌	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+多少	r	O	O
+？	wp	O	O
+
+桂林	ns	S-Ns	B-start_city
+到	v	O	O
+厦门	ns	S-Ns	B-arrival_city
+5月	nt	O	B-start_date
+1号	nt	O	I-start_date
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+4月	nt	O	B-start_date
+28号	nt	O	I-start_date
+，	wp	O	O
+济南	ns	S-Ns	B-start_city
+到	v	O	O
+三亚	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+我	r	O	O
+要	v	O	O
+买	v	O	O
+从	p	O	O
+沈阳	ns	S-Ns	B-start_city
+到	p	O	O
+，	wp	O	O
+三亚	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+哪个	r	O	O
+网址	n	O	O
+便宜	a	O	B-cost_relative
+？	wp	O	O
+
+查	v	O	O
+下	v	O	O
+南昌	ns	S-Ns	B-start_city
+飞	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+查	v	O	O
+一下	m	O	O
+烟台	ns	S-Ns	B-start_city
+到	v	O	O
+长沙	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+今夏	nt	O	B-start_date
+明天	nt	O	B-start_date
+南京	ns	B-Ns	B-start_city
+南京	ns	E-Ns	B-start_city
+至	p	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+有	v	O	O
+没	d	O	O
+有	v	O	O
+？	wp	O	O
+
+月	n	O	O
+29	m	O	B-start_date
+号	q	O	I-start_date
+长春	ns	S-Ns	B-start_city
+到	v	O	O
+上海	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+杭州	ns	S-Ns	B-start_city
+到	v	O	O
+南京	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+你好	i	O	O
+，	wp	O	O
+我	r	O	O
+想	v	O	O
+买	v	O	O
+一	m	O	O
+张	q	O	O
+到	p	O	O
+重庆	ns	S-Ns	B-arrival_city
+的	u	O	O
+，	wp	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+明天	nt	O	B-start_date
+到	v	O	O
+河南	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+秦皇岛	ns	S-Ns	B-start_city
+到	v	O	O
+胶州	ns	S-Ns	B-arrival_city
+飞机	n	O	O
+。	wp	O	O
+
+查	v	O	O
+北京	ns	S-Ns	B-start_city
+到	p	O	O
+襄阳	ns	S-Ns	B-arrival_city
+5月	nt	O	B-start_date
+5日	nt	O	I-start_date
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+广东	ns	S-Ns	B-start_city
+到	v	O	O
+内蒙古	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+多少	r	O	O
+？	wp	O	O
+
+广州	ns	S-Ns	B-start_city
+到	p	O	O
+汕头	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+沈阳	ns	S-Ns	B-start_city
+到	v	O	O
+桂林	ns	S-Ns	B-arrival_city
+两	m	O	B-start_airport
+江	n	O	I-start_airport
+机场	n	O	I-start_airport
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+浦东	ns	S-Ns	B-start_airport
+机场	n	O	I-start_airport
+到	v	O	O
+南充	ns	B-Ns	B-arrival_airport
+机场	n	E-Ns	I-arrival_airport
+。	wp	O	O
+
+4月	nt	O	B-start_date
+29号	nt	O	I-start_date
+北京	ns	S-Ns	B-start_city
+飞往	v	O	O
+武汉	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+上海	ns	S-Ns	B-start_city
+到	v	O	O
+南阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+从	p	O	O
+北京	ns	S-Ns	B-start_city
+去	v	O	O
+广州	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+今天	nt	O	B-start_date
+去	v	O	O
+越南	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+给	p	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+6月	nt	O	B-start_date
+4	m	O	I-start_date
+号	q	O	I-start_date
+济南	ns	S-Ns	B-start_city
+到	v	O	O
+鸡西	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+给	p	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+6月	nt	O	B-start_date
+3号	nt	O	I-start_date
+济南	ns	S-Ns	B-start_city
+到	v	O	O
+，	wp	O	O
+牡丹江	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+给	p	O	O
+我	r	O	O
+查	v	O	O
+一下	m	O	O
+6月	nt	O	B-start_date
+3号	nt	O	I-start_date
+，	wp	O	O
+北京	ns	S-Ns	B-start_city
+到	v	O	O
+哈尔滨	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机票	n	O	O
+。	wp	O	O
+
+零零	v	O	O
+到	v	O	O
+北京	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+。	wp	O	O
+
+庆阳	ns	S-Ns	B-arrival_city
+的	u	O	O
+飞机	n	O	O
+。	wp	O	O
+
+西安	ns	S-Ns	B-start_city
+到	p	O	O
+西峰	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+。	wp	O	O
+
+上海	ns	S-Ns	B-start_city
+到	p	O	O
+海南	ns	S-Ns	B-arrival_city
+的	u	O	O
+机票	n	O	O
+多少	r	O	O
+钱	n	O	O
+？	wp	O	O
+
+兰州	ns	S-Ns	B-start_city
+之	u	O	O
+广东	ns	S-Ns	B-arrival_city
+的	u	O	O
+航班	n	O	O
+是	v	O	O
+。	wp	O	O
