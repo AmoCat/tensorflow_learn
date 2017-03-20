@@ -24,8 +24,8 @@ flags.DEFINE_string('data_path',None,'data path')
 flags.DEFINE_string('embedding_path','./embeddings','embedding_path')
 flags.DEFINE_string('saver_path','./model_saver','saver_path')
 flags.DEFINE_string('output_path','./output.txt','prediction_output_path')
-flags.DEFINE_string('label_dict_path','./int_to_label_dict','int_to_label_dict_path')
-flags.DEFINE_string('word_dict_path','./int_to_word','int_to_word_dict_path')
+flags.DEFINE_string('label_dict_path','./id_to_label_dict','id_to_label_dict_path')
+flags.DEFINE_string('word_dict_path','./id_to_word_dict','id_to_word_dict_path')
 
 def dynamic_rnn():
 	train_data = Dataset(data_type = 'train')
@@ -43,7 +43,7 @@ def dynamic_rnn():
 		biases = tf.get_variable("biases",[FLAGS.n_classes],tf.float32)
 
 		lstm_cell = tf.nn.rnn_cell.BasicLSTMCell(FLAGS.n_hidden,state_is_tuple=True,activation=tf.nn.relu)
-		lstm_cell = tf.nn.rnn_cell.DropoutWrapper(lstm_cell,output_keep_prob=1-FLAGS.dropout)
+		lstm_cell = tf.nn.rnn_cell.DropoutWrapper(lstm_cell,output_keep_prob=1)
 
 		# Get lstm cell output
 		outputs, _ = tf.nn.dynamic_rnn(lstm_cell, x, dtype=tf.float32)
@@ -54,7 +54,7 @@ def dynamic_rnn():
 		optimizer = tf.train.AdamOptimizer(learning_rate = FLAGS.learning_rate).minimize(cost)
 
 	correct_prediction = tf.nn.in_top_k(logits, y_, 1)
-	values, indices = tf.nn.in_top_k(logits, 1)
+	values, indices = tf.nn.top_k(logits, 1)
 	accuracy = tf.reduce_mean(tf.cast(correct_prediction,tf.float32))
 	correct = tf.reduce_sum(tf.cast(correct_prediction,tf.float32))
 
@@ -78,7 +78,7 @@ def dynamic_rnn():
 						test_x, test_y = test_data.next_batch()
 						num += len(test_y)
 						_, correct_num = sess.run([optimizer,correct],feed_dict = \
-						{x_:test_x, y_:test_y, output_keep_prob:1-FLAGS.dropout})
+						{x_:test_x, y_:test_y, output_keep_prob:1})
 						cor_num += correct_num
 					test_accuracy = cor_num/num
 					if test_accuracy >= best_acc:
@@ -98,15 +98,15 @@ def dynamic_rnn():
 				num += len(test_y)
 
 				_, correct_num = sess.run([optimizer,correct],feed_dict = \
-						{x_:test_x, y_:test_y, output_keep_prob:1-FLAGS.dropout})
+						{x_:test_x, y_:test_y, output_keep_prob:1})
 				cor_num += correct_num
 
-				ind = indices.eval(feed_dict = {x_:test_x, y_:test_y, output_keep_prob:1-FLAGS.dropout})
+				ind = indices.eval(feed_dict = {x_:test_x, y_:test_y, output_keep_prob:1})
 				for j in range(0,len(test_y)-1):
-					out.write(word_dict[test_x[i]] + '\t' + label_dict[test_y[i]] + '\t' + label_dict[ind[i]] + '\n')
+					out.write(label_dict[test_y[j]] + '\t' + label_dict[ind[j][0]] + '\n')
 				out.write('\n')
 				out.flush()
-			print "test_accuracy: %g" % (step,test_accuracy)
+			print "test_accuracy: %g" % (cor_num/num)
 			out.close()
 
 
