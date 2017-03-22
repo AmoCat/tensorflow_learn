@@ -96,16 +96,15 @@ def dynamic_rnn():
 				test_x, test_y = test_data.next_batch()
 				num += len(test_y)
 
-				correct_num = sess.run(correct,feed_dict = \
+				correct_num, cor_pred = sess.run([correct,correct_prediction],feed_dict = \
 						{x_:test_x, y_:test_y, output_keep_prob:1})
 				cor_num += correct_num
-
 				ind = indices.eval(feed_dict = {x_:test_x, y_:test_y, output_keep_prob:1})
-				for j in range(0,len(test_y)-1):
-					out.write(label_dict[test_y[j]] + '\t' + label_dict[ind[j][0]] + '\n')
+				for j in range(0,len(test_y)):
+					out.write(word_dict[test_x[0][j]] + '\t' + label_dict[test_y[j]] + '\t' + label_dict[ind[j][0]] + '\n')
 				out.write('\n')
 				out.flush()
-			print "test_accuracy: %g" % (cor_num/num)
+			print "cor_num",cor_num,"num=",num,"test_accuracy: %g" % (cor_num/num)
 			out.close()
 
 

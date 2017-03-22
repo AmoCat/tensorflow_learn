@@ -50,4 +50,6 @@ class Dataset(object):
 
 if __name__ == '__main__':
 	data = Dataset('train')
-	data.next_batch()
+	test = Dataset('test')
+	#data.next_batch()
+	print data.sentence_num,test.sentence_num
