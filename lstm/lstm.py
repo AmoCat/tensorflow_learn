@@ -18,16 +18,17 @@ flags.DEFINE_integer('n_classes',18,'nums of classes')
 flags.DEFINE_integer('emb_size',345823,'embedding size')
 flags.DEFINE_integer('word_dim',100,'word dim')
 flags.DEFINE_integer('PRF',0,'calculate PRF')
+flags.DEFINE_integer('add_feature',0,'add pos and ner feature')
 flags.DEFINE_integer('BiLSTM',0,'is bi-directional LSTM or not')
 flags.DEFINE_float('learning_rate',1e-3,'learning rate')
 flags.DEFINE_float('dropout',0,'dropout')
 flags.DEFINE_string('data_path',None,'data path')
 flags.DEFINE_string('embedding_path','./embeddings','embedding_path')
-flags.DEFINE_string('saver_path','./model_saver','saver_path')
-flags.DEFINE_string('output_path','./output.txt','prediction_output_path')
+flags.DEFINE_string('saver_path','./model/model-','saver_path')
+flags.DEFINE_string('output_path','./output/','prediction_output_path')
 flags.DEFINE_string('label_dict_path','./id_to_label_dict','id_to_label_dict_path')
 flags.DEFINE_string('word_dict_path','./id_to_word_dict','id_to_word_dict_path')
-
+flags.DEFINE_string('log_path','./log/','log_path')
 
 def dynamic_rnn():
 	train_data = Dataset(data_type = 'train')
@@ -84,6 +85,9 @@ def dynamic_rnn():
 			saver = tf.train.Saver()
 			best_acc = 0
 			sess.run(tf.initialize_all_variables())
+			file_tail = "BiLSTM" + str(FLAGS.BiLSTM) + "-h" + str(FLAGS.n_hidden)
+			log_file = open(FLAGS.log_path + file_tail,"w")
+			sys.stdout = log_file
 			for step in range(FLAGS.epoch_step):
 				for i in range(0, train_data.sentence_num):
 					batch_x,batch_y = train_data.next_batch()
@@ -98,7 +102,7 @@ def dynamic_rnn():
 					cor_num += correct_num
 				test_accuracy = cor_num/num
 				if test_accuracy >= best_acc:
-					saver.save(sess,FLAGS.saver_path +str(FLAGS.BiLSTM))
+					saver.save(sess,FLAGS.saver_path + file_tail)
 					best_acc = test_accuracy
 				print "step %d , test_accuracy: %g" % (step,test_accuracy)
 	else:
