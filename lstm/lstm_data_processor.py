@@ -34,8 +34,9 @@ def helper(name):
 '''
 read word and embedding,then generate word-to-id dict and id-to-word dict
 use pkl to store dicts and embeddings
+file_path is path of original embeddings
 '''
-def gen_word_id_dict(file_path,word_to_id_name = 'word_to_id_dict',\
+def gen_word_id_dict(file_path = "./baike-300.vec.txt",word_to_id_name = 'word_to_id_dict',\
 	id_to_word_name = 'id_to_word_dict', embedding_name = 'embeddings'):
 	datas = open(file_path,'r').read().strip().split('\n')
 	embeddings = np.ndarray([EMBEDDING_SIZE,WORD_DIM],dtype = np.float32)
@@ -49,7 +50,7 @@ def gen_word_id_dict(file_path,word_to_id_name = 'word_to_id_dict',\
 		for j in range(1,len(words)-1):
 			embeddings[i][j-1] = words[j]
 	word_to_id['UNK'] = 0
-	for i in range(0,WORD_DIM-1):
+	for i in range(0,WORD_DIM):
 		embeddings[0][i] = unk_embedding[i]
 	id_to_word = dict(zip(word_to_id.values(),word_to_id.keys()))
 	pkl.dump(word_to_id,open(word_to_id_name, 'w'))
@@ -69,7 +70,7 @@ def gen_label_id_dict(train_name = 'train_label',test_name = 'test_label',\
 		label_list.extend(t[1] for t in l)
 
 	#delete the duplicates in label list
-	count = [['UNK',-1]]
+	count = []
 	count.extend(collections.Counter(label_list).most_common())
 
 	#convert label to id
@@ -92,10 +93,15 @@ def test_label_data(name):
 		return
 
 def test_word_to_id_dict(name):
+	helper("train")
+	helper("label")
+	
 	dict = pkl.load(open(name, 'r'))
 	print len(dict)
 
 if __name__ == '__main__':
-	gen_word_id_dict('../embedding/embedding/baike-300.vec.txt')
-	#gen_label_id_dict()
-	test_word_to_id_dict('word_to_id_dict')
+	helper("train")
+	helper("test")
+	gen_word_id_dict(file_path = '../../embedding/embedding/baike-300.vec.txt')
+	gen_label_id_dict()
+	#test_word_to_id_dict('word_to_id_dict')

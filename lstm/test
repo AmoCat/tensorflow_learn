@@ -2805,7 +2805,7 @@ lover	ws	O	O
 
 北京	ns	S-Ns	B-start_city
 到	v	O	O
-地狱	n	O	Oy
+地狱	n	O	O
 的	u	O	O
 航班	n	O	O
 。	wp	O	O
@@ -3883,7 +3883,7 @@ b	ws	O	O
 ？	wp	O	O
 
 泉州	ns	S-Ns	B-arrival_city
-机场	n	O	Ot
+机场	n	O	O
 航班	n	O	O
 
 昆明	ns	S-Ns	B-start_city

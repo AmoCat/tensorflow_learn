@@ -14,10 +14,11 @@ flags.DEFINE_integer('batch_size',1,'batch_size')
 flags.DEFINE_integer('n_hidden',300,'hidden units')
 flags.DEFINE_integer('epoch_step',25,'nums of epochs')
 flags.DEFINE_integer('epoch_size',6000,'batchs of each epoch')
-flags.DEFINE_integer('n_classes',46,'nums of classes')
+flags.DEFINE_integer('n_classes',18,'nums of classes')
 flags.DEFINE_integer('emb_size',345823,'embedding size')
 flags.DEFINE_integer('word_dim',100,'word dim')
 flags.DEFINE_integer('PRF',0,'calculate PRF')
+flags.DEFINE_integer('BiLSTM',0,'is bi-directional LSTM or not')
 flags.DEFINE_float('learning_rate',1e-3,'learning rate')
 flags.DEFINE_float('dropout',0,'dropout')
 flags.DEFINE_string('data_path',None,'data path')
@@ -26,6 +27,7 @@ flags.DEFINE_string('saver_path','./model_saver','saver_path')
 flags.DEFINE_string('output_path','./output.txt','prediction_output_path')
 flags.DEFINE_string('label_dict_path','./id_to_label_dict','id_to_label_dict_path')
 flags.DEFINE_string('word_dict_path','./id_to_word_dict','id_to_word_dict_path')
+
 
 def dynamic_rnn():
 	train_data = Dataset(data_type = 'train')
@@ -38,16 +40,32 @@ def dynamic_rnn():
 	with tf.device('/cpu:0'):
 		embedding = pkl.load(open(FLAGS.embedding_path, 'r'))
 		x = tf.nn.embedding_lookup(embedding,x_)
-	with tf.device('/gpu:1'):	
-		weights = tf.get_variable("weights",[FLAGS.n_hidden,FLAGS.n_classes],tf.float32)
 		biases = tf.get_variable("biases",[FLAGS.n_classes],tf.float32)
 
-		lstm_cell = tf.nn.rnn_cell.BasicLSTMCell(FLAGS.n_hidden,state_is_tuple=True,activation=tf.nn.relu)
-		lstm_cell = tf.nn.rnn_cell.DropoutWrapper(lstm_cell,output_keep_prob=1-FLAGS.dropout)
-
-		# Get lstm cell output
-		outputs, _ = tf.nn.dynamic_rnn(lstm_cell, x, dtype=tf.float32)
-		outputs = tf.reshape(outputs,[-1,FLAGS.n_hidden])
+	if FLAGS.BiLSTM == 0:
+		with tf.device('/gpu:1'):
+			weights = tf.get_variable("weights",[FLAGS.n_hidden,FLAGS.n_classes],tf.float32)
+			lstm_cell = tf.nn.rnn_cell.BasicLSTMCell(FLAGS.n_hidden,state_is_tuple=True,activation=tf.nn.relu)
+			lstm_cell = tf.nn.rnn_cell.DropoutWrapper(lstm_cell,output_keep_prob=1-FLAGS.dropout)
+			outputs, _ = tf.nn.dynamic_rnn(lstm_cell, x, dtype=tf.float32)
+			outputs = tf.reshape(outputs,[-1,FLAGS.n_hidden])
+	else:
+		with tf.device('/cpu:0'):
+			#seq_len = tf.shape(x_)
+			weights = tf.get_variable("weights",[2*FLAGS.n_hidden,FLAGS.n_classes],tf.float32)
+			seq_len = tf.reduce_sum(tf.sign(tf.abs(x_)), 1)
+			lstm_cell_fw = tf.nn.rnn_cell.BasicLSTMCell(FLAGS.n_hidden,state_is_tuple=True,activation=tf.nn.relu)		
+			lstm_cell_bw = tf.nn.rnn_cell.BasicLSTMCell(FLAGS.n_hidden,state_is_tuple=True,activation=tf.nn.relu)
+			#output is a tuple e.g. ([batch_size, n_step, n_hidden],[batch_size, n_step, n_hidden]),t[0]:numpy.ndarray
+			output, _ = tf.nn.bidirectional_dynamic_rnn(lstm_cell_fw, lstm_cell_bw, x, seq_len, dtype=tf.float32)
+			out_fw = tf.convert_to_tensor(output[0], tf.float32)
+			out_bw = tf.convert_to_tensor(output[1], tf.float32)
+			outputs = tf.concat(2, [out_fw,out_bw]) 
+			outputs = tf.reshape(outputs,[-1,2*FLAGS.n_hidden])
+				
+	
+	# Get lstm cell output
+	with tf.device('/gpu:1'):
 
 		logits = tf.matmul(outputs, weights) + biases
 		cost = tf.reduce_mean(tf.nn.sparse_softmax_cross_entropy_with_logits(logits, y_))
@@ -67,12 +85,12 @@ def dynamic_rnn():
 			best_acc = 0
 			sess.run(tf.initialize_all_variables())
 			for step in range(FLAGS.epoch_step):
-				for i in range(0, train_data.sentence_num-1):
+				for i in range(0, train_data.sentence_num):
 					batch_x,batch_y = train_data.next_batch()
 					sess.run(optimizer, feed_dict = {x_:batch_x,y_:batch_y,output_keep_prob:1-FLAGS.dropout})
 				num = 0
 				cor_num = 0
-				for i in range(0, test_data.sentence_num-1):
+				for i in range(0, test_data.sentence_num):
 					test_x, test_y = test_data.next_batch()
 					num += len(test_y)
 					correct_num = sess.run(correct,feed_dict = \
@@ -80,7 +98,7 @@ def dynamic_rnn():
 					cor_num += correct_num
 				test_accuracy = cor_num/num
 				if test_accuracy >= best_acc:
-					saver.save(sess,FLAGS.saver_path)
+					saver.save(sess,FLAGS.saver_path +str(FLAGS.BiLSTM))
 					best_acc = test_accuracy
 				print "step %d , test_accuracy: %g" % (step,test_accuracy)
 	else:
@@ -92,7 +110,7 @@ def dynamic_rnn():
 			out = open(FLAGS.output_path,'word_dict_path')
 			num = 0
 			cor_num = 0
-			for i in range(0, test_data.sentence_num-1):
+			for i in range(0, test_data.sentence_num):
 				test_x, test_y = test_data.next_batch()
 				num += len(test_y)
 
