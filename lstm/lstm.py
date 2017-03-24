@@ -3,34 +3,35 @@
 
 import os
 import sys
+import logging
 import tensorflow as tf 
 import numpy as np 
 import cPickle as pkl
 from read_dataset import Dataset
+from logging_config import logConfig
 
 flags = tf.app.flags
 FLAGS = flags.FLAGS
 flags.DEFINE_integer('batch_size',1,'batch_size')
-flags.DEFINE_integer('n_hidden',300,'hidden units')
-flags.DEFINE_integer('epoch_step',50,'nums of epochs')
+flags.DEFINE_integer('n_hidden',64,'hidden units')
+flags.DEFINE_integer('epoch_step',40,'nums of epochs')
 flags.DEFINE_integer('epoch_size',6000,'batchs of each epoch')
 flags.DEFINE_integer('n_classes',18,'nums of classes')
 flags.DEFINE_integer('emb_size',345823,'embedding size')
 flags.DEFINE_integer('word_dim',100,'word dim')
 flags.DEFINE_integer('PRF',0,'calculate PRF')
-flags.DEFINE_integer('add_feature',0,'add pos and ner feature')
+flags.DEFINE_integer('feature',0,'add pos and ner feature')
 flags.DEFINE_integer('BiLSTM',0,'is bi-directional LSTM or not')
 flags.DEFINE_integer('pos_emb_size',25,'pos_embedding_size')
 flags.DEFINE_integer('ner_emb_size',25,'ner_embedding_size')
-flags.DEFINE_integer('add_feature',0,'add pos and ner feature')
 flags.DEFINE_float('learning_rate',1e-3,'learning rate')
 flags.DEFINE_float('dropout',0,'dropout')
 flags.DEFINE_string('data_path',None,'data path')
 flags.DEFINE_string('embedding_path','./embeddings','embedding_path')
 flags.DEFINE_string('saver_path','./model/model-','saver_path')
 flags.DEFINE_string('output_path','./output/','prediction_output_path')
-flags.DEFINE_string('label_dict_path','./id_to_label_dict','id_to_label_dict_path')
-flags.DEFINE_string('word_dict_path','./id_to_word_dict','id_to_word_dict_path')
+flags.DEFINE_string('label_dict_path','./dict/id_to_label_dict','id_to_label_dict_path')
+flags.DEFINE_string('word_dict_path','./dict/id_to_word_dict','id_to_word_dict_path')
 flags.DEFINE_string('log_path','./log/','log_path')
 
 def dynamic_rnn():
@@ -39,20 +40,20 @@ def dynamic_rnn():
 
 	x_ = tf.placeholder(tf.int32, [FLAGS.batch_size, None]) #[FLAGS.batch_size,None]
 	y_ = tf.placeholder(tf.int32, [None])
-    pos_ = tf.placeholder(tf.int32, [FLAGS.batch_size, None])
-    ner_ = tf.placeholder(tf.int32, [FLAGS.batch_size, None])
-    output_keep_prob = tf.placeholder(tf.float32)
+    	pos_ = tf.placeholder(tf.int32, [FLAGS.batch_size, None])
+    	ner_ = tf.placeholder(tf.int32, [FLAGS.batch_size, None])
+    	output_keep_prob = tf.placeholder(tf.float32)
 	#x:[batch_size,n_steps,n_input]
 	with tf.device('/cpu:0'):
 		embedding = pkl.load(open(FLAGS.embedding_path, 'r'))
 		x = tf.nn.embedding_lookup(embedding, x_)
 		biases = tf.get_variable("biases", [FLAGS.n_classes], tf.float32)
-        if FLAGS.add_feature == 1:
-            pos_emb = tf.get_variable("pos_emb", [batch_size, FLAGS.pos_emb_size], tf.float32)
-            ner_emb = tf.get_variable("ner_emb", [batch_size, FLAGS.ner_emb_size], tf.float32)
-            p = tf.nn.embedding_lookup(pos_emb, pos_)
-            n = tf.nn.embedding_lookup(ner_emb, ner_)
-            x = tf.concat(1,[x, p, n])
+        if FLAGS.feature == 1:
+            	pos_emb = tf.get_variable("pos_emb", [FLAGS.batch_size, FLAGS.pos_emb_size], tf.float32)
+            	ner_emb = tf.get_variable("ner_emb", [FLAGS.batch_size, FLAGS.ner_emb_size], tf.float32)
+            	p = tf.nn.embedding_lookup(pos_emb, pos_)
+            	n = tf.nn.embedding_lookup(ner_emb, ner_)
+            	x = tf.concat(2,[x, p, n])
 
 
 	if FLAGS.BiLSTM == 0:
@@ -92,48 +93,51 @@ def dynamic_rnn():
 	config = tf.ConfigProto()
 	config.gpu_options.allow_growth = True
 
+	file_tail = "BILSTM" + str(FLAGS.BiLSTM) + "-h" + str(FLAGS.n_hidden) + "-fea-"\
+			 + str(FLAGS.feature) + "-epoch-" + str(FLAGS.epoch_step)
 	if FLAGS.PRF == 0:
 		with tf.Session(config = config) as sess:
 			saver = tf.train.Saver()
 			best_acc = 0
 			sess.run(tf.initialize_all_variables())
-			file_tail = "BiLSTM" + str(FLAGS.BiLSTM) + "-h" + str(FLAGS.n_hidden)
-			log_file = open(FLAGS.log_path + file_tail,"w")
-			sys.stdout = log_file
+			logConfig(FLAGS.log_path + file_tail)
 			for step in range(FLAGS.epoch_step):
 				for i in range(0, train_data.sentence_num):
-					batch_x,batch_y = train_data.next_batch()
-					sess.run(optimizer, feed_dict = {x_:batch_x,y_:batch_y,output_keep_prob:1-FLAGS.dropout})
+					batch_x, batch_pos, batch_ner, batch_y = train_data.next_batch()
+					sess.run(optimizer, feed_dict = {x_:batch_x, y_:batch_y,\
+					pos_:batch_pos, ner_:batch_ner, output_keep_prob:1-FLAGS.dropout})
 				num = 0
 				cor_num = 0
 				for i in range(0, test_data.sentence_num):
-					test_x, test_y = test_data.next_batch()
+					test_x, test_pos, test_ner, test_y = test_data.next_batch()
 					num += len(test_y)
-					correct_num = sess.run(correct,feed_dict = \
-					{x_:test_x, y_:test_y, output_keep_prob:1})
+					correct_num = sess.run(correct,feed_dict = {x_:test_x, y_:test_y,\
+					pos_:test_pos, ner_:test_ner, output_keep_prob:1})
 					cor_num += correct_num
 				test_accuracy = cor_num/num
 				if test_accuracy >= best_acc:
 					saver.save(sess,FLAGS.saver_path + file_tail)
 					best_acc = test_accuracy
-				print "step %d , test_accuracy: %g" % (step,test_accuracy)
+				#print "step %d , test_accuracy: %g" % (step,test_accuracy)
+				logging.info("step %d , test_accuracy: %g" % (step,test_accuracy))
 	else:
 		with tf.Session(config = config) as sess:
 			saver = tf.train.Saver()
 			saver.restore(sess, FLAGS.saver_path)
 			label_dict = pkl.load(open(FLAGS.label_dict_path,'r'))
 			word_dict = pkl.load(open(FLAGS.word_dict_path,'r'))
-			out = open(FLAGS.output_path,'word_dict_path')
+			out = open(FLAGS.output_path + file_tail ,'w')
 			num = 0
 			cor_num = 0
 			for i in range(0, test_data.sentence_num):
-				test_x, test_y = test_data.next_batch()
+				test_x, test_pos, test_ner, test_y = test_data.next_batch()
 				num += len(test_y)
 
-				correct_num, cor_pred = sess.run([correct,correct_prediction],feed_dict = \
-						{x_:test_x, y_:test_y, output_keep_prob:1})
+				correct_num = sess.run(correct,feed_dict = {x_:test_x, y_:test_y,\
+					pos_:test_pos, ner_:test_ner, output_keep_prob:1})
 				cor_num += correct_num
-				ind = indices.eval(feed_dict = {x_:test_x, y_:test_y, output_keep_prob:1})
+				ind = indices.eval(feed_dict = {x_:test_x, y_:test_y,\
+					pos_:test_pos, ner_:test_ner, output_keep_prob:1})
 				for j in range(0,len(test_y)):
 					out.write(word_dict[test_x[0][j]] + '\t' + label_dict[test_y[j]] + '\t' + label_dict[ind[j][0]] + '\n')
 				out.write('\n')

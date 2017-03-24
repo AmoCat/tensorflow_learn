@@ -12,6 +12,7 @@ import tensorflow as tf
 FILE_PATH = os.path.dirname(__file__)
 EMBEDDING_SIZE = 345823
 WORD_DIM = 300
+DICT_PREFIX = "./dict/"
 
 '''
 write[[[word,pos,ner,label],……],[],……]to './name_label'
@@ -26,7 +27,7 @@ def helper(name):
 		l = []
 		for line in lines:
 			words = line.split('\t')
-			l.append([word for word in words]))
+			l.append([word for word in words])
 		out_l.append(l)
 	pkl.dump(out_l,open(out_path,'w'))
 
@@ -35,8 +36,8 @@ read word and embedding,then generate word-to-id dict and id-to-word dict
 use pkl to store dicts and embeddings
 file_path is path of original embeddings
 '''
-def gen_word_id_dict(file_path = "./baike-300.vec.txt",word_to_id_name = 'word_to_id_dict',\
-	id_to_word_name = 'id_to_word_dict', embedding_name = 'embeddings'):
+def gen_word_id_dict(file_path = "./baike-300.vec.txt",word_to_id_name = './dict/word_to_id_dict',\
+	id_to_word_name = './dict/id_to_word_dict', embedding_name = 'embeddings'):
 	datas = open(file_path,'r').read().strip().split('\n')
 	embeddings = np.ndarray([EMBEDDING_SIZE,WORD_DIM],dtype = np.float32)
 	word_to_id = dict()
@@ -59,14 +60,14 @@ def gen_word_id_dict(file_path = "./baike-300.vec.txt",word_to_id_name = 'word_t
 '''
 gen label,pos or ner feature hash,f is the index in file of datas[word,feature,label]
 '''
-def gen_label_id_dict(train_name = 'train_label',test_name = 'test_label',f = -1\
+def gen_label_id_dict(train_name = 'train_label',test_name = 'test_label',f = -1,\
 	label_to_id_name = 'label_to_id_dict', id_to_label_name = 'id_to_label_dict'):
 	train_data = pkl.load(open(train_name, 'r'))
 	test_data = pkl.load(open(test_name, 'r'))
 
 	#get label list
 	label_list = list()
-    for l in train_data:
+    	for l in train_data:
 		label_list.extend([t[f] for t in l])
 	for l in test_data:
 		label_list.extend(t[f] for t in l)
@@ -84,11 +85,11 @@ def gen_label_id_dict(train_name = 'train_label',test_name = 'test_label',f = -1
 	pkl.dump(id_to_label, open(id_to_label_name, 'w'))
 
 def feature_hash(train_name = 'train_label',test_name = 'test_label'):
-    hash = [1:"pos",2:"ner",3:"label"]
-    for i in range(1,4):
-        para1 = str(i) + "_to_id_dict"
-        para2 = "id_to_" + str(i) + "_dict"
-        gen_label_id_dict(f = i,label_to_id_name = para1,id_to_label_name = para2)
+   	hash = {1:"pos",2:"ner",3:"label"}
+    	for i in range(1,4):
+        	para1 = DICT_PREFIX + hash[i] + "_to_id_dict"
+        	para2 =	DICT_PREFIX + "id_to_" + hash[i] + "_dict"
+        	gen_label_id_dict(f = i,label_to_id_name = para1,id_to_label_name = para2)
 
 '''
 test if file 'train_label' and 'test_label' is ready
@@ -112,5 +113,5 @@ if __name__ == '__main__':
 	helper("test")
 	#gen_word_id_dict(file_path = '../../embedding/embedding/baike-300.vec.txt')
 	feature_hash()
-    #gen_label_id_dict()
+    	#gen_label_id_dict()
 	#test_word_to_id_dict('word_to_id_dict')
