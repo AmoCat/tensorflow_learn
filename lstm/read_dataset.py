@@ -12,25 +12,31 @@ class Dataset(object):
 		self.word_dim = word_dim
 		self.data_type = data_type
 		self.embedding_size = embedding_size
-		self.words, self.labels, self.sentence_num = self.init_data(self.data_type)
+		self.words, self.pos, self.ner, self.labels, self.sentence_num = self.init_data(self.data_type)
 		self.batch_size = batch_size
 		self.completed_epoches = 0
 		self._index_in_epoch = 0
 
 	def init_data(self, data_name):
-		datas = pkl.load(open(data_name + '_label', 'r'))
+        datas = pkl.load(open(data_name + '_label', 'r'))
 		word_to_id = pkl.load(open('word_to_id_dict', 'r'))
-		label_to_id = pkl.load(open('label_to_id_dict', 'r'))
+		pos_to_id = pkl.load(open('pos_to_id_dict', 'r'))
+        ner_to_id = pkl.load(open('ner_to_id_dict', 'r'))
+        label_to_id = pkl.load(open('label_to_id_dict', 'r'))
 		words = list()
+        pos = list()
+        ner = list()
 		labels = list()
 		for data in datas:
-			words.append([word_to_id[t[0]] if word_to_id.has_key(t[0]) else word_to_id['UNK'] for t in data])
-			labels.append([label_to_id[t[1]] for t in data])
+            words.append([word_to_id[t[0]] if word_to_id.has_key(t[0]) else word_to_id['UNK'] for t in data])
+			pos.append([pos_to_id[1]] for t in data)
+            ner.append([ner_to_id[2]] for t in data)
+            labels.append([label_to_id[t[-1]] for t in data])
 		#perm = np.arange(len(words))
 		#np.random.shuffle(perm)
 		#words = words[perm]
 		#labels = labels[perm]
-		return words, labels, len(words)
+		return words, pos, ner, labels, len(words)
 
 	def next_batch(self):
 		start = self._index_in_epoch
@@ -40,7 +46,7 @@ class Dataset(object):
 			end = self.sentence_num
 		else:
 			end = self._index_in_epoch
-		return self.words[start:end],self.labels[start]
+            return self.words[start:end], self.pos[start:end], self.ner[start:end], self.labels[start]
 
 	def get_datas(self):
 		return self.words, self.labels

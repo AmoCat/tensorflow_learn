@@ -14,8 +14,7 @@ EMBEDDING_SIZE = 345823
 WORD_DIM = 300
 
 '''
-write[[(word,label),……],[],……]to './name_label'
-e.g. word,pos,ner,label -> (word,label)
+write[[[word,pos,ner,label],……],[],……]to './name_label'
 '''
 def helper(name):
 	in_path = os.path.join(FILE_PATH,name)
@@ -27,7 +26,7 @@ def helper(name):
 		l = []
 		for line in lines:
 			words = line.split('\t')
-			l.append((words[0],words[-1]))
+			l.append([word for word in words]))
 		out_l.append(l)
 	pkl.dump(out_l,open(out_path,'w'))
 
@@ -57,17 +56,20 @@ def gen_word_id_dict(file_path = "./baike-300.vec.txt",word_to_id_name = 'word_t
 	pkl.dump(id_to_word,open(id_to_word_name, 'w'))
 	pkl.dump(embeddings,open(embedding_name, 'w'))
 
-def gen_label_id_dict(train_name = 'train_label',test_name = 'test_label',\
-	 label_to_id_name = 'label_to_id_dict', id_to_label_name = 'id_to_label_dict'):
+'''
+gen label,pos or ner feature hash,f is the index in file of datas[word,feature,label]
+'''
+def gen_label_id_dict(train_name = 'train_label',test_name = 'test_label',f = -1\
+	label_to_id_name = 'label_to_id_dict', id_to_label_name = 'id_to_label_dict'):
 	train_data = pkl.load(open(train_name, 'r'))
 	test_data = pkl.load(open(test_name, 'r'))
 
 	#get label list
 	label_list = list()
-	for l in train_data:
-		label_list.extend([t[1] for t in l])
+    for l in train_data:
+		label_list.extend([t[f] for t in l])
 	for l in test_data:
-		label_list.extend(t[1] for t in l)
+		label_list.extend(t[f] for t in l)
 
 	#delete the duplicates in label list
 	count = []
@@ -81,6 +83,12 @@ def gen_label_id_dict(train_name = 'train_label',test_name = 'test_label',\
 	pkl.dump(label_to_id, open(label_to_id_name, 'w'))
 	pkl.dump(id_to_label, open(id_to_label_name, 'w'))
 
+def feature_hash(train_name = 'train_label',test_name = 'test_label'):
+    hash = [1:"pos",2:"ner",3:"label"]
+    for i in range(1,4):
+        para1 = str(i) + "_to_id_dict"
+        para2 = "id_to_" + str(i) + "_dict"
+        gen_label_id_dict(f = i,label_to_id_name = para1,id_to_label_name = para2)
 
 '''
 test if file 'train_label' and 'test_label' is ready
@@ -102,6 +110,7 @@ def test_word_to_id_dict(name):
 if __name__ == '__main__':
 	helper("train")
 	helper("test")
-	gen_word_id_dict(file_path = '../../embedding/embedding/baike-300.vec.txt')
-	gen_label_id_dict()
+	#gen_word_id_dict(file_path = '../../embedding/embedding/baike-300.vec.txt')
+	feature_hash()
+    #gen_label_id_dict()
 	#test_word_to_id_dict('word_to_id_dict')
