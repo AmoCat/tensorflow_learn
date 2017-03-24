@@ -20,6 +20,8 @@ flags.DEFINE_integer('word_dim',100,'word dim')
 flags.DEFINE_integer('PRF',0,'calculate PRF')
 flags.DEFINE_integer('add_feature',0,'add pos and ner feature')
 flags.DEFINE_integer('BiLSTM',0,'is bi-directional LSTM or not')
+flags.DEFINE_integer('pos_emb_size',25,'pos_embedding_size')
+flags.DEFINE_integer('ner_emb_size',25,'ner_embedding_size')
 flags.DEFINE_integer('add_feature',0,'add pos and ner feature')
 flags.DEFINE_float('learning_rate',1e-3,'learning rate')
 flags.DEFINE_float('dropout',0,'dropout')
@@ -35,14 +37,23 @@ def dynamic_rnn():
 	train_data = Dataset(data_type = 'train')
 	test_data = Dataset(data_type = 'test')
 
-	x_ = tf.placeholder(tf.int32,[FLAGS.batch_size,None]) #[FLAGS.batch_size,None]
-	y_ = tf.placeholder(tf.int32,[None])
-	output_keep_prob = tf.placeholder(tf.float32)
+	x_ = tf.placeholder(tf.int32, [FLAGS.batch_size, None]) #[FLAGS.batch_size,None]
+	y_ = tf.placeholder(tf.int32, [None])
+    pos_ = tf.placeholder(tf.int32, [FLAGS.batch_size, None])
+    ner_ = tf.placeholder(tf.int32, [FLAGS.batch_size, None])
+    output_keep_prob = tf.placeholder(tf.float32)
 	#x:[batch_size,n_steps,n_input]
 	with tf.device('/cpu:0'):
 		embedding = pkl.load(open(FLAGS.embedding_path, 'r'))
-		x = tf.nn.embedding_lookup(embedding,x_)
-		biases = tf.get_variable("biases",[FLAGS.n_classes],tf.float32)
+		x = tf.nn.embedding_lookup(embedding, x_)
+		biases = tf.get_variable("biases", [FLAGS.n_classes], tf.float32)
+        if FLAGS.add_feature == 1:
+            pos_emb = tf.get_variable("pos_emb", [batch_size, FLAGS.pos_emb_size], tf.float32)
+            ner_emb = tf.get_variable("ner_emb", [batch_size, FLAGS.ner_emb_size], tf.float32)
+            p = tf.nn.embedding_lookup(pos_emb, pos_)
+            n = tf.nn.embedding_lookup(ner_emb, ner_)
+            x = tf.concat(1,[x, p, n])
+
 
 	if FLAGS.BiLSTM == 0:
 		with tf.device('/gpu:1'):
