@@ -25,6 +25,7 @@ flags.DEFINE_integer('BiLSTM',0,'is bi-directional LSTM or not')
 flags.DEFINE_integer('ran_emb',0,'add random variable embedding in training process')
 flags.DEFINE_integer('pos_emb_size',25,'pos_embedding_size')
 flags.DEFINE_integer('ner_emb_size',25,'ner_embedding_size')
+flags.DEFINE_integer('feature_emb_size',25,'pos and ner embedding size')
 flags.DEFINE_float('learning_rate',1e-3,'learning rate')
 flags.DEFINE_float('dropout',0,'dropout')
 flags.DEFINE_string('data_path',None,'data path')
@@ -60,8 +61,8 @@ def dynamic_rnn(sentence_num = 0):
 			x = tf.concat(2,[x, ran_x])
 
 	if FLAGS.feature == 1:
-            	pos_emb = tf.get_variable("pos_emb", [POS_NUM, FLAGS.pos_emb_size], tf.float32)
-            	ner_emb = tf.get_variable("ner_emb", [NER_NUM, FLAGS.ner_emb_size], tf.float32)
+            	pos_emb = tf.get_variable("pos_emb", [POS_NUM, FLAGS.feature_emb_size], tf.float32)
+            	ner_emb = tf.get_variable("ner_emb", [NER_NUM, FLAGS.feature_emb_size], tf.float32)
             	p = tf.nn.embedding_lookup(pos_emb, pos_)
             	n = tf.nn.embedding_lookup(ner_emb, ner_)
             	x = tf.concat(2,[x, p, n])
@@ -105,7 +106,8 @@ def dynamic_rnn(sentence_num = 0):
 	config.gpu_options.allow_growth = True
 
 	file_tail = "BILSTM" + str(FLAGS.BiLSTM) + "-h" + str(FLAGS.n_hidden) + "-fea-"\
-			 + str(FLAGS.feature) + "-epoch-" + str(FLAGS.epoch_step)
+			 + str(FLAGS.feature) + "-" + FLAGS.feature_emb_size \
+			+"-epoch-" + str(FLAGS.epoch_step) 
 	file_tail += "-ranemb" if FLAGS.ran_emb == 1 else ""
 	if FLAGS.PRF == 0:
 		with tf.Session(config = config) as sess:
