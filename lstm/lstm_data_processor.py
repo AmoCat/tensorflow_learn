@@ -3,6 +3,7 @@
 
 import os
 import sys
+import tensorflow as tf
 import cPickle as pkl
 import numpy as np
 import collections
@@ -47,7 +48,7 @@ def gen_word_id_dict(file_path = "./baike-300.vec.txt",word_to_id_name = './dict
 		words = line.strip().split(' ')
 		i = len(word_to_id)
 		word_to_id[words[0]] = i
-		for j in range(1,len(words)-1):
+		for j in range(1,len(words)):
 			embeddings[i][j-1] = words[j]
 	word_to_id['UNK'] = 0
 	for i in range(0,WORD_DIM):
@@ -56,6 +57,47 @@ def gen_word_id_dict(file_path = "./baike-300.vec.txt",word_to_id_name = './dict
 	pkl.dump(word_to_id,open(word_to_id_name, 'w'))
 	pkl.dump(id_to_word,open(id_to_word_name, 'w'))
 	pkl.dump(embeddings,open(embedding_name, 'w'))
+
+'''
+Get the embedding of the words contained in the training set and the test set;
+save the embeddings in out_emb_path
+'''
+def minimize_words_size(embedding_path = "embeddings", train_path = "train_label", test_path = "test_label",\
+		out_emb_path = "minimized_embeddings", word_to_id_path = "./dict/word_to_id_dict"):
+	embeddings = pkl.load(open(embedding_path, 'r'))
+	word_to_id_dict = pkl.load(open(word_to_id_path, 'r'))
+	train_data = pkl.load(open(train_path, 'r'))
+	test_data = pkl.load(open(test_path, 'r'))
+	word_to_id_dict = pkl.load(open(word_to_id_path, 'r'))
+	words = []
+	for sen in train_data:
+		words.extend([l[0] for l in sen])
+	for sen in test_data:
+		words.extend([l[0] for l in sen])
+	words.append('UNK')
+
+	new_emb = list()
+	n_word_to_id_dict = dict()
+
+	count = []
+	count.extend(collections.Counter(words).most_common())
+	for word,_ in count:
+		# if embeddings has the word
+		if word_to_id_dict.has_key(word):
+			i = len(n_word_to_id_dict)
+			id = word_to_id_dict[word]
+			n_word_to_id_dict[word] = i
+			e = list()
+			for j in range(0,WORD_DIM):
+				e.append(embeddings[id][j])
+			new_emb.append(e)
+
+	new_emb_nparray = np.array(new_emb)
+	n_id_to_word_dict = dict(zip(n_word_to_id_dict.values(),n_word_to_id_dict.keys()))
+	pkl.dump(new_emb_nparray, open("minimized_embeddings", 'w'))
+	pkl.dump(n_id_to_word_dict, open("./dict/minimized_id_to_word_dict", 'w'))
+	pkl.dump(n_word_to_id_dict, open("./dict/minimized_word_to_id_dict", 'w'))
+	return len(n_id_to_word_dict)
 
 '''
 gen label,pos or ner feature hash,f is the index in file of datas[word,feature,label]
@@ -109,9 +151,11 @@ def test_word_to_id_dict(name):
 	print len(dict)
 
 if __name__ == '__main__':
-	helper("train")
-	helper("test")
+	words_num = minimize_words_size()
+	print "word_num:",words_num
+	#helper("train")
+	#helper("test")
 	#gen_word_id_dict(file_path = '../../embedding/embedding/baike-300.vec.txt')
-	feature_hash()
+	#feature_hash()
     	#gen_label_id_dict()
 	#test_word_to_id_dict('word_to_id_dict')

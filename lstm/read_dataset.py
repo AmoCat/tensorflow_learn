@@ -19,7 +19,7 @@ class Dataset(object):
 
 	def init_data(self, data_name):
         	datas = pkl.load(open(data_name + '_label', 'r'))
-		word_to_id = pkl.load(open('./dict/word_to_id_dict', 'r'))
+		word_to_id = pkl.load(open('./dict/minimized_word_to_id_dict', 'r'))
 		pos_to_id = pkl.load(open('./dict/pos_to_id_dict', 'r'))
         	ner_to_id = pkl.load(open('./dict/ner_to_id_dict', 'r'))
         	label_to_id = pkl.load(open('./dict/label_to_id_dict', 'r'))
@@ -33,6 +33,8 @@ class Dataset(object):
 			pos.append([pos_to_id[t[1]] for t in data])
             		ner.append([ner_to_id[t[2]] for t in data])
             		labels.append([label_to_id[t[-1]] for t in data])
+		#w = np.ndarray((len(words),), dtype = np.int32)
+		#p = np.ndarray(()))
 		#perm = np.arange(len(words))
 		#np.random.shuffle(perm)
 		#words = words[perm]
@@ -45,6 +47,10 @@ class Dataset(object):
 		if self._index_in_epoch >= self.sentence_num:
 			self._index_in_epoch = 0
 			end = self.sentence_num
+			#perm = np.arange(self.sentence_num)
+			#np.random.shuffle(perm)
+			#self.words = self.words[perm]
+			#self.labels = self.labels[perm]
 		else:
 			end = self._index_in_epoch
             	return self.words[start:end], self.pos[start:end], self.ner[start:end], self.labels[start]

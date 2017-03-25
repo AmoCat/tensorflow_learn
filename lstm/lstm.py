@@ -18,23 +18,29 @@ flags.DEFINE_integer('epoch_step',40,'nums of epochs')
 flags.DEFINE_integer('epoch_size',6000,'batchs of each epoch')
 flags.DEFINE_integer('n_classes',18,'nums of classes')
 flags.DEFINE_integer('emb_size',345823,'embedding size')
-flags.DEFINE_integer('word_dim',100,'word dim')
+flags.DEFINE_integer('word_dim',300,'word dim')
 flags.DEFINE_integer('PRF',0,'calculate PRF')
 flags.DEFINE_integer('feature',0,'add pos and ner feature')
 flags.DEFINE_integer('BiLSTM',0,'is bi-directional LSTM or not')
+flags.DEFINE_integer('ran_emb',0,'add random variable embedding in training process')
 flags.DEFINE_integer('pos_emb_size',25,'pos_embedding_size')
 flags.DEFINE_integer('ner_emb_size',25,'ner_embedding_size')
 flags.DEFINE_float('learning_rate',1e-3,'learning rate')
 flags.DEFINE_float('dropout',0,'dropout')
 flags.DEFINE_string('data_path',None,'data path')
-flags.DEFINE_string('embedding_path','./embeddings','embedding_path')
+flags.DEFINE_string('embedding_path','./minimized_embeddings','embedding_path')
 flags.DEFINE_string('saver_path','./model/model-','saver_path')
 flags.DEFINE_string('output_path','./output/','prediction_output_path')
 flags.DEFINE_string('label_dict_path','./dict/id_to_label_dict','id_to_label_dict_path')
-flags.DEFINE_string('word_dict_path','./dict/id_to_word_dict','id_to_word_dict_path')
+flags.DEFINE_string('word_dict_path','./dict/minimized_id_to_word_dict','id_to_word_dict_path')
 flags.DEFINE_string('log_path','./log/','log_path')
 
-def dynamic_rnn():
+POS_NUM = 23
+NER_NUM = 9
+#WORD_NUM = 345823
+WORD_NUM = 1788
+
+def dynamic_rnn(sentence_num = 0):
 	train_data = Dataset(data_type = 'train')
 	test_data = Dataset(data_type = 'test')
 
@@ -48,9 +54,14 @@ def dynamic_rnn():
 		embedding = pkl.load(open(FLAGS.embedding_path, 'r'))
 		x = tf.nn.embedding_lookup(embedding, x_)
 		biases = tf.get_variable("biases", [FLAGS.n_classes], tf.float32)
-        if FLAGS.feature == 1:
-            	pos_emb = tf.get_variable("pos_emb", [FLAGS.batch_size, FLAGS.pos_emb_size], tf.float32)
-            	ner_emb = tf.get_variable("ner_emb", [FLAGS.batch_size, FLAGS.ner_emb_size], tf.float32)
+		if FLAGS.ran_emb == 1:
+			random_emb = tf.get_variable("ran_emb", [WORD_NUM, FLAGS.word_dim], tf.float32)
+		        ran_x = tf.nn.embedding_lookup(random_emb, x_)
+			x = tf.concat(2,[x, ran_x])
+
+	if FLAGS.feature == 1:
+            	pos_emb = tf.get_variable("pos_emb", [POS_NUM, FLAGS.pos_emb_size], tf.float32)
+            	ner_emb = tf.get_variable("ner_emb", [NER_NUM, FLAGS.ner_emb_size], tf.float32)
             	p = tf.nn.embedding_lookup(pos_emb, pos_)
             	n = tf.nn.embedding_lookup(ner_emb, ner_)
             	x = tf.concat(2,[x, p, n])
@@ -95,6 +106,7 @@ def dynamic_rnn():
 
 	file_tail = "BILSTM" + str(FLAGS.BiLSTM) + "-h" + str(FLAGS.n_hidden) + "-fea-"\
 			 + str(FLAGS.feature) + "-epoch-" + str(FLAGS.epoch_step)
+	file_tail += "-ranemb" if FLAGS.ran_emb == 1 else ""
 	if FLAGS.PRF == 0:
 		with tf.Session(config = config) as sess:
 			saver = tf.train.Saver()
@@ -123,7 +135,7 @@ def dynamic_rnn():
 	else:
 		with tf.Session(config = config) as sess:
 			saver = tf.train.Saver()
-			saver.restore(sess, FLAGS.saver_path)
+			saver.restore(sess, FLAGS.saver_path + file_tail)
 			label_dict = pkl.load(open(FLAGS.label_dict_path,'r'))
 			word_dict = pkl.load(open(FLAGS.word_dict_path,'r'))
 			out = open(FLAGS.output_path + file_tail ,'w')
