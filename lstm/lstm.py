@@ -106,7 +106,7 @@ def dynamic_rnn(sentence_num = 0):
 	config.gpu_options.allow_growth = True
 
 	file_tail = "BILSTM" + str(FLAGS.BiLSTM) + "-h" + str(FLAGS.n_hidden) + "-fea-"\
-			 + str(FLAGS.feature) + "-" + FLAGS.feature_emb_size \
+			 + str(FLAGS.feature) + "-" + str(FLAGS.feature_emb_size) \
 			+"-epoch-" + str(FLAGS.epoch_step) 
 	file_tail += "-ranemb" if FLAGS.ran_emb == 1 else ""
 	if FLAGS.PRF == 0:
