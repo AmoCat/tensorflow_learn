@@ -1,0 +1,2 @@
+model_checkpoint_path: "model-BILSTM1-h64-fea-1-epoch-40-ranemb"
+all_model_checkpoint_paths: "model-BILSTM1-h64-fea-1-epoch-40-ranemb"
