@@ -47,7 +47,7 @@ def get_name_tail():
 	file_tail += "-" + str(FLAGS.feature_emb_size) if FLAGS.feature_emb_size != 25 else ""
 	file_tail += "-epoch-" + str(FLAGS.epoch_step) 
 	file_tail += "-ranemb" if FLAGS.ran_emb == 1 else ""
-    return file_tail
+	return file_tail
 
 def dynamic_rnn(sentence_num = 0):
 	train_data = Dataset(data_type = 'train')
@@ -114,7 +114,7 @@ def dynamic_rnn(sentence_num = 0):
 	config.gpu_options.allow_growth = True
 
 	file_tail = get_name_tail()
-    if FLAGS.PRF == 0:
+    	if FLAGS.PRF == 0:
 		with tf.Session(config = config) as sess:
 			saver = tf.train.Saver()
 			best_acc = 0
