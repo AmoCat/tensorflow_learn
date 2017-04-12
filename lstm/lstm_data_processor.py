@@ -81,10 +81,15 @@ def minimize_words_size(embedding_path = "embeddings", train_path = "train_label
 
 	count = []
 	count.extend(collections.Counter(words).most_common())
+	
+	first = []
+	for j in range(0,WORD_DIM):
+		first.append(embeddings[0][j])
+	new_emb.append(first)
 	for word,_ in count:
 		# if embeddings has the word
 		if word_to_id_dict.has_key(word):
-			i = len(n_word_to_id_dict)
+			i = len(n_word_to_id_dict)+1
 			id = word_to_id_dict[word]
 			n_word_to_id_dict[word] = i
 			e = list()

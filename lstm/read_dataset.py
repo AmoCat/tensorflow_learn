@@ -39,7 +39,7 @@ class Dataset(object):
 		#np.random.shuffle(perm)
 		#words = words[perm]
 		#labels = labels[perm]
-		return words, pos, ner, labels, len(words)
+		return np.array(words), pos, ner, np.array(labels), len(words)
 
 	def next_batch(self):
 		start = self._index_in_epoch
@@ -53,7 +53,7 @@ class Dataset(object):
 			#self.labels = self.labels[perm]
 		else:
 			end = self._index_in_epoch
-            	return self.words[start:end], self.pos[start:end], self.ner[start:end], self.labels[start]
+		return self.words[start:end], self.pos[start:end], self.ner[start:end], self.labels[start:end]
 
 	def get_datas(self):
 		return self.words, self.labels
@@ -64,5 +64,5 @@ class Dataset(object):
 if __name__ == '__main__':
 	data = Dataset('train')
 	test = Dataset('test')
-	#data.next_batch()
+	data.next_batch()
 	print data.sentence_num,test.sentence_num
