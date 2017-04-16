@@ -84,7 +84,7 @@ def dynamic_rnn(sentence_num = 0,max_len = 54):
 	mask = tf.placeholder(tf.int32,[None])
     	output_keep_prob = tf.placeholder(tf.float32)
 	seq_len = tf.cast(tf.reduce_sum(tf.sign(tf.abs(x_)), 1),tf.int32)
-	tf.set_random_sees(1)
+	tf.set_random_seed(1)
 	#x:[batch_size,n_steps,n_input]
 	with tf.device('/cpu:0'):
 		embedding = pkl.load(open(FLAGS.embedding_path, 'r'))
