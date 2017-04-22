@@ -58,6 +58,25 @@ def gen_word_id_dict(file_path = "./baike-300.vec.txt",word_to_id_name = './dict
 	pkl.dump(id_to_word,open(id_to_word_name, 'w'))
 	pkl.dump(embeddings,open(embedding_name, 'w'))
 
+
+def gen_ran_word2int():
+	word2int = pkl.load(open("./dict/minimized_word_to_id_dict", 'r'))
+	train = pkl.load(open("train_label", 'r'))
+#	test = pkl.load(open("./data/test_label", 'r'))
+
+	words = []
+	for sen in train:
+		words.extend([l[0] for l in sen])
+	##minimized_id_to_words start from
+	ran_word2int = word2int
+	for word in words:
+		if not word2int.has_key(word):
+			ran_word2int[word] = len(ran_word2int) + 1
+
+	ran_int2word =  dict(zip(ran_word2int.values(), ran_word2int.keys()))
+	pkl.dump(ran_word2int, open("./dict/ran_word_to_id_dict", 'w'))
+	pkl.dump(ran_int2word, open("./dict/ran_id_to_word_dict", 'w'))
+
 '''
 Get the embedding of the words contained in the training set and the test set;
 save the embeddings in out_emb_path
@@ -89,7 +108,7 @@ def minimize_words_size(embedding_path = "embeddings", train_path = "train_label
 	for word,_ in count:
 		# if embeddings has the word
 		if word_to_id_dict.has_key(word):
-			i = len(n_word_to_id_dict)+1
+			i = len(new_emb)
 			id = word_to_id_dict[word]
 			n_word_to_id_dict[word] = i
 			e = list()
@@ -149,18 +168,18 @@ def test_label_data(name):
 		return
 
 def test_word_to_id_dict(name):
-	helper("train")
-	helper("label")
+	#helper("train")
 	
 	dict = pkl.load(open(name, 'r'))
 	print len(dict)
 
 if __name__ == '__main__':
-	words_num = minimize_words_size()
-	print "word_num:",words_num
+	#words_num = minimize_words_size()
+	#print "word_num:",words_num
 	#helper("train")
 	#helper("test")
 	#gen_word_id_dict(file_path = '../../embedding/embedding/baike-300.vec.txt')
 	#feature_hash()
-    	#gen_label_id_dict()
-	#test_word_to_id_dict('word_to_id_dict')
+    	#gen_ran_word2int()
+	#gen_label_id_dict()
+	test_word_to_id_dict(sys.argv[1])

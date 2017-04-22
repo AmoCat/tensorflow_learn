@@ -1,0 +1,17 @@
+2017-04-16 Sunday 23:01:27  lstm1.py : INFO  step 0 , test_accuracy: 0.984037
+2017-04-17 Monday 00:12:17  lstm1.py : INFO  step 1 , test_accuracy: 0.98369
+2017-04-17 Monday 01:21:26  lstm1.py : INFO  step 2 , test_accuracy: 0.982418
+2017-04-17 Monday 02:36:14  lstm1.py : INFO  step 3 , test_accuracy: 0.9786
+2017-04-17 Monday 04:10:36  lstm1.py : INFO  step 4 , test_accuracy: 0.982418
+2017-04-17 Monday 05:23:36  lstm1.py : INFO  step 5 , test_accuracy: 0.982765
+2017-04-17 Monday 06:36:50  lstm1.py : INFO  step 6 , test_accuracy: 0.980914
+2017-04-17 Monday 07:50:45  lstm1.py : INFO  step 7 , test_accuracy: 0.982186
+2017-04-17 Monday 09:04:59  lstm1.py : INFO  step 8 , test_accuracy: 0.980451
+2017-04-17 Monday 10:13:59  lstm1.py : INFO  step 9 , test_accuracy: 0.981839
+2017-04-17 Monday 11:21:00  lstm1.py : INFO  step 10 , test_accuracy: 0.980104
+2017-04-17 Monday 12:27:39  lstm1.py : INFO  step 11 , test_accuracy: 0.975361
+2017-04-17 Monday 13:34:01  lstm1.py : INFO  step 12 , test_accuracy: 0.979063
+2017-04-17 Monday 14:41:10  lstm1.py : INFO  step 13 , test_accuracy: 0.973164
+2017-04-17 Monday 16:05:52  lstm1.py : INFO  step 14 , test_accuracy: 0.957663
+2017-04-17 Monday 17:33:43  lstm1.py : INFO  step 15 , test_accuracy: 0.955928
+2017-04-17 Monday 18:45:03  lstm1.py : INFO  step 16 , test_accuracy: 0.956854

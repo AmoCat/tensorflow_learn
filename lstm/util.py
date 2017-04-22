@@ -8,6 +8,20 @@ def gpu_config():
 	config.gpu_options.allow_growth=True
 	return config
 
+def padding_fea(data, max_seg = 54):
+	batch_size = data.shape[0]
+	batch_x = numpy.zeros([batch_size, max_seg],numpy.int32)
+
+	for i in range(batch_size):
+		cur_len = len(data[i])
+		zeros = [0 for _ in range(max_seg - cur_len)]
+		batch_x_i = deepcopy(data[i])
+
+		if cur_len < max_seg:
+			batch_x_i.extend(zeros)
+		batch_x[i] = batch_x_i
+	return batch_x
+
 def padding(data,labels,pos,ner,max_seg = 54):
 	assert isinstance(data,numpy.ndarray),'the data type should be numpy.ndarray whose dtype is list'
 	assert isinstance(labels,numpy.ndarray),'the label type should be numpy.ndarray whose dtype is list'

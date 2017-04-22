@@ -187,8 +187,8 @@
 飞机票	O	O
 。	O	O
 
-首都	B-start_airport	B-start_airport
-机场	I-start_airport	I-start_airport
+首都	B-start_airport	B-arrival_airport
+机场	I-start_airport	I-arrival_airport
 的	O	O
 天气	O	O
 
@@ -354,7 +354,7 @@ UNK	I-start_date	I-start_date
 机场	I-arrival_airport	I-arrival_airport
 。	O	O
 
-这里	O	O
+这里	O	B-start_city
 到	O	O
 ，	O	O
 佛山	B-arrival_city	B-arrival_city
@@ -421,7 +421,7 @@ UNK	I-start_date	I-start_date
 看	O	O
 一下	O	O
 明天	B-start_date	B-start_date
-十一点	B-start_time	B-start_time
+十一点	B-start_time	O
 的	O	O
 航班	O	O
 。	O	O
@@ -430,7 +430,7 @@ UNK	I-start_date	I-start_date
 我	O	O
 查	O	O
 一下	O	O
-晚上	B-start_time	B-start_date
+晚上	B-start_time	B-start_time
 重庆	B-start_city	B-start_city
 飞往	O	O
 北京	B-arrival_city	B-arrival_city
@@ -611,7 +611,7 @@ UNK	B-arrival_city	B-arrival_city
 
 聊	O	O
 点	O	O
-和	O	O
+和	O	B-arrival_city
 三点	B-start_time	B-start_time
 的	O	O
 时候	O	O
@@ -649,9 +649,9 @@ UNK	I-start_date	I-start_date
 深圳	B-start_airport	B-start_city
 机场	I-start_airport	O
 至	O	O
-北京	B-arrival_city	B-start_city
-五环	B-arrival_airport	B-start_airport
-机场	I-arrival_airport	I-start_airport
+北京	B-arrival_city	B-arrival_city
+五环	B-arrival_airport	B-arrival_airport
+机场	I-arrival_airport	I-arrival_airport
 。	O	O
 
 正在	O	O
@@ -683,9 +683,9 @@ UNK	I-start_date	I-start_date
 。	O	O
 
 到	O	O
-武汉	B-start_city	B-start_city
-天河	B-start_airport	B-start_airport
-机场	I-start_airport	I-start_airport
+武汉	B-start_city	B-arrival_city
+天河	B-start_airport	B-arrival_airport
+机场	I-start_airport	I-arrival_airport
 多	O	O
 长	O	O
 时间	O	O
@@ -888,9 +888,9 @@ UNK	I-start_date	I-start_date
 。	O	O
 
 到	O	O
-济宁	B-arrival_city	B-start_city
-纸坊	B-arrival_airport	B-start_airport
-飞机场	I-arrival_airport	I-start_airport
+济宁	B-arrival_city	B-arrival_city
+纸坊	B-arrival_airport	O
+飞机场	I-arrival_airport	O
 多少	O	O
 钱	O	O
 ？	O	O
@@ -937,7 +937,7 @@ UNK	I-start_city	I-start_city
 给	O	O
 。	O	O
 
-UNK	B-start_city	O
+UNK	B-start_city	B-start_city
 到	O	O
 江北	B-arrival_airport	B-arrival_airport
 机场	I-arrival_airport	I-arrival_airport
@@ -978,7 +978,7 @@ UNK	B-start_city	O
 去	O	O
 啦	O	O
 ，	O	O
-法	B-arrival_city	B-arrival_city
+法	B-arrival_city	O
 的	O	O
 机票	O	O
 。	O	O
@@ -1014,8 +1014,8 @@ UNK	O	O
 飞机	O	O
 。	O	O
 
-松江区	B-start_city	B-start_city
-UNK	I-start_city	O
+松江区	B-start_city	B-start_airport
+UNK	I-start_city	I-start_airport
 坐	O	O
 高铁	O	O
 到	O	O
@@ -1027,7 +1027,7 @@ UNK	I-start_city	O
 ？	O	O
 
 从	O	O
-咸阳	B-arrival_city	B-start_city
+咸阳	B-arrival_city	B-arrival_city
 的	O	O
 联盟	O	O
 一路	O	O
@@ -1115,9 +1115,9 @@ UNK	O	O
 要	O	O
 去	O	O
 重庆	B-arrival_city	B-arrival_city
-两	B-arrival_airport	O
-路	I-arrival_airport	B-arrival_airport
-机场	I-arrival_airport	I-arrival_airport
+两	B-arrival_airport	B-arrival_airport
+路	I-arrival_airport	I-arrival_airport
+机场	I-arrival_airport	O
 。	O	O
 
 都	O	O
@@ -1131,9 +1131,9 @@ UNK	O	O
 看	O	O
 一下	O	O
 去	O	O
-广州	B-arrival_city	B-start_city
-白云	B-arrival_airport	B-start_airport
-机场	I-arrival_airport	I-start_airport
+广州	B-arrival_city	B-arrival_city
+白云	B-arrival_airport	B-arrival_airport
+机场	I-arrival_airport	I-arrival_airport
 怎么	O	O
 走	O	O
 啊	O	O
@@ -1176,7 +1176,7 @@ UNK	O	O
 嗯	O	O
 ，	O	O
 查	O	O
-揭阳	O	O
+揭阳	O	B-start_city
 ，	O	O
 老	O	O
 南宁	B-arrival_city	B-arrival_city
@@ -1203,7 +1203,7 @@ UNK	O	O
 。	O	O
 
 武汉	B-start_city	B-start_city
-UNK	I-start_city	O
+UNK	I-start_city	B-start_city
 离	O	O
 天河	B-arrival_airport	B-arrival_airport
 机场	I-arrival_airport	I-arrival_airport
@@ -1231,7 +1231,7 @@ UNK	I-start_city	O
 啊	O	O
 ？	O	O
 
-昆明	B-start_city	B-start_city
+昆明	B-start_city	B-start_airport
 国际	B-start_airport	I-start_airport
 机场	I-start_airport	I-start_airport
 。	O	O
@@ -1318,7 +1318,7 @@ UNK	B-start_airport	B-start_airport
 日本	B-arrival_city	B-arrival_city
 ？	O	O
 
-沈阳	B-start_city	B-start_city
+沈阳	B-start_city	O
 治沙	O	O
 UNK	B-arrival_city	O
 有	O	O
@@ -1346,7 +1346,7 @@ UNK	B-arrival_city	O
 北京	B-arrival_city	B-arrival_city
 的	O	O
 飞机	O	O
-六点	B-start_time	B-start_date
+六点	B-start_time	B-start_time
 到	I-start_time	O
 十点	I-start_time	O
 的	O	O
@@ -1369,9 +1369,9 @@ UNK	B-arrival_city	O
 航班	O	O
 。	O	O
 
-重庆	B-start_city	B-start_city
-巫山	B-start_airport	B-start_airport
-机场	I-start_airport	I-start_airport
+重庆	B-start_city	B-arrival_city
+巫山	B-start_airport	B-arrival_airport
+机场	I-start_airport	I-arrival_airport
 什么	O	O
 时候	O	O
 开通	O	O
@@ -1387,8 +1387,8 @@ UNK	B-arrival_city	O
 有	O	O
 ？	O	O
 
-昆明	B-start_airport	B-start_city
-机场	I-start_airport	O
+昆明	B-start_airport	B-start_airport
+机场	I-start_airport	I-start_airport
 到	O	O
 西站	O	O
 
@@ -1454,7 +1454,7 @@ UNK	O	O
 到	O	O
 UNK	O	O
 从	O	O
-新加坡	B-start_city	B-arrival_city
+新加坡	B-start_city	B-start_city
 到	O	O
 天宇	O	O
 飞机	O	O
@@ -1483,7 +1483,7 @@ UNK	O	O
 。	O	O
 
 从	O	O
-甲子	B-start_city	B-start_city
+甲子	B-start_city	O
 到	O	O
 昆明	B-arrival_city	B-arrival_city
 ，	O	O
@@ -1559,9 +1559,9 @@ UNK	O	O
 
 好好	O	O
 去	O	O
-济宁	B-arrival_city	B-start_city
-曲阜	B-arrival_airport	B-start_airport
-机场	I-arrival_airport	I-start_airport
+济宁	B-arrival_city	B-arrival_city
+曲阜	B-arrival_airport	B-arrival_airport
+机场	I-arrival_airport	I-arrival_airport
 。	O	O
 
 太原	B-start_city	B-start_city
@@ -1582,7 +1582,7 @@ UNK	O	O
 炒股	O	O
 。	O	O
 
-深圳	B-arrival_city	B-start_city
+深圳	B-arrival_city	B-arrival_city
 之	O	O
 四	O	O
 ，	O	O
@@ -1691,7 +1691,7 @@ UNK	O	O
 我	O	O
 查	O	O
 一下	O	O
-UNK	O	O
+UNK	O	B-start_city
 网	O	O
 长沙	B-arrival_city	B-arrival_city
 的	O	O
@@ -1709,7 +1709,7 @@ UNK	O	O
 
 后天	B-start_date	B-start_date
 从	O	O
-地球	O	B-start_city
+地球	O	O
 到	O	O
 火星	B-arrival_city	B-arrival_city
 的	O	O
@@ -1728,7 +1728,7 @@ UNK	O	O
 
 你	O	O
 帮	O	O
-东莞	B-arrival_city	B-arrival_city
+东莞	B-arrival_city	B-start_city
 坐	O	O
 飞机	O	O
 多少	O	O
@@ -1748,7 +1748,7 @@ UNK	O	O
 我	O	O
 查询	O	O
 ，	O	O
-UNK	B-arrival_city	O
+UNK	B-arrival_city	B-start_city
 UNK	O	O
 ，	O	O
 嗯	O	O
@@ -1854,9 +1854,9 @@ UNK	O	O
 要	O	O
 去	O	O
 杭州市	B-arrival_city	B-arrival_city
-萧山市	I-arrival_city	B-start_airport
-国际	B-arrival_airport	I-start_airport
-机场	I-arrival_airport	I-start_airport
+萧山市	I-arrival_city	B-arrival_airport
+国际	B-arrival_airport	I-arrival_airport
+机场	I-arrival_airport	I-arrival_airport
 。	O	O
 
 今天	B-start_date	B-start_date
@@ -1928,7 +1928,7 @@ UNK	O	O
 从	O	O
 杭州	B-start_city	B-start_city
 到	O	O
-稻城	B-arrival_city	O
+稻城	B-arrival_city	B-arrival_city
 的	O	O
 飞机	O	O
 什么	O	O
@@ -2064,7 +2064,7 @@ UNK	O	O
 飞机票	O	O
 。	O	O
 
-西安	B-arrival_city	B-arrival_city
+西安	B-arrival_city	B-start_city
 的	O	O
 飞机	O	O
 可	O	O
@@ -2275,7 +2275,7 @@ UNK	O	O
 。	O	O
 
 查询	O	O
-韩国	B-start_city	B-start_city
+韩国	B-start_city	B-arrival_city
 代购	O	O
 是	O	O
 汕头	B-arrival_city	B-arrival_city
@@ -2499,7 +2499,7 @@ UNK	I-start_city	I-start_city
 的	O	O
 航班	O	O
 ，	O	O
-赤峰	B-start_city	B-start_city
+赤峰	B-start_city	B-arrival_city
 围绕	O	O
 ，	O	O
 爱	O	O
@@ -3147,10 +3147,10 @@ UNK	B-arrival_city	B-arrival_city
 
 搜索	O	O
 从	O	O
-UNK	O	B-start_city
+UNK	O	O
 从	O	O
 杭州	B-start_city	B-start_city
-萧山	B-start_airport	I-start_city
+萧山	B-start_airport	B-start_airport
 国际	I-start_airport	I-start_airport
 机场	I-start_airport	I-start_airport
 到	O	O
@@ -3301,8 +3301,8 @@ UNK	O	B-start_city
 找	O	O
 一下	O	O
 五月	B-start_date	B-start_date
-，	O	O
-32	B-start_date	B-start_date
+，	O	I-start_date
+32	B-start_date	I-start_date
 号	I-start_date	I-start_date
 去	O	O
 吃	O	O
@@ -3410,7 +3410,7 @@ UNK	B-start_date	B-start_date
 。	O	O
 
 查询	O	O
-后天	B-start_date	O
+后天	B-start_date	B-start_date
 ，	O	O
 广州	B-start_city	B-start_city
 到	O	O
@@ -3593,7 +3593,7 @@ UNK	B-start_date	B-start_date
 看	O	O
 一下	O	O
 从	O	O
-这里	B-start_city	O
+这里	B-start_city	B-start_city
 到	O	O
 北京	B-arrival_city	B-arrival_city
 的	O	O
@@ -3781,7 +3781,7 @@ UNK	B-start_date	B-start_date
 
 5月	B-start_date	B-start_date
 1	I-start_date	I-start_date
-以后	I-start_date	I-start_date
+以后	I-start_date	O
 ，	O	O
 台州	B-start_city	B-start_city
 到	O	O
@@ -3954,7 +3954,7 @@ UNK	B-arrival_city	B-arrival_city
 ，	O	O
 飞机票	O	O
 ，	O	O
-啥	O	O
+啥	O	B-arrival_city
 时候	O	O
 最	B-cost_relative	B-cost_relative
 便宜	I-cost_relative	I-cost_relative
@@ -3996,7 +3996,7 @@ UNK	B-arrival_city	B-arrival_city
 26	B-start_date	B-start_date
 号	I-start_date	I-start_date
 ，	O	O
-贵州	B-arrival_city	B-start_city
+贵州	B-arrival_city	B-arrival_city
 荔波	O	O
 航班	O	O
 是	O	O
@@ -4279,7 +4279,7 @@ UNK	O	O
 有	O	O
 没	O	O
 有	O	O
-上海	B-arrival_city	B-start_city
+上海	B-arrival_city	B-arrival_city
 大	O	O
 ？	O	O
 嗯	O	O
@@ -4755,7 +4755,7 @@ a	O	O
 
 查	O	O
 一下	O	O
-UNK	B-start_date	B-start_date
+UNK	B-start_date	B-start_city
 到	O	O
 广州	B-arrival_city	B-arrival_city
 的	O	O
@@ -5130,7 +5130,7 @@ UNK	B-start_date	B-start_date
 说	O	O
 一下	O	O
 现在	B-start_date	B-start_date
-北京	B-arrival_airport	B-start_city
+北京	B-arrival_airport	B-arrival_city
 机场	I-arrival_airport	O
 的	O	O
 情况	O	O
@@ -5191,7 +5191,7 @@ UNK	B-start_date	B-start_date
 4月	I-start_date	I-start_date
 30	I-start_date	I-start_date
 号	I-start_date	I-start_date
-呼市	O	B-start_city
+呼市	O	O
 去	O	O
 北京	B-arrival_city	B-arrival_city
 的	O	O
@@ -5294,7 +5294,7 @@ UNK	B-start_date	B-start_date
 到	O	O
 云南	B-arrival_city	B-arrival_city
 ，	O	O
-昆明	B-arrival_city	B-arrival_city
+昆明	B-arrival_city	B-start_city
 ，	O	O
 飞机	O	O
 。	O	O
@@ -5460,7 +5460,7 @@ UNK	B-start_date	B-start_date
 
 明天	B-start_date	B-start_date
 早上	B-start_time	B-start_time
-十	I-start_time	I-start_time
+十	I-start_time	O
 点	I-start_time	O
 去	O	O
 上海	B-arrival_city	B-arrival_city
@@ -5614,9 +5614,9 @@ UNK	I-start_date	I-start_date
 
 UNK	B-start_date	O
 到	O	O
-深圳	B-arrival_city	B-start_city
-宝安	B-arrival_airport	B-start_airport
-机场	I-arrival_airport	I-start_airport
+深圳	B-arrival_city	B-arrival_city
+宝安	B-arrival_airport	B-arrival_airport
+机场	I-arrival_airport	I-arrival_airport
 
 海口	B-start_city	B-start_city
 到	O	O
@@ -5707,7 +5707,7 @@ UNK	B-start_airport	B-start_airport
 揭阳	B-start_city	B-start_city
 到	O	O
 广州	B-arrival_city	B-arrival_city
-UNK	O	I-arrival_city
+UNK	O	O
 的	O	O
 航班	O	O
 。	O	O
@@ -5791,7 +5791,7 @@ UNK	O	I-arrival_city
 。	O	O
 
 上海	B-start_city	B-start_city
-虹桥	B-start_airport	B-start_airport
+虹桥	B-start_airport	O
 有	O	O
 没	O	O
 有	O	O
@@ -5813,7 +5813,7 @@ UNK	O	I-arrival_city
 哪些	O	O
 ？	O	O
 
-天津	B-start_city	B-start_city
+天津	B-start_city	B-arrival_city
 飞机	O	O
 到	O	O
 南充	B-arrival_city	B-arrival_city
@@ -5871,8 +5871,8 @@ UNK	O	I-arrival_city
 航班	O	O
 。	O	O
 
-萧山	B-start_airport	B-start_city
-机场	I-start_airport	O
+萧山	B-start_airport	B-start_airport
+机场	I-start_airport	I-start_airport
 到	O	O
 贵阳	B-arrival_city	B-arrival_city
 龙洞堡	B-arrival_airport	B-arrival_airport
@@ -6010,8 +6010,8 @@ UNK	O	O
 的	O	O
 航班	O	O
 
-井冈山	B-start_airport	B-arrival_airport
-机场	I-start_airport	I-arrival_airport
+井冈山	B-start_airport	I-arrival_airport
+机场	I-start_airport	O
 一个	O	O
 月	O	O
 有	O	O
@@ -6113,7 +6113,7 @@ UNK	O	O
 到	O	O
 大连	B-arrival_city	B-arrival_city
 航班	O	O
-最近	O	B-start_date
+最近	O	B-arrival_city
 时间	O	O
 最	B-cost_relative	B-cost_relative
 便宜	I-cost_relative	I-cost_relative
@@ -6129,9 +6129,9 @@ UNK	O	O
 
 明天	B-start_date	B-start_date
 从	O	O
-旁观	B-start_city	B-start_city
+旁观	B-start_city	O
 到	O	O
-红果	B-arrival_city	O
+红果	B-arrival_city	B-arrival_city
 的	O	O
 航班	O	O
 。	O	O
@@ -6384,7 +6384,7 @@ UNK	O	O
 福建	B-start_city	B-start_city
 厦门	I-start_city	I-start_city
 到	O	O
-厦门	B-start_city	B-start_city
+厦门	B-start_city	B-arrival_city
 到	O	O
 四川	B-arrival_city	B-arrival_city
 的	O	O
@@ -6396,8 +6396,8 @@ UNK	O	O
 到	O	O
 合肥	B-arrival_airport	B-arrival_city
 机场	I-arrival_airport	O
-新桥	B-arrival_airport	B-start_airport
-机场	I-arrival_airport	I-start_airport
+新桥	B-arrival_airport	B-arrival_airport
+机场	I-arrival_airport	I-arrival_airport
 。	O	O
 
 从	O	O
@@ -6468,7 +6468,7 @@ UNK	O	O
 机场	I-start_airport	I-start_airport
 航班	O	O
 
-厦门	B-start_airport	B-start_city
+厦门	B-start_airport	B-arrival_city
 机场	I-start_airport	O
 的	O	O
 航班	O	O
@@ -6611,7 +6611,7 @@ UNK	O	O
 UNK	I-start_date	I-start_date
 ，	O	O
 从	O	O
-广州	B-start_city	B-start_city
+广州	B-start_city	B-arrival_city
 ，	O	O
 起飞	O	O
 到	O	O
@@ -6879,7 +6879,7 @@ UNK	I-start_time	I-start_time
 广州	B-start_city	B-start_city
 到	O	O
 长沙	B-arrival_city	B-arrival_city
-国际	B-arrival_airport	I-arrival_airport
+国际	B-arrival_airport	B-arrival_airport
 机场	I-arrival_airport	I-arrival_airport
 的	O	O
 飞机	O	O
@@ -7057,7 +7057,7 @@ UNK	O	O
 
 从	O	O
 雁山	B-start_city	B-start_city
-立交	O	O
+立交	O	I-start_city
 桥头	O	O
 ，	O	O
 永强	B-start_airport	B-arrival_airport
@@ -7161,7 +7161,7 @@ UNK	O	O
 。	O	O
 
 明天	B-start_date	B-start_date
-明天	B-start_date	B-start_date
+明天	B-start_date	B-start_time
 长春	B-start_city	B-start_city
 到	O	O
 北京	B-arrival_city	B-arrival_city
@@ -7234,7 +7234,7 @@ UNK	O	O
 ？	O	O
 
 离	O	O
-北京	B-arrival_city	B-start_city
+北京	B-arrival_city	B-arrival_city
 最	O	O
 早	O	O
 一	O	O
@@ -7409,7 +7409,7 @@ UNK	O	O
 飞机票	O	O
 。	O	O
 
-杨	B-start_city	B-start_city
+杨	B-start_city	O
 到	O	O
 泰国	B-arrival_city	B-arrival_city
 的	O	O
@@ -7699,7 +7699,7 @@ UNK	O	O
 。	O	O
 
 四川	B-start_city	B-start_city
-南充	B-start_city	I-start_city
+南充	B-start_city	B-start_city
 到	O	O
 上海	B-arrival_city	B-arrival_city
 六	B-start_date	B-start_date
@@ -7772,8 +7772,8 @@ UNK	O	O
 航班	O	O
 。	O	O
 
-UNK	O	B-start_date
-慕容	O	B-start_city
+UNK	O	O
+慕容	O	O
 从	O	O
 中国	B-start_city	B-start_city
 到	O	O
@@ -8128,7 +8128,7 @@ UNK	B-start_city	B-start_city
 飞机	O	O
 
 查询	O	O
-后天	B-start_date	B-start_date
+后天	B-start_date	O
 厦门	B-start_city	B-start_city
 到	O	O
 北京	B-arrival_city	B-arrival_city
@@ -8400,7 +8400,7 @@ UNK	O	O
 
 查	O	O
 一下	O	O
-UNK	B-start_date	B-start_date
+UNK	B-start_date	B-start_city
 到	O	O
 广州	B-arrival_city	B-arrival_city
 的	O	O
@@ -8477,7 +8477,7 @@ UNK	O	O
 航班	O	O
 哪个	O	O
 航空	O	O
-公司	O	O
+公司	O	B-arrival_city
 最	B-cost_relative	B-cost_relative
 便宜	I-cost_relative	I-cost_relative
 ？	O	O
@@ -8494,8 +8494,8 @@ UNK	O	O
 东	O	O
 怎么	O	O
 去	O	O
-萧山	B-arrival_airport	B-arrival_city
-机场	I-arrival_airport	O
+萧山	B-arrival_airport	B-arrival_airport
+机场	I-arrival_airport	I-arrival_airport
 
 查询	O	O
 从	O	O
@@ -8794,8 +8794,8 @@ iPhone	O	O
 
 哈尔滨	B-start_city	B-start_city
 到	O	O
-UNK	O	B-start_date
-号	O	I-start_date
+UNK	O	O
+号	O	O
 的	O	O
 航班	O	O
 。	O	O
@@ -8835,7 +8835,7 @@ UNK	O	B-start_date
 航班	O	O
 杭州	B-start_city	B-start_city
 到	O	O
-桐城人	O	O
+桐城人	O	B-arrival_city
 的	O	O
 飞机票	O	O
 。	O	O
@@ -8894,15 +8894,15 @@ UNK	O	B-start_date
 几	O	O
 班	O	O
 从	O	O
-深圳	B-start_city	B-start_city
+深圳	B-start_city	B-arrival_city
 来	O	O
 的	O	O
 飞机	O	O
 。	O	O
 
-淮南	B-start_city	B-start_city
+淮南	B-start_city	B-arrival_city
 新	O	O
-锦江	B-arrival_city	O
+锦江	B-arrival_city	B-start_city
 到	O	O
 UNK	O	O
 
@@ -8914,11 +8914,11 @@ UNK	O	O
 
 贵阳	B-start_city	B-start_city
 到	O	O
-揭阳	B-arrival_airport	B-arrival_city
-机场	I-arrival_airport	O
+揭阳	B-arrival_airport	B-arrival_airport
+机场	I-arrival_airport	I-arrival_airport
 的	O	O
 UNK	O	O
-北京	B-arrival_city	B-start_city
+北京	B-arrival_city	B-arrival_city
 要	O	O
 多	O	O
 长	O	O
@@ -9450,7 +9450,7 @@ UNK	O	O
 飞机	O	O
 。	O	O
 
-今夏	B-start_date	B-start_date
+今夏	B-start_date	O
 明天	B-start_date	B-start_date
 南京	B-start_city	B-start_city
 南京	B-start_city	B-start_city

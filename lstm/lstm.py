@@ -13,9 +13,11 @@ from util import *
 
 flags = tf.app.flags
 FLAGS = flags.FLAGS
+
+flags.DEFINE_integer('ran_word_num',1976,'ran_word_num')
 flags.DEFINE_integer('CRF',1,'CRF layer')
 flags.DEFINE_integer('batch_size',1,'batch_size')
-flags.DEFINE_integer('n_hidden',64,'hidden units')
+flags.DEFINE_integer('n_hidden',128,'hidden units')
 flags.DEFINE_integer('epoch_step',40,'nums of epochs')
 flags.DEFINE_integer('epoch_size',6000,'batchs of each epoch')
 flags.DEFINE_integer('n_classes',18,'nums of classes')
@@ -23,12 +25,12 @@ flags.DEFINE_integer('emb_size',345823,'embedding size')
 flags.DEFINE_integer('word_dim',300,'word dim')
 flags.DEFINE_integer('PRF',0,'calculate PRF')
 flags.DEFINE_integer('L2',1,'add L2 regularizer')
-flags.DEFINE_integer('feature',0,'add pos and ner feature')
+flags.DEFINE_integer('feature',1,'add pos and ner feature')
 flags.DEFINE_integer('BiLSTM',1,'is bi-directional LSTM or not')
 flags.DEFINE_integer('ran_emb',0,'add random variable embedding in training process')
-flags.DEFINE_integer('pos_emb_size',25,'pos_embedding_size')
-flags.DEFINE_integer('ner_emb_size',25,'ner_embedding_size')
-flags.DEFINE_integer('feature_emb_size',25,'pos and ner embedding size')
+flags.DEFINE_integer('pos_emb_size',50,'pos_embedding_size')
+flags.DEFINE_integer('ner_emb_size',50,'ner_embedding_size')
+flags.DEFINE_integer('feature_emb_size',50,'pos and ner embedding size')
 flags.DEFINE_float('learning_rate',1e-3,'learning rate')
 flags.DEFINE_float('dropout',0,'dropout')
 flags.DEFINE_string('data_path',None,'data path')
@@ -44,6 +46,11 @@ NER_NUM = 9
 #WORD_NUM = 345823
 WORD_NUM = 1789
 BETA_REGUL = 0.01
+
+
+embedding = pkl.load(open(FLAGS.embedding_path, 'r'))
+label_dict = pkl.load(open(FLAGS.label_dict_path,'r'))
+word_dict = pkl.load(open(FLAGS.word_dict_path,'r'))
 
 def crf_evaluate(seq_len,trans_matrix,unary_score,y_pad):
 	correct_num = 0
@@ -71,6 +78,7 @@ def get_name_tail():
 	file_tail += "-" + str(FLAGS.feature_emb_size) if FLAGS.feature_emb_size != 25 else ""
 	file_tail += "-epoch-" + str(FLAGS.epoch_step) 
 	file_tail += "-ranemb" if FLAGS.ran_emb == 1 else ""
+	file_tail += "-dropout" + FLAGS.dropout if FLAGS.dropout != 0 else ""
 	return file_tail
 
 def dynamic_rnn(sentence_num = 0,max_len = 54):
@@ -78,6 +86,7 @@ def dynamic_rnn(sentence_num = 0,max_len = 54):
 	test_data = Dataset(data_type = 'test')
 
 	x_ = tf.placeholder(tf.int32, [FLAGS.batch_size, None]) #[FLAGS.batch_size,None]
+	x_ran = tf.placeholder(tf.int32, [FLAGS.batch_size, None])
 	pos_ = tf.placeholder(tf.int32, [FLAGS.batch_size, None])
     	ner_ = tf.placeholder(tf.int32, [FLAGS.batch_size, None])
 	y_ = tf.placeholder(tf.int32, [None])
@@ -87,12 +96,12 @@ def dynamic_rnn(sentence_num = 0,max_len = 54):
 	tf.set_random_seed(1)
 	#x:[batch_size,n_steps,n_input]
 	with tf.device('/cpu:0'):
-		embedding = pkl.load(open(FLAGS.embedding_path, 'r'))
+		#embedding = pkl.load(open(FLAGS.embedding_path, 'r'))
 		x = tf.nn.embedding_lookup(embedding, x_)
 		biases = tf.get_variable("biases", [FLAGS.n_classes], tf.float32)
 		if FLAGS.ran_emb == 1:
-			random_emb = tf.get_variable("ran_emb", [WORD_NUM, FLAGS.word_dim], tf.float32)
-		        ran_x = tf.nn.embedding_lookup(random_emb, x_)
+			random_emb = tf.get_variable("ran_emb", [FLAGS.ran_word_num, FLAGS.word_dim], tf.float32)
+		        ran_x = tf.nn.embedding_lookup(random_emb, x_ran)
 			x = tf.concat(2,[x, ran_x])
 
 	if FLAGS.feature == 1:
@@ -142,8 +151,8 @@ def dynamic_rnn(sentence_num = 0,max_len = 54):
 	optimizer = tf.train.AdamOptimizer(learning_rate = FLAGS.learning_rate).minimize(cost)
 	correct_prediction = tf.nn.in_top_k(logits, y_, 1)
 	values, indices = tf.nn.top_k(logits, 1)
-	accuracy = tf.reduce_mean(tf.cast(correct_prediction,tf.float32))
-	correct = tf.reduce_sum(tf.cast(correct_prediction,tf.float32))
+	#accuracy = tf.reduce_mean(tf.cast(correct_prediction,tf.float32))
+	correct = tf.reduce_sum(tf.cast(correct_prediction,tf.float32)* tf.cast(mask, tf.float32))
 
 
 	file_tail = get_name_tail()
@@ -156,24 +165,26 @@ def dynamic_rnn(sentence_num = 0,max_len = 54):
 			for step in range(FLAGS.epoch_step):
 				for i in range(0, train_data.sentence_num):
 				#for i in range(0, 300):
-					batch_x, batch_pos, batch_ner, batch_y = train_data.next_batch()
+					random_x,batch_x, batch_pos, batch_ner, batch_y = train_data.next_batch()
+					ran_x_pad = padding_fea(random_x)
 					x_pad,y_pad,pos_pad,ner_pad,mask_feed = padding(batch_x,batch_y,batch_pos,batch_ner)
 					out,_ = sess.run([outputs,optimizer], feed_dict = {x_:x_pad, y_:y_pad,mask:mask_feed,\
-					pos_:pos_pad, ner_:ner_pad, output_keep_prob:1-FLAGS.dropout})
+					x_ran: ran_x_pad, pos_:pos_pad, ner_:ner_pad, output_keep_prob:1-FLAGS.dropout})
 				num = 0
 				cor_num = 0
 				for i in range(0, test_data.sentence_num):
-					test_x, test_pos, test_ner, test_y = test_data.next_batch()
+					random_x, test_x, test_pos, test_ner, test_y = test_data.next_batch()
+					ran_x_pad = padding_fea(random_x)
 					x_pad,y_pad,pos_pad,ner_pad,mask_feed = padding(test_x,test_y,test_pos,test_ner)
 					if not FLAGS.CRF:
 						num += len(test_y[0])
 						seq_length,correct_num = sess.run([seq_len,correct],feed_dict = {x_:x_pad,\
-						 y_:y_pad,mask:mask_feed,pos_:pos_pad, ner_:ner_pad, output_keep_prob:1})
+						 x_ran:ran_x_pad,y_:y_pad,mask:mask_feed,pos_:pos_pad, ner_:ner_pad, output_keep_prob:1})
 						cor_num += correct_num
 					else:
 						seq_length,correct_num,tran_matrix,score = sess.run([seq_len,correct,\
 							transition_params,unary_score],feed_dict = {x_:x_pad, y_:y_pad,\
-							 mask:mask_feed, pos_:pos_pad, ner_:ner_pad, output_keep_prob:1})
+							x_ran:ran_x_pad,mask:mask_feed, pos_:pos_pad, ner_:ner_pad, output_keep_prob:1})
 						cor_label, label_num, _ = crf_evaluate(seq_length,tran_matrix,score,y_pad)
 						cor_num += cor_label
 						num += label_num
@@ -187,23 +198,24 @@ def dynamic_rnn(sentence_num = 0,max_len = 54):
 		with tf.Session(config = gpu_config()) as sess:
 			saver = tf.train.Saver()
 			saver.restore(sess, FLAGS.saver_path + file_tail)
-			label_dict = pkl.load(open(FLAGS.label_dict_path,'r'))
-			word_dict = pkl.load(open(FLAGS.word_dict_path,'r'))
+			#label_dict = pkl.load(open(FLAGS.label_dict_path,'r'))
+			#word_dict = pkl.load(open(FLAGS.word_dict_path,'r'))
 			out = open(FLAGS.output_path + file_tail ,'w')
 			num = 0
 			cor_num = 0
 			for i in range(0, test_data.sentence_num):
-				test_x, test_pos, test_ner, test_y = test_data.next_batch()
+				random_x,test_x, test_pos, test_ner, test_y = test_data.next_batch()
+				ran_x_pad = padding_fea(random_x)
 				x_pad,y_pad,pos_pad,ner_pad,mask_feed = padding(test_x,test_y,test_pos,test_ner)
 				if not FLAGS.CRF:
 					num += len(test_y[0])
 					ind,correct_num = sess.run([indices,correct],feed_dict = {x_:x_pad,\
-					 y_:y_pad,mask:mask_feed,pos_:pos_pad, ner_:ner_pad, output_keep_prob:1})
+					 x_ran:ran_x_pad,y_:y_pad,mask:mask_feed,pos_:pos_pad, ner_:ner_pad, output_keep_prob:1})
 					cor_num += correct_num
 				else:
 					seq_length,correct_num,tran_matrix,score = sess.run([seq_len,correct,\
 						transition_params,unary_score],feed_dict = {x_:x_pad, y_:y_pad,\
-						 mask:mask_feed, pos_:pos_pad, ner_:ner_pad, output_keep_prob:1})
+						x_ran:ran_x_pad,mask:mask_feed, pos_:pos_pad, ner_:ner_pad, output_keep_prob:1})
 					cor_label_num, label_num, ind = crf_evaluate(seq_length,tran_matrix,score,y_pad)
 					cor_num += cor_label_num
 					num += label_num
