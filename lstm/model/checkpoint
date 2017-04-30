@@ -1,2 +1,2 @@
-model_checkpoint_path: "model-CRF-L2-BILSTM1-h128-fea-1-50-epoch-40-ranemb"
-all_model_checkpoint_paths: "model-CRF-L2-BILSTM1-h128-fea-1-50-epoch-40-ranemb"
+model_checkpoint_path: "model-CRF-crfsdp-L20.0001-BILSTM1-h128-fea-1-50-epoch-40-b16"
+all_model_checkpoint_paths: "model-CRF-crfsdp-L20.0001-BILSTM1-h128-fea-1-50-epoch-40-b16"

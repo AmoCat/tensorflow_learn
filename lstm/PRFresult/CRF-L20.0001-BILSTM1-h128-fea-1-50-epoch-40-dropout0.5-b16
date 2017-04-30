@@ -1,0 +1,10 @@
+processed 8704 tokens with 2109 phrases; found: 2093 phrases; correct: 2029.
+accuracy:  98.77%; precision:  96.94%; recall:  96.21%; FB1:  96.57
+          airline: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+  arrival_airport: precision:  84.38%; recall:  81.82%; FB1:  83.08  64
+     arrival_city: precision:  98.31%; recall:  98.11%; FB1:  98.21  948
+    cost_relative: precision: 100.00%; recall:  90.00%; FB1:  94.74  9
+    start_airport: precision:  88.64%; recall:  79.59%; FB1:  83.87  44
+       start_city: precision:  96.94%; recall:  97.06%; FB1:  97.00  784
+       start_date: precision:  97.81%; recall:  95.71%; FB1:  96.75  228
+       start_time: precision:  75.00%; recall:  70.59%; FB1:  72.73  16
