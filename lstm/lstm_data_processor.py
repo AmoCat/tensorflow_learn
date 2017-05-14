@@ -147,14 +147,15 @@ def gen_label_id_dict(train_name = 'train_label',test_name = 'test_label',f = -1
 	for label, _ in count:
 		label_to_id[label] = len(label_to_id)
 	id_to_label = dict(zip(label_to_id.values(), label_to_id.keys()))
+	print label_to_id_name, len(label_to_id)
 	pkl.dump(label_to_id, open(label_to_id_name, 'w'))
 	pkl.dump(id_to_label, open(id_to_label_name, 'w'))
 
 def feature_hash(train_name = 'train_label',test_name = 'test_label'):
-   	hash = {1:"pos",2:"ner",3:"label"}
-    	for i in range(1,4):
-        	para1 = DICT_PREFIX + hash[i] + "_to_id_dict"
-        	para2 =	DICT_PREFIX + "id_to_" + hash[i] + "_dict"
+   	hash = {1:"pos",2:"ner",-1:"label",3:"sdp"}
+    	for i,v in hash.items():
+        	para1 = DICT_PREFIX + v + "_to_id_dict"
+        	para2 =	DICT_PREFIX + "id_to_" + v + "_dict"
         	gen_label_id_dict(f = i,label_to_id_name = para1,id_to_label_name = para2)
 
 '''
@@ -176,10 +177,10 @@ def test_word_to_id_dict(name):
 if __name__ == '__main__':
 	#words_num = minimize_words_size()
 	#print "word_num:",words_num
-	#helper("train")
-	#helper("test")
+	helper("train")
+	helper("test")
 	#gen_word_id_dict(file_path = '../../embedding/embedding/baike-300.vec.txt')
-	#feature_hash()
+	feature_hash()
     	#gen_ran_word2int()
 	#gen_label_id_dict()
-	test_word_to_id_dict(sys.argv[1])
+	#test_word_to_id_dict(sys.argv[1])

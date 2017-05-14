@@ -79,6 +79,43 @@ def crf_evaluate(seq_len,trans_matrix,unary_score,y_pad):
 		#print "correct_num:",correct_num
 	return correct_num,label_num,ind
 
+def endChunk(s, lastType):
+	if s == 'O' or s[0] == 'B':
+		return True
+	return s[2:] != lastType
+
+def calculate_fb1(batch_size, y, y_pred, seq_len, max_len):
+	correctChunk = 0
+	foundGuessed = 0
+	foundCorrect = 0
+	
+	for i in range(0, batch_size):
+		tag = [label_dict[id] for id in y[:seq_len[i]]]
+		tag_pred = [label_dict[id] for id in y_pred[i*max_len:i*max_len + seq_len[i]]]
+		FoundType = 'O'
+		CorrectType = 'O'
+		lastFoundIndex = -1
+		lastCorrectIndex = -1
+		ly = list()
+		ly_pred = list()
+		for j in range(0, seq_len[j]):
+			a = tag[j]
+			b = tag_pred[j]
+			if endChunk(a, CorrectType) and CorrectType != 'O':
+				ly.append((lastCorrectIndex,j,CorrectType))
+				lastCorrectIndex = j
+				CorrectType = 'O' if a == 'O' else a[2:]
+				correctChunk += 1
+			if endChunk(b, FoundType) and FoundType != 'O':
+				ly_pred.append((lastFoundIndex,j,FoundType))
+				lastFoundIndex = j
+				FoundType = 'O' if b == 'O' else b[2:]
+				foundGuesses += 1
+		for item in ly:
+			if item in ly_pred:
+				foundCorrect += 1
+		return correctChunk, foundGuessed, foundCorrect
+
 def get_name_tail():
 	file_tail = ""
 	file_tail += "CRF" if FLAGS.CRF == 1 else ""
@@ -267,6 +304,7 @@ def dynamic_rnn(sentence_num = 0,max_len = 54):
 				out.flush()
 
 			print "test loss:%g,test_accuracy: %g" % (ave_cost/test_data.batch_num,1.0*cor_num/num)
+			print file_tail
 			out.close()
 
 
