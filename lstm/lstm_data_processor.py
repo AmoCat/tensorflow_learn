@@ -9,17 +9,21 @@ import numpy as np
 import collections
 from collections import Counter
 import tensorflow as tf
+from copy import deepcopy
 
-FILE_PATH = os.path.dirname(__file__)
+DICT_PREFIX = "./dict/"
+FILE_PATH = os.path.dirname(__file__) + 'dict/'
 EMBEDDING_SIZE = 345823
 WORD_DIM = 300
-DICT_PREFIX = "./dict/"
+DATA_PATH = './data/'
+
+hash = {1:"pos",2:"ner",-1:"label",3:"sdp"}
 
 '''
 write[[[word,pos,ner,label],……],[],……]to './name_label'
 '''
 def helper(name):
-	in_path = os.path.join(FILE_PATH,name)
+	in_path = os.path.join(DATA_PATH,name)
 	out_path = os.path.join(FILE_PATH,name+'_label')
 	datas = open(in_path,'r').read().strip().split('\n\n')
 	out_l = []
@@ -123,19 +127,58 @@ def minimize_words_size(embedding_path = "embeddings", train_path = "train_label
 	pkl.dump(n_word_to_id_dict, open("./dict/minimized_word_to_id_dict", 'w'))
 	return len(n_id_to_word_dict)
 
+def gen_sdp_path_relationid(mode = 'train', PREFIX = './data/path_pkl/', path_num = 'all'):
+	in_tail = "_sdp_relation_"+path_num+"_path_to_root"
+	out_tail = "_sdp_idrelation_"+path_num+"_path_to_root"
+	sdp2int = pkl.load(open("./dict/sdp_to_id_dict",'r'))
+	datas = pkl.load(open(PREFIX + mode + in_tail,'r'))
+	id_datas = deepcopy(datas)
+	for i in range(len(datas)):
+		sen = datas[i]
+		for j in range(len(sen)):
+			w = sen[j]
+			for k in range(len(w)):
+				path = w[k]
+				for q in range(len(path)):
+					relation = path[q]
+					if not sdp2int.has_key(relation):
+						relation = 'unk'
+					id_datas[i][j][k][q] = sdp2int[relation]
+	pkl.dump(id_datas,open(PREFIX + mode + out_tail,'w'))
+
+def gen_path_relationid(mode = 'train',data_type = 'sdp', PREFIX = './data/path_pkl/', path_num = '1'):
+	in_tail = "_" +data_type + "_relation_"+path_num+"_path_to_root"
+	out_tail = "_" + data_type + "_idrelation_"+path_num+"_path_to_root"
+	sdp2int = pkl.load(open("./dict/" + data_type + "_to_id_dict",'r'))
+	datas = pkl.load(open(PREFIX + mode + in_tail,'r'))
+	for i in range(len(datas)):
+		sen = datas[i]
+		for j in range(len(sen)):
+			path = sen[j]
+			for k in range(len(w)):
+				relation = path[k]
+				if not sdp2int.has_key(relation):
+					relation = 'unk'
+				datas[i][j][k] = sdp2int[relation]
+	pkl.dump(datas,open(PREFIX + mode + out_tail,'w'))
+
 '''
 gen label,pos or ner feature hash,f is the index in file of datas[word,feature,label]
 '''
-def gen_label_id_dict(train_name = 'train_label',test_name = 'test_label',f = -1,\
+def gen_label_id_dict(train_name = './dict/train_label',test_name = './dict/test_label',f = -1,\
+	dev_name = './dict/dev_label',\
 	label_to_id_name = 'label_to_id_dict', id_to_label_name = 'id_to_label_dict'):
 	train_data = pkl.load(open(train_name, 'r'))
 	test_data = pkl.load(open(test_name, 'r'))
+	dev_data = pkl.load(open(dev_name, 'r'))
 
 	#get label list
 	label_list = list()
-    	for l in train_data:
+	for l in train_data:
 		label_list.extend([t[f] for t in l])
 	for l in test_data:
+		label_list.extend(t[f] for t in l)
+	for l in dev_data:
 		label_list.extend(t[f] for t in l)
 
 	#delete the duplicates in label list
@@ -144,8 +187,12 @@ def gen_label_id_dict(train_name = 'train_label',test_name = 'test_label',f = -1
 
 	#convert label to id
 	label_to_id = dict()
+	if f == 3:
+		label_to_id['start'] = len(label_to_id)
 	for label, _ in count:
 		label_to_id[label] = len(label_to_id)
+	if f >=1 and f <=3:
+		label_to_id['unk'] = len(label_to_id)
 	id_to_label = dict(zip(label_to_id.values(), label_to_id.keys()))
 	print label_to_id_name, len(label_to_id)
 	pkl.dump(label_to_id, open(label_to_id_name, 'w'))
@@ -177,10 +224,12 @@ def test_word_to_id_dict(name):
 if __name__ == '__main__':
 	#words_num = minimize_words_size()
 	#print "word_num:",words_num
-	helper("train")
-	helper("test")
-	#gen_word_id_dict(file_path = '../../embedding/embedding/baike-300.vec.txt')
 	feature_hash()
+	gen_sdp_path_relationid(mode = 'train')
+	gen_sdp_path_relationid(mode = 'test')
+	gen_sdp_path_relationid(mode = 'dev')
+	#gen_word_id_dict(file_path = '../../embedding/embedding/baike-300.vec.txt')
+	#feature_hash()
     	#gen_ran_word2int()
 	#gen_label_id_dict()
 	#test_word_to_id_dict(sys.argv[1])
