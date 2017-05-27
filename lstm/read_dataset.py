@@ -27,13 +27,15 @@ class Dataset(object):
         #self.batch_num = (self.sentence_num-1)/self.batch_size + 1
         self.batch_num = self.sentence_num/self.batch_size
 
-    def init_path(self, add_sen_num, data_type, path_type = 'sdp', file_prefix = './data/path_pkl/', file_name = 'path_to_root'):
+    def init_path(self, add_sen_num, data_type, path_type = 'dp', file_prefix = './data/path_pkl/', file_name = 'path_to_root'):
         file_path = file_prefix+data_type+'_'+path_type+'_1_'+file_name
         relation_path = file_prefix+data_type+'_'+path_type+'_idrelation_1_'+file_name
         path = pkl.load(open(file_path, 'r'))
+        relations = pkl.load(open(relation_path, 'r'))
         for i in range(0, add_sen_num):
             path.append([[1]])
-        return np.array(path)
+            relations.append([[0]])
+        return np.array(path),np.array(relations)
 
     def init_sdp_path(self, add_sen_num, mode, file_prefix = './data/path_pkl/',file_name = "all_path_to_root"):
         paths = pkl.load(open(file_prefix + mode + '_sdp_' + file_name,'r'))
@@ -110,7 +112,7 @@ class Dataset(object):
                 self.labels = res
             elif v == 'cur_sdp_father':
                 self.cur_sdp_father = self.init_fea(datas,i,pad_sen_num,name,padding_num = 1)
-        self.dp_path = self.init_path(pad_sen_num, data_name, path_type = 'sdp')
+        self.dp_path,self.dp_relations = self.init_path(pad_sen_num, data_name, path_type = 'dp')
         self.sdp_path,self.sdp_relations = self.init_sdp_path(pad_sen_num, data_name)
         return np.array(words), np.array(ran_words), sentence_num, sentence_num + pad_sen_num
 
@@ -130,13 +132,15 @@ class Dataset(object):
                 self.labels = self.labels[perm]
                 self.sdp_path = self.sdp_path[perm]
                 self.dp_path = self.dp_path[perm]
+                self.dp_relations = self.dp_relations[perm]
                 self.sdp_relations = self.sdp_relations[perm]
                 self.cur_sdp_father = self.cur_sdp_father[perm]
         else:
             end = self._index_in_epoch
         return self.ran_words[start:end], self.words[start:end], self.pos[start:end], \
                 self.ner[start:end], self.sdp[start:end], self.labels[start:end], self.dp_path[start:end],\
-                self.cur_sdp_father[start:end],self.sdp_path[start:end],self.sdp_relations[start:end]
+                self.cur_sdp_father[start:end],self.sdp_path[start:end],self.sdp_relations[start:end],\
+                self.dp_relations[start:end]
 
     def get_datas(self):
         return self.words, self.labels

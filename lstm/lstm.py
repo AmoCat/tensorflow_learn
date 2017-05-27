@@ -21,9 +21,8 @@ flags.DEFINE_integer('CRF',1,'CRF layer')
 flags.DEFINE_integer('batch_size',16,'batch_size')
 flags.DEFINE_integer('n_hidden',128,'hidden units')
 flags.DEFINE_integer('encode_hidden',64, 'encode hidden units')
-flags.DEFINE_integer('encode_sdp_dropout',0.5, 'encode dropout')
 flags.DEFINE_integer('encode_dp_path',0, 'encode dp path,each word only one path to ROOT')
-flags.DEFINE_integer('encode_sdp_path',1,'encode sdp path')
+flags.DEFINE_integer('encode_sdp_path',0,'encode sdp path')
 flags.DEFINE_integer('epoch_step',40,'nums of epochs')
 flags.DEFINE_integer('epoch_size',6000,'batchs of each epoch')
 flags.DEFINE_integer('n_classes',16,'nums of classes')
@@ -45,6 +44,7 @@ flags.DEFINE_integer('feature_emb_size',50,'pos and ner embedding size')
 flags.DEFINE_float('learning_rate',1e-3,'learning rate')
 flags.DEFINE_float('dropout',0,'dropout')
 flags.DEFINE_float('beta',0.0001,'beta_regul')
+flags.DEFINE_float('encode_sdp_dropout',0.5, 'encode dropout')
 flags.DEFINE_string('data_path',None,'data path')
 flags.DEFINE_string('embedding_path','./minimized_embeddings','embedding_path')
 flags.DEFINE_string('saver_path','./anc/model/model-','saver_path')
@@ -58,11 +58,13 @@ SEED = 1
 POS_NUM = 24
 NER_NUM = 10
 SDP_NUM = 108
+DP_NUM = 16
 #WORD_NUM = 345823
 WORD_NUM = 1789
 BETA_REGUL = 0.01
 MAX_PATH_NUM = 3
 
+padding_path_num = 0
 
 embedding = pkl.load(open(FLAGS.embedding_path, 'r'))
 label_dict = pkl.load(open(FLAGS.label_dict_path,'r'))
@@ -76,9 +78,9 @@ class Encoder(object):
             #father_index对于padding的word加了一个路径为[1]
             anc_seq_len = tf.reduce_sum(tf.sign(father_index),axis = 1)
             encode_cell_fw = tf.nn.rnn_cell.BasicLSTMCell(FLAGS.encode_hidden,state_is_tuple = True, activation = tf.nn.relu)
-            encode_cell_fw = tf.nn.rnn_cell.DropoutWrapper(encode_cell_fw, output_keep_prob = FLAGS.encode_sdp_dropout, seed = SEED)
+            encode_cell_fw = tf.nn.rnn_cell.DropoutWrapper(encode_cell_fw, output_keep_prob = 1-FLAGS.encode_sdp_dropout, seed = SEED)
             encode_cell_bw = tf.nn.rnn_cell.BasicLSTMCell(FLAGS.encode_hidden,state_is_tuple = True, activation = tf.nn.relu)
-            encode_cell_bw = tf.nn.rnn_cell.DropoutWrapper(encode_cell_bw, output_keep_prob = FLAGS.encode_sdp_dropout, seed = SEED)
+            encode_cell_bw = tf.nn.rnn_cell.DropoutWrapper(encode_cell_bw, output_keep_prob = 1-FLAGS.encode_sdp_dropout, seed = SEED)
     
             encode_outputs, _ = tf.nn.bidirectional_dynamic_rnn(encode_cell_fw, encode_cell_bw,\
                 anc_feature, anc_seq_len, dtype = tf.float32)
@@ -97,16 +99,26 @@ class Encoder(object):
             encode_vec = tf.reshape(encode_vec, [FLAGS.batch_size,max_seq_len,2*FLAGS.encode_hidden])
             return encoder_vec
 
-    def lstm_encoder(self,father_index,anc_feature,batch_size,max_seq_len):
+    def lstm_encoder(self,father_index,anc_feature,anc_seq_len = None):
         with tf.variable_scope('encode_path_lstm'):
             #anc_seq_len = tf.reduce_sum(tf.sign(father_mask),axis = 1)
             #father_index对于padding的word加了一个路径为[1]
-            anc_seq_len = tf.reduce_sum(tf.sign(father_index),axis = 1)
+            if anc_seq_len == None:
+                anc_seq_len = tf.reduce_sum(tf.sign(father_index),axis = 1)
             encode_cell_fw = tf.nn.rnn_cell.BasicLSTMCell(FLAGS.encode_hidden,state_is_tuple = True, activation = tf.nn.relu)
-            encode_cell_fw = tf.nn.rnn_cell.DropoutWrapper(encode_cell_fw, output_keep_prob = FLAGS.encode_sdp_dropout, seed = SEED)
+            encode_cell_fw = tf.nn.rnn_cell.DropoutWrapper(encode_cell_fw, output_keep_prob = 1-FLAGS.encode_sdp_dropout, seed = SEED)
     
             encode_outputs, _ = tf.nn.dynamic_rnn(encode_cell_fw,anc_feature, anc_seq_len, dtype = tf.float32)
-            return encode_outputs
+
+            batch_range = tf.range(tf.shape(father_index)[0])
+            fw_last_indices = tf.stack([batch_range, anc_seq_len-1], axis = 1)
+            encode_vec = tf.gather_nd(encode_outputs, fw_last_indices)
+            return encode_vec
+
+def get_padding_path_num(sdp_father,sdp_hash_id):
+    global padding_path_num
+    padding_path_num = len(sdp_hash_id)-len(sdp_father)
+
 
 def evaluate(best_F,file_tail,data_type):
     cmd = "perl ./conlleval.pl -d \"\\t\" < " + FLAGS.output_path + data_type + '/' +file_tail+ "tmp_out"
@@ -203,6 +215,7 @@ def calculate_fb1(batch_size, y, y_pred, seq_len, max_len):
 
 def get_name_tail():
     file_tail = ""
+    file_tail += "encode_dp_path-" if FLAGS.encode_dp_path == 1 else ""
     file_tail += "encode_sdp_path-" if FLAGS.encode_sdp_path == 1 else ""
     file_tail += "add_sdp_anc_in_crf-" if FLAGS.add_sdp_anc_in_crf == 1 else ""
     file_tail += "add_sdp_anc-" if FLAGS.add_sdp_anc == 1 else ""
@@ -211,16 +224,20 @@ def get_name_tail():
     return file_tail 
 
 def get_pad(data):
-    random_x,batch_x, batch_pos, batch_ner,batch_sdp, batch_y, dp_path, batch_cur_sdp_father, sdp_path,sdp_relation = data.next_batch()
+    random_x,batch_x, batch_pos, batch_ner,batch_sdp, batch_y, dp_path, batch_cur_sdp_father,\
+     sdp_path,sdp_relation,dp_relation = data.next_batch()
     ran_x_pad = padding_fea(random_x)
     sdp_pad = padding_fea(batch_sdp)
     cur_sdp_father = padding_fea(batch_cur_sdp_father,padding_num = 1)
     x_pad,y_pad,pos_pad,ner_pad,mask_feed = padding(batch_x,batch_y,batch_pos,batch_ner)
-    dp_path_pad, dp_path_mask = padding_path(dp_path)
-    sdp_path_pad = padding_sdp_path(sdp_path,padding_num = 1)
-    sdp_relation_pad = padding_sdp_path(sdp_relation,padding_num = 0)
+    dp_path_pad= padding_path(dp_path)
+    dp_path_mask = padding_path(dp_path,padding_num = 0)
+    dp_relation_pad = padding_path(dp_relation, padding_num = 0)
+    sdp_path_pad,sdppath_hash_id,sdp_seq_len,batch_range = padding_sdp_path(sdp_path,padding_num = 1)
+    sdp_relation_pad,_,_,_ = padding_sdp_path(sdp_relation,padding_num = 0)
     return batch_x, batch_y, x_pad, ran_x_pad, y_pad, mask_feed, pos_pad, ner_pad, sdp_pad,\
-     dp_path_pad, dp_path_mask,cur_sdp_father,sdp_path_pad,sdp_relation_pad
+     dp_path_pad,cur_sdp_father,sdp_path_pad,sdp_relation_pad,dp_relation_pad,sdppath_hash_id,\
+     dp_path_mask,sdp_seq_len,batch_range
 
 '''
 ancestors_index size:[FLAGS.batch_size*max_seq_len, max_ancestors_len]
@@ -229,14 +246,17 @@ return [batch_size*max_seq_len, max_ancestors_len]
 ancestors_index start with 1
 root index设为1,后序anc_seq_len每个减1去掉ROOT
 '''
-def anc_index_lookup(x_,ancestors_index,start_index = 1):
+def anc_index_lookup(x_,ancestors_index,start_index = 1,batch_range = None):
     max_seq_len = tf.shape(x_)[1]
     batch_size = tf.shape(x_)[0]
     max_anc_len = tf.shape(ancestors_index)[1]
 
     anc_index_bias = tf.reshape(ancestors_index, [-1])-start_index 
-    batch_range = tf.range(0,batch_size*max_seq_len*max_anc_len)/(max_anc_len*max_seq_len)
-    hash_indices = batch_range*max_seq_len + anc_index_bias
+    if batch_range == None:
+        batch_range = tf.range(0,batch_size*max_seq_len*max_anc_len)/(max_anc_len*max_seq_len)
+        hash_indices = batch_range*max_seq_len + anc_index_bias
+    else:
+        hash_indices = batch_range + anc_index_bias
 
     batch_len = max_seq_len*batch_size
     return batch_len,max_seq_len,max_anc_len,hash_indices
@@ -278,11 +298,15 @@ def dynamic_rnn(sentence_num = 0,max_len = 54):
     y_ = tf.placeholder(tf.int32, [None])
     mask = tf.placeholder(tf.int32,[None])
    # ancestor_mask = tf.placeholder(tf.int32,[None])
-    dp_father_index = tf.placeholder(tf.int32, [FLAGS.batch_size, None])#[batch_size,seq_len,ancester_len]
-    sdp_father_index = tf.placeholder(tf.int32, [FLAGS.batch_size*max_len,MAX_PATH_NUM, None])
-    sdp_father_relation = tf.placeholder(tf.int32, [FLAGS.batch_size*max_len,MAX_PATH_NUM,None])
-    dp_path_mask = tf.placeholder(tf.int32, [FLAGS.batch_size, None])
+    dp_father_index = tf.placeholder(tf.int32, [FLAGS.batch_size, None])
+    dp_father_relation = tf.placeholder(tf.int32, [FLAGS.batch_size,None])
+    dp_mask = tf.placeholder(tf.int32,[FLAGS.batch_size,None])
+    sdp_father_index = tf.placeholder(tf.int32, [None,None])
+    sdp_father_relation = tf.placeholder(tf.int32, [None,None])
+    sdp_path_hash = tf.placeholder(tf.int32, [None])
     out_keep_prob = tf.placeholder(tf.float32)
+    batch_range = tf.placeholder(tf.int32,[None])
+    sdp_seq_len = tf.placeholder(tf.int32,[None])
     seq_len = tf.cast(tf.reduce_sum(tf.sign(tf.abs(x_)), 1),tf.int32)
     #x:[batch_size,n_steps,n_input]
     with tf.device('/cpu:0'):
@@ -293,10 +317,9 @@ def dynamic_rnn(sentence_num = 0,max_len = 54):
             random_emb = tf.get_variable("ran_emb", [FLAGS.ran_word_num, FLAGS.word_dim], tf.float32)
             ran_x = tf.nn.embedding_lookup(random_emb, x_ran)
             x = tf.concat(2,[x, ran_x])
-
-
-
+    dp_emb = tf.get_variable('dp_emb', [DP_NUM, FLAGS.feature_emb_size], tf.float32)
     sdp_emb = tf.get_variable('sdp_emb', [SDP_NUM, FLAGS.feature_emb_size], tf.float32)
+
     if FLAGS.add_sdp == 1:
             sdp = tf.nn.embedding_lookup(sdp_emb, sdp_)
             x = tf.concat(2, [x, sdp])
@@ -311,76 +334,89 @@ def dynamic_rnn(sentence_num = 0,max_len = 54):
                 if FLAGS.encode_dp_path == 1:
                     #ancestor = encode_ancestors(x_,ancestor_mask,dp_father_index,pos_,pos_emb, ner_,ner_emb, seq_len)
                     father_ind_1 = tf.reshape(dp_father_index,[FLAGS.batch_size*max_len,-1])
-                    father_mask_1 = tf.reshape(dp_path_mask, [FLAGS.batch_size*max_len, -1])
+                    dp_father_relation_1 = tf.reshape(dp_father_relation,[FLAGS.batch_size*max_len,-1])
+                    dp_mask_1 = tf.reshape(dp_mask,[FLAGS.batch_size*max_len,-1])
                     batch_len,max_seq_len,ax_anc_len,hash_indices = anc_index_lookup(x_,father_ind_1)
-                    anc_word,anc_pos,anc_ner = lookup_ancestors(x_,batch_len,pos_,ner_,hash_indices)
-                    anc_word = tf.nn.embedding_lookup(embedding, anc_word)
-                    anc_pos = tf.nn.embedding_lookup(pos_emb, anc_pos)
-                    anc_ner = tf.nn.embedding_lookup(ner_emb, anc_ner)#[batch_size*seq_len,max_anc_len,feature_emb_size]
-                    #anc_feature = tf.concat(2,[anc_word,anc_pos,anc_ner])
-                    anc_feature = tf.concat(2,[anc_word,anc_pos,anc_ner])
-                   # cur = tf.reshape(cur, [FLAGS.batch_size*max_len,1,-1])
-                   # anc_input = tf.concat(1,[cur, anc_feature])
-
-                    #anc_seq_len至少为1,包含当前节点,此时为根节点
-                    with tf.variable_scope('encode_lstm'):
-                        #anc_seq_len = tf.reduce_sum(tf.sign(father_mask),axis = 1)
-                        #father_index对于padding的word加了一个路径为[1]
-                        anc_seq_len = tf.reduce_sum(tf.sign(father_ind_1),axis = 1)
-                        encode_cell_fw = tf.nn.rnn_cell.BasicLSTMCell(FLAGS.encode_hidden,
-                                            state_is_tuple = True, activation = tf.nn.relu)
-                        encode_cell_fw = tf.nn.rnn_cell.DropoutWrapper(encode_cell_fw, output_keep_prob = 0.5, seed = SEED)
-                        encode_cell_bw = tf.nn.rnn_cell.BasicLSTMCell(FLAGS.encode_hidden,
-                                            state_is_tuple = True, activation = tf.nn.relu)
-                        encode_cell_bw = tf.nn.rnn_cell.DropoutWrapper(encode_cell_bw, output_keep_prob = 0.5, seed = SEED)
-
-                        encode_outputs, _ = tf.nn.bidirectional_dynamic_rnn(encode_cell_fw, encode_cell_bw,\
-                                anc_feature, anc_seq_len, dtype = tf.float32)
-
-                        encode_output_fw,encode_output_bw = encode_outputs
-                    anc_batch_range = tf.range(FLAGS.batch_size*max_seq_len)
-                    fw_last_indices = tf.stack([anc_batch_range, anc_seq_len-1], axis = 1)
-                    zeros = tf.zeros([tf.shape(anc_seq_len)[0]],dtype = tf.int32)
-                    bw_last_indices = tf.stack([anc_batch_range, zeros], axis = 1)
-
-                    #[batch_size*max_len,anc_hidden]
-                    fw_encode_vec = tf.gather_nd(encode_output_fw, fw_last_indices)
-                    bw_encode_vec = tf.gather_nd(encode_output_bw, bw_last_indices)
-
-                    encode_vec = tf.concat(1,[fw_encode_vec,bw_encode_vec])
-                    encode_vec = tf.reshape(encode_vec, [FLAGS.batch_size,max_seq_len,2*FLAGS.encode_hidden])
-                    x = tf.concat(2,[x,encode_vec])
-                if FLAGS.encode_sdp_path == 1:
-                    sdp_father_index_1 = tf.reshape(sdp_father_index,[FLAGS.batch_size*max_len,-1])
-                    sdp_father_relation_1 = tf.reshape(sdp_father_relation,[FLAGS.batch_size*max_len,-1])
-                    #anc_word,anc_pos,anc_ner,max_seq_len,max_anc_len = anc_index_lookup(x_,sdp_father_index,pos_,ner_)
-                    batch_len,max_seq_len,max_anc_len,hash_indices = anc_index_lookup(x_,sdp_father_index_1)
                     #anc_word,anc_pos,anc_ner = lookup_ancestors(x_,batch_len,pos_,ner_,hash_indices)
-                    max_anc_len = max_anc_len/MAX_PATH_NUM
+                    
                     pos_looktable = tf.reshape(pos_,[-1])
                     word_looktable = tf.reshape(x_,[-1])
                     ner_looktable = tf.reshape(ner_,[-1])
                     anc_word = tf.reshape(tf.gather(word_looktable,hash_indices),[batch_len,-1])
                     anc_pos = tf.reshape(tf.gather(pos_looktable,hash_indices),[batch_len,-1])
                     anc_ner = tf.reshape(tf.gather(ner_looktable,hash_indices),[batch_len,-1])
+                    
+                    anc_word = tf.nn.embedding_lookup(embedding, anc_word)
+                    anc_pos = tf.nn.embedding_lookup(pos_emb, anc_pos)
+                    anc_ner = tf.nn.embedding_lookup(ner_emb, anc_ner)#[batch_size*seq_len,max_anc_len,feature_emb_size]
+                    #anc_feature = tf.concat(2,[anc_word,anc_pos,anc_ner])
+
+                    dp_father_relation_emb = tf.nn.embedding_lookup(dp_emb,dp_father_relation_1)
+                    anc_feature = tf.concat(2,[anc_word,anc_pos,dp_father_relation_emb])
+                   # cur = tf.reshape(cur, [FLAGS.batch_size*max_len,1,-1])
+                   # anc_input = tf.concat(1,[cur, anc_feature])
+
+                    #anc_seq_len至少为1,包含当前节点,此时为根节点
+                    '''
+                    with tf.variable_scope('encode_lstm'):
+                        #father_index对于padding的word加了一个路径为[1]
+                        anc_seq_len = tf.reduce_sum(tf.sign(father_ind_1),axis = 1)
+                        encode_cell_fw = tf.nn.rnn_cell.BasicLSTMCell(FLAGS.encode_hidden,
+                                            state_is_tuple = True, activation = tf.nn.relu)
+                        encode_cell_fw = tf.nn.rnn_cell.DropoutWrapper(encode_cell_fw, output_keep_prob = 0.5, seed = SEED)
+
+                        encode_outputs, _ = tf.nn.bidirectional_dynamic_rnn(encode_cell_fw, \
+                                anc_feature, anc_seq_len, dtype = tf.float32)
+                    '''
+                    encoder = Encoder()
+                    encode_v = encoder.lstm_encoder(dp_mask_1,anc_feature)
+                    encode_vec = tf.reshape(encode_v, [FLAGS.batch_size,max_seq_len,FLAGS.encode_hidden])
+                    x = tf.concat(2,[x,encode_vec])
+                if FLAGS.encode_sdp_path == 1:
+                    #anc_word,anc_pos,anc_ner,max_seq_len,max_anc_len = anc_index_lookup(x_,sdp_father_index,pos_,ner_)
+                    _,max_seq_len,max_anc_len,hash_indices = anc_index_lookup(x_,sdp_father_index,batch_range = batch_range)
+                    #anc_word,anc_pos,anc_ner = lookup_ancestors(x_,batch_len,pos_,ner_,hash_indices)
+                    batch_len = tf.shape(sdp_father_index)[0]
+                    pos_looktable = tf.reshape(pos_,[-1])
+                    word_looktable = tf.reshape(x_,[-1])
+                    ner_looktable = tf.reshape(ner_,[-1])
+                    pack = tf.stack([batch_len,-1])
+                    anc_word = tf.reshape(tf.gather(word_looktable,hash_indices),pack)
+                    anc_pos = tf.reshape(tf.gather(pos_looktable,hash_indices),pack)
+                    anc_ner = tf.reshape(tf.gather(ner_looktable,hash_indices),pack)
                     anc_word = tf.nn.embedding_lookup(embedding, anc_word)
                     anc_pos = tf.nn.embedding_lookup(pos_emb, anc_pos)
                     #[batch_size*seq_len,max_path_num*max_anc_len,emb_size]
                     #anc_ner = tf.nn.embedding_lookup(ner_emb, anc_ner)
                     #[batch_size*seq_len,max_path_num*max_anc_len,emb_size]
                     
-                    sdp_father_relation_emb = tf.nn.embedding_lookup(sdp_emb,sdp_father_relation_1)
+                    sdp_father_relation_emb = tf.nn.embedding_lookup(sdp_emb,sdp_father_relation)
                     anc_feature = tf.concat(2,[anc_word,anc_pos,sdp_father_relation_emb])
             
                     encoder = Encoder()
-                    encode_v = encoder.lstm_encoder(sdp_father_index_1,anc_feature,FLAGS.batch_size,max_len)
+                    encode_v = encoder.lstm_encoder(sdp_father_index,anc_feature,sdp_seq_len)
                     #[batch_size*max_len,max_path_num*max_anc_len,hidden]
+
+                    '''
+                    padding MAX_PATH_NUM-REAL_PATH_NUM条path
+                    '''
+                    inf = float('-inf')
+                    #padding_path = np.ones([padding_path_num,FLAGS.encode_hidden],dtype = np.float32)
+                    #padding_path = tf.convert_to_tensor(padding_path*inf)
+                    global padding_path_num
+                    padding_path = tf.constant(inf,shape = [padding_path_num,FLAGS.encode_hidden])
+                    encode_v = tf.concat(0,[tf.reshape(encode_v,[-1,FLAGS.encode_hidden]),padding_path])
+                    '''
+                    encode_v = tf.gather(encode_v,sdp_path_hash)
+
                     encode_vec = tf.reshape(encode_v,[FLAGS.batch_size*max_len,MAX_PATH_NUM,-1,1])
                     #[batch_size*max_len,max_path_num,hidden_size,1]
                     pool_input = tf.nn.max_pool(encode_vec,ksize = [1,3,1,1],strides = [1,3,1,1],padding = 'VALID')
-                    sdp_encode_vec = tf.reshape(pool_input,[FLAGS.batch_size,max_len,-1])
-                    #x = tf.concat(2,[x,sdp_encode_vec])
-                    
+                    #shape = tf.stack([FLAGS.batch_size,max_len,-1])
+                    sdp_encode_vec = tf.reshape(pool_input,[FLAGS.batch_size,max_len,FLAGS.encode_hidden])
+                    #用-1报depth的错
+                    x = tf.concat(2,[x,sdp_encode_vec])
+                    '''
 
     if FLAGS.add_sdp_anc == 1:
         cur_father_emb = tf.nn.embedding_lookup(embedding, cur_father_lookup(x_,cur_sdp_father))
@@ -458,13 +494,22 @@ def dynamic_rnn(sentence_num = 0,max_len = 54):
                 ave_cost = 0
                 for i in range(0, train_data.batch_num):
                     _,_,x_pad, ran_x_pad, y_pad, mask_feed, pos_pad, ner_pad, sdp_pad,\
-                    path,path_mask,cur_father,sdp_path,sdp_path_relation = get_pad(train_data)
-                    #batch_len_v,encode_v_v,anc_word_value,anc_f_v,sdp_en_v = sess.run([batch_len,encode_v,anc_word,anc_feature,sdp_encode_vec],\
-                    loss,output_np,_ = sess.run([cost,outputs,optimizer],
+                    path,cur_father,sdp_path,sdp_path_relation,dp_relation,sdp_f_hash_ind,\
+                    dp_path_mask,sdp_seq_len_,batch_range_ = get_pad(train_data)
+                    get_padding_path_num(sdp_path,sdp_f_hash_ind)
+                    print "padding_path_num",padding_path_num
+                    #anc_feature_v,dp_mask_1_v = sess.run([dp_mask_1,anc_feature],
+                    print sdp_f_hash_ind
+                    print "\n",len(batch_range_),len(sdp_f_hash_ind)
+                    encode_v_v,padding_path_v= sess.run([encode_v,padding_path],\
+                    #loss,output_np,_ = sess.run([cost,outputs,optimizer],
                             feed_dict = {x_:x_pad, x_ran:ran_x_pad,y_:y_pad,pos_:pos_pad,dp_father_index:path,\
-                            dp_path_mask:path_mask,cur_sdp_father:cur_father,\
+                            dp_father_relation:dp_relation,cur_sdp_father:cur_father,sdp_path_hash:sdp_f_hash_ind,\
                             sdp_father_relation:sdp_path_relation,sdp_father_index:sdp_path,\
+                            dp_mask:dp_path_mask,sdp_seq_len:sdp_seq_len_,batch_range:batch_range_,\
                         mask:mask_feed,ner_:ner_pad,sdp_:sdp_pad,out_keep_prob:1-FLAGS.dropout})
+                    print encode_v_v,padding_path_v,padding_path_v.shape
+                    return
                     ave_cost += loss
                 logging.info("step %d, training  loss : %g" % (step, ave_cost/train_data.batch_num))
                 num = 0
@@ -473,22 +518,26 @@ def dynamic_rnn(sentence_num = 0,max_len = 54):
                 tmp_out = open(FLAGS.output_path + '/dev/'+file_tail+"tmp_out" ,'w')
                 for i in range(0, dev_data.batch_num):
                     dev_x,dev_y,x_pad, ran_x_pad, y_pad, mask_feed, pos_pad, ner_pad, sdp_pad,\
-                     path,path_mask, cur_father,sdp_path,sdp_path_relation = get_pad(dev_data)
+                     path,cur_father,sdp_path,sdp_path_relation,dp_relation,sdp_f_hash_ind,\
+                     dp_path_mask,sdp_seq_len_,batch_range_  = get_pad(dev_data)
+                    get_padding_path_num(sdp_path,sdp_f_hash_ind)
                     if not FLAGS.CRF:
                         for yi in dev_y:
                             num += len(yi)
                         loss,seq_length,ind,correct_num = sess.run([cost,seq_len,indices,correct],\
                                 feed_dict = {x_:x_pad, x_ran:ran_x_pad,y_:y_pad,pos_:pos_pad,dp_father_index:path,\
-                                dp_path_mask:path_mask,cur_sdp_father:cur_father,\
+                                dp_father_relation:dp_relation,cur_sdp_father:cur_father,sdp_path_hash:sdp_f_hash_ind,\
                                 sdp_father_relation:sdp_path_relation,sdp_father_index:sdp_path,\
+                                dp_mask:dp_path_mask,sdp_seq_len:sdp_seq_len_,batch_range:batch_range_,\
                             mask:mask_feed,ner_:ner_pad,sdp_:sdp_pad,out_keep_prob:1})
                         cor_num += correct_num
                     else:
                         loss,seq_length,correct_num,tran_matrix,score, ind = sess.run([cost,seq_len,correct,\
                             transition_params,unary_score, indices],\
                             feed_dict = {x_:x_pad, x_ran:ran_x_pad,y_:y_pad,pos_:pos_pad,dp_father_index:path,\
-                            dp_path_mask:path_mask,cur_sdp_father:cur_father,\
+                            dp_father_relation:dp_relation,cur_sdp_father:cur_father,sdp_path_hash:sdp_f_hash_ind,\
                             sdp_father_relation:sdp_path_relation,sdp_father_index:sdp_path,\
+                            dp_mask:dp_path_mask,sdp_seq_len:sdp_seq_len_,batch_range:batch_range_,\
                             mask:mask_feed,ner_:ner_pad,sdp_:sdp_pad,out_keep_prob:1})
                         cor_label, label_num, _ = crf_evaluate(seq_length,tran_matrix,score,y_pad)
                         cor_num += cor_label
@@ -518,22 +567,26 @@ def dynamic_rnn(sentence_num = 0,max_len = 54):
             best_F = 0
             for i in range(0, test_data.batch_num):
                 test_x,test_y,x_pad, ran_x_pad, y_pad, mask_feed, pos_pad, ner_pad, sdp_pad,\
-                 path, path_mask, cur_father,sdp_path,sdp_path_relation = get_pad(test_data)
+                 path,cur_father,sdp_path,sdp_path_relation,dp_relation,sdp_f_hash_ind,\
+                 dp_path_mask,sdp_seq_len_,batch_range_  = get_pad(test_data)
+                get_padding_path_num(sdp_path,sdp_f_hash_ind)
                 if not FLAGS.CRF:
                     for yi in test_y:
                         num += len(yi)
                     loss,seq_length,ind,correct_num = sess.run([cost,seq_len,indices,correct],\
                             feed_dict = {x_:x_pad, x_ran:ran_x_pad,y_:y_pad,pos_:pos_pad,dp_father_index:path,\
-                            dp_path_mask:path_mask,cur_sdp_father:cur_father,\
+                            dp_father_relation:dp_relation,cur_sdp_father:cur_father,sdp_path_hash:sdp_f_hash_ind,\
                             sdp_father_relation:sdp_path_relation,sdp_father_index:sdp_path,\
+                            dp_mask:dp_path_mask,sdp_seq_len:sdp_seq_len_,batch_range:batch_range_,\
                         mask:mask_feed,ner_:ner_pad,sdp_:sdp_pad,out_keep_prob:1})
                     cor_num += correct_num
                 else:
                     loss,seq_length,correct_num,tran_matrix,score = sess.run([cost,seq_len,correct,\
                         transition_params,unary_score],\
                         feed_dict = {x_:x_pad, x_ran:ran_x_pad,y_:y_pad,pos_:pos_pad,dp_father_index:path,\
-                        dp_path_mask:path_mask,cur_sdp_father:cur_father,\
-                        sdp_father_relation:sdp_path_relation,sdp_father_index:sdp_path,\
+                        dp_father_relation:dp_relation,cur_sdp_father:cur_father,\
+                        sdp_father_relation:sdp_path_relation,sdp_father_index:sdp_path,sdp_path_hash:sdp_f_hash_ind,\
+                        dp_mask:dp_path_mask,sdp_seq_len:sdp_seq_len_,batch_range:batch_range_,\
                         mask:mask_feed,ner_:ner_pad,sdp_:sdp_pad,out_keep_prob:1})
                     cor_label_num, label_num, ind = crf_evaluate(seq_length,tran_matrix,score,y_pad)
                     cor_num += cor_label_num

@@ -146,7 +146,7 @@ def gen_sdp_path_relationid(mode = 'train', PREFIX = './data/path_pkl/', path_nu
 					id_datas[i][j][k][q] = sdp2int[relation]
 	pkl.dump(id_datas,open(PREFIX + mode + out_tail,'w'))
 
-def gen_path_relationid(mode = 'train',data_type = 'sdp', PREFIX = './data/path_pkl/', path_num = '1'):
+def gen_path_relationid(mode = 'train',data_type = 'dp', PREFIX = './data/path_pkl/', path_num = '1'):
 	in_tail = "_" +data_type + "_relation_"+path_num+"_path_to_root"
 	out_tail = "_" + data_type + "_idrelation_"+path_num+"_path_to_root"
 	sdp2int = pkl.load(open("./dict/" + data_type + "_to_id_dict",'r'))
@@ -155,7 +155,7 @@ def gen_path_relationid(mode = 'train',data_type = 'sdp', PREFIX = './data/path_
 		sen = datas[i]
 		for j in range(len(sen)):
 			path = sen[j]
-			for k in range(len(w)):
+			for k in range(len(path)):
 				relation = path[k]
 				if not sdp2int.has_key(relation):
 					relation = 'unk'
@@ -187,11 +187,11 @@ def gen_label_id_dict(train_name = './dict/train_label',test_name = './dict/test
 
 	#convert label to id
 	label_to_id = dict()
-	if f == 3:
+	if f == 3 or f == 5:
 		label_to_id['start'] = len(label_to_id)
 	for label, _ in count:
 		label_to_id[label] = len(label_to_id)
-	if f >=1 and f <=3:
+	if f >=1 and f <=5:
 		label_to_id['unk'] = len(label_to_id)
 	id_to_label = dict(zip(label_to_id.values(), label_to_id.keys()))
 	print label_to_id_name, len(label_to_id)
@@ -199,7 +199,7 @@ def gen_label_id_dict(train_name = './dict/train_label',test_name = './dict/test
 	pkl.dump(id_to_label, open(id_to_label_name, 'w'))
 
 def feature_hash(train_name = 'train_label',test_name = 'test_label'):
-   	hash = {1:"pos",2:"ner",-1:"label",3:"sdp"}
+   	hash = {1:"pos",2:"ner",-1:"label",3:"sdp",5:"dp"}
     	for i,v in hash.items():
         	para1 = DICT_PREFIX + v + "_to_id_dict"
         	para2 =	DICT_PREFIX + "id_to_" + v + "_dict"
@@ -224,10 +224,16 @@ def test_word_to_id_dict(name):
 if __name__ == '__main__':
 	#words_num = minimize_words_size()
 	#print "word_num:",words_num
+	helper('train')
+	helper('test')
+	helper('dev')
 	feature_hash()
-	gen_sdp_path_relationid(mode = 'train')
-	gen_sdp_path_relationid(mode = 'test')
-	gen_sdp_path_relationid(mode = 'dev')
+	#gen_sdp_path_relationid(mode = 'train')
+	#gen_sdp_path_relationid(mode = 'test')
+	#gen_sdp_path_relationid(mode = 'dev')
+	gen_path_relationid(mode = 'train')
+	gen_path_relationid(mode = 'test')
+	gen_path_relationid(mode = 'dev')
 	#gen_word_id_dict(file_path = '../../embedding/embedding/baike-300.vec.txt')
 	#feature_hash()
     	#gen_ran_word2int()
