@@ -27,9 +27,9 @@ class Dataset(object):
         #self.batch_num = (self.sentence_num-1)/self.batch_size + 1
         self.batch_num = self.sentence_num/self.batch_size
 
-    def init_path(self, add_sen_num, data_type, path_type = 'dp', file_prefix = './data/path_pkl/', file_name = 'path_to_root'):
-        file_path = file_prefix+data_type+'_'+path_type+'_1_'+file_name
-        relation_path = file_prefix+data_type+'_'+path_type+'_idrelation_1_'+file_name
+    def init_path(self, add_sen_num, data_type, path_type = 'dp', file_prefix = './data/path_pkl/', file_name = '1_path_to_root'):
+        file_path = file_prefix+data_type+'_'+path_type+'_'+file_name
+        relation_path = file_prefix+data_type+'_'+path_type+'_idrelation_'+file_name
         path = pkl.load(open(file_path, 'r'))
         relations = pkl.load(open(relation_path, 'r'))
         for i in range(0, add_sen_num):
@@ -106,14 +106,16 @@ class Dataset(object):
                 self.pos = res
             elif v == 'ner':
                 self.ner = res
-            elif v == 'sdp':
+            elif v == 'sdp':#单个sdp标签
                 self.sdp = res
             elif v == 'label':
                 self.labels = res
-            elif v == 'cur_sdp_father':
+            elif v == 'cur_sdp_father':#单个父节点index
                 self.cur_sdp_father = self.init_fea(datas,i,pad_sen_num,name,padding_num = 1)
         self.dp_path,self.dp_relations = self.init_path(pad_sen_num, data_name, path_type = 'dp')
         self.sdp_path,self.sdp_relations = self.init_sdp_path(pad_sen_num, data_name)
+        self.cur_sdp_multihead,self.cur_sdp_relations_multihead = \
+        self.init_path(pad_sen_num,data_name,path_type = 'sdp',file_name = 'multihead') 
         return np.array(words), np.array(ran_words), sentence_num, sentence_num + pad_sen_num
 
     def next_batch(self, max_seq = 54):
@@ -135,12 +137,15 @@ class Dataset(object):
                 self.dp_relations = self.dp_relations[perm]
                 self.sdp_relations = self.sdp_relations[perm]
                 self.cur_sdp_father = self.cur_sdp_father[perm]
+                self.cur_sdp_multihead = self.cur_sdp_multihead[perm]
+                self.cur_sdp_relations_multihead = self.cur_sdp_relations_multihead[perm]
         else:
             end = self._index_in_epoch
         return self.ran_words[start:end], self.words[start:end], self.pos[start:end], \
                 self.ner[start:end], self.sdp[start:end], self.labels[start:end], self.dp_path[start:end],\
                 self.cur_sdp_father[start:end],self.sdp_path[start:end],self.sdp_relations[start:end],\
-                self.dp_relations[start:end]
+                self.dp_relations[start:end],self.cur_sdp_multihead[start:end],\
+                self.cur_sdp_relations_multihead[start:end]
 
     def get_datas(self):
         return self.words, self.labels
@@ -150,7 +155,7 @@ class Dataset(object):
 
 if __name__ == '__main__':
     #data = Dataset('train'):w
-    test = Dataset('test')
-    _,_,_,_,_,_,path,father = test.next_batch()
-    print path[0]
-    print "after padding,there are ", test.sentence_num, "sentences"
+    train = Dataset('train')
+    _,_,_,_,_,_,_,_,_,_,_,multi_head,_ = train.next_batch()
+    print multi_head
+    #print "after padding,there are ", test.sentence_num, "sentences"

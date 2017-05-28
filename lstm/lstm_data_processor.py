@@ -146,9 +146,16 @@ def gen_sdp_path_relationid(mode = 'train', PREFIX = './data/path_pkl/', path_nu
 					id_datas[i][j][k][q] = sdp2int[relation]
 	pkl.dump(id_datas,open(PREFIX + mode + out_tail,'w'))
 
-def gen_path_relationid(mode = 'train',data_type = 'dp', PREFIX = './data/path_pkl/', path_num = '1'):
-	in_tail = "_" +data_type + "_relation_"+path_num+"_path_to_root"
-	out_tail = "_" + data_type + "_idrelation_"+path_num+"_path_to_root"
+'''
+multi_father = True时处理的是当前节点sdp的多个head的情况，不是path,只是存储结构类似
+'''
+def gen_path_relationid(mode = 'train',data_type = 'dp', PREFIX = './data/path_pkl/',multi_father = False, path_num = '1'):
+	if multi_father == False:
+		in_tail = "_" +data_type + "_relation_"+path_num+"_path_to_root"
+		out_tail = "_" + data_type + "_idrelation_"+path_num+"_path_to_root"
+	else:
+		in_tail = "_" + data_type + "_relation_multihead"
+		out_tail = "_" + data_type + "_idrelation_multihead"
 	sdp2int = pkl.load(open("./dict/" + data_type + "_to_id_dict",'r'))
 	datas = pkl.load(open(PREFIX + mode + in_tail,'r'))
 	for i in range(len(datas)):
@@ -264,7 +271,10 @@ if __name__ == '__main__':
 	#helper('train')
 	#helper('test')
 	#helper('dev')
-	feature_hash()
+	#feature_hash()
+	gen_path_relationid(mode = 'train',data_type = 'sdp',multi_father = True)
+	gen_path_relationid(mode = 'test',data_type = 'sdp',multi_father = True)
+	gen_path_relationid(mode = 'dev',data_type = 'sdp',multi_father = True)
 	#gen_sdp_path_relationid(mode = 'train')
 	#gen_sdp_path_relationid(mode = 'test')
 	#gen_sdp_path_relationid(mode = 'dev')

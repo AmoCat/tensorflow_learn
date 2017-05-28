@@ -3,6 +3,8 @@ from copy import deepcopy
 import numpy
 import tensorflow as tf
 
+MAX_HEAD_NUM = 3
+
 def gpu_config():
     config = tf.ConfigProto()
     config.gpu_options.allow_growth=True
@@ -19,6 +21,7 @@ def padding_path(data, max_seg = 54,padding_num = 1):
         path_pad = numpy.ones([batch_size,max_seg,max_path_len], numpy.int32)
     else:
         path_pad = numpy.zeros([batch_size,max_seg,max_path_len], numpy.int32)
+    actual_head_num = []
     for i in range(0, len(data)):
         sen = data[i]
         for j in range(0, max_seg):
@@ -66,11 +69,59 @@ def padding_sdp_path(data, max_path_num = 3, max_seg = 54, padding_num = 1):
     return path_pad
 '''
 
+
+'''
+batch_range 是每个word的每个head节点对应batch_size*seq_len中的index
+head不可以类似dp path不传batch_range，因为那种的必须padding到一样的path_leb
+即这个需要padding到一样的head_len，但事先不能pad，必须在tf中进行pad,因此
+只需要传如hash_indices，并且将mulyihead维度调整为[总head数目]，则需要pad的head个数是
+batch_size*seq_len*max_head_num - 总head数目
+不需要pad，只需要在少的词部分给每个词补一个父节点
+'''
+def padding_multihead(data, max_seg = 54, padding_num =1, max_head_num = 3):
+    multihead = []
+    actual_head_num = []
+    batch_range = []
+    batch_size = len(data)
+    for i in range(len(data)):
+        sen = data[i]
+        for j in range(max_seg):#对每个词
+            if j >= len(sen):
+                multihead.append(padding_num)
+                actual_head_num.append(1)
+                batch_range.append(i*max_seg)
+                continue
+            w = data[i][j]
+            actual_head_num.append(len(w))
+            multihead.extend(w)
+            batch_range.extend([i*max_seg for _ in range(len(w))])
+    
+    real_head_num = sum(actual_head_num)
+    padding_head_num = batch_size*max_seg*max_head_num - real_head_num
+    padding_head_ind = [i for i in range(real_head_num,batch_size*max_seg*max_head_num)]
+    head_hash_ind = []
+    pre_sum = 0
+    start = 0
+    for i in range(len(actual_head_num)):
+        num = actual_head_num[i]
+        batch_id = i/max_seg
+        word_id = i/(batch_size*max_seg)
+        for j in range(num):
+            head_hash_ind.append(pre_sum)
+            pre_sum += 1
+        while len(head_hash_ind)%(max_head_num) != 0:
+            head_hash_ind.append(padding_head_ind[start])
+            start += 1
+
+    return multihead,batch_range,head_hash_ind   
+
+
+            
 '''
 返回[总路径长度,最大path长度]的path 或relation 以及path_hash_ind
 anc_seq_len:[总路径长度]，每条路径的seq_len
+batch_range 是每条路径上的每个节点对应的batch_size*seq_len中的index，代表第几个词
 '''
-
 def padding_sdp_path(data, max_path_num = 3, max_seg = 54, padding_num = 1):
     max_path_len = 0
     batch_size = len(data)
@@ -92,6 +143,7 @@ def padding_sdp_path(data, max_path_num = 3, max_seg = 54, padding_num = 1):
                 paths.append([padding_num for _ in range(max_path_len)])
                 actual_path_num.append(1)
                 anc_seq_len.append(1)#至少为1否则下边-1后为负数
+                #由于path padding了，所以batch_range增加max_path_len个
                 batch_range.extend([i*max_seg for _ in range(max_path_len)])
                 continue
             w = data[i][j]#每个词
@@ -204,4 +256,4 @@ if __name__ == '__main__':
     data = []
     data.append(sen_1)
     data.append(sen_2)
-    padding_sdp_path(numpy.array(data),max_path_num = 2,max_seg = 2)
+    padding_multihead(numpy.array(sen_1),max_seg = 2,max_head_num = 3)
