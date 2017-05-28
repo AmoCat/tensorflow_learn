@@ -44,12 +44,6 @@ sI14
 S'I-start_time'
 p15
 sI15
-S'B-airline'
-p16
-sI16
-S'I-airline'
-p17
-sI17
 S'B-or'
-p18
+p16
 s.

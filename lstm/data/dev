@@ -1,0 +1,4674 @@
+南昌	ns	S-Ns	Agt	2	ATT	5	B-start_city
+去	v	O	Root	1	ATT	5	O
+芷江	ns	S-Ns	Nmod	5	VOB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机	n	O	Lfin	2	SBV	7	O
+，	wp	O	mPunc	2	WP	5	O
+二	m	O	mPars	2	HED	1	O
+。	wp	O	mPunc	2	WP	7	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查	v	O	eSucc	1	VOB	1	O
+一下	m	O	mDegr	3	CMP	3	O
+深圳	ns	S-Ns	Loc	6	SBV	6	B-start_city
+到	v	O	dCont	3	ATT	9	O
+通辽	ns	S-Ns	Orig	9	POB	6	B-arrival_city
+的	u	O	mAux	7	RAD	6	O
+机票	n	O	Dir	6	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+六盘水	ns	S-Ns	Lini	2	SBV	2	B-start_city
+到	v	O	dOrig	5	ATT	7	O
+贵阳	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+机票	n	O	Exp	7	ATT	7	O
+多少	r	O	Quan	7	ATT	7	O
+钱	n	O	Root	1	HED	1	O
+？	wp	O	mPunc	7	WP	7	O
+
+嗯	o	O	mMod	3	ADV	3	O
+，	wp	O	mPunc	1	WP	1	O
+到	v	O	Root	1	HED	1	O
+北京	ns	S-Ns	Nmod	6	ATT	6	B-arrival_city
+的	u	O	mAux	4	RAD	4	O
+飞机	n	O	Lfin	3	POB	3	O
+。	wp	O	mPunc	3	WP	3	O
+
+济南	ns	S-Ns	Agt	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+三亚	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+查询	v	O	Exp	3	HED	1	O
+兰州	ns	S-Ns	Loc	3	ADV	3	B-start_city
+到	v	O	Root	1	ATT	7	O
+新	a	O	Desc	5	ATT	5	O
+石家庄	ns	S-Ns	Loc	7	POB	3	B-arrival_city
+的	u	O	mAux	5	RAD	3	O
+飞机票	n	O	Lfin	3	VOB	1	O
+。	wp	O	mPunc	3	WP	1	O
+
+乌兰浩特	nh	S-Nh	Agt	2	SBV	4	B-start_city
+到	v	O	Root	1	ADV	4	O
+呼和浩特	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+有	v	O	eSucc	2	HED	1	O
+没	d	O	mNeg	6	ADV	6	O
+有	v	O	eSelt	4	COO	4	O
+航班	n	O	Exp	4	VOB	6	O
+？	wp	O	mPunc	4	WP	4	O
+
+四月	nt	O	Time	8	HED	1	O
+，	wp	O	mPunc	1	WP	1	O
+4月	nt	O	Time	5	ATT	4	B-start_date
+29	m	O	Seq	5	ATT	5	I-start_date
+号	q	O	Time	8	COO	1	I-start_date
+，	wp	O	mPunc	5	WP	5	O
+南京	ns	S-Ns	Loc	8	SBV	8	B-start_city
+到	v	O	Root	1	ATT	11	O
+海口	ns	S-Ns	Loc	11	POB	8	B-arrival_city
+的	u	O	mAux	9	RAD	8	O
+航班	n	O	Lfin	8	COO	1	O
+，	wp	O	mPunc	8	WP	11	O
+你	r	O	mPars	8	COO	11	O
+。	wp	O	mPunc	8	WP	1	O
+
+莆田	ns	S-Ns	Lini	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+香港	ns	S-Ns	Poss	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+机票	n	O	Lfin	2	SBV	6	O
+有	v	O	mNeg	2	HED	1	O
+没	d	O	eSelt	6	ADV	8	O
+有	v	O	mNeg	2	COO	6	O
+？	wp	O	mPunc	2	WP	6	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查	v	O	eSucc	1	VOB	1	O
+一下	m	O	mDegr	3	CMP	3	O
+明天	nt	O	Time	7	ADV	7	B-start_date
+贵阳	ns	S-Ns	Lini	7	SBV	7	B-start_city
+到	v	O	dDesc	10	ATT	10	O
+杭州	ns	S-Ns	Lfin	7	POB	7	B-arrival_city
+的	u	O	mAux	7	RAD	7	O
+航班	n	O	Cont	3	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+查	v	O	Exp	3	HED	1	O
+一下	m	O	mTime	3	CMP	1	O
+三十	m	O	Tini	5	ATT	4	B-start_date
+后	nd	O	mTime	3	ADV	5	I-start_date
+到	v	O	Root	1	ATT	8	O
+北京	ns	S-Ns	Loc	8	POB	5	B-arrival_city
+的	u	O	mAux	6	RAD	5	O
+机票	n	O	Sfin	5	VOB	1	O
+。	wp	O	mPunc	5	WP	1	O
+
+厦门	ns	S-Ns	Lini	2	SBV	2	B-start_city
+到	v	O	dOrig	6	HED	1	O
+贵州	ns	B-Ns	Nmod	4	ATT	4	B-arrival_city
+毕节	ns	E-Ns	Lfin	2	ATT	6	I-arrival_city
+的	u	O	mAux	2	RAD	4	O
+飞机票	n	O	Exp	8	ATT	8	O
+多少	r	O	Quan	8	ATT	8	O
+钱	n	O	Root	1	VOB	2	O
+？	wp	O	mPunc	8	WP	2	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查	v	O	eSucc	1	VOB	1	O
+一下	m	O	mDegr	3	CMP	3	O
+北京	ns	S-Ns	Loc	6	SBV	6	B-start_city
+到	v	O	rAgt	9	ATT	9	O
+南京	ns	S-Ns	Lfin	6	POB	6	B-arrival_city
+的	u	O	mAux	6	RAD	6	O
+飞机票	n	O	Cont	3	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+郑州	ns	S-Ns	Lini	2	ATT	5	B-start_city
+到	p	O	Root	1	ATT	5	O
+昆明	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+查询	v	O	Mann	2	HED	1	O
+到	v	O	Root	1	CMP	1	O
+北京	ns	S-Ns	Loc	7	ATT	7	B-arrival_city
+最	d	O	mDegr	5	ADV	5	B-cost_relative
+便宜	a	O	Desc	7	ATT	7	I-cost_relative
+的	u	O	mAux	5	RAD	5	O
+机票	n	O	Lfin	2	POB	2	O
+。	wp	O	mPunc	2	WP	1	O
+
+查询	v	O	Mann	2	HED	1	O
+到	v	O	Root	1	CMP	1	O
+拉萨	ns	S-Ns	Orig	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	1	O
+机票	n	O	Exp	2	VOB	1	O
+。	wp	O	mPunc	2	WP	1	O
+
+到	p	O	Root	1	HED	1	O
+广东	ns	S-Ns	Lfin	1	ATT	3	B-arrival_city
+机票	n	O	eSucc	1	POB	1	O
+。	wp	O	mPunc	1	WP	1	O
+
+上海	ns	S-Ns	Agt	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	9	O
+南京	ns	S-Ns	Loc	9	VOB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+4月	nt	O	Tmod	7	ATT	6	B-start_date
+28	m	O	Seq	7	ATT	7	I-start_date
+号	q	O	Time	9	ATT	9	I-start_date
+的	u	O	mAux	7	RAD	7	O
+机票	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	9	O
+
+5月	nt	O	Tmod	3	ATT	2	B-start_date
+1	m	O	Seq	3	ATT	3	I-start_date
+号	q	O	Tmod	4	ATT	10	I-start_date
+六盘水	ns	S-Ns	Agt	5	SBV	5	B-start_city
+到	v	O	dTime	8	ATT	8	O
+海口	ns	S-Ns	Lfin	5	POB	5	B-arrival_city
+的	u	O	mAux	5	RAD	5	O
+机票	n	O	Exp	10	ATT	10	O
+多少	r	O	Quan	10	ATT	10	O
+钱	n	O	Root	1	HED	1	O
+？	wp	O	mPunc	10	WP	10	O
+
+5月	nt	O	Tmod	3	ATT	3	B-start_date
+2	m	O	Seq	3	ATT	3	I-start_date
+号	q	O	Time	5	ADV	5	I-start_date
+长沙	ns	S-Ns	Loc	5	SBV	5	B-start_city
+飞	v	O	Root	1	HED	1	O
+重庆	ns	S-Ns	Loc	8	ATT	8	B-arrival_city
+几度	m	O	Quan	8	ATT	8	O
+机票	n	O	Exp	5	VOB	5	O
+，	wp	O	mPunc	5	WP	5	O
+啊	u	O	mTone	5	RAD	5	O
+！	wp	O	mPunc	5	WP	5	O
+
+长沙	ns	S-Ns	Lini	2	SBV	2	B-start_city
+飞	v	O	rAgt	5	ATT	5	O
+重庆	ns	S-Ns	Lfin	2	VOB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+飞机票	n	O	Exp	9	ATT	9	O
+5月	nt	O	Tmod	8	ATT	8	B-start_date
+2	m	O	Seq	8	ATT	8	I-start_date
+号	q	O	Time	9	ATT	9	I-start_date
+字	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	9	WP	9	O
+
+查询	v	O	Mann	3	HED	1	O
+西安	ns	S-Ns	Lini	3	SBV	3	B-start_city
+到	v	O	Root	1	ATT	6	O
+广州	ns	S-Ns	Loc	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+飞机票	n	O	Lfin	3	VOB	1	O
+。	wp	O	mPunc	3	WP	1	O
+
+给	p	O	mPrep	2	ADV	3	O
+我	r	O	Datv	3	POB	1	O
+查	v	O	Root	1	HED	1	O
+一下	m	O	mDegr	3	CMP	3	O
+今天	nt	O	Tmod	6	ATT	6	B-start_date
+晚上	nt	O	Time	7	ADV	7	B-start_time
+去	v	O	dMann	3	ATT	10	O
+上海	ns	S-Ns	Loc	10	VOB	7	B-arrival_city
+的	u	O	mAux	8	RAD	7	O
+航班	n	O	Lfin	7	VOB	3	O
+。	wp	O	mPunc	3	WP	3	O
+
+去	v	O	dOrig	4	ATT	4	O
+越南	ns	S-Ns	Lfin	1	VOB	1	B-arrival_city
+的	u	O	mAux	1	RAD	1	O
+飞机票	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	4	WP	4	O
+
+嘉兴	ns	S-Ns	Agt	4	SBV	9	B-start_city
+从	p	O	mPrep	3	ADV	4	O
+合肥	ns	S-Ns	Lini	4	POB	2	B-start_city
+到	p	O	Root	1	ATT	7	O
+青岛	ns	S-Ns	Loc	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+火车	n	O	Dir	4	SBV	9	O
+，	wp	O	mPunc	4	WP	7	O
+破	v	O	eSucc	4	HED	1	O
+航班	n	O	Pat	9	VOB	9	O
+。	wp	O	mPunc	9	WP	9	O
+
+5月	nt	O	Tmod	2	ATT	2	B-start_date
+1号	nt	O	Time	3	ADV	3	I-start_date
+有	v	O	Root	1	HED	1	O
+沈阳	ns	S-Ns	Exp	3	DBL	3	B-start_city
+到	v	O	eSucc	3	ATT	8	O
+南昌	ns	S-Ns	Orig	8	POB	5	B-arrival_city
+的	u	O	mAux	6	RAD	5	O
+机票	n	O	Belg	3	VOB	3	O
+吗	u	O	mTone	3	RAD	3	O
+？	wp	O	mPunc	3	WP	3	O
+
+从	p	O	mPrep	2	ADV	3	O
+快乐	a	O	Sini	3	POB	1	O
+到	p	O	Root	1	ATT	6	O
+四川	ns	S-Ns	Orig	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+航班	n	O	Lfin	3	HED	1	O
+。	wp	O	mPunc	3	WP	6	O
+
+后天	nt	O	Exp	4	ATT	7	B-start_date
+从	p	O	mPrep	3	ADV	4	O
+杭州	ns	S-Ns	Lini	4	POB	2	B-start_city
+到	p	O	Root	1	ATT	7	O
+郑州	ns	S-Ns	Loc	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+飞机票	n	O	Lfin	4	HED	1	O
+。	wp	O	mPunc	4	WP	7	O
+
+迪拜	v	O	Agt	2	ATT	5	O
+到	v	O	Root	1	CMP	1	O
+中国	ns	S-Ns	Poss	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+八	m	O	Seq	2	ATT	2	B-start_date
+号	q	O	Mann	3	ADV	3	I-start_date
+去	v	O	Root	1	ATT	6	O
+北海	ns	S-Ns	Nmod	6	VOB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+航班	n	O	Lfin	3	HED	1	O
+。	wp	O	mPunc	3	WP	6	O
+
+你	r	O	Agt	2	SBV	2	O
+去	v	O	Root	1	HED	1	O
+北京	ns	S-Ns	Lfin	2	VOB	2	B-start_city
+到	v	O	mDir	2	ATT	7	O
+上海	ns	S-Ns	Loc	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+航班	n	O	Lfin	2	VOB	2	O
+。	wp	O	mPunc	2	WP	2	O
+
+我	r	O	Agt	3	SBV	3	O
+要	v	O	mMod	3	ADV	3	O
+查询	v	O	Root	1	HED	1	O
+飞机票	n	O	eEqu	5	ATT	5	O
+上海	ns	S-Ns	Nmod	6	ATT	6	B-start_city
+自	r	O	Datv	3	VOB	3	O
+，	wp	O	mPunc	3	WP	3	O
+贵州	ns	B-Ns	Exp	9	ATT	9	B-arrival_city
+铜仁	ns	I-Ns	dCont	3	ATT	10	I-arrival_city
+大兴镇	ns	E-Ns	Nmod	9	COO	3	I-arrival_city
+。	wp	O	mPunc	3	WP	3	O
+
+我	r	O	Aft	2	SBV	2	O
+想	v	O	Root	1	HED	1	O
+预订	v	O	dCont	2	VOB	2	O
+哈尔滨	ns	S-Ns	Datv	3	VOB	3	B-start_city
+到	v	O	eSucc	3	ATT	8	O
+北京	ns	S-Ns	Orig	8	POB	5	B-arrival_city
+的	u	O	mAux	6	RAD	5	O
+机票	n	O	Lfin	5	VOB	3	O
+。	wp	O	mPunc	2	WP	2	O
+
+坐	v	O	Root	1	HED	1	O
+飞机	n	O	Tool	1	VOB	1	O
+从	p	O	mPrep	4	ADV	5	O
+温州	ns	S-Ns	Lini	5	POB	3	B-start_city
+到	p	O	ePurp	1	ADV	7	O
+成都	ns	S-Ns	Lfin	5	POB	5	B-arrival_city
+要	v	O	mDir	5	COO	1	O
+多少	r	O	Quan	9	ATT	9	O
+钱	n	O	mSepa	5	VOB	7	O
+？	wp	O	mPunc	5	WP	1	O
+
+查	v	O	Root	1	HED	1	O
+5月	nt	O	Tmod	4	ATT	3	B-start_date
+5	m	O	Seq	4	ATT	4	I-start_date
+号	q	O	Time	6	ATT	6	I-start_date
+的	u	O	mAux	4	RAD	4	O
+航班	n	O	Cont	1	VOB	1	O
+。	wp	O	mPunc	1	WP	1	O
+
+重庆	ns	S-Ns	Agt	2	ATT	5	B-start_city
+到	p	O	Root	1	ATT	5	O
+石家庄	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+浦东	ns	S-Ns	Nmod	2	ATT	2	B-start_airport
+机场	n	O	Agt	3	SBV	3	I-start_airport
+到	v	O	Root	1	HED	1	O
+南充	ns	S-Ns	Nmod	5	ATT	5	B-arrival_airport
+机场	n	O	Lfin	3	ATT	6	I-arrival_airport
+飞机票	n	O	eSucc	3	POB	3	O
+。	wp	O	mPunc	6	WP	3	O
+
+5月	nt	O	Tmod	3	ATT	3	B-start_date
+2	m	O	Seq	3	ATT	3	I-start_date
+号	q	O	Time	5	ATT	8	I-start_date
+西安	ns	S-Ns	Lini	5	SBV	5	B-start_city
+到	v	O	Root	1	ATT	8	O
+哈尔滨	ns	S-Ns	Nmod	8	POB	5	B-arrival_city
+的	u	O	mAux	6	RAD	5	O
+航班	n	O	Lfin	5	HED	1	O
+。	wp	O	mPunc	5	WP	8	O
+
+四川	ns	B-Ns	Nmod	2	ATT	2	B-start_city
+南充	ns	E-Ns	Agt	3	SBV	3	B-start_city
+到	v	O	dDesc	6	ATT	8	O
+上海	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+机票	n	O	Exp	8	ATT	8	O
+六	m	O	Seq	8	ATT	8	B-start_date
+号	q	O	Root	1	HED	1	I-start_date
+。	wp	O	mPunc	8	WP	8	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查	v	O	ePurp	1	VOB	1	O
+一下	m	O	mDegr	3	CMP	3	O
+徐州	ns	S-Ns	Loc	6	SBV	6	B-start_city
+到	v	O	dCont	3	ATT	9	O
+西安	ns	S-Ns	Orig	9	POB	6	B-arrival_city
+的	u	O	mAux	7	RAD	6	O
+机票	n	O	Exp	6	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+上海	ns	S-Ns	Loc	2	ATT	6	B-start_city
+到	p	O	dOrig	6	ATT	5	O
+贵阳	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+飞机票	n	O	Desc	6	ATT	6	O
+价格	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	6	WP	6	O
+
+沈阳	ns	S-Ns	Lini	2	ATT	5	B-start_city
+到	v	O	Root	1	ATT	5	O
+上海	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+你	r	O	Agt	2	SBV	4	O
+靠	p	O	Root	1	ADV	4	O
+沈阳	ns	S-Ns	Datv	2	POB	2	B-start_city
+到	v	O	eSucc	2	ATT	7	O
+大连	ns	S-Ns	Orig	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+机票	n	O	Lfin	4	HED	1	O
+。	wp	O	mPunc	4	WP	7	O
+
+上海	ns	S-Ns	Agt	2	SBV	2	B-start_city
+飞	v	O	Root	1	ATT	5	O
+纽约	ns	S-Ns	Loc	5	VOB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+机票	n	O	Pat	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+广州	ns	S-Ns	Agt	2	ATT	5	B-start_city
+到	p	O	Root	1	ATT	5	O
+潮州	ns	S-Ns	Poss	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+南昌	ns	S-Ns	Agt	2	ATT	5	B-start_city
+去	v	O	Root	1	ATT	5	O
+阜阳	ns	S-Ns	Nmod	5	VOB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+义乌	ns	S-Ns	Loc	2	SBV	2	B-start_city
+到	v	O	Root	1	HED	1	O
+香港	ns	S-Ns	Nmod	4	ATT	4	B-arrival_city
+航班	n	O	Lfin	2	POB	2	O
+。	wp	O	mPunc	2	WP	2	O
+
+下	nd	O	Desc	3	ADV	6	O
+一	m	O	Quan	3	ATT	3	O
+周	q	O	Time	6	ATT	4	O
+义	n	O	Nmod	5	SBV	6	O
+乌	j	O	Agt	6	SBV	6	O
+到	v	O	Root	1	HED	1	O
+香港	ns	S-Ns	Nmod	8	ATT	8	B-arrival_city
+航班	n	O	Lfin	6	POB	6	O
+。	wp	O	mPunc	6	WP	6	O
+
+30	m	O	Seq	2	ATT	2	B-start_date
+号	q	O	Time	8	ATT	3	I-start_date
+黄浩特	nh	S-Nh	Nmod	2	SBV	4	B-start_city
+到	v	O	mDir	2	HED	1	O
+，	wp	O	mPunc	2	WP	4	O
+上海	ns	S-Ns	Orig	8	ATT	8	B-arrival_city
+的	u	O	mAux	6	RAD	6	O
+机票	n	O	Root	1	COO	4	O
+。	wp	O	mPunc	8	WP	4	O
+
+我	r	O	Agt	2	SBV	2	O
+去	v	O	Root	1	HED	1	O
+北京	ns	S-Ns	Lfin	2	VOB	2	B-arrival_city
+坐	v	O	ePurp	2	COO	2	O
+飞机	n	O	Cont	4	VOB	4	O
+。	wp	O	mPunc	4	WP	2	O
+
+深圳	ns	S-Ns	Nmod	2	ATT	2	B-start_airport
+机场	n	O	Agt	3	SBV	5	I-start_airport
+到	p	O	dExp	7	ADV	5	O
+南澳	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+有	v	O	mVain	7	HED	1	O
+多	d	O	mDegr	7	ADV	7	O
+远	a	O	Root	1	CMP	5	O
+？	wp	O	mPunc	7	WP	5	O
+一	m	O	Comp	7	COO	5	O
+。	wp	O	mPunc	9	WP	5	O
+
+沈阳	ns	S-Ns	Lini	2	ATT	5	B-start_city
+飞	v	O	dExp	6	ATT	5	O
+无锡	ns	S-Ns	Nmod	4	ATT	4	B-arrival_city
+航班	n	O	Desc	5	ATT	5	O
+号	n	O	Lfin	2	SBV	6	O
+是	v	O	Root	1	HED	1	O
+多少	r	O	mTone	6	VOB	6	O
+？	wp	O	mPunc	6	WP	6	O
+
+今天	nt	O	Time	1	ATT	6	B-start_date
+沈阳	ns	B-Ni	Loc	5	ATT	3	B-start_city
+飞无锡	nz	E-Ni	Nmod	5	ATT	5	O
+ZH9515	ws	O	Nmod	5	ATT	5	O
+航班	n	O	Exp	1	ATT	6	O
+动态	n	O	Root	1	HED	1	O
+
+沈阳	ns	S-Ns	Agt	2	SBV	2	B-start_city
+飞	v	O	Root	1	HED	1	O
+无锡	ns	S-Ns	Nmod	4	ATT	4	B-arrival_city
+航班	n	O	Desc	5	ATT	6	O
+ZH9750	ws	O	Desc	1	ATT	6	O
+动态	n	O	Dir	2	VOB	2	O
+
+丽江	ns	S-Ns	Lini	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+昆明	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+我	r	O	Agt	5	SBV	3	O
+要	v	O	mMod	5	ADV	3	O
+坐	v	O	dMann	5	HED	1	O
+飞机	n	O	Pat	3	VOB	3	O
+去	v	O	Root	1	COO	3	O
+海南	ns	S-Ns	Lfin	5	VOB	5	B-arrival_city
+，	wp	O	mPunc	5	WP	3	O
+那	r	O	Exp	10	SBV	15	O
+就	d	O	mMod	10	ADV	15	O
+在	p	O	eSucc	5	ADV	15	O
+龙床	n	O	Loc	10	POB	10	O
+，	wp	O	mPunc	10	WP	10	O
+把	p	O	mPrep	14	ADV	15	O
+你	r	O	Pat	15	POB	13	O
+抛弃	v	O	eSucc	10	COO	3	O
+。	wp	O	mPunc	15	WP	3	O
+
+济南	ns	S-Ns	Agt	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+韩国	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+机票	n	O	Cont	7	ATT	7	O
+多少	r	O	Quan	7	ATT	7	O
+钱	n	O	eSucc	2	HED	1	O
+？	wp	O	mPunc	7	WP	7	O
+
+你	r	O	Agt	3	ATT	2	O
+本人	r	O	eEqu	1	ATT	6	O
+到	v	O	Root	1	ATT	6	O
+美国	ns	S-Ns	Poss	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+航班	n	O	Lfin	3	HED	1	O
+。	wp	O	mPunc	3	WP	6	O
+
+给	p	O	Root	1	ADV	3	O
+我	r	O	Datv	1	POB	1	O
+给	v	O	mPrep	6	ADV	7	O
+我	r	O	Poss	6	IOB	3	O
+今	nt	O	Nmod	6	ATT	6	B-start_date
+江苏	ns	S-Ns	Datv	7	VOB	3	B-start_city
+玩	v	O	ePurp	1	HED	1	O
+了	u	O	mTime	7	RAD	7	O
+去	v	O	dDesc	12	ATT	12	O
+美国	ns	S-Ns	Lfin	9	VOB	9	B-arrival_city
+的	u	O	mAux	9	RAD	9	O
+机票	n	O	Cont	7	VOB	7	O
+。	wp	O	mPunc	7	WP	7	O
+
+宁波	ns	S-Ns	Lini	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+济南	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+至	p	O	mPrep	4	ATT	4	O
+北京	ns	S-Ns	Loc	4	POB	1	B-arrival_city
+的	u	O	mAux	2	RAD	1	O
+航班	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	4	WP	4	O
+
+从	p	O	mPrep	2	ADV	3	O
+北京	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	dOrig	7	HED	1	O
+纽约	ns	S-Ns	Lfin	3	ATT	5	B-arrival_city
+机票	n	O	eSucc	3	ATT	7	O
+多少	r	O	Quan	7	ATT	7	O
+钱	n	O	Root	1	POB	3	O
+？	wp	O	mPunc	7	WP	3	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Poss	3	ATT	3	O
+弟	n	O	Datv	1	VOB	1	O
+，	wp	O	mPunc	1	WP	1	O
+一	m	O	Quan	6	ATT	6	O
+张	q	O	Qp	10	ATT	9	O
+明天	nt	O	Time	10	ATT	8	B-start_date
+早上	nt	O	Tmod	9	ATT	9	B-start_time
+八点	nt	O	Time	10	ADV	10	I-start_time
+到	p	O	eSucc	1	COO	1	O
+，	wp	O	mPunc	10	WP	10	O
+安徽	ns	B-Ns	Nmod	13	ATT	13	B-arrival_city
+亳州	ns	E-Ns	Orig	15	ATT	15	I-arrival_city
+的	u	O	mAux	13	RAD	13	O
+机票	n	O	eCoo	10	COO	10	O
+。	wp	O	mPunc	15	WP	1	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+订购	v	O	ePurp	1	VOB	1	O
+去	v	O	dDesc	7	CMP	3	O
+北京	ns	S-Ns	Lfin	4	VOB	4	B-arrival_city
+的	u	O	mAux	4	RAD	4	O
+机票	n	O	Pat	3	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+看	v	O	eSucc	1	VOB	1	O
+一下	m	O	mDegr	3	CMP	3	O
+广州	ns	S-Ns	Loc	6	ATT	9	B-start_city
+到	p	O	dTime	9	ATT	9	O
+襄阳	ns	S-Ns	Lfin	6	POB	6	B-arrival_city
+的	u	O	mAux	6	RAD	6	O
+机票	n	O	Cont	3	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+上海	ns	S-Ns	Loc	2	ATT	5	B-start_city
+到	p	O	dDesc	5	ATT	5	O
+昆明	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+机票	n	O	Exp	7	HED	1	O
+，	wp	O	mPunc	5	WP	5	O
+二	m	O	Root	1	COO	5	O
+。	wp	O	mPunc	7	WP	5	O
+
+从	p	O	mPrep	3	ADV	4	O
+上海	ns	B-Ns	Loc	3	ATT	3	B-start_city
+虹桥	ns	E-Ns	Lini	4	POB	1	B-start_airport
+到	v	O	dOrig	8	HED	1	O
+甘肃	ns	S-Ns	Lfin	4	ATT	7	B-arrival_city
+的	u	O	mAux	4	RAD	5	O
+飞机票	n	O	Desc	8	ATT	8	O
+单程	n	O	Root	1	POB	4	O
+。	wp	O	mPunc	8	WP	4	O
+
+给	p	O	Root	1	ADV	3	O
+我	r	O	Datv	1	POB	1	O
+订	v	O	ePurp	1	HED	1	O
+一	m	O	Quan	5	ATT	5	O
+张	q	O	Qp	8	ATT	8	O
+广州	ns	S-Ns	Loc	8	ATT	8	B-arrival_city
+的	u	O	mAux	6	RAD	6	O
+飞机票	n	O	Pat	3	VOB	3	O
+。	wp	O	mPunc	3	WP	3	O
+
+南充	ns	S-Ns	Agt	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+北京	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+从	p	O	mPrep	2	ADV	3	O
+杭州	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	dDesc	6	ATT	6	O
+合肥	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+航班	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	6	WP	6	O
+
+明天	nt	O	Time	3	ADV	3	B-start_date
+太原	ns	S-Ns	Lini	3	ADV	3	B-start_city
+到	v	O	Root	1	ATT	6	O
+杭州	ns	S-Ns	Nmod	1	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+飞机	n	O	Lfin	3	HED	1	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查	v	O	eSucc	1	VOB	1	O
+5月	nt	O	Tmod	5	ATT	5	B-start_date
+2	m	O	Seq	6	ATT	6	I-start_date
+号	q	O	rAgt	11	ATT	7	I-start_date
+合肥	ns	S-Ns	Lfin	6	VOB	3	B-start_city
+到	v	O	eSucc	6	ATT	11	O
+晋江	ns	S-Ns	Poss	11	POB	8	B-arrival_city
+的	u	O	mAux	9	RAD	8	O
+航班	n	O	Cont	3	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查	v	O	eSucc	1	VOB	1	O
+一下	m	O	mDegr	3	CMP	3	O
+深圳	ns	S-Ns	Lini	6	SBV	6	B-start_city
+到	v	O	dDesc	9	ATT	9	O
+北京	ns	S-Ns	Lfin	6	POB	6	B-arrival_city
+的	u	O	mAux	6	RAD	6	O
+飞机	n	O	Cont	3	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+给	p	O	Root	1	ADV	3	O
+我	r	O	Datv	1	POB	1	O
+查	v	O	ePurp	1	HED	1	O
+一下	m	O	mDegr	3	CMP	3	O
+6月	nt	O	Tmod	6	ATT	7	B-start_date
+2	m	O	Seq	7	ATT	7	I-start_date
+号	q	O	Time	9	ATT	8	I-start_date
+济南	ns	S-Ns	Loc	9	SBV	9	B-start_city
+到	v	O	dDesc	12	ATT	12	O
+鸡西	ns	S-Ns	Lfin	9	POB	9	B-arrival_city
+的	u	O	mAux	9	RAD	9	O
+飞机票	n	O	Cont	3	VOB	3	O
+。	wp	O	mPunc	3	WP	3	O
+
+从	p	O	mPrep	2	ADV	3	O
+上海	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	Root	1	ATT	6	O
+海南	ns	S-Ns	Nmod	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+飞机	n	O	Lfin	3	HED	1	O
+。	wp	O	mPunc	3	WP	6	O
+
+北京	ns	S-Ns	Lini	2	SBV	2	B-start_city
+到	v	O	dDesc	5	ATT	5	O
+上海	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+航班	n	O	Root	1	HED	1	O
+啊	u	O	mTone	5	RAD	5	O
+！	wp	O	mPunc	5	WP	5	O
+
+快	d	O	Mann	2	ADV	2	O
+到	v	O	rLfin	5	ADV	6	O
+北京	ns	S-Ns	Lfin	2	ATT	5	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+飞机	n	O	Exp	6	POB	2	O
+要	v	O	Root	1	HED	1	O
+多少	r	O	Quan	6	ATT	10	O
+多	d	O	Quan	9	ADV	9	O
+长	a	O	Desc	10	ATT	10	O
+时间	n	O	TDur	6	VOB	6	O
+？	wp	O	mPunc	6	WP	6	O
+
+帮	v	O	rAgt	9	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查	v	O	eSucc	1	VOB	1	O
+一下	m	O	mDegr	3	CMP	3	O
+杭州	ns	S-Ns	Loc	6	SBV	6	B-start_city
+去	v	O	dCont	3	ATT	9	O
+贵阳	ns	S-Ns	Lfin	6	VOB	6	B-arrival_city
+的	u	O	mAux	6	RAD	6	O
+飞机票	n	O	Root	1	VOB	3	O
+。	wp	O	mPunc	9	WP	1	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查	v	O	ePurp	1	VOB	1	O
+一下	m	O	mDegr	3	CMP	3	O
+，	wp	O	mPunc	3	WP	1	O
+昆明	ns	S-Ns	Loc	7	ADV	7	B-start_city
+到	v	O	eSucc	3	ATT	10	O
+郑州	ns	S-Ns	Orig	10	POB	7	B-arrival_city
+的	u	O	mAux	8	RAD	7	O
+机票	n	O	Lfin	7	COO	1	O
+。	wp	O	mPunc	7	WP	1	O
+
+查	v	O	Root	1	HED	1	O
+一下	m	O	mDegr	1	CMP	1	O
+国庆	nt	O	TDur	1	ADV	4	B-start_date
+到	v	O	eSucc	1	ATT	7	O
+桂林	ns	S-Ns	Loc	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+飞机票	n	O	Lfin	4	VOB	1	O
+。	wp	O	mPunc	4	WP	1	O
+
+查	v	O	Root	1	HED	1	O
+一下	m	O	mDegr	1	CMP	1	O
+明天	nt	O	Time	5	ADV	5	B-start_date
+南京	ns	S-Ns	Agt	5	SBV	5	B-start_city
+到	v	O	dCont	1	ATT	8	O
+福州	ns	S-Ns	Datv	8	POB	5	B-arrival_city
+的	u	O	mAux	6	RAD	5	O
+航班	n	O	Lfin	5	VOB	1	O
+。	wp	O	mPunc	1	WP	1	O
+
+深圳	ns	S-Ns	Agt	2	ATT	5	B-start_city
+到	p	O	Root	1	ATT	5	O
+郑州	ns	S-Ns	Loc	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机票	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+我	r	O	Aft	2	SBV	2	O
+想	v	O	Root	1	HED	1	O
+要	v	O	mMod	4	ADV	4	O
+问	v	O	dCont	2	VOB	2	O
+一下	m	O	mDegr	4	CMP	4	O
+从	p	O	mPrep	7	ADV	8	O
+上海	ns	S-Ns	Lini	8	POB	6	B-start_city
+到	p	O	dCont	4	ATT	11	O
+昆明	ns	S-Ns	Lfin	8	POB	8	B-arrival_city
+的	u	O	mAux	8	RAD	8	O
+机票	n	O	Cont	4	SBV	12	O
+要	v	O	eSucc	4	VOB	4	O
+多少	r	O	Quan	14	ATT	14	O
+钱	n	O	Cont	12	VOB	12	O
+？	wp	O	mPunc	2	WP	2	O
+
+人	n	O	Agt	7	SBV	9	O
+要	v	O	mMod	7	ADV	9	O
+在	p	O	mPrep	4	ADV	9	O
+多伦多	ns	S-Ns	Loc	7	POB	3	B-start_airport
+，	wp	O	mPunc	4	WP	3	I-start_airport
+机场	n	O	Loc	7	ATT	7	O
+转机	n	O	Root	1	SBV	9	O
+，	wp	O	mPunc	7	WP	7	O
+到	v	O	eSucc	7	HED	1	O
+香港	ns	S-Ns	Lfin	9	POB	9	B-arrival_city
+。	wp	O	mPunc	9	WP	9	O
+
+从	p	O	mPrep	2	ADV	3	O
+邯郸	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	dDesc	6	ATT	6	O
+美国	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+机票	n	O	Exp	7	SBV	7	O
+是	v	O	Root	1	HED	1	O
+多少	r	O	Quan	9	ATT	9	O
+钱	n	O	Clas	7	VOB	7	O
+？	wp	O	mPunc	7	WP	7	O
+
+查	v	O	Root	1	ATT	2	O
+航班	n	O	Cont	1	SBV	5	O
+后天	nt	O	Agt	5	ADV	5	B-start_date
+福州	ns	S-Ns	Nmod	3	SBV	5	B-start_city
+到	v	O	eSucc	1	HED	1	O
+贵阳	ns	S-Ns	Lfin	5	VOB	5	B-arrival_city
+。	wp	O	mPunc	5	WP	5	O
+
+请	v	O	mMod	2	HED	1	O
+查	v	O	Root	1	VOB	1	O
+一下	m	O	mDegr	2	CMP	2	O
+郑州	ns	S-Ns	Lini	5	ADV	5	B-start_city
+到	v	O	dCont	2	ATT	8	O
+广州	ns	S-Ns	Nmod	8	POB	5	B-arrival_city
+的	u	O	mAux	6	RAD	5	O
+航班	n	O	Lfin	5	VOB	2	O
+。	wp	O	mPunc	2	WP	1	O
+
+从	p	O	mPrep	2	ADV	7	O
+菏泽	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	dExp	9	ADV	7	O
+郑州	ns	B-Ns	Nmod	6	ATT	6	B-arrival_city
+新郑	ns	I-Ns	Nmod	6	ATT	6	B-arrival_airport
+机场	n	E-Ns	Lfin	3	POB	3	I-arrival_airport
+有	v	O	mVain	9	HED	1	O
+多	d	O	mDegr	9	ADV	9	O
+远	a	O	Root	1	VOB	7	O
+？	wp	O	mPunc	9	WP	7	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+定	v	O	ePurp	1	VOB	1	O
+一个	m	O	Qp	9	ATT	9	O
+明天	nt	O	Time	6	ADV	6	B-start_date
+去	v	O	rAgt	9	ATT	9	O
+广州	ns	S-Ns	Lfin	6	VOB	6	B-arrival_city
+的	u	O	mAux	6	RAD	6	O
+飞机	n	O	Cont	3	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+广州	ns	B-Ns	Nmod	2	ATT	2	B-start_city
+南站	ns	E-Ns	Loc	3	SBV	3	I-start_city
+到	v	O	Root	1	ATT	7	O
+英德	ns	S-Ns	Loc	7	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+高铁	n	O	Desc	7	ATT	7	O
+航班	n	O	Lfin	3	HED	1	O
+。	wp	O	mPunc	3	WP	7	O
+
+五月一号	nz	O	Nmod	2	ATT	2	B-start_date
+天津	ns	S-Ns	Agt	3	SBV	3	B-start_city
+到	v	O	Root	1	HED	1	O
+深圳	ns	S-Ns	Lfin	3	ATT	5	B-arrival_city
+机票	n	O	Cont	3	POB	3	O
+
+你	r	O	Agt	4	SBV	4	O
+给	p	O	mPrep	3	ADV	4	O
+我	r	O	Datv	4	POB	2	O
+搜	v	O	Root	1	HED	1	O
+一下	m	O	mDegr	4	CMP	4	O
+现在	nt	O	Time	8	ATT	14	B-start_date
+临沂	ns	S-Ns	Agt	8	ATT	14	B-start_city
+到	p	O	dCont	4	ATT	14	O
+青岛	ns	S-Ns	Sco	14	POB	8	B-arrival_city
+的	u	O	mAux	9	RAD	8	O
+那个	r	O	Sco	14	ATT	14	O
+北京	ns	S-Ns	Loc	14	ATT	14	B-arrival_city
+的	u	O	mAux	12	RAD	12	O
+机票	n	O	Lfin	8	VOB	4	O
+。	wp	O	mPunc	4	WP	4	O
+
+查	v	O	Root	1	HED	1	O
+一	m	O	Quan	3	ATT	3	O
+下	q	O	Qp	8	CMP	1	O
+大连	ns	S-Ns	Lini	5	SBV	5	B-start_city
+飞	v	O	dDesc	8	ATT	8	O
+深圳	ns	S-Ns	Lfin	5	VOB	5	B-arrival_city
+的	u	O	mAux	5	RAD	5	O
+飞机	n	O	Cont	1	VOB	1	O
+。	wp	O	mPunc	1	WP	1	O
+
+请	v	O	mMod	2	HED	1	O
+到	v	O	mPrep	5	CMP	1	O
+贵州	ns	S-Ns	Loc	5	ATT	5	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+机票	n	O	Pat	6	POB	2	O
+还有	v	O	Root	1	VOB	1	O
+吗	u	O	mTone	6	RAD	6	O
+？	wp	O	mPunc	6	WP	1	O
+
+天津	ns	S-Ns	Loc	2	SBV	2	B-start_city
+有	v	O	Root	1	HED	1	O
+飞机	n	O	Exp	2	VOB	2	O
+吗	u	O	mTone	2	RAD	2	O
+？	wp	O	mPunc	2	WP	2	O
+
+给	p	O	Root	1	ADV	3	O
+我	r	O	Datv	1	POB	1	O
+订	v	O	ePurp	1	HED	1	O
+张	nh	S-Nh	Agt	5	VOB	3	O
+去	v	O	dDesc	8	ATT	8	O
+上海	ns	S-Ns	Lfin	5	VOB	5	B-arrival_city
+的	u	O	mAux	5	RAD	5	O
+机票	n	O	Pat	3	VOB	3	O
+。	wp	O	mPunc	3	WP	3	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查	v	O	eSucc	1	VOB	1	O
+一下	m	O	mDegr	3	CMP	3	O
+郑州	ns	S-Ns	Lini	6	ADV	6	B-start_city
+至	p	O	dCont	3	ATT	9	O
+贵阳	ns	S-Ns	Sco	9	POB	6	B-arrival_city
+的	u	O	mAux	7	RAD	6	O
+机票	n	O	Lfin	6	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+到	p	O	Root	1	HED	1	O
+南昌	ns	S-Ns	Lfin	1	ATT	3	B-arrival_city
+飞机票	n	O	Lfin	1	ATT	5	O
+多少	r	O	Quan	5	ATT	5	O
+钱	n	O	mSepa	1	POB	1	O
+？	wp	O	mPunc	1	WP	1	O
+
+请问	v	O	Root	1	HED	1	O
+思南	ns	S-Ns	Lini	3	SBV	3	B-start_city
+到	v	O	dLoc	6	ATT	6	O
+中山	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+退	v	O	Desc	7	SBV	8	O
+机票	n	O	Exp	9	VOB	6	O
+是	v	O	mMod	9	VOB	1	O
+多少	r	O	dCont	1	VOB	8	O
+？	wp	O	mPunc	1	WP	1	O
+
+杭州	ns	S-Ns	Loc	2	SBV	2	B-start_city
+到	v	O	Root	1	HED	1	O
+郑州	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+机票	n	O	eSucc	2	ATT	5	O
+多少	r	O	mTone	4	VOB	2	O
+？	wp	O	mPunc	4	WP	2	O
+
+30	m	O	Seq	2	ATT	2	B-start_date
+号	q	O	Qp	3	ATT	3	I-start_date
+温州	ns	S-Ns	Agt	4	ATT	7	B-start_city
+到	v	O	Root	1	ATT	7	O
+北京	ns	S-Ns	Nmod	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+飞机	n	O	Lfin	4	HED	1	O
+。	wp	O	mPunc	4	WP	7	O
+
+明天	nt	O	Time	6	ADV	8	B-start_date
+从	p	O	mPrep	5	ADV	6	O
+宁波	ns	B-Ns	Nmod	4	ATT	4	B-start_city
+栎社	n	I-Ns	Nmod	5	ATT	5	B-start_airport
+机场	n	E-Ns	Lini	6	POB	2	I-start_airport
+到	p	O	Root	1	ADV	8	O
+重庆	ns	S-Ns	Lfin	6	POB	6	B-arrival_city
+有	v	O	eSucc	6	HED	1	O
+打折	v	O	Desc	11	ATT	11	O
+的	u	O	mAux	9	RAD	9	O
+机票	n	O	Belg	8	VOB	8	O
+吗	u	O	mTone	8	RAD	8	O
+？	wp	O	mPunc	8	WP	8	O
+
+贵阳	ns	S-Ns	Loc	3	ATT	3	B-arrival_city
+的	u	O	mAux	1	RAD	1	O
+飞机票	n	O	Exp	4	SBV	4	O
+是	v	O	Root	1	HED	1	O
+多少	r	O	mTone	4	VOB	4	O
+？	wp	O	mPunc	4	WP	4	O
+
+明天	nt	O	Tmod	2	ATT	2	B-start_date
+中午	nt	O	Tmod	3	ATT	3	B-start_time
+十二点	nt	O	Tmod	4	ADV	5	I-start_time
+左右	m	O	Time	7	RAD	3	O
+有	v	O	eSelt	7	HED	1	O
+没	d	O	mNeg	7	ADV	7	O
+有	v	O	Root	1	COO	5	O
+去	v	O	dDesc	11	ATT	11	O
+北京	ns	S-Ns	Lfin	8	VOB	8	B-arrival_city
+的	u	O	mAux	8	RAD	8	O
+机票	n	O	Exp	7	VOB	7	O
+？	wp	O	mPunc	7	WP	5	O
+
+南昌	ns	S-Ns	Agt	2	SBV	2	B-start_city
+到	v	O	Root	1	HED	1	O
+乌鲁木齐	ns	S-Ns	Lfin	2	ATT	4	B-arrival_city
+飞机票	n	O	eSucc	2	POB	2	O
+。	wp	O	mPunc	4	WP	2	O
+
+北京	ns	S-Ns	Lini	2	ADV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+南京	ns	S-Ns	Sco	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+机票	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+北京	ns	S-Ns	Loc	2	ATT	5	B-start_city
+到	p	O	Root	1	ATT	5	O
+大同	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+查询	v	O	Mann	4	HED	1	O
+从	p	O	mPrep	3	ADV	4	O
+郑州	ns	S-Ns	Lini	4	POB	2	B-start_city
+到	p	O	Root	1	ATT	7	O
+厦门	ns	S-Ns	Orig	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+航班	n	O	Lfin	4	VOB	1	O
+。	wp	O	mPunc	4	WP	1	O
+
+哈尔滨	ns	S-Ns	Agt	2	ADV	2	B-start_city
+到	v	O	dOrig	5	ATT	5	O
+鸡西	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+飞机票	n	O	Exp	7	ATT	7	O
+多	a	O	Quan	7	ATT	7	O
+钱	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	7	WP	7	O
+
+从	p	O	mPrep	4	ADV	5	O
+上海	ns	B-Ns	Nmod	3	ATT	3	B-start_city
+浦东	ns	I-Ns	Nmod	4	ATT	4	B-start_airport
+机场	n	E-Ns	Lini	12	POB	1	I-start_airport
+到	v	O	mPrep	11	ADV	12	O
+四川	ns	B-Ns	Nmod	7	ATT	7	B-arrival_city
+双流	ns	I-Ns	Nmod	8	ATT	8	B-arrival_airport
+机场	n	E-Ns	Poss	9	ATT	9	I-arrival_airport
+价格	n	O	Desc	11	ATT	11	O
+多少	r	O	Quan	11	ATT	11	O
+钱	n	O	Tool	12	POB	5	O
+坐	v	O	Root	1	HED	1	O
+飞机	n	O	Tool	12	VOB	12	O
+？	wp	O	mPunc	12	WP	12	O
+
+从	p	O	mPrep	2	ADV	3	O
+首都	n	O	Lini	3	POB	1	B-start_city
+到	p	O	Root	1	ATT	6	O
+郑州	ns	S-Ns	Nmod	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+机票	n	O	Sfin	3	HED	1	O
+。	wp	O	mPunc	3	WP	6	O
+
+三亚	ns	S-Ns	Loc	2	ADV	2	B-start_city
+到	v	O	rAgt	5	ATT	5	O
+西安	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+飞机票	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	5	WP	5	O
+
+呼和浩特	ns	S-Ns	Lini	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+通辽	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机票	n	O	Lfin	2	ATT	7	O
+多少	r	O	Quan	7	ATT	7	O
+钱	n	O	mSepa	2	HED	1	O
+？	wp	O	mPunc	2	WP	7	O
+
+阴道	n	O	Exp	3	ATT	3	O
+大	a	O	Desc	3	ATT	3	O
+图	n	O	Root	1	ATT	6	O
+明天	nt	O	Time	6	ATT	6	B-start_date
+的	u	O	mAux	4	RAD	4	O
+航班	n	O	Cont	3	HED	1	O
+。	wp	O	mPunc	3	WP	6	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查	v	O	eSucc	1	VOB	1	O
+一下	m	O	mDegr	3	CMP	3	O
+5月	nt	O	Tmod	6	ATT	6	B-start_date
+23号	nt	O	Time	7	ADV	7	I-start_date
+到	v	O	dCont	3	ATT	10	O
+济南	ns	S-Ns	Orig	10	POB	7	B-arrival_city
+的	u	O	mAux	8	RAD	7	O
+机票	n	O	Lfin	7	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查	v	O	eSucc	1	VOB	1	O
+一下	m	O	mDegr	3	CMP	3	O
+明天	nt	O	Time	7	ATT	11	B-start_date
+天津	ns	S-Ns	Loc	7	ATT	11	B-start_city
+到	p	O	dDesc	11	ATT	11	O
+吉林市	ns	S-Ns	Lfin	7	POB	7	B-arrival_city
+的	u	O	mAux	7	RAD	7	O
+航班	n	O	Desc	11	ATT	11	O
+情况	n	O	Cont	3	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+长沙	ns	S-Ns	Lini	2	SBV	2	B-start_city
+飞往	v	O	rExp	5	ATT	5	O
+重庆	ns	S-Ns	Lfin	2	VOB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+飞机	n	O	Exp	8	SBV	6	O
+还有	v	O	mMod	8	HED	1	O
+没	d	O	mNeg	8	ADV	8	O
+有	v	O	Root	1	COO	6	O
+？	wp	O	mPunc	8	WP	6	O
+
+4月	nt	O	Tmod	2	ATT	2	B-start_date
+30号	nt	O	Time	4	ADV	4	I-start_date
+香港	ns	S-Ns	Agt	4	SBV	4	B-start_city
+到	v	O	Root	1	ATT	7	O
+武汉	ns	S-Ns	Poss	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+航班	n	O	Lfin	4	HED	1	O
+。	wp	O	mPunc	4	WP	7	O
+
+晋江	ns	S-Ns	Agt	2	ATT	5	B-start_city
+到	v	O	Root	1	ATT	5	O
+开县	ns	S-Ns	Poss	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+从	p	O	mPrep	2	ADV	3	O
+郑州	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	Root	1	ATT	6	O
+北京	ns	S-Ns	Nmod	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+飞机	n	O	Lfin	3	HED	1	O
+。	wp	O	mPunc	3	WP	6	O
+
+昆明	ns	S-Ns	Loc	2	SBV	2	B-start_city
+到	v	O	Root	1	HED	1	O
+曼谷	ns	S-Ns	Nmod	4	ATT	4	B-arrival_city
+后天	n	O	Poss	6	ATT	6	O
+的	u	O	mAux	4	RAD	4	O
+航班	n	O	Lfin	2	POB	2	O
+。	wp	O	mPunc	2	WP	2	O
+
+湛江	ns	S-Ns	Agt	2	ADV	2	B-start_city
+至	p	O	rLfin	5	ATT	5	O
+成都	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+飞机票	n	O	Exp	6	SBV	6	O
+是	v	O	Root	1	HED	1	O
+多少	r	O	Quan	8	ATT	8	O
+钱	n	O	Clas	6	VOB	6	O
+？	wp	O	mPunc	6	WP	6	O
+
+昆明	ns	S-Ns	Loc	2	ADV	2	B-start_city
+到	v	O	dDesc	5	ATT	5	O
+延安	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+机票	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	5	WP	5	O
+
+从	p	O	mPrep	2	ADV	3	O
+新疆	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	dOrig	6	ATT	6	O
+昆明	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+飞机票	n	O	Exp	8	SBV	8	O
+，	wp	O	mPunc	6	WP	6	O
+是	v	O	Root	1	HED	1	O
+多少	r	O	mTone	8	VOB	8	O
+？	wp	O	mPunc	8	WP	8	O
+
+天津	ns	S-Ns	Agt	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+上海	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+从	p	O	mPrep	2	ADV	3	O
+新疆	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	dDesc	12	ADV	13	O
+昆明	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+和	c	O	mConj	6	LAD	6	O
+成都	ns	S-Ns	eCoo	4	COO	4	B-arrival_city
+这	r	O	Sco	9	ATT	9	O
+几	m	O	Quan	9	ATT	9	O
+天	q	O	Time	12	ATT	12	O
+的	u	O	mAux	9	RAD	9	O
+飞机票	n	O	Desc	12	ATT	12	O
+价格	n	O	Exp	13	SBV	13	O
+是	v	O	Root	1	HED	1	O
+多少	r	O	mTone	13	VOB	13	O
+
+新疆	ns	S-Ns	Agt	2	SBV	2	B-start_city
+到	v	O	rLfin	5	ATT	5	O
+昆明	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+飞机票	n	O	Exp	6	SBV	6	O
+是	v	O	Root	1	HED	1	O
+什么	r	O	Sco	1	ATT	8	O
+价格	n	O	Clas	6	VOB	6	O
+
+成都	ns	S-Ns	Agt	2	SBV	2	B-start_city
+到	p	O	Root	1	HED	1	O
+乌鲁木齐	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+机票	n	O	eSucc	2	ATT	6	O
+多少	r	O	Quan	6	ATT	6	O
+钱	n	O	eCoo	4	POB	2	O
+？	wp	O	mPunc	2	WP	2	O
+
+7月	nt	O	Time	5	ATT	3	B-start_date
+17	m	O	Seq	3	ATT	3	I-start_date
+号	q	O	dMann	5	ADV	5	I-start_date
+上海	ns	S-Ns	Lfin	3	SBV	5	B-start_city
+到	v	O	Root	1	HED	1	O
+重庆	ns	S-Ns	Lfin	5	POB	5	B-arrival_city
+机票	n	O	eSucc	5	VOB	5	O
+。	wp	O	mPunc	5	WP	5	O
+
+石家庄	ns	S-Ns	Lini	2	SBV	2	B-start_city
+飞	v	O	rAgt	5	ATT	5	O
+重庆	ns	S-Ns	Lfin	2	VOB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+飞机	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	5	WP	5	O
+
+郑州	ns	S-Ns	Lini	2	ADV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+上海	ns	S-Ns	Loc	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机票	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+广州	ns	S-Ns	Lini	2	ADV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+西安	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+妈妈	n	O	mPars	9	HED	1	O
+，	wp	O	mPunc	1	WP	1	O
+上海	ns	S-Ns	Loc	4	ATT	9	B-start_city
+到	p	O	dDesc	9	ATT	9	O
+南充	ns	S-Ns	Lfin	4	POB	4	B-arrival_city
+的	u	O	mAux	4	RAD	4	O
+30	m	O	Seq	8	ATT	8	B-start_date
+号	q	O	Qp	9	ATT	9	I-start_date
+飞机票	n	O	Root	1	COO	1	O
+。	wp	O	mPunc	9	WP	1	O
+
+西安	ns	S-Ns	Lini	2	ADV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+哈尔滨	ns	S-Ns	Sco	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+机票	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+南昌	ns	S-Ns	Agt	2	ATT	6	B-start_city
+到	v	O	Root	1	ATT	6	O
+上海	ns	S-Ns	Loc	6	ATT	4	B-arrival_city
+六号	nz	O	Orig	6	POB	2	B-start_date
+的	u	O	mAux	4	RAD	4	O
+机票	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	6	O
+
+查询	v	O	Mann	2	HED	1	O
+去	v	O	rAgt	5	CMP	1	O
+西安	ns	S-Ns	Orig	5	VOB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+机票	n	O	Root	1	VOB	1	O
+。	wp	O	mPunc	5	WP	1	O
+
+从	p	O	mPrep	2	ADV	5	O
+乌鲁木齐	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	dExp	8	ADV	5	O
+北京	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+坐	v	O	eSucc	3	ATT	9	O
+飞机	n	O	Cont	5	VOB	5	O
+多	d	O	mDegr	8	ADV	8	O
+长	a	O	Root	1	ATT	9	O
+时间	n	O	Pat	8	HED	1	O
+？	wp	O	mPunc	8	WP	9	O
+
+现在	nt	O	Time	2	ADV	2	B-start_date
+有	v	O	Root	1	HED	1	O
+没	d	O	mNeg	4	ADV	4	O
+有	v	O	eSelt	2	COO	2	O
+特价	n	O	Desc	6	ATT	6	O
+飞机票	n	O	Exp	2	VOB	4	O
+？	wp	O	mPunc	2	WP	2	O
+
+我	r	O	Agt	3	SBV	3	O
+要	v	O	mMod	3	ADV	3	O
+订	v	O	Root	1	HED	1	O
+一	m	O	Quan	5	ATT	5	O
+张	q	O	Qp	9	ATT	9	O
+去	v	O	dDesc	9	ATT	9	O
+海南	ns	S-Ns	Lfin	6	VOB	6	B-arrival_city
+的	u	O	mAux	6	RAD	6	O
+机票	n	O	Cont	3	VOB	3	O
+。	wp	O	mPunc	3	WP	3	O
+
+坐	v	O	Root	1	HED	1	O
+飞机	n	O	Tool	1	VOB	1	O
+从	p	O	mPrep	4	ADV	5	O
+北京	ns	S-Ns	Lini	5	POB	3	B-start_city
+到	p	O	eSucc	1	CMP	1	O
+三亚	ns	S-Ns	Lfin	5	POB	5	B-arrival_city
+多	d	O	mNeg	8	ADV	8	O
+长	a	O	ePurp	5	ATT	9	O
+时间	n	O	TDur	8	POB	5	O
+？	wp	O	mPunc	8	WP	1	O
+
+南昌	ns	S-Ns	Agt	2	ATT	5	B-start_city
+到	v	O	Root	1	ATT	5	O
+重庆	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+从	p	O	mPrep	2	ADV	3	O
+深圳	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	dOrig	6	ATT	6	O
+哈尔滨	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+飞机票	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	6	WP	6	O
+
+从	p	O	mPrep	2	ADV	3	O
+深圳	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	dOrig	7	ATT	7	O
+哈尔滨	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+特价	n	O	Desc	7	ATT	7	O
+飞机票	n	O	Exp	9	SBV	9	O
+最	d	O	mDegr	9	ADV	9	B-cost_relative
+便宜	a	O	dExp	11	SBV	11	I-cost_relative
+的	u	O	mAux	9	RAD	9	O
+是	v	O	Root	1	HED	1	O
+多少	r	O	Clas	11	VOB	11	O
+？	wp	O	mPunc	11	WP	11	O
+
+现在	nt	O	Time	3	ADV	7	B-start_date
+上海	ns	S-Ns	Loc	3	ATT	6	B-start_city
+到	p	O	rLthru	6	ATT	6	O
+大阪	ns	S-Ns	Desc	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+机票	n	O	Exp	7	SBV	7	O
+要	v	O	Root	1	HED	1	O
+多少	r	O	mTone	7	VOB	7	O
+？	wp	O	mPunc	7	WP	7	O
+
+西安	ns	S-Ns	Lini	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+长春	ns	S-Ns	Loc	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机票	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查询	v	O	eSucc	1	VOB	1	O
+一下	m	O	mDegr	3	CMP	3	O
+温州	ns	S-Ns	Loc	6	SBV	6	B-start_city
+到	v	O	dCont	3	ATT	9	O
+成都	ns	S-Ns	Loc	9	POB	6	B-arrival_city
+的	u	O	mAux	7	RAD	6	O
+机票	n	O	Lfin	6	VOB	3	O
+，	wp	O	mPunc	3	WP	1	O
+十	m	O	eSum	3	COO	1	O
+。	wp	O	mPunc	11	WP	1	O
+
+从	p	O	mPrep	2	ADV	3	O
+临夏	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	rExp	7	ATT	7	O
+绵阳	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+，	wp	O	mPunc	3	WP	3	O
+的	u	O	mAux	3	RAD	3	O
+航班	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	7	WP	7	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查	v	O	ePurp	1	VOB	1	O
+一下	m	O	mDegr	3	CMP	3	O
+明天	nt	O	Time	6	ADV	6	B-start_date
+到	v	O	dCont	3	ATT	9	O
+英国	ns	S-Ns	Orig	9	POB	6	B-arrival_city
+的	u	O	mAux	7	RAD	7	O
+机票	n	O	Lfin	6	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+明天	nt	O	Time	3	ATT	6	B-start_date
+青岛	ns	S-Ns	Loc	3	ATT	6	B-start_city
+到	v	O	Root	1	ATT	6	O
+佳木斯	ns	S-Ns	Loc	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+机票	n	O	Exp	3	HED	1	O
+。	wp	O	mPunc	3	WP	6	O
+
+我们	r	O	Agt	3	SBV	3	O
+要	v	O	mMod	3	ADV	3	O
+去	v	O	Root	1	HED	1	O
+北京	ns	S-Ns	Lfin	3	VOB	3	B-arrival_city
+有	v	O	dCont	3	COO	3	O
+什么	r	O	mTone	7	ATT	7	O
+航班	n	O	Belg	5	VOB	5	O
+？	wp	O	mPunc	3	WP	3	O
+
+昆明	ns	S-Ns	Loc	2	SBV	2	B-start_city
+到	v	O	Root	1	HED	1	O
+杭州	ns	S-Ns	Lfin	2	ATT	4	B-arrival_city
+机票	n	O	eSucc	2	POB	2	O
+。	wp	O	mPunc	2	WP	2	O
+
+上海市	ns	S-Ns	Agt	2	SBV	2	B-start_city
+动	v	O	Root	1	ATT	5	O
+美国	ns	S-Ns	Poss	5	VOB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+机票	n	O	Pat	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+衡阳	ns	S-Ns	Loc	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+上海	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+我	r	O	Agt	3	SBV	3	O
+要	v	O	mMod	3	ADV	3	O
+订	v	O	Root	1	HED	1	O
+一	m	O	Quan	5	ATT	5	O
+张	q	O	Qp	9	ATT	9	O
+去	v	O	dDesc	9	ATT	9	O
+珠海	ns	S-Ns	Lfin	6	VOB	6	B-arrival_city
+的	u	O	mAux	6	RAD	6	O
+机票	n	O	Cont	3	VOB	3	O
+。	wp	O	mPunc	3	WP	3	O
+
+石家庄	ns	S-Ns	Agt	2	ADV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+烟台	ns	S-Ns	Loc	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+火车票	n	O	Sfin	2	HED	1	O
+，	wp	O	mPunc	2	WP	5	O
+飞机票	n	O	eSucc	2	COO	5	O
+。	wp	O	mPunc	7	WP	5	O
+
+请问	v	O	Root	1	HED	1	O
+有	v	O	mVain	7	VOB	1	O
+宁夏	ns	S-Ns	eCoo	5	ATT	7	B-start_city
+自	p	O	mPrep	5	ATT	7	O
+温州	ns	S-Ns	Datv	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+航班	n	O	Cont	1	VOB	2	O
+吗	u	O	mTone	1	RAD	2	O
+？	wp	O	mPunc	1	WP	1	O
+
+去	v	O	dDesc	4	ATT	4	O
+东京	ns	S-Ns	Lfin	1	VOB	1	B-arrival_city
+的	u	O	mAux	1	RAD	1	O
+航班	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	4	WP	4	O
+
+我	r	O	Agt	4	SBV	4	O
+现在	nt	O	Time	4	ADV	4	O
+要	v	O	mMod	4	ADV	4	O
+去	v	O	Root	1	HED	1	O
+北京	ns	S-Ns	Lfin	4	VOB	4	B-arrival_city
+旅游	v	O	ePurp	4	COO	4	O
+你	r	O	Datv	6	VOB	6	O
+要	v	O	mMod	9	ADV	9	O
+到	v	O	ePurp	6	COO	4	O
+那里	r	O	Lfin	9	POB	9	O
+找	v	O	ePurp	9	COO	9	O
+飞机	n	O	Cont	11	VOB	11	O
+。	wp	O	mPunc	11	WP	4	O
+
+宜兴	ns	S-Ns	Loc	2	SBV	2	B-start_city
+到	v	O	Root	1	HED	1	O
+浙江	ns	B-Ni	eCoo	4	ATT	4	B-arrival_city
+台	j	E-Ni	Loc	5	ATT	5	O
+庚寅虎	nz	O	Lfin	2	ATT	6	O
+机票	n	O	Cont	2	POB	2	O
+。	wp	O	mPunc	2	WP	2	O
+
+查	v	O	Root	1	HED	1	O
+济源	n	O	Lini	3	SBV	3	B-start_city
+到	v	O	dDesc	6	ATT	6	O
+葫芦岛	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+航班	n	O	Cont	1	VOB	1	O
+。	wp	O	mPunc	1	WP	1	O
+
+贵阳	ns	B-Ns	Nmod	3	ATT	2	B-start_city
+龙洞堡	ns	I-Ns	Nmod	3	ATT	3	B-start_airport
+机场	n	E-Ns	Agt	4	ATT	6	I-start_airport
+至	p	O	Root	1	ATT	6	O
+金阳	ns	S-Ns	Lfin	4	POB	4	B-arrival_city
+客车站	n	O	Lfin	4	SBV	8	O
+怎么	r	O	Mann	8	ADV	8	O
+走	v	O	eSucc	4	HED	1	O
+？	wp	O	mPunc	8	WP	8	O
+
+啊	e	O	mTone	5	ADV	3	O
+，	wp	O	mPunc	1	WP	1	O
+坐	v	O	dMann	5	HED	1	O
+飞机	n	O	Tool	3	VOB	3	O
+到	v	O	Root	1	CMP	3	O
+北京	ns	S-Ns	Lfin	5	POB	5	B-arrival_city
+。	wp	O	mPunc	5	WP	3	O
+
+坐	v	O	dMann	3	HED	1	O
+飞机	n	O	Tool	1	VOB	1	O
+到	v	O	Root	1	CMP	1	O
+深圳	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+。	wp	O	mPunc	3	WP	1	O
+
+到	p	O	dExp	6	ADV	4	O
+云南	ns	B-Ns	Nmod	3	ATT	3	B-arrival_city
+大理	ns	E-Ns	Lfin	1	POB	1	I-arrival_city
+坐	v	O	eSucc	1	SBV	6	O
+飞机	n	O	Cont	4	VOB	4	O
+需要	v	O	Root	1	HED	1	O
+多	d	O	mDegr	8	ADV	8	O
+长	a	O	Desc	9	ATT	9	O
+时间	n	O	Cont	6	VOB	6	O
+？	wp	O	mPunc	6	WP	6	O
+
+查询	v	O	Desc	2	HED	1	O
+太原	ns	S-Ns	Agt	3	ATT	6	B-start_city
+到	p	O	dDesc	6	ATT	6	O
+石家庄	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+航班	n	O	Root	1	VOB	1	O
+。	wp	O	mPunc	6	WP	1	O
+
+南昌	ns	S-Ns	Agt	2	ADV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+贵阳	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+请	v	O	mMod	2	HED	1	O
+查	v	O	Root	1	VOB	1	O
+一下	m	O	mDegr	2	CMP	2	O
+张东	nh	S-Nh	Agt	5	SBV	5	B-start_city
+到	v	O	dDesc	8	ATT	8	O
+三亚	ns	S-Ns	Lfin	5	POB	5	B-arrival_city
+的	u	O	mAux	5	RAD	5	O
+航班	n	O	Cont	2	VOB	2	O
+啊	u	O	mTone	2	RAD	2	O
+！	wp	O	mPunc	2	WP	1	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查	v	O	ePurp	1	VOB	1	O
+一下	m	O	mDegr	3	CMP	3	O
+三亚	ns	S-Ns	Lini	6	SBV	6	B-start_city
+到	v	O	rExp	9	ATT	9	O
+广州	ns	S-Ns	Lfin	6	POB	6	B-arrival_city
+的	u	O	mAux	6	RAD	6	O
+飞机	n	O	Cont	3	SBV	11	O
+最	d	O	mDegr	11	ADV	11	O
+早	a	O	Desc	14	ATT	14	O
+的	u	O	mAux	11	RAD	11	O
+一	m	O	Quan	14	ATT	14	O
+班	q	O	Qp	9	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+跟	p	O	mPrep	2	ADV	3	O
+我	r	O	Datv	3	POB	1	O
+订	v	O	dExp	11	HED	1	O
+一	m	O	Quan	5	ATT	5	O
+张	q	O	Qp	9	ADV	11	O
+去	v	O	dDesc	9	ATT	9	O
+武汉	ns	S-Ns	Lfin	6	VOB	6	B-arrival_city
+的	u	O	mAux	6	RAD	6	O
+机票	n	O	Cont	3	SBV	11	O
+最	d	O	mDegr	11	ADV	11	B-cost_relative
+便宜	a	O	Root	1	VOB	3	I-cost_relative
+的	u	O	mTone	11	RAD	11	O
+。	wp	O	mPunc	11	WP	3	O
+
+成都	ns	S-Ns	Agt	2	ATT	5	B-start_city
+到	p	O	Root	1	ATT	5	O
+北京	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+北京	ns	S-Ns	Loc	2	ADV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+韩国	ns	S-Ns	Orig	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+未来	nt	O	Tmod	3	ATT	6	B-start_date
+五	m	O	Quan	3	ATT	3	I-start_date
+天	q	O	Time	5	ATT	6	I-start_date
+假	n	O	Mann	5	ATT	6	O
+往返	v	O	Root	1	ATT	6	O
+机票	n	O	Cont	5	HED	1	O
+。	wp	O	mPunc	5	WP	6	O
+
+飞机	n	O	Exp	2	SBV	2	O
+到	v	O	Root	1	HED	1	O
+上海	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+，	wp	O	mPunc	2	WP	2	O
+上海	ns	S-Ns	Exp	7	ATT	7	B-arrival_city
+的	u	O	mAux	5	RAD	5	O
+好	a	O	eCoo	2	COO	2	O
+吧	u	O	mTone	7	RAD	7	O
+！	wp	O	mPunc	7	WP	2	O
+
+国定	b	O	Desc	4	ATT	3	O
+一	m	O	Quan	3	ATT	3	O
+张	q	O	Qp	4	ATT	8	O
+北京	ns	S-Ns	Exp	5	ADV	5	B-start_city
+至	p	O	Root	1	ATT	8	O
+上海	ns	S-Ns	Loc	8	POB	5	B-arrival_city
+的	u	O	mAux	6	RAD	5	O
+飞机票	n	O	Lfin	5	HED	1	O
+。	wp	O	mPunc	5	WP	8	O
+
+给	p	O	mPrep	2	ADV	3	O
+我	r	O	Datv	3	POB	1	O
+订	v	O	Root	1	HED	1	O
+一	m	O	Quan	5	ATT	5	O
+张	q	O	Qp	6	ATT	6	O
+石家庄	ns	S-Ns	Loc	11	VOB	3	B-start_city
+飞往	v	O	rExp	11	COO	3	O
+上海	ns	S-Ns	Loc	7	ATT	9	B-arrival_city
+九点半	nt	O	Time	11	ATT	12	B-start_time
+的	u	O	mAux	9	RAD	9	O
+火车	n	O	Pat	3	ATT	12	O
+飞机票	n	O	eCoo	11	VOB	7	O
+。	wp	O	mPunc	3	WP	3	O
+
+昆明	ns	S-Ns	Lini	2	ADV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+成都	ns	S-Ns	Loc	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+机票	n	O	Lfin	2	ATT	6	O
+多少	r	O	mNeg	2	HED	1	O
+？	wp	O	mPunc	2	WP	6	O
+
+昆明	ns	S-Ns	Loc	2	ADV	2	B-start_city
+至	p	O	Root	1	ATT	5	O
+温州	ns	S-Ns	Orig	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+机票	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+乌鲁木齐	ns	S-Ns	Agt	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+重庆	ns	S-Ns	Loc	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机票	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+乌鲁木齐	ns	S-Ns	Lini	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+重庆	ns	S-Ns	Loc	6	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机票	n	O	Desc	6	ATT	6	O
+后天	n	O	Lfin	2	HED	1	O
+呢	u	O	mTone	2	RAD	6	O
+！	wp	O	mPunc	2	WP	6	O
+
+查询	v	O	Desc	2	HED	1	O
+葡乙	n	O	Desc	3	SBV	3	O
+查询	v	O	Root	1	COO	1	O
+郑州	ns	S-Ns	Nmod	3	SBV	5	B-start_city
+到	v	O	mDir	3	CMP	3	O
+，	wp	O	mPunc	3	WP	1	O
+义乌	ns	S-Ns	Poss	9	ATT	9	B-arrival_city
+的	u	O	mAux	7	RAD	7	O
+飞机	n	O	Agt	3	COO	1	O
+。	wp	O	mPunc	9	WP	1	O
+
+从	p	O	mPrep	2	ADV	3	O
+西安	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	dOrig	6	ATT	6	O
+新疆	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+机票	n	O	Exp	8	ATT	8	O
+多少	r	O	Quan	8	ATT	8	O
+钱	n	O	Root	1	HED	1	O
+？	wp	O	mPunc	8	WP	8	O
+
+上海	ns	S-Ns	Agt	2	ATT	5	B-start_city
+到	p	O	Root	1	ATT	5	O
+绵阳	ns	S-Ns	Loc	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机票	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+等	v	O	Root	1	HED	1	O
+一下	m	O	mDegr	1	CMP	1	O
+要	v	O	dCont	1	ADV	4	O
+坐	v	O	dMann	6	VOB	1	O
+飞机	n	O	Tool	4	VOB	4	O
+去	v	O	dCont	3	COO	4	O
+马来西亚	ns	S-Ns	Lfin	6	VOB	6	B-arrival_city
+呢	u	O	mTone	1	RAD	4	O
+！	wp	O	mPunc	1	WP	1	O
+
+石家庄	ns	S-Ns	Lini	2	SBV	2	B-start_city
+飞	v	O	rAgt	5	ATT	5	O
+深圳	ns	S-Ns	Lfin	2	VOB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+飞机	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	5	WP	5	O
+
+成都	ns	S-Ns	Agt	2	ATT	5	B-start_city
+到	p	O	Root	1	ATT	5	O
+上海	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+赣州	ns	S-Ns	Lini	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+云南	ns	S-Ns	Loc	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机票	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+查	v	O	Root	1	HED	1	O
+五月份	nt	O	Time	4	ADV	4	B-start_date
+北京	ns	S-Ns	Loc	4	ADV	4	B-start_city
+到	v	O	rExp	7	ATT	7	O
+芝加哥	ns	S-Ns	Lfin	4	POB	4	B-arrival_city
+的	u	O	mAux	4	RAD	4	O
+航班	n	O	Cont	1	VOB	1	O
+。	wp	O	mPunc	1	WP	1	O
+
+下午	nt	O	Tmod	2	ATT	2	B-start_time
+4点	nt	O	Time	3	ADV	3	I-start_time
+问	v	O	Root	1	HED	1	O
+九寨	ns	S-Ns	Nmod	1	ATT	5	B-arrival_city
+航班	n	O	Cont	3	VOB	3	O
+
+重庆	ns	S-Ns	Agt	2	SBV	2	B-start_city
+去	v	O	dDesc	5	ATT	5	O
+广州	ns	S-Ns	Lfin	2	VOB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+航班	n	O	Poss	7	SBV	7	O
+又	d	O	mMod	7	ADV	7	O
+有	v	O	Root	1	HED	1	O
+什么	r	O	mTone	9	ATT	9	O
+航班	n	O	Belg	7	VOB	7	O
+？	wp	O	mPunc	7	WP	7	O
+
+百度	nz	O	Agt	4	ATT	3	O
+一下	m	O	mDegr	1	ATT	3	O
+广州	ns	S-Ns	Lini	4	ATT	9	B-start_city
+到	p	O	dOrig	7	ATT	7	O
+北京	ns	S-Ns	Lfin	4	POB	4	B-arrival_city
+的	u	O	mAux	4	RAD	4	O
+飞机票	n	O	Exp	9	ATT	9	O
+多少	r	O	Quan	9	ATT	9	O
+钱	n	O	Root	1	HED	1	O
+？	wp	O	mPunc	9	WP	9	O
+
+无锡	ns	S-Ns	Lini	2	SBV	2	B-start_city
+坐	v	O	dDesc	3	HED	1	O
+飞机	n	O	Exp	4	VOB	2	O
+到	v	O	Root	1	CMP	2	O
+西安	ns	B-Ns	Lfin	4	POB	4	B-arrival_city
+
+太原	ns	S-Ns	Lini	2	ADV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+福州	ns	S-Ns	Orig	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+机票	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+查	v	O	Root	1	HED	1	O
+一	m	O	Quan	3	ATT	3	O
+下	q	O	Qp	4	ATT	4	O
+大理	ns	S-Ns	Lini	5	SBV	5	B-start_city
+到	p	O	dCont	1	ATT	8	O
+昆明	ns	S-Ns	Lfin	5	POB	5	B-arrival_city
+的	u	O	mAux	5	RAD	5	O
+航班	n	O	Cont	1	VOB	1	O
+
+但	c	O	mConj	6	ADV	6	O
+下午	nt	O	Time	6	ATT	6	B-start_time
+一直	d	O	mTime	6	ADV	4	O
+青岛	ns	S-Ns	Loc	6	ATT	6	B-arrival_city
+的	u	O	mAux	4	RAD	4	O
+机票	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	6	WP	6	O
+
+可以	v	O	mMod	2	ADV	2	O
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	2	DBL	2	O
+才	d	O	mTime	5	ADV	5	O
+查	v	O	ePurp	2	VOB	2	O
+一下	m	O	Quan	11	CMP	5	O
+重庆	ns	S-Ns	Lini	8	SBV	8	B-start_city
+到	v	O	dDesc	11	ATT	11	O
+苏州	ns	S-Ns	Lfin	8	POB	8	B-arrival_city
+的	u	O	mAux	8	RAD	8	O
+飞机	n	O	Cont	5	VOB	5	O
+吗	u	O	mTone	5	RAD	2	O
+？	wp	O	mPunc	5	WP	2	O
+
+广州	ns	S-Ns	Lini	2	ATT	5	B-start_city
+到	p	O	Root	1	ATT	5	O
+重庆	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机票	n	O	Lfin	2	SBV	7	O
+今天	nt	O	eEqu	5	ADV	7	O
+多少	r	O	mNeg	2	HED	1	O
+？	wp	O	mPunc	2	WP	7	O
+
+10月	nt	O	Tmod	2	ATT	3	B-start_date
+28	m	O	Seq	3	ATT	3	I-start_date
+号	q	O	Time	8	ATT	8	I-start_date
+上海	ns	S-Ns	Lfin	3	SBV	5	B-start_city
+到	v	O	mDir	3	ATT	8	O
+重庆	ns	S-Ns	Loc	8	POB	5	B-arrival_city
+的	u	O	mAux	6	RAD	5	O
+航班	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	8	WP	8	O
+
+兰州	ns	S-Ns	Agt	2	ADV	2	B-start_city
+到	v	O	rLfin	5	ATT	5	O
+贵阳	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+飞机票	n	O	Exp	7	ATT	7	O
+多少	r	O	Quan	7	ATT	7	O
+钱	n	O	Root	1	HED	1	O
+？	wp	O	mPunc	7	WP	7	O
+
+4月	nt	O	Tmod	2	ATT	2	B-start_date
+28日	nt	O	Time	4	ADV	4	I-start_date
+济南	ns	S-Ns	Agt	4	SBV	4	B-start_city
+到	v	O	Root	1	ATT	7	O
+三亚	ns	S-Ns	Nmod	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+飞机	n	O	Lfin	4	HED	1	O
+。	wp	O	mPunc	4	WP	7	O
+
+乌兰浩特	ns	S-Ns	Poss	4	SBV	2	B-start_city
+有	v	O	eSelt	4	HED	1	O
+没	d	O	mNeg	4	ADV	4	O
+有	v	O	dDesc	8	COO	2	O
+到	v	O	eSucc	4	CMP	4	O
+石家庄	ns	S-Ns	Lfin	5	POB	5	B-arrival_city
+的	u	O	mAux	5	RAD	5	O
+航班	n	O	Root	1	VOB	4	O
+？	wp	O	mPunc	8	WP	2	O
+
+合肥	ns	S-Ns	Agt	2	SBV	2	B-start_city
+到	v	O	dDesc	5	ATT	7	O
+贵阳	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+机票	n	O	Exp	7	ATT	7	O
+多少	r	O	Quan	7	ATT	7	O
+钱	n	O	Root	1	HED	1	O
+？	wp	O	mPunc	7	WP	7	O
+
+北京	ns	S-Ns	Lini	2	ADV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+厦门	ns	S-Ns	Datv	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+连云港	ns	S-Ns	Loc	2	SBV	2	B-start_city
+起飞	v	O	rExp	4	ATT	4	O
+的	u	O	mAux	2	RAD	2	O
+航班	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	4	WP	4	O
+
+从	p	O	mPrep	2	ADV	3	O
+内蒙古	ns	S-Ns	Orig	7	POB	1	B-start_city
+到	p	O	mPrep	4	HED	1	O
+成	v	O	mPrep	7	POB	3	O
+成都	ns	S-Ns	Loc	7	ATT	7	B-arrival_city
+的	u	O	mAux	5	RAD	5	O
+飞机票	n	O	Root	1	VOB	4	O
+。	wp	O	mPunc	7	WP	3	O
+
+明天	nt	O	Time	2	ADV	2	B-start_date
+到	v	O	Root	1	HED	1	O
+北京	ns	S-Ns	Nmod	5	ATT	5	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+飞机	n	O	Lfin	2	POB	2	O
+。	wp	O	mPunc	2	WP	2	O
+
+到	p	O	mPrep	5	HED	1	O
+河南	ns	B-Ns	Nmod	3	ATT	3	B-arrival_city
+南阳	ns	E-Ns	Loc	5	ATT	5	I-arrival_city
+的	u	O	mAux	3	RAD	3	O
+飞机票	n	O	Root	1	POB	1	O
+。	wp	O	mPunc	5	WP	1	O
+
+明天	nt	O	Time	3	ATT	6	B-start_date
+广州	ns	S-Ns	Agt	3	ATT	6	B-start_city
+到	p	O	Root	1	ATT	6	O
+厦门	ns	S-Ns	Datv	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+飞机	n	O	Lfin	3	HED	1	O
+。	wp	O	mPunc	3	WP	6	O
+
+5月	nt	O	Tmod	2	ATT	2	B-start_date
+3号	nt	O	Time	4	ADV	4	I-start_date
+西安	ns	S-Ns	Lini	4	SBV	4	B-start_city
+到	v	O	Root	1	ATT	7	O
+哈尔滨	ns	S-Ns	Loc	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+航班	n	O	Lfin	4	HED	1	O
+，	wp	O	mPunc	4	WP	7	O
+二	m	O	Quan	4	COO	7	O
+。	wp	O	mPunc	4	WP	7	O
+
+听到	v	O	Root	1	HED	1	O
+上海	ns	S-Ns	Loc	5	ATT	5	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+什么	r	O	mTone	5	ATT	5	O
+航班	n	O	Cont	1	VOB	1	O
+？	wp	O	mPunc	1	WP	1	O
+
+查询	v	O	Mann	4	HED	1	O
+从	p	O	mPrep	3	ADV	7	O
+中国	ns	S-Ns	Lini	4	POB	2	B-start_city
+到	p	O	Root	1	ATT	7	O
+韩国	ns	S-Ns	Poss	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+航班	n	O	Lfin	4	VOB	1	O
+。	wp	O	mPunc	4	WP	1	O
+
+上谷	ns	S-Ns	Loc	3	ATT	3	B-arrival_city
+的	u	O	mAux	1	RAD	1	O
+飞机票	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	3	WP	3	O
+
+明天	nt	O	Time	2	ADV	2	B-start_date
+到	v	O	Root	1	ATT	5	O
+火星	n	O	Desc	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+西宁	ns	S-Ns	Lini	2	SBV	2	B-start_city
+到	v	O	Root	1	HED	1	O
+徐州	ns	S-Ns	Nmod	5	ATT	5	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+飞机	n	O	Lfin	2	POB	2	O
+。	wp	O	mPunc	2	WP	2	O
+
+查询	v	O	Mann	2	HED	1	O
+到	v	O	Root	1	CMP	1	O
+三亚	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	1	O
+飞机	n	O	Lfin	2	VOB	1	O
+。	wp	O	mPunc	2	WP	1	O
+
+查	v	O	Root	1	HED	1	O
+一下	m	O	Desc	1	CMP	1	O
+今天	nt	O	Time	5	ADV	5	B-start_date
+乌鲁木齐	ns	S-Ns	Agt	5	SBV	5	B-start_city
+到	v	O	dCont	1	ATT	8	O
+哈市	j	O	Lfin	5	POB	5	B-arrival_city
+的	u	O	mAux	5	RAD	5	O
+机票	n	O	Cont	1	VOB	1	O
+。	wp	O	mPunc	1	WP	1	O
+
+今天	nt	O	Time	2	ADV	2	B-start_date
+去	v	O	Root	1	ATT	5	O
+越南	ns	S-Ns	Poss	5	VOB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+看	v	O	mVain	6	HED	1	O
+一下	m	O	mTime	6	CMP	1	O
+后天	nt	O	Lthru	6	ATT	9	B-start_date
+从	p	O	mPrep	5	ADV	6	O
+杭州	ns	S-Ns	Lini	6	POB	4	B-start_city
+到	p	O	Root	1	ATT	9	O
+郑州	ns	S-Ns	Sco	9	POB	6	B-arrival_city
+的	u	O	mAux	7	RAD	6	O
+机票	n	O	Sfin	6	VOB	1	O
+。	wp	O	mPunc	6	WP	1	O
+
+查	v	O	Root	1	HED	1	O
+一下	m	O	mDegr	1	CMP	1	O
+明天	nt	O	Time	4	ADV	4	B-start_date
+去	v	O	eSucc	1	COO	1	O
+广州	ns	S-Ns	Sco	9	VOB	4	B-arrival_city
+最	d	O	mDegr	7	ADV	7	O
+早	a	O	Desc	9	ATT	9	O
+的	u	O	mAux	7	RAD	7	O
+飞机票	n	O	Lfin	4	VOB	4	O
+。	wp	O	mPunc	1	WP	1	O
+
+5月	nt	O	Tmod	3	ATT	3	B-start_date
+24	m	O	Seq	3	ATT	3	I-start_date
+号	q	O	Time	4	ATT	8	I-start_date
+沈阳	ns	S-Ns	Agt	5	ADV	5	B-start_city
+到	v	O	Root	1	ATT	8	O
+南昌	ns	S-Ns	Orig	8	POB	5	B-arrival_city
+的	u	O	mAux	6	RAD	5	O
+机票	n	O	Lfin	5	HED	1	O
+。	wp	O	mPunc	5	WP	8	O
+
+从	p	O	mPrep	2	ADV	3	O
+新疆	ns	S-Ns	Lini	3	POB	1	B-start_city
+去	v	O	Root	1	ATT	6	O
+四川	ns	S-Ns	Poss	6	VOB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+航班	n	O	Lfin	3	HED	1	O
+。	wp	O	mPunc	3	WP	6	O
+
+从	p	O	mPrep	2	ADV	3	O
+库尔乐	n	O	Lini	3	POB	1	B-start_city
+到	p	O	Root	1	ATT	6	O
+四川	ns	S-Ns	Poss	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+航班	n	O	Lfin	3	HED	1	O
+。	wp	O	mPunc	3	WP	6	O
+
+台湾	ns	S-Ns	Poss	3	ATT	3	B-arrival_city
+的	u	O	mAux	1	RAD	1	O
+飞机票	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	3	WP	3	O
+
+给	p	O	Root	1	ADV	3	O
+我	r	O	Datv	1	POB	1	O
+查	v	O	ePurp	1	HED	1	O
+一下	m	O	mDegr	3	CMP	3	O
+6月	nt	O	Tmod	6	ATT	7	B-start_date
+2	m	O	Seq	7	ATT	7	I-start_date
+号	q	O	Tfin	3	ATT	8	I-start_date
+济南	ns	S-Ns	Lfin	7	SBV	9	B-start_city
+到	v	O	eSucc	7	ATT	12	O
+牡丹江	ns	S-Ns	Loc	12	POB	9	B-arrival_city
+的	u	O	mAux	10	RAD	9	O
+飞机票	n	O	Lfin	9	VOB	3	O
+。	wp	O	mPunc	9	WP	3	O
+
+要	v	O	mMod	4	HED	1	O
+从	p	O	mPrep	3	ADV	4	O
+昆明	ns	S-Ns	Lini	4	POB	2	B-start_city
+到	p	O	Root	1	ATT	7	O
+北京	ns	S-Ns	Nmod	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+航班	n	O	Lfin	4	VOB	1	O
+。	wp	O	mPunc	4	WP	1	O
+
+我	r	O	Aft	2	SBV	2	O
+想	v	O	Root	1	HED	1	O
+问	v	O	dCont	2	VOB	2	O
+咨询	v	O	Cont	3	VOB	3	O
+一下	m	O	mDegr	4	CMP	4	O
+那个	r	O	Sco	8	ATT	8	O
+珍妮	v	O	eEqu	8	ATT	8	O
+南昌	ns	S-Ns	Datv	4	SBV	9	B-start_city
+到	v	O	eSucc	4	VOB	4	O
+，	wp	O	mPunc	2	WP	9	O
+福建	ns	S-Ns	Poss	13	ATT	13	B-arrival_city
+的	u	O	mAux	11	RAD	11	O
+机票	n	O	Exp	14	SBV	14	O
+是	v	O	eCau	2	COO	9	O
+多少	r	O	Clas	14	VOB	14	O
+？	wp	O	mPunc	14	WP	2	O
+
+合肥	ns	S-Ns	Lini	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+上海	ns	S-Ns	Sco	1	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+
+合肥	ns	S-Ns	Lini	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+广州	ns	S-Ns	Sco	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+今天	nt	O	Time	3	ATT	3	B-start_date
+的	u	O	mAux	1	RAD	1	O
+机票	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	3	WP	3	O
+
+查	v	O	rAgt	8	HED	1	O
+一下	m	O	mDegr	1	CMP	1	O
+从	p	O	mPrep	4	ADV	5	O
+南通	ns	S-Ns	Lini	5	POB	3	B-start_city
+到	p	O	dCont	1	ATT	8	O
+郑州	ns	S-Ns	Lfin	5	POB	5	B-arrival_city
+的	u	O	mAux	5	RAD	5	O
+飞机票	n	O	Root	1	VOB	1	O
+。	wp	O	mPunc	8	WP	1	O
+
+昆明	ns	S-Ns	Lini	2	ADV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+马尔代夫	ns	S-Ns	Nmod	1	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+
+今天	nt	O	Time	3	ATT	6	B-start_date
+萧山	ns	S-Ns	Loc	3	ATT	6	B-start_city
+到	p	O	Root	1	ATT	6	O
+南昌	ns	S-Ns	Orig	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+机票	n	O	Exp	3	HED	1	O
+。	wp	O	mPunc	3	WP	6	O
+
+我	r	O	Agt	3	SBV	3	O
+好	d	O	mMod	3	ADV	3	O
+托	v	O	Root	1	HED	1	O
+到	v	O	mDir	3	CMP	3	O
+上海	ns	S-Ns	Loc	7	ATT	7	B-arrival_city
+的	u	O	mAux	5	RAD	5	O
+机票	n	O	Pat	3	VOB	3	O
+。	wp	O	mPunc	3	WP	3	O
+
+30	m	O	Seq	2	ATT	2	B-start_date
+号	q	O	Seq	3	ATT	3	I-start_date
+呼和浩特	ns	S-Ns	Time	7	SBV	4	B-start_city
+到	v	O	mPrep	3	ATT	7	O
+上海	ns	S-Ns	Loc	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+机票	n	O	Exp	9	HED	1	O
+，	wp	O	mPunc	7	WP	7	O
+一	m	O	Root	1	COO	7	O
+。	wp	O	mPunc	9	WP	7	O
+
+29	m	O	Seq	2	ATT	2	B-start_date
+号	q	O	Qp	3	ATT	3	I-start_date
+南宁	ns	S-Ns	Agt	4	ADV	4	B-start_city
+到	v	O	Root	1	ATT	7	O
+合肥	ns	S-Ns	Nmod	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+飞机	n	O	Lfin	4	HED	1	O
+。	wp	O	mPunc	4	WP	7	O
+
+义乌	ns	S-Ns	Loc	2	SBV	2	B-start_city
+到	v	O	Root	1	HED	1	O
+香港	ns	S-Ns	Lfin	2	ATT	7	B-arrival_city
+一	m	O	Quan	5	ATT	5	O
+周	q	O	Time	7	ATT	6	O
+内	nd	O	mRang	5	ATT	7	O
+航班	n	O	eSucc	2	POB	2	O
+。	wp	O	mPunc	7	WP	2	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查	v	O	ePurp	1	VOB	1	O
+深圳	ns	S-Ns	Lini	5	ATT	8	B-start_city
+到	p	O	rAgt	8	ATT	8	O
+长沙	ns	S-Ns	Lfin	5	POB	5	B-arrival_city
+的	u	O	mAux	5	RAD	5	O
+飞机票	n	O	Cont	3	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+有	v	O	mVain	3	HED	1	O
+没	d	O	mNeg	3	ADV	3	O
+有	v	O	Root	1	COO	1	O
+杭州	ns	S-Ns	Exp	3	SBV	5	B-start_city
+到	v	O	eSucc	3	ATT	8	O
+南京	ns	S-Ns	Nmod	8	POB	5	B-arrival_city
+的	u	O	mAux	6	RAD	5	O
+飞机	n	O	Lfin	5	VOB	3	O
+。	wp	O	mPunc	5	WP	1	O
+
+南阳	ns	S-Ns	Agt	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+上海	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+济南	ns	S-Ns	Agt	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+韩国	ns	S-Ns	Poss	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+查看	v	O	Root	1	HED	1	O
+有	v	O	dCont	1	COO	1	O
+没	d	O	mNeg	4	ADV	4	O
+有	v	O	eSelt	2	COO	2	O
+到	v	O	mDir	2	ATT	8	O
+武汉	ns	S-Ns	Poss	8	POB	5	B-arrival_city
+的	u	O	mAux	6	RAD	5	O
+航班	n	O	Exp	2	VOB	4	O
+？	wp	O	mPunc	1	WP	1	O
+
+查	v	O	dDesc	8	HED	1	O
+一	m	O	Quan	3	ATT	3	O
+下	q	O	Qp	4	ATT	8	O
+成都	ns	S-Ns	Agt	5	SBV	5	B-start_city
+到	v	O	dCont	1	ATT	8	O
+杭州	ns	S-Ns	Lfin	5	POB	5	B-arrival_city
+的	u	O	mAux	5	RAD	5	O
+航班	n	O	Root	1	VOB	1	O
+。	wp	O	mPunc	8	WP	1	O
+
+喀什	ns	S-Ns	Agt	2	SBV	2	B-start_city
+回	v	O	Root	1	ATT	6	O
+和	c	O	mConj	4	LAD	4	B-arrival_city
+田	n	O	Datv	6	COO	2	I-arrival_city
+的	u	O	mAux	4	RAD	4	O
+飞机	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	6	O
+
+乌鲁木齐	ns	S-Ns	Lini	3	SBV	3	B-start_city
+，	wp	O	mPunc	1	WP	1	O
+到	v	O	Root	1	HED	1	O
+，	wp	O	mPunc	3	WP	3	O
+咸阳	ns	S-Ns	Orig	7	ATT	7	B-arrival_city
+的	u	O	mAux	5	RAD	5	O
+机票	n	O	eSucc	3	COO	3	O
+。	wp	O	mPunc	7	WP	3	O
+
+广州	ns	S-Ns	Lini	2	ATT	5	B-start_city
+到	p	O	Root	1	ATT	5	O
+郑州	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+机票	n	O	Lfin	2	SBV	6	O
+有	v	O	mNeg	2	HED	1	O
+打折	v	O	eSelt	2	VOB	6	O
+吗	u	O	mTone	2	RAD	6	O
+？	wp	O	mPunc	2	WP	6	O
+
+上海	ns	S-Ns	Loc	2	ATT	5	B-start_city
+到	p	O	mPrep	7	ATT	5	O
+成都	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+机票	n	O	Lfin	2	HED	1	O
+，	wp	O	mPunc	2	WP	5	O
+价格	n	O	Exp	9	COO	5	O
+，	wp	O	mPunc	7	WP	7	O
+多少	r	O	Quan	10	ATT	10	O
+钱	n	O	Root	1	ATT	12	O
+一	m	O	Quan	12	ATT	12	O
+张	q	O	Qp	10	COO	7	O
+？	wp	O	mPunc	10	WP	5	O
+
+查看	v	O	Root	1	HED	1	O
+明天	nt	O	Time	3	ADV	3	B-start_date
+到	v	O	dCont	1	ATT	6	O
+和田	ns	S-Ns	Orig	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+机票	n	O	Lfin	3	VOB	1	O
+。	wp	O	mPunc	1	WP	1	O
+
+给	p	O	dMann	8	ADV	3	O
+我	r	O	Datv	1	POB	1	O
+查看	v	O	ePurp	1	HED	1	O
+星期三	nt	O	Time	7	VOB	3	B-start_date
+的	u	O	mAux	4	RAD	4	O
+从	p	O	mPrep	7	ADV	8	O
+乌鲁木齐	ns	S-Ns	Lini	8	POB	6	B-start_city
+到	p	O	Root	1	ATT	11	O
+和田	ns	S-Ns	Orig	11	POB	8	B-arrival_city
+的	u	O	mAux	9	RAD	8	O
+机票	n	O	Lfin	8	VOB	3	O
+。	wp	O	mPunc	8	WP	3	O
+
+明天	nt	O	Time	3	ADV	3	B-start_date
+济南	ns	S-Ns	Agt	3	SBV	3	B-start_city
+到	v	O	Root	1	ATT	6	O
+泰国	ns	S-Ns	Datv	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+航班	n	O	Lfin	3	HED	1	O
+。	wp	O	mPunc	3	WP	6	O
+
+明天	nt	O	Time	2	ADV	2	B-start_date
+去	v	O	Root	1	HED	1	O
+北京	ns	S-Ns	Lfin	2	VOB	2	B-arrival_city
+怎么	r	O	Mann	5	ADV	5	O
+走	v	O	eSucc	2	COO	2	O
+？	wp	O	mPunc	5	WP	2	O
+飞机票	n	O	Cont	9	SBV	9	O
+怎么	r	O	Mann	9	ADV	9	O
+订	v	O	ePurp	5	COO	2	O
+？	wp	O	mPunc	9	WP	2	O
+
+南宁	ns	S-Ns	Lini	2	ADV	2	B-start_city
+到	v	O	rAgt	5	ATT	5	O
+贵阳	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+飞机票	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	5	WP	5	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查	v	O	eSucc	1	VOB	1	O
+一下	m	O	mDegr	3	CMP	3	O
+明天	nt	O	Time	7	ATT	10	B-start_date
+广州	ns	S-Ns	Loc	7	ATT	10	B-start_city
+到	p	O	dDesc	10	ATT	10	O
+上海	ns	S-Ns	Lfin	7	POB	7	B-arrival_city
+的	u	O	mAux	7	RAD	7	O
+航班	n	O	Cont	3	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查	v	O	ePurp	1	VOB	1	O
+一	m	O	mDegr	5	ADV	5	O
+下去	v	O	rPat	8	CMP	3	O
+西安	ns	S-Ns	Loc	8	ATT	8	B-arrival_city
+的	u	O	mAux	6	RAD	6	O
+飞机票	n	O	Cont	3	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+昆明	ns	S-Ns	Lini	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+上海	ns	S-Ns	Loc	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机票	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+临沧	v	O	Agt	2	HED	1	B-start_city
+到	v	O	Root	1	CMP	1	O
+飞	v	O	mPrep	4	ATT	6	O
+昆明	ns	S-Ns	Lfin	6	VOB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+飞机票	n	O	Lfin	2	POB	2	O
+。	wp	O	mPunc	2	WP	1	O
+
+明天	nt	O	Time	3	ADV	3	B-start_date
+济南	ns	S-Ns	Agt	3	SBV	3	B-start_city
+飞	v	O	Root	1	ATT	6	O
+长春	ns	S-Ns	Nmod	6	VOB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+航班	n	O	Pat	3	HED	1	O
+。	wp	O	mPunc	3	WP	6	O
+
+明天	nt	O	Time	3	ADV	3	B-start_date
+西安	ns	S-Ns	Agt	3	SBV	3	B-start_city
+到	v	O	Root	1	ATT	6	O
+北京	ns	S-Ns	Nmod	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+飞机	n	O	Lfin	3	HED	1	O
+。	wp	O	mPunc	3	WP	6	O
+
+西安	ns	S-Ns	Lini	2	ATT	7	B-start_city
+到	p	O	Root	1	ADV	4	O
+三亚	ns	S-Ns	Lfin	2	POB	2	B-start_city
+到	v	O	mDir	2	ATT	7	O
+西安	ns	S-Ns	Loc	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+飞机票	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	7	O
+
+到	p	O	mPrep	4	ATT	4	O
+包头	ns	S-Ns	Loc	4	POB	1	B-arrival_city
+的	u	O	mAux	2	RAD	1	O
+飞机票	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	4	WP	4	O
+
+5月	nt	O	Tmod	2	ATT	2	B-start_date
+1号	nt	O	Time	4	ADV	4	I-start_date
+上海	ns	S-Ns	Agt	4	SBV	4	B-start_city
+到	v	O	Root	1	ATT	7	O
+莆田	ns	S-Ns	Nmod	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+飞机	n	O	Lfin	4	ATT	9	O
+那个	r	O	Sco	9	ATT	9	O
+车票	n	O	Cont	4	SBV	10	O
+是	v	O	eSucc	4	HED	1	O
+多少	r	O	Quan	12	ATT	12	O
+钱	n	O	Clas	10	VOB	10	O
+？	wp	O	mPunc	10	WP	10	O
+
+长沙	ns	S-Ns	Lini	2	ATT	5	B-start_city
+飞往	v	O	rExp	5	ATT	5	O
+南乐	ns	S-Ns	Lfin	2	VOB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+飞机	n	O	Poss	6	SBV	6	O
+有	v	O	Root	1	HED	1	O
+没	d	O	mNeg	8	ADV	8	O
+有	v	O	eAdvt	6	COO	6	O
+票	n	O	Belg	8	VOB	8	O
+？	wp	O	mPunc	8	WP	6	O
+
+这个	r	O	Sco	2	ATT	2	O
+语音	n	O	Exp	6	SBV	6	O
+一下	m	O	Mann	6	ADV	6	O
+从	p	O	mPrep	5	ADV	6	O
+昆明	ns	S-Ns	Lini	6	POB	4	B-start_city
+去	v	O	Root	1	HED	1	O
+，	wp	O	mPunc	6	WP	6	O
+重庆	ns	S-Ns	Loc	9	ATT	12	B-arrival_city
+的	u	O	eSucc	6	RAD	8	O
+，	wp	O	mPunc	9	WP	8	O
+机票	n	O	Desc	12	ATT	12	O
+价格	n	O	eCoo	9	COO	6	O
+。	wp	O	mPunc	12	WP	6	O
+
+从	p	O	mPrep	4	ADV	9	O
+贵阳	ns	S-Ns	Tmod	4	SBV	9	B-start_city
+明天	nt	O	Tmod	4	ATT	4	B-start_date
+早上	nt	O	Time	9	ADV	9	B-start_time
+到	v	O	mTime	4	ADV	9	O
+成都	ns	S-Ns	Loc	8	ATT	8	B-arrival_city
+的	u	O	mAux	6	RAD	6	O
+飞机票	n	O	Poss	9	POB	5	O
+有	v	O	Root	1	HED	1	O
+没	d	O	mNeg	11	ADV	11	O
+有	v	O	eSelt	9	COO	9	O
+？	wp	O	mPunc	9	WP	9	O
+
+明天	nt	O	Time	3	ADV	3	B-start_date
+重庆	ns	S-Ns	Agt	3	SBV	3	B-start_city
+飞	v	O	Root	1	ATT	6	O
+长沙	ns	S-Ns	Nmod	6	VOB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+航班	n	O	Dir	3	SBV	7	O
+有	v	O	mVain	9	HED	1	O
+几	m	O	Quan	9	ATT	9	O
+趟	q	O	Qp	3	VOB	7	O
+？	wp	O	mPunc	3	WP	7	O
+
+明天	nt	O	Time	10	ADV	8	B-start_date
+从	p	O	mPrep	3	ADV	4	O
+成都	ns	S-Ns	Lini	4	POB	2	B-start_city
+到	p	O	rExp	7	ATT	7	O
+广元	ns	S-Ns	Lfin	4	POB	4	B-arrival_city
+的	u	O	mAux	4	RAD	4	O
+飞机票	n	O	Exp	10	SBV	8	O
+有	v	O	mVain	10	HED	1	O
+没	d	O	mNeg	10	ADV	10	O
+有	v	O	Root	1	COO	8	O
+？	wp	O	mPunc	10	WP	8	O
+
+从	p	O	mPrep	2	ADV	3	O
+成都	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	rAgt	6	ATT	6	O
+广元	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+飞机票	n	O	Poss	7	SBV	7	O
+有	v	O	Root	1	HED	1	O
+门题	n	O	Belg	7	VOB	7	O
+有	v	O	eEqu	8	COO	7	O
+没	d	O	eSelt	9	ADV	11	O
+有	v	O	eSelt	7	COO	9	O
+？	wp	O	mPunc	7	WP	7	O
+
+上海	ns	S-Ns	Agt	2	ATT	5	B-start_city
+到	p	O	dDesc	5	ATT	5	O
+新加坡	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+机票	n	O	Exp	6	SBV	6	O
+是	v	O	Root	1	HED	1	O
+多少	r	O	Quan	6	VOB	6	O
+啊	u	O	mTone	6	RAD	6	O
+？	wp	O	mPunc	6	WP	6	O
+
+给	p	O	Root	1	ADV	3	O
+我	r	O	Datv	1	POB	1	O
+订	v	O	ePurp	1	HED	1	O
+上	v	O	mDir	3	CMP	3	O
+云南	ns	S-Ns	Loc	7	ATT	7	B-arrival_city
+的	u	O	mAux	5	RAD	5	O
+飞机票	n	O	Pat	3	VOB	3	O
+。	wp	O	mPunc	3	WP	3	O
+
+潮州	ns	S-Ns	Nmod	3	ATT	3	B-arrival_city
+大	a	O	Desc	3	ATT	3	O
+飞机	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	3	WP	3	O
+
+上海	ns	S-Ns	Agt	2	SBV	2	B-start_city
+动	v	O	Root	1	ATT	7	O
+美国	ns	S-Ns	Loc	4	VOB	2	B-arrival_city
+的	u	O	Pat	2	RAD	2	O
+，	wp	O	mPunc	4	WP	2	O
+红	a	O	Desc	7	ATT	7	O
+飞机	n	O	eEqu	4	HED	1	O
+。	wp	O	mPunc	2	WP	7	O
+
+上海	ns	S-Ns	Agt	2	SBV	2	B-start_city
+报道	v	O	Root	1	HED	1	O
+美国	ns	S-Ns	Poss	5	ATT	5	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+飞机	n	O	Cont	2	VOB	2	O
+。	wp	O	mPunc	2	WP	2	O
+
+飞机	n	O	Tool	2	SBV	2	O
+说	v	O	Root	1	HED	1	O
+一下	m	O	mDegr	2	CMP	2	O
+杭州	ns	S-Ns	Loc	6	ATT	6	B-arrival_city
+的	u	O	mAux	4	RAD	4	O
+地方	n	O	Cont	2	VOB	2	O
+。	wp	O	mPunc	2	WP	2	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查	v	O	eSucc	1	VOB	1	O
+一下	m	O	mDegr	3	CMP	3	O
+北京	ns	S-Ns	Lini	6	SBV	6	B-start_city
+到	v	O	dDesc	9	ATT	9	O
+上海	ns	S-Ns	Lfin	6	POB	6	B-arrival_city
+的	u	O	mAux	6	RAD	6	O
+飞机	n	O	Cont	3	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+深圳	ns	S-Ns	Loc	2	ATT	5	B-start_city
+到	p	O	Root	1	ATT	5	O
+广元	ns	S-Ns	Orig	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+机票	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+重庆	ns	S-Ns	Agt	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+北京	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+看	v	O	Root	1	HED	1	O
+一下	m	O	mTime	4	CMP	1	O
+赣州	ns	S-Ns	Lini	4	SBV	4	B-start_city
+到	v	O	dCont	1	ATT	7	O
+北京	ns	S-Ns	Nmod	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+飞机	n	O	Lfin	4	VOB	1	O
+。	wp	O	mPunc	4	WP	1	O
+
+长沙	ns	S-Ns	Loc	2	SBV	2	B-start_city
+有	v	O	Root	1	HED	1	O
+没	d	O	mNeg	4	ADV	4	O
+有	v	O	eSelt	2	COO	2	O
+去	v	O	dDesc	8	ATT	8	O
+珠海	ns	S-Ns	Lfin	5	VOB	5	B-arrival_city
+的	u	O	mAux	5	RAD	5	O
+飞机票	n	O	Exp	2	VOB	4	O
+？	wp	O	mPunc	2	WP	2	O
+
+5月	nt	O	Time	3	ATT	3	B-start_date
+2	m	O	Seq	3	ATT	3	I-start_date
+号	q	O	Qp	5	ATT	5	I-start_date
+的	u	O	mAux	3	RAD	3	O
+飞机票	n	O	Agt	6	SBV	6	O
+到	v	O	dTime	9	ATT	8	O
+成都	ns	S-Ns	Lfin	6	POB	6	B-arrival_city
+时	n	O	mTime	6	ADV	9	O
+是	v	O	Root	1	HED	1	O
+多少	r	O	Quan	11	ATT	11	O
+钱	n	O	Clas	9	VOB	9	O
+呢	u	O	mTone	9	RAD	9	O
+？	wp	O	mPunc	9	WP	9	O
+
+温州	ns	S-Ns	Loc	2	ATT	5	B-start_city
+到	p	O	Root	1	ATT	5	O
+银川	ns	S-Ns	Loc	5	POB	2	B-arrival_city
+特价	n	O	Desc	5	ATT	5	O
+机票	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+济南	ns	S-Ns	Loc	2	ATT	2	B-arrival_city
+飞机票	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	2	WP	2	O
+
+厦门	ns	S-Ns	Lini	2	ADV	2	B-start_city
+到	v	O	dDesc	5	ATT	5	O
+上海	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+票价	n	O	Exp	6	SBV	6	O
+是	v	O	Root	1	HED	1	O
+多少	r	O	Quan	8	ATT	8	O
+飞机票	n	O	Clas	6	VOB	6	O
+？	wp	O	mPunc	6	WP	6	O
+
+5月	nt	O	Tmod	3	ATT	3	B-start_date
+12	m	O	Seq	3	ATT	3	I-start_date
+号	q	O	Time	5	ATT	8	I-start_date
+上海	ns	S-Ns	Loc	5	SBV	5	B-start_city
+到	v	O	Root	1	ATT	8	O
+西安	ns	S-Ns	Orig	8	POB	5	B-arrival_city
+的	u	O	mAux	6	RAD	5	O
+机票	n	O	Exp	5	HED	1	O
+。	wp	O	mPunc	5	WP	8	O
+
+查	v	O	Root	1	HED	1	O
+一下	m	O	Desc	1	CMP	1	O
+西安	ns	S-Ns	Loc	4	SBV	4	B-start_city
+到	v	O	eSucc	1	ATT	7	O
+广州	ns	S-Ns	Loc	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+飞机票	n	O	Lfin	4	VOB	1	O
+。	wp	O	mPunc	1	WP	1	O
+
+5月	nt	O	Tmod	2	ATT	2	B-start_date
+1号	nt	O	Time	4	ADV	4	I-start_date
+沈阳	ns	S-Ns	Agt	4	ADV	4	B-start_city
+到	v	O	Root	1	ATT	7	O
+重庆	ns	S-Ns	Loc	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+机票	n	O	ePurp	4	HED	1	O
+。	wp	O	mPunc	4	WP	7	O
+
+昆明	ns	S-Ns	Lini	2	SBV	4	B-start_city
+到	v	O	Root	1	ADV	4	O
+瑞丽	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+有	v	O	eSucc	2	HED	1	O
+航班	n	O	Exp	4	VOB	4	O
+吗	u	O	mTone	4	RAD	4	O
+？	wp	O	mPunc	4	WP	4	O
+
+上海	ns	S-Ns	Agt	2	ATT	5	B-start_city
+到	p	O	Root	1	ATT	5	O
+纽约	ns	S-Ns	Loc	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+机票	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+临沂	ns	S-Ns	Agt	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+广州	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+给	p	O	Root	1	ADV	3	O
+我	r	O	Datv	1	POB	1	O
+查	v	O	ePurp	1	HED	1	O
+一下	m	O	mDegr	3	CMP	3	O
+6月	nt	O	Tmod	6	ATT	7	B-start_date
+4	m	O	Seq	7	ATT	7	I-start_date
+号	q	O	Cont	3	ATT	8	I-start_date
+济南	ns	S-Ns	Nmod	7	SBV	9	B-start_city
+到	v	O	eSucc	3	ATT	12	O
+牡丹江	ns	S-Ns	Loc	12	POB	9	B-arrival_city
+的	u	O	mAux	10	RAD	9	O
+飞机票	n	O	Lfin	9	VOB	3	O
+。	wp	O	mPunc	9	WP	3	O
+
+给	p	O	rAgt	11	ADV	3	O
+我	r	O	Datv	1	POB	1	O
+查	v	O	ePurp	1	HED	1	O
+一下	m	O	mDegr	3	CMP	3	O
+6月	nt	O	Tmod	6	ATT	6	B-start_date
+3号	nt	O	Time	8	ADV	8	I-start_date
+北京	ns	S-Ns	Loc	8	ADV	8	B-start_city
+到	v	O	dCont	3	ATT	11	O
+鸡西	ns	S-Ns	Lfin	8	POB	8	B-arrival_city
+的	u	O	mAux	8	RAD	8	O
+飞机票	n	O	Root	1	VOB	3	O
+。	wp	O	mPunc	11	WP	3	O
+
+无锡	ns	S-Ns	Loc	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+厦门	ns	S-Ns	Orig	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+机票	n	O	Cont	2	HED	1	O
+，	wp	O	mPunc	2	WP	5	O
+你	r	O	mPars	2	COO	5	O
+。	wp	O	mPunc	2	WP	5	O
+
+广州	ns	S-Ns	Lini	2	ATT	5	B-start_city
+到	p	O	Root	1	ATT	5	O
+潮州	ns	S-Ns	Orig	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+从	p	O	mPrep	2	ADV	3	O
+西宁	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	Root	1	ATT	6	O
+昆明	ns	S-Ns	Orig	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+机票	n	O	Lfin	3	HED	1	O
+。	wp	O	mPunc	3	WP	6	O
+
+从	p	O	mPrep	6	ADV	3	O
+贵阳	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	rAgt	6	ATT	6	O
+成都	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+的	u	O	mAux	3	RAD	4	O
+飞机票	n	O	Loc	10	SBV	10	O
+我们	r	O	Aft	8	SBV	8	O
+听	v	O	rCont	9	SBV	10	O
+的	u	O	Clas	10	RAD	8	O
+有	v	O	Root	1	HED	1	O
+没	d	O	Quan	6	ADV	12	O
+有	v	O	Qp	6	COO	10	O
+？	wp	O	mPunc	10	WP	10	O
+
+长春	ns	S-Ns	Lini	2	ATT	5	B-start_city
+到	p	O	Root	1	ATT	5	O
+上海	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	SBV	7	O
+明天	nt	O	Time	7	ADV	7	B-start_date
+有	v	O	eSucc	2	HED	1	O
+多少	r	O	Quan	9	ATT	9	O
+班级	n	O	Exp	7	VOB	7	O
+？	wp	O	mPunc	7	WP	7	O
+
+明天	nt	O	Time	2	ADV	2	B-start_date
+到	v	O	Root	1	HED	1	O
+上海	ns	S-Ns	Lfin	2	POB	2	B-start_city
+到	p	O	mDir	2	ATT	13	O
+海南	ns	S-Ns	Poss	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+机票	n	O	eSucc	2	ATT	8	O
+几点钟	nt	O	Time	10	ATT	13	O
+最	d	O	mDegr	10	ADV	10	O
+早	a	O	Desc	13	ATT	13	O
+的	u	O	mAux	10	RAD	10	O
+一	m	O	Quan	13	ATT	13	O
+班	q	O	Qp	7	VOB	2	O
+。	wp	O	mPunc	2	WP	2	O
+
+北京	ns	S-Ns	Loc	2	SBV	2	B-start_city
+去	v	O	Root	1	HED	1	O
+新疆	ns	S-Ns	Nmod	1	ATT	4	B-arrival_city
+航班	n	O	Lfin	2	VOB	2	O
+
+杭州	ns	S-Ns	Lini	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	6	O
+曲靖	ns	S-Ns	Nmod	5	VOB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+火车	n	O	Lfin	2	ATT	6	O
+飞机票	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	6	O
+
+桂林	ns	S-Ns	Exp	3	SBV	3	B-start_city
+，	wp	O	mPunc	1	WP	1	O
+至	d	O	Root	1	HED	1	O
+，	wp	O	mPunc	3	WP	3	O
+深圳	ns	S-Ns	Poss	7	ATT	7	B-arrival_city
+的	u	O	mAux	5	RAD	5	O
+机票	n	O	Exp	9	ATT	9	O
+5月	nt	O	Tmod	9	ATT	9	B-start_date
+1号	nt	O	eSucc	3	COO	3	I-start_date
+。	wp	O	mPunc	9	WP	3	O
+
+4月	nt	O	Tmod	3	ATT	3	B-start_date
+29	m	O	Seq	3	ATT	3	I-start_date
+号	q	O	Time	5	ATT	4	I-start_date
+济南	ns	S-Ns	Agt	5	SBV	5	B-start_city
+到	v	O	Root	1	ATT	8	O
+三亚	ns	S-Ns	Nmod	8	POB	5	B-arrival_city
+的	u	O	mAux	6	RAD	5	O
+飞机	n	O	Lfin	5	HED	1	O
+。	wp	O	mPunc	5	WP	8	O
+
+明天	nt	O	Time	2	ADV	2	B-start_date
+到	v	O	rAgt	5	ATT	5	O
+北京	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+飞机票	n	O	Poss	7	SBV	6	O
+是	v	O	mMod	7	HED	1	O
+有	v	O	Root	1	VOB	6	O
+多少	r	O	Quan	9	ATT	9	O
+钱	n	O	Belg	7	VOB	7	O
+呢	u	O	mTone	7	RAD	7	O
+？	wp	O	mPunc	7	WP	6	O
+
+7月	nt	O	Tmod	2	ATT	2	B-start_date
+20	m	O	Time	4	HED	1	I-start_date
+，	wp	O	mPunc	2	WP	2	O
+九号	nz	O	Root	1	COO	2	O
+，	wp	O	mPunc	4	WP	4	O
+南京	ns	S-Ns	Lini	8	COO	4	B-start_city
+，	wp	O	mPunc	6	WP	6	O
+到	i	O	eSucc	4	COO	4	O
+，	wp	O	mPunc	8	WP	8	O
+海口	ns	S-Ns	Loc	12	ATT	12	B-arrival_city
+的	u	O	mAux	10	RAD	10	O
+航班	n	O	eSucc	8	COO	8	O
+。	wp	O	mPunc	12	WP	2	O
+
+杭州	ns	S-Ns	Loc	2	SBV	2	B-start_city
+到	v	O	rExp	5	ATT	5	O
+内蒙	ns	S-Ns	Loc	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+机票	n	O	Exp	7	ATT	7	O
+多少	r	O	Quan	7	ATT	7	O
+钱	n	O	Root	1	HED	1	O
+？	wp	O	mPunc	7	WP	7	O
+
+后天	nt	O	Time	3	ATT	2	B-start_date
+里面	nd	O	Sco	1	ADV	3	O
+吃	v	O	Root	1	HED	1	O
+到	v	O	mDir	3	CMP	3	O
+广州	ns	B-Ns	Loc	9	ATT	6	B-arrival_city
+广州	ns	E-Ns	Poss	8	ATT	9	I-arrival_city
+的	u	O	mAux	6	RAD	6	O
+上	nd	O	Loc	9	ATT	9	O
+航班	n	O	Pat	3	POB	4	O
+。	wp	O	mPunc	3	WP	3	O
+
+徐州	ns	S-Ns	Lini	2	ATT	5	B-start_city
+到	v	O	Root	1	ATT	5	O
+海口	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+我	r	O	Agt	2	SBV	2	O
+订	v	O	Root	1	HED	1	O
+一	m	O	Quan	4	ATT	4	O
+张	q	O	Qp	8	ATT	8	O
+去	v	O	dDesc	8	ATT	8	O
+上海	ns	S-Ns	Lfin	5	VOB	5	B-arrival_city
+的	u	O	mAux	5	RAD	5	O
+机票	n	O	Cont	2	VOB	2	O
+。	wp	O	mPunc	2	WP	2	O
+
+有	v	O	Root	1	HED	1	O
+香格里拉	ns	S-Ns	Exp	1	DBL	1	B-start_city
+到	v	O	eSucc	1	ATT	6	O
+北京	ns	S-Ns	Nmod	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+飞机	n	O	Lfin	3	VOB	1	O
+吗	u	O	mTone	3	RAD	1	O
+？	wp	O	mPunc	3	WP	1	O
+
+6月	nt	O	Tmod	2	ATT	2	B-start_date
+1号	nt	O	Time	4	ATT	4	I-start_date
+的	u	O	mAux	2	RAD	2	O
+上海	ns	S-Ns	Loc	5	ADV	5	B-start_city
+到	v	O	Root	1	ATT	8	O
+南京	ns	S-Ns	Orig	8	POB	5	B-arrival_city
+的	u	O	mAux	6	RAD	5	O
+机票	n	O	Lfin	5	HED	1	O
+。	wp	O	mPunc	5	WP	8	O
+
+到	v	O	mPrep	4	ATT	4	O
+徐州	ns	S-Ns	Orig	4	POB	1	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+机票	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	4	WP	4	O
+
+6月	nt	O	Tmod	2	ATT	2	B-start_date
+3号	nt	O	Time	4	ATT	4	I-start_date
+的	u	O	mAux	2	RAD	2	O
+上海	ns	S-Ns	Loc	5	ADV	5	B-start_city
+到	v	O	Root	1	ATT	8	O
+南京	ns	S-Ns	Orig	8	POB	5	B-arrival_city
+的	u	O	mAux	6	RAD	5	O
+机票	n	O	Lfin	5	HED	1	O
+。	wp	O	mPunc	5	WP	8	O
+
+长沙	ns	S-Ns	Lini	2	SBV	2	B-start_city
+到	v	O	Root	1	HED	1	O
+西安	ns	S-Ns	Nmod	4	ATT	4	B-arrival_city
+飞机	n	O	Lfin	2	POB	2	O
+。	wp	O	mPunc	2	WP	2	O
+
+贵阳	ns	S-Ns	Lini	2	ADV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+襄阳	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+迪拜	v	O	Agt	2	ATT	5	B-start_city
+到	v	O	Root	1	CMP	1	O
+中国	ns	S-Ns	Poss	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+一	m	O	mConj	5	HED	1	O
+，	wp	O	mPunc	1	WP	1	O
+明明天	nt	O	Time	5	ADV	5	B-start_date
+合肥	ns	S-Ns	Loc	5	SBV	5	B-start_city
+到	v	O	Root	1	ATT	8	O
+池州	ns	S-Ns	Nmod	8	POB	5	B-arrival_city
+的	u	O	mAux	6	RAD	5	O
+航班	n	O	Lfin	5	COO	1	O
+。	wp	O	mPunc	5	WP	1	O
+
+明天	nt	O	Time	3	ADV	3	B-start_date
+太原	ns	S-Ns	Lini	3	ADV	3	B-start_city
+到	v	O	Root	1	ATT	6	O
+杭州	ns	S-Ns	Nmod	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+飞机	n	O	Lfin	3	HED	1	O
+。	wp	O	mPunc	3	WP	6	O
+
+后天	nt	O	Time	2	ADV	2	B-start_date
+到	v	O	Root	1	HED	1	O
+北京	ns	S-Ns	Lfin	2	POB	2	B-start_city
+到	p	O	eSucc	2	ATT	7	O
+郑州	ns	S-Ns	Nmod	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+航班	n	O	Lfin	4	VOB	2	O
+。	wp	O	mPunc	4	WP	2	O
+
+明天	nt	O	Time	4	ADV	7	B-start_date
+，	wp	O	mPunc	1	WP	1	O
+成都	ns	S-Ns	Agt	4	ATT	7	B-start_city
+到	p	O	Root	1	ATT	7	O
+温州	ns	S-Ns	Nmod	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+航班	n	O	Lfin	4	HED	1	O
+。	wp	O	mPunc	4	WP	7	O
+
+北京	ns	S-Ns	Lini	2	ADV	2	B-start_city
+至	p	O	Root	1	ATT	5	O
+广州	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+号	n	O	Lfin	2	HED	1	O
+，	wp	O	mPunc	5	WP	5	O
+土	j	O	Desc	8	ATT	8	O
+飞机	n	O	eCoo	5	COO	5	O
+呀	u	O	mTone	2	RAD	8	O
+！	wp	O	mPunc	2	WP	5	O
+
+给	p	O	dExp	12	ADV	3	O
+我	r	O	Datv	1	POB	1	O
+查询	v	O	ePurp	1	HED	1	O
+一下	m	O	mDegr	3	CMP	3	O
+丽江	ns	S-Ns	Lini	6	SBV	6	B-start_city
+到	v	O	rReas	11	ATT	10	O
+昆明	ns	S-Ns	Lfin	6	POB	6	B-arrival_city
+的	u	O	mAux	6	RAD	6	O
+飞机	n	O	Desc	10	ATT	10	O
+飞机	n	O	Desc	11	ATT	11	O
+票价	n	O	Cont	3	SBV	12	O
+是	v	O	Root	1	VOB	3	O
+多少	r	O	Quan	14	ATT	14	O
+行	n	O	Clas	12	VOB	12	O
+吧	u	O	mTone	12	RAD	12	O
+？	wp	O	mPunc	12	WP	3	O
+
+乌鲁木齐	ns	S-Ns	Loc	2	ATT	2	B-start_city
+导航	v	O	Root	1	HED	1	O
+，	wp	O	mPunc	2	WP	2	O
+哈市	j	O	Poss	6	ATT	6	B-arrival_city
+的	u	O	mAux	4	RAD	4	O
+机票	n	O	eCoo	2	COO	2	O
+。	wp	O	mPunc	6	WP	2	O
+
+银川	ns	S-Ns	Lini	2	ADV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+北京	ns	S-Ns	Sco	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+机票	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+10月	nt	O	Tmod	2	ATT	2	B-start_date
+1	m	O	Time	4	ADV	4	O
+天津	ns	S-Ns	Agt	4	SBV	4	B-start_city
+到	v	O	Root	1	ATT	7	O
+西安	ns	S-Ns	Nmod	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+航班	n	O	Lfin	4	HED	1	O
+。	wp	O	mPunc	4	WP	7	O
+
+海口	ns	S-Ns	Loc	2	SBV	2	B-start_city
+到	v	O	rAgt	5	ATT	5	O
+杭州	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+飞机票	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	5	WP	5	O
+
+查询	v	O	Root	1	HED	1	O
+美国	ns	S-Ns	Datv	1	ATT	6	B-start_city
+到	v	O	eSucc	1	ATT	6	O
+伊拉克	ns	S-Ns	Poss	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+飞机	n	O	Lfin	3	VOB	1	O
+。	wp	O	mPunc	3	WP	1	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查	v	O	eSucc	1	VOB	1	O
+一下	m	O	mDegr	3	CMP	3	O
+昆明	ns	S-Ns	Loc	6	ADV	6	B-start_city
+到	v	O	dCont	3	ATT	9	O
+杭州	ns	S-Ns	Orig	9	POB	6	B-arrival_city
+的	u	O	mAux	7	RAD	6	O
+机票	n	O	Dir	6	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+上海	ns	S-Ns	Loc	2	ADV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+南京	ns	S-Ns	Orig	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+机票	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+叶飞	nh	S-Nh	Nmod	2	SBV	3	O
+北京	ns	S-Ns	Agt	3	ADV	3	B-start_city
+到	v	O	Root	1	ATT	6	O
+美国	ns	S-Ns	Poss	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+航班	n	O	Lfin	3	HED	1	O
+。	wp	O	mPunc	3	WP	6	O
+
+查	v	O	Mann	2	HED	1	O
+下	v	O	dOrig	7	CMP	1	O
+格尔木	ns	S-Ns	Lfin	2	ATT	7	B-start_city
+到	p	O	ePurp	2	ATT	7	O
+西宁	ns	S-Ns	Lfin	4	POB	4	B-arrival_city
+的	u	O	mAux	4	RAD	4	O
+飞机票	n	O	Root	1	VOB	1	O
+。	wp	O	mPunc	7	WP	1	O
+
+查询	v	O	Mann	2	HED	1	O
+到	v	O	Root	1	CMP	1	O
+美国	ns	S-Ns	Orig	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+机票	n	O	Lfin	2	VOB	1	O
+。	wp	O	mPunc	2	WP	1	O
+
+济南	ns	B-Ns	Nmod	3	ATT	3	B-start_city
+国际	n	I-Ns	Desc	3	ATT	3	B-start_airport
+机场	n	E-Ns	Agt	4	SBV	4	I-start_airport
+到	v	O	Root	1	HED	1	O
+韩国	ns	S-Ns	Lfin	4	ATT	7	B-arrival_city
+多少	r	O	Quan	7	ATT	7	O
+钱	n	O	mSepa	4	VOB	4	O
+？	wp	O	mPunc	4	WP	4	O
+
+我们	r	O	Poss	3	SBV	3	O
+每天	r	O	Freq	3	ADV	3	O
+有	v	O	Root	1	HED	1	O
+三	m	O	Quan	5	ATT	5	O
+班	q	O	Qp	9	DBL	3	O
+去	v	O	dDesc	9	ATT	9	O
+上海	ns	S-Ns	Lfin	6	VOB	6	B-arrival_city
+的	u	O	mAux	6	RAD	6	O
+飞机	n	O	Belg	3	VOB	3	O
+。	wp	O	mPunc	3	WP	3	O
+
+帮	v	O	rAgt	9	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查	v	O	eSucc	1	VOB	1	O
+一下	m	O	mDegr	3	CMP	3	O
+武汉	ns	S-Ns	Lini	6	SBV	6	B-start_city
+到	v	O	dCont	3	ATT	9	O
+上海	ns	S-Ns	Lfin	6	POB	6	B-arrival_city
+的	u	O	mAux	6	RAD	6	O
+飞机票	n	O	Root	1	VOB	3	O
+。	wp	O	mPunc	9	WP	1	O
+
+娟	nh	S-Nh	Agt	4	SBV	4	O
+明天	nt	O	Time	4	ADV	4	B-start_date
+天津	ns	S-Ns	Loc	4	ADV	4	B-start_city
+至	p	O	Root	1	ATT	7	O
+山东	ns	S-Ns	Nmod	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+航班	n	O	Lfin	4	HED	1	O
+。	wp	O	mPunc	4	WP	7	O
+
+谁	r	O	Agt	3	SBV	3	O
+明天	nt	O	Time	3	ADV	3	B-start_date
+到	v	O	Root	1	HED	1	O
+美国	ns	S-Ns	Poss	6	ATT	6	B-arrival_city
+的	u	O	mAux	4	RAD	4	O
+航班	n	O	Lfin	3	POB	3	O
+。	wp	O	mPunc	3	WP	3	O
+
+查询	v	O	mPars	4	HED	1	O
+，	wp	O	mPunc	1	WP	1	O
+格尔木	ns	S-Ns	Agt	4	ATT	7	B-start_city
+到	p	O	Root	1	ATT	7	O
+西宁	ns	S-Ns	Nmod	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+航班	n	O	Lfin	4	COO	1	O
+。	wp	O	mPunc	4	WP	1	O
+
+你	r	O	Agt	2	SBV	2	O
+下	v	O	Root	1	ATT	7	O
+到	v	O	mDir	2	CMP	2	O
+长治	ns	S-Ns	Loc	7	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	2	O
+飞机	n	O	Desc	7	ATT	7	O
+航班	n	O	Datv	2	HED	1	O
+。	wp	O	mPunc	2	WP	7	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+定	v	O	ePurp	1	VOB	1	O
+一个	m	O	Qp	9	ATT	9	O
+明天	nt	O	Time	6	ADV	6	B-start_date
+去	v	O	rAgt	9	ATT	9	O
+武汉	ns	S-Ns	Lfin	6	VOB	6	B-arrival_city
+的	u	O	mAux	6	RAD	6	O
+飞机	n	O	Cont	3	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+28日	nt	O	Time	3	ATT	6	B-start_date
+成都	ns	S-Ns	Agt	3	ATT	6	B-start_city
+到	p	O	Root	1	ATT	6	O
+济南	ns	S-Ns	Datv	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+机票	n	O	Lfin	3	HED	1	O
+。	wp	O	mPunc	3	WP	6	O
+
+明天	nt	O	Time	2	ADV	2	B-start_date
+去	v	O	Root	1	ATT	5	O
+北京	ns	S-Ns	Nmod	5	VOB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+去	v	O	dExp	6	ATT	4	O
+武汉	ns	S-Ns	Lfin	1	VOB	1	B-arrival_city
+的	u	O	mAux	2	RAD	1	O
+机票	n	O	Cont	1	SBV	6	O
+最	d	O	mDegr	6	ADV	6	B-cost_relative
+便宜	a	O	Root	1	HED	1	I-cost_relative
+呢	u	O	mTone	6	RAD	6	O
+！	wp	O	mPunc	6	WP	6	O
+
+查	v	O	dCont	8	HED	1	O
+一下	m	O	mDegr	1	CMP	1	O
+明天	nt	O	Time	5	ATT	8	B-start_date
+大连	ns	S-Ns	Agt	5	ATT	8	B-start_city
+到	v	O	dCont	1	ATT	8	O
+北京	ns	S-Ns	Lfin	5	POB	5	B-arrival_city
+的	u	O	mAux	5	RAD	5	O
+飞机	n	O	Root	1	VOB	1	O
+。	wp	O	mPunc	8	WP	1	O
+
+我	r	O	Agt	2	SBV	2	O
+等到	v	O	Root	1	HED	1	O
+上海	ns	S-Ns	Poss	5	ATT	5	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+机票	n	O	Cont	2	SBV	6	O
+查询	v	O	eCoo	5	VOB	2	O
+。	wp	O	mPunc	2	WP	2	O
+
+上海	ns	B-Ns	Loc	3	ATT	3	B-start_city
+浦东	ns	I-Ns	Nmod	3	ATT	3	B-start_airport
+机场	n	E-Ns	Exp	9	SBV	7	I-start_airport
+到	v	O	mPrep	6	ADV	7	O
+深圳	ns	S-Ns	Loc	6	ATT	6	B-arrival_city
+北	nd	O	Comp	9	POB	4	O
+有	v	O	mVain	9	HED	1	O
+多	d	O	mDegr	9	ADV	9	O
+远	a	O	Root	1	VOB	7	O
+。	wp	O	mPunc	9	WP	7	O
+
+帮	v	O	rPat	12	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+订	v	O	ePurp	1	VOB	1	O
+一	m	O	Quan	5	ATT	5	O
+张	q	O	Qp	7	SBV	9	O
+从	p	O	mPrep	7	ADV	9	O
+北京	ns	S-Ns	Datv	3	POB	6	B-start_city
+，	wp	O	mPunc	1	WP	6	O
+到	v	O	Root	1	CMP	3	O
+，	wp	O	mPunc	9	WP	9	O
+重庆	ns	S-Ns	Orig	13	ATT	13	B-arrival_city
+的	u	O	mAux	11	RAD	11	O
+机票	n	O	eSucc	9	COO	9	O
+，	wp	O	mPunc	13	WP	13	O
+飞机票	n	O	eCoo	13	COO	13	O
+。	wp	O	mPunc	15	WP	1	O
+
+南京	ns	S-Ns	Agt	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+佛山	ns	S-Ns	Poss	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+渭南	ns	B-Ns	Loc	2	ATT	2	B-start_city
+渭南	ns	E-Ns	Loc	3	SBV	6	I-start_city
+到	v	O	dExp	8	ADV	6	O
+咸阳	ns	B-Ns	Nmod	5	ATT	5	B-arrival_airport
+机场	n	E-Ns	Lfin	3	POB	3	I-arrival_airport
+有	v	O	mVain	8	HED	1	O
+多	d	O	mDegr	8	ADV	8	O
+远	a	O	Root	1	VOB	6	O
+？	wp	O	mPunc	8	WP	6	O
+
+天津	ns	S-Ns	Agt	2	SBV	2	B-start_city
+到	v	O	Root	1	HED	1	O
+贵州	ns	S-Ns	Nmod	5	ATT	5	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+号	n	O	Lfin	2	POB	2	O
+，	wp	O	mPunc	2	WP	2	O
+飞机	n	O	Pat	8	SBV	8	O
+还有	v	O	eSucc	2	COO	2	O
+吗	u	O	mTone	8	RAD	8	O
+？	wp	O	mPunc	8	WP	2	O
+
+明天	nt	O	Time	3	ADV	3	B-start_date
+大连	ns	S-Ns	Loc	3	SBV	3	B-start_city
+飞	v	O	Root	1	HED	1	O
+深圳	ns	S-Ns	Nmod	5	ATT	5	B-arrival_city
+航班	n	O	Exp	3	VOB	3	O
+。	wp	O	mPunc	3	WP	3	O
+
+30	m	O	Seq	2	ATT	2	B-start_date
+号	q	O	Mann	4	ATT	3	I-start_date
+大连	ns	S-Ns	Lini	4	SBV	4	B-start_city
+到	v	O	Root	1	ATT	7	O
+哈尔滨	ns	S-Ns	Loc	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+飞机票	n	O	Lfin	4	HED	1	O
+。	wp	O	mPunc	4	WP	7	O
+
+后天	nt	O	Time	3	ADV	3	B-start_date
+北京	ns	S-Ns	Loc	3	ADV	3	B-start_city
+到	v	O	Root	1	ATT	6	O
+兰州	ns	S-Ns	Orig	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+机票	n	O	Exp	3	HED	1	O
+。	wp	O	mPunc	3	WP	6	O
+
+从	p	O	mPrep	2	ADV	3	O
+景德镇	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	Root	1	HED	1	O
+美国	ns	S-Ns	Poss	8	ATT	7	B-arrival_city
+的	u	O	mAux	4	RAD	4	O
+火车	n	O	eCoo	7	ATT	7	O
+火车票	n	O	Desc	8	ATT	8	O
+飞机票	n	O	Lfin	3	POB	3	O
+。	wp	O	mPunc	3	WP	3	O
+
+杭州	ns	S-Ns	Loc	2	SBV	2	B-start_city
+到	v	O	Root	1	HED	1	O
+重庆	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+机票	n	O	Cont	2	VOB	2	O
+。	wp	O	mPunc	2	WP	2	O
+
+找	v	O	Root	1	HED	1	O
+一下	m	O	mDegr	1	CMP	1	O
+贵阳	ns	S-Ns	Cont	1	VOB	1	B-start_city
+，	wp	O	mPunc	1	WP	1	O
+龙洞堡	ns	B-Ns	Nmod	6	ATT	6	B-arrival_airport
+机场	n	E-Ns	Poss	8	ATT	8	I-arrival_airport
+的	u	O	mAux	6	RAD	6	O
+电话	n	O	eSucc	1	COO	1	O
+。	wp	O	mPunc	8	WP	1	O
+
+廊坊	ns	S-Ns	Loc	2	ATT	5	B-start_city
+到	v	O	Root	1	ATT	5	O
+南京	ns	S-Ns	Orig	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+机票	n	O	Exp	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+给	p	O	Root	1	ADV	3	O
+我	r	O	Datv	1	POB	1	O
+查	v	O	ePurp	1	HED	1	O
+下	v	O	Cons	3	CMP	3	O
+到	v	O	dCont	3	CMP	3	O
+哈尔滨	ns	S-Ns	Lfin	5	POB	5	B-arrival_city
+的	u	O	mTone	5	RAD	5	O
+，	wp	O	mPunc	3	WP	3	O
+飞机票	n	O	Agt	1	COO	3	O
+。	wp	O	mPunc	1	WP	3	O
+
+查	v	O	dExp	11	SBV	11	O
+一下	m	O	Desc	1	CMP	1	O
+明天	nt	O	Tmod	4	ATT	4	B-start_date
+早上	nt	O	Tmod	5	ATT	5	B-start_time
+九点	nt	O	Time	7	ADV	7	I-start_time
+杭州	ns	S-Ns	Agt	7	SBV	7	B-start_city
+飞	v	O	dDesc	10	ATT	10	O
+贵阳	ns	S-Ns	Datv	7	VOB	7	B-arrival_city
+的	u	O	mAux	7	RAD	7	O
+航班	n	O	Cont	1	VOB	1	O
+是	v	O	Root	1	HED	1	O
+哪	r	O	mTone	14	ATT	13	O
+一	m	O	Quan	14	ATT	14	O
+次	q	O	Clas	11	VOB	11	O
+？	wp	O	mPunc	11	WP	11	O
+
+杭州	ns	S-Ns	Lini	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+济南	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+4月	nt	O	Tmod	3	ATT	3	B-start_date
+29	m	O	Seq	3	ATT	3	I-start_date
+号	q	O	Time	4	ATT	7	I-start_date
+到	v	O	Root	1	ATT	7	O
+武汉	ns	S-Ns	Poss	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+飞机	n	O	Lfin	4	HED	1	O
+。	wp	O	mPunc	4	WP	7	O
+
+青岛	ns	S-Ns	Lini	2	ADV	2	B-start_city
+至	p	O	Root	1	ATT	5	O
+昆明	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+西安	ns	S-Ns	Lini	2	ATT	5	B-start_city
+到	p	O	Root	1	ATT	5	O
+赣州	ns	S-Ns	Datv	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+看	v	O	Root	1	HED	1	O
+五月	nt	O	Tmod	3	ATT	3	B-start_date
+三日	nt	O	Time	5	ADV	7	I-start_date
+上海	ns	S-Ns	Lfin	3	SBV	7	B-start_city
+到	p	O	dCont	1	ADV	7	O
+长沙	ns	S-Ns	Loc	1	POB	5	B-arrival_city
+机票	n	O	Lfin	5	VOB	1	O
+
+乌鲁木齐	ns	S-Ns	Lini	2	SBV	2	B-start_city
+到	v	O	Root	1	HED	1	O
+郑州	ns	S-Ns	Loc	4	ATT	4	B-arrival_city
+飞机票	n	O	Lfin	2	POB	2	O
+。	wp	O	mPunc	2	WP	2	O
+
+5月	nt	O	Tmod	2	ATT	2	B-start_date
+6号	nt	O	Time	4	ADV	4	I-start_date
+南昌	ns	S-Ns	Agt	4	ADV	4	B-start_city
+至	p	O	Root	1	ATT	7	O
+乌鲁木齐	ns	S-Ns	Nmod	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+飞机票	n	O	Lfin	4	SBV	8	O
+有	v	O	mNeg	4	HED	1	O
+吗	u	O	mTone	4	RAD	8	O
+？	wp	O	mPunc	4	WP	8	O
+
+北京	ns	S-Ns	Lini	2	ATT	5	B-start_city
+飞往	v	O	rExp	5	ATT	5	O
+日本	ns	S-Ns	Lfin	2	VOB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+飞机	n	O	Exp	6	SBV	6	O
+有	v	O	Root	1	HED	1	O
+几	m	O	Quan	8	ATT	8	O
+辆	q	O	Qp	6	VOB	6	O
+？	wp	O	mPunc	6	WP	6	O
+
+北京	ns	S-Ns	Loc	2	SBV	2	B-start_city
+到	v	O	Root	1	HED	1	O
+大同	ns	S-Ns	Nmod	4	ATT	6	B-arrival_city
+明天	nt	O	Time	6	ATT	6	B-start_date
+的	u	O	mAux	4	RAD	4	O
+航班	n	O	Lfin	2	POB	2	O
+。	wp	O	mPunc	2	WP	2	O
+
+长沙	ns	S-Ns	Lini	2	ADV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+衡阳	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+长沙	ns	S-Ns	Lini	2	ADV	2	B-start_city
+飞往	v	O	rExp	5	ATT	5	O
+上海	ns	S-Ns	Lfin	2	VOB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+飞机	n	O	Exp	8	SBV	6	O
+还有	v	O	mMod	8	HED	1	O
+没	d	O	mNeg	8	ADV	8	O
+有	v	O	Root	1	COO	6	O
+？	wp	O	mPunc	8	WP	6	O
+
+是	v	O	mMod	6	HED	1	O
+长沙	ns	S-Ns	Lini	3	ADV	3	B-start_city
+到	v	O	rAgt	6	ATT	6	O
+成都	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+飞机	n	O	Exp	8	SBV	8	O
+不	d	O	mNeg	8	ADV	8	O
+是	v	O	Root	1	VOB	1	O
+火车	n	O	Clas	8	VOB	8	O
+。	wp	O	mPunc	8	WP	1	O
+
+他	r	O	Agt	2	SBV	2	O
+去	v	O	Root	1	HED	1	O
+美国	ns	S-Ns	Poss	5	VOB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	VOB	2	O
+。	wp	O	mPunc	2	WP	2	O
+
+福州	ns	S-Ns	Agt	2	ADV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+郑州	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+明天	nt	O	Time	3	ATT	7	B-start_date
+北京	ns	S-Ns	Loc	3	ATT	7	B-start_city
+到	p	O	Root	1	ATT	7	O
+湖北	ns	B-Ns	Nmod	5	ATT	5	B-arrival_city
+宜昌	ns	E-Ns	Nmod	7	POB	3	I-arrival_city
+的	u	O	mAux	5	RAD	3	O
+飞机	n	O	Lfin	3	HED	1	O
+。	wp	O	mPunc	3	WP	7	O
+
+我	r	O	Agt	3	SBV	2	O
+想	v	O	mMod	3	HED	1	O
+订	v	O	Root	1	VOB	2	O
+张	nh	S-Nh	Agt	5	VOB	3	O
+去	v	O	dDesc	8	ATT	8	O
+上海	ns	S-Ns	Lfin	5	VOB	5	B-arrival_city
+的	u	O	mAux	5	RAD	5	O
+机票	n	O	Cont	3	VOB	3	O
+。	wp	O	mPunc	3	WP	2	O
+
+来	v	O	rAgt	8	HED	1	O
+我	r	O	Agt	5	SBV	5	O
+给	p	O	mPrep	4	ADV	5	O
+你	r	O	Datv	5	POB	3	O
+说	v	O	ePurp	1	COO	1	O
+的	u	O	mAux	5	RAD	5	O
+那个	r	O	Sco	8	ATT	8	O
+成都	ns	S-Ns	Root	1	ATT	12	B-start_city
+到	p	O	mPrep	12	ATT	12	O
+乌鲁木齐	ns	S-Ns	Loc	12	POB	9	B-arrival_city
+的	u	O	mAux	10	RAD	9	O
+妻儿	n	O	Comp	8	VOB	5	O
+或	c	O	mConj	14	LAD	16	B-or
+机票	n	O	Comp	8	ATT	16	O
+多少	r	O	Quan	16	ATT	16	O
+钱	n	O	eEqu	8	COO	12	O
+？	wp	O	mPunc	8	WP	1	O
+
+查	v	O	Root	1	HED	1	O
+一下	m	O	Desc	1	CMP	1	O
+温州	ns	S-Ns	Loc	4	SBV	4	B-start_city
+到	v	O	eSucc	1	ATT	7	O
+深圳	ns	S-Ns	Loc	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+飞机票	n	O	Lfin	4	VOB	1	O
+。	wp	O	mPunc	1	WP	1	O
+
+从	p	O	mPrep	2	ADV	3	O
+榆林市	ns	S-Ns	Lini	3	POB	1	B-start_city
+去	v	O	rAgt	7	ATT	7	O
+石家庄	ns	S-Ns	Lfin	3	VOB	3	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+火车	n	O	Desc	7	ATT	7	O
+航班	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	7	WP	7	O
+
+广州	ns	S-Ns	Lini	2	ATT	5	B-start_city
+到	p	O	Root	1	ATT	5	O
+澳洲	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机	n	O	Lfin	2	HED	1	O
+，	wp	O	mPunc	2	WP	5	O
+鸡	n	O	Agt	2	COO	5	O
+。	wp	O	mPunc	2	WP	5	O
+
+沈阳	ns	S-Ns	Agt	2	SBV	6	B-start_city
+会	v	O	dExp	6	ADV	6	O
+无锡	ns	S-Ns	Nmod	4	ATT	4	B-arrival_city
+航班	n	O	Desc	5	ATT	5	O
+号	n	O	Cont	2	SBV	6	O
+是	v	O	Root	1	HED	1	O
+多少	r	O	mTone	6	VOB	6	O
+？	wp	O	mPunc	6	WP	6	O
+
+午夜	nt	O	Time	2	ADV	2	B-start_time
+到	v	O	Root	1	ATT	5	O
+美国	ns	S-Ns	Poss	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+宁波	ns	S-Ns	Lini	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+济南	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+从	p	O	mPrep	2	ADV	3	O
+上海	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	dOrig	6	ATT	6	O
+甘肃	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+飞机票	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	6	WP	6	O
+
+今天	nt	O	Time	9	ADV	7	B-start_date
+西安	ns	S-Ns	Lini	3	ATT	6	B-start_city
+到	p	O	dDesc	6	ATT	6	O
+贵阳	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+飞机	n	O	Exp	9	SBV	7	O
+有	v	O	mVain	9	HED	1	O
+几	m	O	Quan	9	ATT	9	O
+点钟	q	O	Root	1	VOB	7	O
+的	u	O	mAux	9	RAD	7	O
+？	wp	O	mPunc	9	WP	7	O
+
+常州	ns	S-Ns	Lini	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+郑州	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+西安	ns	S-Ns	Lini	2	ATT	6	B-start_city
+到	p	O	dOrig	6	ATT	6	O
+西宁	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+飞机	n	O	Desc	6	ATT	6	O
+航班	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	6	WP	6	O
+
+查	v	O	dMann	4	HED	1	O
+一下	m	O	mDegr	1	CMP	1	O
+明天	nt	O	Time	4	ADV	4	B-start_date
+到	v	O	Root	1	ATT	7	O
+上海	ns	S-Ns	Orig	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+机票	n	O	Exp	4	VOB	1	O
+。	wp	O	mPunc	4	WP	1	O
+
+快点儿	v	O	Root	1	HED	1	O
+起来	v	O	mDir	1	CMP	1	O
+画画	v	O	eSucc	1	COO	1	O
+这个	r	O	Sco	6	ATT	6	O
+那个	r	O	Sco	6	ATT	6	O
+飞机票	n	O	Cont	3	VOB	3	O
+，	wp	O	mPunc	6	WP	1	O
+嵩	ns	S-Ns	Poss	10	ATT	10	O
+的	u	O	mAux	8	RAD	8	O
+歌	n	O	eCoo	6	COO	1	O
+，	wp	O	mPunc	10	WP	10	O
+成都	ns	S-Ns	Agt	13	SBV	13	B-start_city
+到	p	O	eCoo	10	COO	10	O
+乌鲁木齐	ns	S-Ns	Lfin	13	POB	13	B-arrival_city
+多少	r	O	Quan	16	ATT	16	O
+钱	n	O	Desc	13	POB	13	O
+？	wp	O	mPunc	13	WP	1	O
+
+从	p	O	mPrep	2	ADV	3	O
+北海	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	dOrig	6	ATT	8	O
+北京	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+机票	n	O	Exp	8	ATT	8	O
+多少	r	O	Quan	8	ATT	8	O
+钱	n	O	Root	1	HED	1	O
+？	wp	O	mPunc	8	WP	8	O
+
+从	p	O	mPrep	2	ADV	3	O
+成都	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	Root	1	ADV	12	O
+北京	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+大约	d	O	mMod	6	ADV	6	O
+坐	v	O	ePurp	3	ATT	11	O
+几	m	O	Quan	8	ATT	8	O
+个	q	O	Qp	9	ATT	9	O
+小时	n	O	Desc	11	CMP	6	O
+的	u	O	mAux	9	RAD	6	O
+飞机	n	O	Tool	6	SBV	12	O
+坐	v	O	eCoo	11	HED	1	O
+飞机	n	O	Tool	12	VOB	12	O
+到	v	O	mDir	12	CMP	12	O
+。	wp	O	mPunc	12	WP	12	O
+
+成都	ns	S-Ns	Agt	2	ATT	5	B-start_city
+到	p	O	rLfin	5	ATT	5	O
+拉萨	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+航班	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	5	WP	5	O
+
+去	v	O	rAgt	6	ATT	5	O
+大连	ns	S-Ns	Nmod	5	VOB	1	B-arrival_city
+的	u	O	mAux	2	RAD	1	O
+飞机	n	O	Desc	5	ATT	5	O
+大厅	n	O	Lfin	1	SBV	6	O
+有	v	O	Root	1	HED	1	O
+吗	u	O	mTone	6	RAD	6	O
+？	wp	O	mPunc	6	WP	6	O
+
+最	d	O	mDegr	2	ADV	2	O
+早	a	O	Mann	4	ATT	7	O
+的	u	O	mAux	2	RAD	2	O
+到	v	O	Root	1	ATT	7	O
+美国	ns	S-Ns	Poss	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+航班	n	O	Lfin	4	HED	1	O
+。	wp	O	mPunc	4	WP	7	O
+
+赣州	ns	S-Ns	Lini	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+深圳	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机	n	O	Lfin	2	SBV	6	O
+有	v	O	mNeg	2	HED	1	O
+吗	u	O	mTone	2	RAD	6	O
+？	wp	O	mPunc	2	WP	6	O
+
+查询	v	O	Exp	3	HED	1	O
+西宁	ns	S-Ns	Lini	3	ATT	5	B-start_city
+至	p	O	Root	1	ATT	5	O
+格尔木	ns	S-Ns	Nmod	5	POB	3	B-arrival_city
+航班	n	O	Lfin	3	VOB	1	O
+。	wp	O	mPunc	3	WP	1	O
+
+不	d	O	mNeg	2	ADV	2	O
+是	v	O	Root	1	HED	1	O
+从	p	O	mPrep	4	ADV	7	O
+贵阳	ns	S-Ns	Lini	7	POB	3	B-start_city
+到	p	O	mPrep	6	ADV	7	O
+杭州	ns	S-Ns	Dir	7	POB	5	B-start_city
+到	v	O	rAgt	14	ATT	11	O
+成都	ns	S-Ns	Lfin	7	POB	7	B-arrival_city
+的	u	O	mAux	7	RAD	7	O
+两	m	O	Quan	11	ATT	11	O
+倍	q	O	rExp	14	ATT	14	O
+多	m	O	mRang	10	RAD	11	O
+的	u	O	mAux	11	RAD	11	O
+飞机票	n	O	Clas	2	VOB	2	O
+吗	u	O	mTone	2	RAD	2	O
+？	wp	O	mPunc	2	WP	2	O
+
+我	r	O	Agt	2	SBV	2	O
+说	v	O	Root	1	HED	1	O
+从	p	O	mPrep	4	ADV	5	O
+贵阳	ns	S-Ns	Loc	8	POB	3	B-start_city
+到	p	O	mPrep	6	ADV	9	O
+成都	ns	S-Ns	Lfin	8	ATT	8	B-arrival_city
+的	u	O	mAux	6	RAD	6	O
+飞机票	n	O	Loc	9	POB	5	O
+有	v	O	dCont	2	VOB	2	O
+两	m	O	Quan	11	ATT	11	O
+倍	q	O	Qp	14	ATT	14	O
+多	m	O	Quan	10	RAD	11	O
+的	u	O	mAux	11	RAD	11	O
+飞机票	n	O	Exp	9	VOB	9	O
+吗	u	O	mTone	2	RAD	9	O
+？	wp	O	mPunc	2	WP	2	O
+
+贵阳	ns	S-Ns	Lini	2	SBV	2	B-start_city
+到	v	O	rTime	7	ATT	5	O
+太原	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+航班	n	O	rTime	7	ATT	7	O
+5月	nt	O	Tmod	7	ATT	7	B-start_date
+15号	nt	O	Root	1	HED	1	I-start_date
+。	wp	O	mPunc	7	WP	7	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查	v	O	ePurp	1	VOB	1	O
+一下	m	O	mDegr	3	CMP	3	O
+去	v	O	dCont	3	COO	3	O
+美国	ns	S-Ns	Poss	8	ATT	8	B-arrival_city
+的	u	O	mAux	6	RAD	6	O
+飞机票	n	O	Lfin	5	VOB	5	O
+。	wp	O	mPunc	3	WP	1	O
+
+查	v	O	Root	1	HED	1	O
+一	m	O	mDegr	3	ADV	3	O
+下去	v	O	Mann	6	CMP	1	O
+美国	ns	S-Ns	Poss	6	ATT	6	B-arrival_city
+的	u	O	mAux	4	RAD	4	O
+机票	n	O	Cont	1	VOB	1	O
+。	wp	O	mPunc	1	WP	1	O
+
+明天	nt	O	Time	4	ADV	4	B-start_date
+我	r	O	Agt	4	SBV	4	O
+要	v	O	mMod	4	ADV	4	O
+去	v	O	Root	1	HED	1	O
+索马里	ns	B-Ns	Nmod	6	ATT	6	B-start_airport
+机场	n	E-Ns	Lfin	4	VOB	4	I-start_airport
+翻译	v	O	ePurp	4	COO	4	O
+。	wp	O	mPunc	4	WP	4	O
+
+现在	nt	O	Time	3	ADV	3	O
+要	v	O	mMod	3	ADV	3	O
+去	v	O	rAgt	6	HED	1	O
+北京	ns	S-Ns	Lfin	3	ATT	6	B-arrival_city
+的	u	O	mAux	3	RAD	4	O
+飞机票	n	O	Root	1	VOB	3	O
+吗	u	O	mTone	6	RAD	3	O
+？	wp	O	mPunc	6	WP	3	O
+
+长春	ns	S-Ns	Agt	2	SBV	2	B-start_city
+到	p	O	Root	1	HED	1	O
+长白山	ns	S-Ns	Lfin	2	ATT	4	B-arrival_city
+机票	n	O	eSucc	2	ATT	6	O
+多少	r	O	Quan	6	ATT	6	O
+钱	n	O	Pat	4	POB	2	O
+？	wp	O	mPunc	4	WP	2	O
+
+请问	v	O	mPars	13	HED	1	O
+一下	m	O	mDegr	1	CMP	1	O
+那个	r	O	Sco	6	ATT	4	O
+海口	ns	B-Ns	Loc	6	ATT	6	B-start_city
+美兰	nz	I-Ns	Nmod	6	ATT	6	B-start_airport
+机场	n	E-Ns	Agt	7	SBV	7	I-start_airport
+飞往	v	O	dExp	13	ATT	10	O
+昆明	ns	S-Ns	Lfin	7	VOB	7	B-arrival_city
+的	u	O	mAux	7	RAD	7	O
+航班	n	O	Exp	13	ATT	12	O
+30	m	O	Quan	12	ATT	12	B-start_date
+号	q	O	Qp	10	SBV	13	I-start_date
+是	v	O	Root	1	VOB	1	O
+多少	r	O	Quan	15	ATT	15	O
+钱	n	O	Clas	13	VOB	13	O
+呀	u	O	mTone	13	RAD	13	O
+？	wp	O	mPunc	13	WP	1	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+买	v	O	dCont	1	VOB	1	O
+5月	nt	O	Tmod	5	ATT	5	B-start_date
+1号	nt	O	Time	6	ADV	6	I-start_date
+到	v	O	dDesc	9	ATT	9	O
+重庆	ns	S-Ns	Lfin	6	POB	6	B-arrival_city
+的	u	O	mAux	6	RAD	6	O
+机票	n	O	Pat	3	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+查询	v	O	Mann	3	HED	1	O
+昆明	ns	S-Ns	Lini	3	SBV	3	B-start_city
+到	v	O	Root	1	ATT	6	O
+瑞丽	ns	S-Ns	Orig	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+航班	n	O	Lfin	3	VOB	1	O
+。	wp	O	mPunc	3	WP	1	O
+
+昆明	ns	S-Ns	Lini	2	SBV	4	B-start_city
+到	v	O	Root	1	ADV	4	O
+德宏	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+有	v	O	eSucc	2	HED	1	O
+航班	n	O	Exp	4	VOB	4	O
+吗	u	O	mTone	4	RAD	4	O
+？	wp	O	mPunc	4	WP	4	O
+
+有	v	O	Root	1	HED	1	O
+张掖	ns	S-Ns	Lini	3	DBL	1	B-start_city
+到	v	O	dDesc	6	ATT	6	O
+北京	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+飞机	n	O	Exp	1	VOB	1	O
+吗	u	O	mTone	1	RAD	1	O
+？	wp	O	mPunc	1	WP	1	O
+
+西安	ns	S-Ns	Lini	2	ATT	4	B-start_city
+至	p	O	Root	1	ATT	4	O
+上海	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	4	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查询	v	O	eSucc	1	VOB	1	O
+兰州	ns	S-Ns	Loc	5	ADV	5	B-start_city
+到	v	O	dDesc	8	ATT	8	O
+丽江	ns	S-Ns	Lfin	5	POB	5	B-arrival_city
+的	u	O	mAux	5	RAD	5	O
+机票	n	O	Cont	3	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+后天	nt	O	Time	3	ADV	3	B-start_date
+昆明	ns	S-Ns	Lini	3	SBV	3	B-start_city
+到	v	O	Root	1	ATT	6	O
+丽江	ns	S-Ns	Nmod	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+航班	n	O	Lfin	3	HED	1	O
+。	wp	O	mPunc	3	WP	6	O
+
+郑州	ns	S-Ns	Lini	2	ADV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+深圳	ns	S-Ns	Sco	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+你好	i	O	Mann	4	SBV	4	O
+给	p	O	mPrep	3	ADV	4	O
+我	r	O	Datv	4	POB	2	O
+订	v	O	Root	1	HED	1	O
+一	m	O	Quan	6	ATT	6	O
+张	q	O	Qp	11	ATT	11	O
+明天	nt	O	Tmod	8	ATT	8	B-start_date
+早上	nt	O	Tmod	9	ATT	9	B-start_time
+八点	nt	O	Time	11	ATT	11	I-start_time
+的	u	O	mAux	9	RAD	9	O
+机票	n	O	Cont	4	VOB	4	O
+。	wp	O	mPunc	4	WP	4	O
+
+查询	v	O	Exp	3	HED	1	O
+明天	nt	O	Time	3	ADV	3	B-start_date
+到	v	O	Root	1	ATT	6	O
+火星	n	O	Desc	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+航班	n	O	Lfin	3	VOB	1	O
+。	wp	O	mPunc	3	WP	1	O
+
+从	p	O	mPrep	2	ADV	3	O
+南通	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	v	O	Root	1	HED	1	O
+，	wp	O	mPunc	3	WP	3	O
+成都	ns	S-Ns	Loc	7	ATT	7	B-arrival_city
+的	u	O	mAux	5	RAD	5	O
+飞机票	n	O	eSucc	3	COO	3	O
+。	wp	O	mPunc	7	WP	3	O
+
+从	p	O	mPrep	4	ADV	5	O
+贵阳	ns	B-Ns	Nmod	3	ATT	3	B-start_city
+龙洞堡	ns	I-Ns	Nmod	4	ATT	4	B-start_airport
+机场	n	E-Ns	Lini	5	POB	1	I-start_airport
+至	v	O	Root	1	HED	1	O
+。	wp	O	mPunc	5	WP	5	O
+
+招远市	ns	S-Ns	Loc	2	ATT	6	B-start_city
+到	p	O	dDesc	6	ATT	6	O
+青岛	ns	B-Ns	Nmod	4	ATT	4	B-arrival_airport
+机场	n	E-Ns	Lfin	2	POB	2	I-arrival_airport
+的	u	O	mAux	2	RAD	2	O
+路线	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	6	WP	6	O
+
+今天	nt	O	Tmod	2	ATT	2	B-start_date
+晚上	nt	O	Time	5	ADV	7	B-start_time
+从	p	O	mPrep	4	ADV	5	O
+南通	ns	S-Ns	Lini	5	POB	3	B-start_city
+到	p	O	dPoss	7	ADV	7	O
+成都	ns	S-Ns	Lfin	5	POB	5	B-arrival_city
+有	v	O	Root	1	HED	1	O
+几	m	O	Quan	9	ATT	9	O
+个	q	O	Qp	10	ATT	10	O
+航班	n	O	Belg	7	VOB	7	O
+。	wp	O	mPunc	7	WP	7	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查	v	O	ePurp	1	VOB	1	O
+一下	m	O	Quan	9	CMP	3	O
+恩施	ns	S-Ns	Lini	6	SBV	6	B-start_city
+到	v	O	dDesc	9	ATT	9	O
+杭州	ns	S-Ns	Lfin	6	POB	6	B-arrival_city
+的	u	O	mAux	6	RAD	6	O
+机票	n	O	Cont	3	VOB	3	O
+。	wp	O	mPunc	1	WP	1	O
+
+明天	nt	O	Time	2	ADV	2	B-start_date
+飞往	v	O	dExp	8	ATT	5	O
+海南	ns	S-Ns	Poss	5	VOB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Dir	2	SBV	6	O
+是	v	O	mMod	8	HED	1	O
+几	m	O	Quan	8	ATT	8	O
+点	q	O	Root	1	VOB	6	O
+？	wp	O	mPunc	8	WP	6	O
+
+从	p	O	mPrep	2	ADV	3	O
+菏泽	ns	S-Ns	Lini	3	POB	1	B-start_city
+坐	v	O	dMann	5	HED	1	O
+火车	n	O	Tool	3	VOB	3	O
+到	v	O	dExp	10	ADV	8	O
+深圳	ns	S-Ns	Nmod	7	ATT	7	B-arrival_airport
+机场	n	O	Lfin	5	POB	5	I-arrival_airport
+有	v	O	mVain	10	COO	3	O
+多	d	O	mDegr	10	ADV	10	O
+远	a	O	Root	1	VOB	8	O
+？	wp	O	mPunc	10	WP	3	O
+
+所以	c	O	mConj	4	ADV	4	O
+你	r	O	Agt	4	SBV	4	O
+只	d	O	mRang	4	ADV	4	O
+需要	v	O	Root	1	HED	1	O
+有	v	O	mVain	6	VOB	4	O
+买	v	O	dExp	13	VOB	5	O
+来到	v	O	eSucc	6	COO	6	O
+中国	ns	S-Ns	Lfin	7	ATT	11	B-arrival_city
+的	u	O	mAux	7	RAD	8	O
+机票	n	O	Desc	11	ATT	11	O
+钱	n	O	Exp	6	VOB	7	O
+就	d	O	mMod	13	ADV	13	O
+可以	v	O	dCont	4	COO	4	O
+了	u	O	mTone	13	RAD	13	O
+。	wp	O	mPunc	4	WP	4	O
+
+从	p	O	mPrep	2	ADV	3	O
+郑州	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	Root	1	ATT	6	O
+厦门	ns	S-Ns	Nmod	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+航班	n	O	Lfin	3	HED	1	O
+。	wp	O	mPunc	3	WP	6	O
+
+昆明	ns	S-Ns	Loc	2	ATT	4	B-start_city
+到	p	O	Root	1	ADV	4	O
+长沙	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+机票	n	O	eSucc	2	HED	1	O
+。	wp	O	mPunc	2	WP	4	O
+
+沈阳	ns	S-Ns	Lini	2	ATT	4	B-start_city
+飞	v	O	dDesc	4	ATT	4	O
+无锡	ns	S-Ns	Lfin	2	ATT	4	B-arrival_city
+航班	n	O	Exp	8	SBV	8	O
+今天	nt	O	Tmod	7	ADV	8	O
+什么	r	O	mTone	7	ATT	7	O
+时候	n	O	Time	8	ADV	8	O
+走	v	O	Root	1	HED	1	O
+？	wp	O	mPunc	8	WP	8	O
+
+从	p	O	mPrep	2	ADV	3	O
+宁夏	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	rLfin	6	ATT	6	O
+绵阳	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+飞机票	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	6	WP	6	O
+
+济南	ns	B-Ns	Nmod	3	ATT	3	B-start_city
+国际	n	I-Ns	Desc	3	ATT	3	B-start_airport
+机场	n	E-Ns	Loc	4	SBV	4	I-start_airport
+坐	v	O	Root	1	HED	1	O
+飞机	n	O	Tool	4	VOB	4	O
+到	v	O	mDir	4	CMP	4	O
+，	wp	O	mPunc	4	WP	4	O
+银川	ns	S-Ns	eSucc	4	ATT	10	B-arrival_city
+多少	r	O	Quan	10	ATT	10	O
+钱	n	O	eCoo	8	COO	4	O
+？	wp	O	mPunc	8	WP	4	O
+
+从	p	O	mPrep	2	ADV	3	O
+济南	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	Root	1	HED	1	O
+韩国	ns	B-Ns	Nmod	5	ATT	6	B-arrival_city
+仁川	ns	E-Ns	Nmod	6	ATT	6	I-arrival_city
+飞机	n	O	Lfin	3	ATT	8	O
+多少	r	O	Quan	8	ATT	8	O
+钱	n	O	Belg	3	POB	3	O
+？	wp	O	mPunc	3	WP	3	O
+
+查查	v	O	Root	1	HED	1	O
+一下	m	O	mDegr	1	CMP	1	O
+从	p	O	mPrep	4	ADV	5	O
+北京	ns	S-Ns	Lini	5	POB	3	B-start_city
+飞往	v	O	dCont	1	ATT	8	O
+石家庄	ns	S-Ns	Orig	8	VOB	5	B-arrival_city
+的	u	O	mAux	6	RAD	5	O
+机票	n	O	Dir	5	VOB	1	O
+。	wp	O	mPunc	1	WP	1	O
+
+4月	nt	O	Tmod	2	ATT	3	B-start_date
+29	m	O	Seq	3	ATT	3	I-start_date
+号	q	O	Time	5	ATT	5	I-start_date
+的	u	O	mAux	3	RAD	3	O
+上海	ns	S-Ns	Lini	6	SBV	6	B-start_city
+到	v	O	Root	1	ATT	9	O
+南京	ns	S-Ns	Orig	9	POB	6	B-arrival_city
+的	u	O	mAux	7	RAD	6	O
+机票	n	O	Lfin	6	HED	1	O
+。	wp	O	mPunc	6	WP	9	O
+
+给	p	O	Root	1	ADV	3	O
+我	r	O	Datv	1	POB	1	O
+订	v	O	ePurp	1	HED	1	O
+一	m	O	Quan	5	ATT	5	O
+张	q	O	Qp	9	ATT	9	O
+去	v	O	dDesc	9	ATT	9	O
+美国	ns	S-Ns	Lfin	6	VOB	6	B-arrival_city
+的	u	O	mAux	6	RAD	6	O
+机票	n	O	Pat	3	VOB	3	O
+完	v	O	Cons	1	CMP	3	O
+了	u	O	mTone	1	RAD	10	O
+。	wp	O	mPunc	1	WP	3	O
+
+南京	ns	S-Ns	Lini	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+上海	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+从	p	O	mPrep	2	ADV	3	O
+北京	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	Root	1	HED	1	O
+柳州	ns	S-Ns	Nmod	6	ATT	6	B-arrival_city
+的	u	O	mAux	4	RAD	4	O
+飞机	n	O	Lfin	3	POB	3	O
+。	wp	O	mPunc	3	WP	3	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+卡	v	O	dMann	6	VOB	1	O
+给	p	O	mPrep	5	ADV	6	O
+我	r	O	Datv	3	POB	4	O
+找	v	O	eSucc	1	COO	3	O
+一个	m	O	Qp	11	ATT	11	O
+去	v	O	rAgt	11	ATT	11	O
+北京	ns	S-Ns	Lfin	8	VOB	8	B-arrival_city
+的	u	O	mAux	8	RAD	8	O
+飞机票	n	O	Cont	6	VOB	6	O
+。	wp	O	mPunc	6	WP	1	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查	v	O	ePurp	1	VOB	1	O
+一下	m	O	Quan	9	CMP	3	O
+重庆	ns	S-Ns	Lini	6	SBV	6	B-start_city
+到	v	O	dDesc	9	ATT	9	O
+上海	ns	S-Ns	Lfin	6	POB	6	B-arrival_city
+的	u	O	mAux	6	RAD	6	O
+飞机	n	O	Cont	3	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+双鸭山	ns	S-Ns	Exp	3	SBV	3	B-start_city
+，	wp	O	mPunc	1	WP	1	O
+到	v	O	Root	1	HED	1	O
+太平	ns	B-Ns	Nmod	5	ATT	5	B-arrival_airport
+机场	n	E-Ns	Lfin	3	POB	3	I-arrival_airport
+。	wp	O	mPunc	3	WP	3	O
+
+从	p	O	mPrep	2	ADV	3	O
+温州	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	rAgt	6	ATT	6	O
+武汉	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+航班	n	O	Exp	8	SBV	8	O
+明天	nt	O	Time	8	ADV	8	B-start_date
+有	v	O	Root	1	HED	1	O
+没	d	O	eSelt	8	ADV	10	O
+有	v	O	eSelt	8	COO	8	O
+？	wp	O	mPunc	8	WP	8	O
+
+阿克苏	ns	S-Ns	Lini	3	SBV	3	B-start_city
+，	wp	O	mPunc	1	WP	1	O
+到	v	O	Root	1	HED	1	O
+昆路	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+，	wp	O	mPunc	3	WP	3	O
+飞机	n	O	eSucc	3	COO	3	O
+。	wp	O	mPunc	6	WP	3	O
+
+飞机票	n	O	eEqu	2	SBV	3	O
+北京	ns	S-Ns	Lini	3	SBV	3	B-start_city
+到	v	O	Root	1	HED	1	O
+上海	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+。	wp	O	mPunc	3	WP	3	O
+
+刚	d	O	mTime	2	ADV	2	O
+到	v	O	Root	1	HED	1	O
+纽约	ns	S-Ns	Loc	5	ATT	5	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+航班	n	O	Lfin	2	VOB	2	O
+。	wp	O	mPunc	2	WP	2	O
+
+乌鲁木齐	ns	S-Ns	Lini	2	SBV	2	B-start_city
+到	v	O	mPrep	7	ATT	5	O
+西安	ns	S-Ns	Loc	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Root	1	SBV	7	O
+最	d	O	mDegr	7	ADV	7	B-cost_relative
+便宜	a	O	Desc	10	ATT	10	I-cost_relative
+的	u	O	mAux	7	RAD	7	O
+多少	r	O	Quan	10	ATT	10	O
+钱	n	O	Qp	5	ATT	11	O
+现在	nt	O	Time	5	HED	1	O
+？	wp	O	mPunc	5	WP	11	O
+
+从	p	O	mPrep	2	ADV	3	O
+贵阳	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	rAgt	7	HED	1	O
+成都	ns	S-Ns	Lfin	3	ATT	6	B-arrival_city
+的	u	O	mAux	3	RAD	4	O
+飞机票	n	O	Desc	7	ATT	7	O
+后天	n	O	Root	1	POB	3	B-start_date
+呢	u	O	mTone	7	RAD	3	O
+！	wp	O	mPunc	7	WP	3	O
+
+我	r	O	Agt	3	SBV	3	O
+要	v	O	mMod	3	ADV	3	O
+去	v	O	Root	1	HED	1	O
+虹桥	ns	B-Ns	Nmod	5	ATT	5	B-arrival_airport
+机场	n	E-Ns	Lfin	3	VOB	3	I-arrival_airport
+。	wp	O	mPunc	3	WP	3	O
+
+那	r	O	Agt	10	ADV	7	O
+我	r	O	Agt	4	SBV	7	O
+就	d	O	mMod	4	ADV	7	O
+跟	p	O	Root	1	ADV	7	O
+你	r	O	Datv	4	POB	4	O
+一起	d	O	Mann	7	ADV	7	O
+去	v	O	ePurp	4	HED	1	O
+吧	u	O	mTone	7	RAD	7	O
+，	wp	O	mPunc	7	WP	7	O
+到校	v	O	eSucc	7	COO	7	O
+北京	ns	S-Ns	Dir	10	ADV	12	B-start_city
+到	v	O	eSucc	10	ATT	15	O
+上海	ns	S-Ns	Nmod	15	POB	12	B-arrival_city
+的	u	O	mAux	13	RAD	12	O
+航班	n	O	Lfin	12	VOB	10	O
+。	wp	O	mPunc	10	WP	7	O
+
+福州	ns	S-Ns	Loc	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	6	O
+咸阳	ns	S-Ns	Loc	6	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+特价	n	O	Desc	6	ATT	6	O
+机票	n	O	Lfin	2	HED	1	O
+，	wp	O	mPunc	2	WP	6	O
+啊	e	O	mPunc	2	RAD	6	O
+，	wp	O	mPunc	2	WP	8	O
+你	r	O	mPars	2	COO	8	O
+。	wp	O	mPunc	2	WP	6	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查	v	O	eSucc	1	VOB	1	O
+一下	m	O	mDegr	3	CMP	3	O
+贵阳	ns	S-Ns	Loc	6	ADV	6	B-start_city
+到	v	O	dCont	3	ATT	9	O
+广州	ns	S-Ns	Orig	9	POB	6	B-arrival_city
+的	u	O	mAux	7	RAD	6	O
+机票	n	O	Exp	6	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+邯郸	ns	S-Ns	Loc	2	SBV	2	B-start_city
+到	v	O	Root	1	HED	1	O
+上海	ns	S-Ns	Lfin	2	ATT	4	B-arrival_city
+机票	n	O	ePurp	2	POB	2	O
+。	wp	O	mPunc	2	WP	2	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查	v	O	ePurp	1	VOB	1	O
+一下	m	O	mDegr	3	CMP	3	O
+杭州	ns	S-Ns	Loc	6	SBV	6	B-start_city
+到	v	O	dCont	3	ATT	9	O
+广州	ns	S-Ns	Loc	9	POB	6	B-arrival_city
+的	u	O	mAux	7	RAD	6	O
+飞机票	n	O	Lfin	6	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+今天	nt	O	Tmod	2	ATT	2	B-start_date
+晚上	nt	O	Time	4	ADV	4	B-start_time
+温州	ns	S-Ns	Loc	4	SBV	4	B-start_city
+去	v	O	Root	1	ATT	7	O
+北京	ns	S-Ns	Loc	7	VOB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+机票	n	O	Lfin	4	HED	1	O
+。	wp	O	mPunc	4	WP	7	O
+
+南昌荡	v	O	Mann	2	HED	1	O
+到	v	O	Root	1	CMP	1	O
+上海	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+，	wp	O	mPunc	2	WP	1	O
+飞机	n	O	eSucc	2	COO	1	O
+。	wp	O	mPunc	5	WP	1	O
+
+从	p	O	mPrep	2	ADV	3	O
+武汉	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	dOrig	6	ATT	6	O
+北京	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+机票	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	6	WP	6	O
+
+从	p	O	mPrep	2	ADV	3	O
+石家庄	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	Root	1	ATT	6	O
+重庆	ns	S-Ns	Nmod	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+飞机	n	O	Lfin	3	HED	1	O
+。	wp	O	mPunc	3	WP	6	O
+
+查询	v	O	Desc	2	HED	1	O
+后天	n	O	Agt	5	VOB	1	B-start_date
+，	wp	O	mPunc	2	WP	1	O
+北京	ns	S-Ns	Loc	5	SBV	5	B-start_city
+去	v	O	Root	1	ATT	8	O
+庆阳	ns	S-Ns	Poss	8	VOB	5	B-arrival_city
+的	u	O	mAux	6	RAD	5	O
+航班	n	O	Lfin	5	COO	1	O
+。	wp	O	mPunc	5	WP	1	O
+
+据	p	O	mPrep	2	HED	1	O
+广州	ns	S-Ns	Lini	3	SBV	3	B-start_city
+到	v	O	Root	1	ATT	6	O
+西安	ns	S-Ns	Nmod	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+航班	n	O	Lfin	3	POB	1	O
+。	wp	O	mPunc	3	WP	1	O
+
+上海市	ns	S-Ns	Agt	2	ATT	5	B-start_city
+到	v	O	Root	1	ATT	5	O
+美国	ns	S-Ns	Poss	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+机票	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查	v	O	ePurp	1	VOB	1	O
+一下	m	O	mDegr	3	CMP	3	O
+明天	nt	O	Time	7	ADV	7	B-start_date
+就	d	O	mTime	7	ADV	7	O
+回	v	O	rExp	10	COO	3	O
+太原	ns	S-Ns	Lfin	7	ATT	10	B-arrival_city
+的	u	O	mAux	7	RAD	8	O
+飞机	n	O	Cont	3	VOB	7	O
+。	wp	O	mPunc	3	WP	1	O
+
+邯郸	ns	S-Ns	Loc	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+上海	ns	S-Ns	Loc	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+机票	n	O	Exp	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+大同	ns	S-Ns	Lini	2	SBV	2	B-start_city
+到	v	O	dOrig	5	ATT	5	O
+北京	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+机票	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	5	WP	5	O
+
+从	p	O	mPrep	2	ADV	9	O
+重庆	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	Root	1	ADV	9	O
+北京	ns	S-Ns	Lfin	3	ATT	5	B-arrival_city
+飞机票	n	O	Lfin	3	POB	3	O
+好多	m	O	Quan	7	ATT	7	O
+钱	n	O	Cont	3	ATT	9	O
+一	m	O	Quan	9	ATT	9	O
+张	q	O	Qp	7	HED	1	O
+。	wp	O	mPunc	3	WP	9	O
+
+请	v	O	mMod	2	HED	1	O
+帮	v	O	Root	1	VOB	1	O
+我	r	O	Datv	2	DBL	2	O
+查询	v	O	eSucc	2	VOB	2	O
+一下	m	O	mDegr	4	CMP	4	O
+昆明	ns	S-Ns	Loc	7	ADV	7	B-start_city
+到	v	O	dCont	4	ATT	10	O
+香港	ns	S-Ns	Orig	10	POB	7	B-arrival_city
+的	u	O	mAux	8	RAD	7	O
+机票	n	O	Lfin	7	VOB	4	O
+。	wp	O	mPunc	4	WP	1	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查	v	O	ePurp	1	VOB	1	O
+一下	m	O	mDegr	3	CMP	3	O
+从	p	O	mPrep	6	CMP	3	O
+北京	ns	S-Ns	Lini	7	SBV	7	B-start_city
+飞往	v	O	dCont	3	ATT	10	O
+上海	ns	S-Ns	Nmod	10	VOB	7	B-arrival_city
+的	u	O	mAux	8	RAD	7	O
+飞机	n	O	Lfin	7	POB	5	O
+。	wp	O	mPunc	3	WP	1	O
+
+成都	ns	S-Ns	Agt	2	ATT	5	B-start_city
+到	p	O	Root	1	ATT	5	O
+温州	ns	S-Ns	Datv	1	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+机票	n	O	Lfin	2	HED	1	O
+
+5月	nt	O	Tmod	2	ATT	2	B-start_date
+15号	nt	O	Time	4	ADV	4	I-start_date
+西安	ns	S-Ns	Agt	4	SBV	4	B-start_city
+到	v	O	Root	1	ATT	7	O
+义乌	ns	S-Ns	Nmod	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+航班	n	O	Lfin	4	HED	1	O
+。	wp	O	mPunc	4	WP	7	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查查	v	O	eSucc	1	VOB	1	O
+歙县	ns	S-Ns	Lini	5	SBV	5	B-start_city
+到	v	O	dTime	9	VOB	3	O
+河南	ns	S-Ns	Lfin	5	ATT	7	B-arrival_city
+边	nd	O	mRang	6	ATT	9	O
+的	u	O	mAux	5	RAD	7	O
+飞机票	n	O	Cont	3	ATT	11	O
+多少	r	O	Quan	11	ATT	11	O
+钱	n	O	eCoo	9	VOB	5	O
+？	wp	O	mPunc	3	WP	1	O
+
+鄂尔多斯	ns	S-Ns	Agt	2	SBV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+三亚	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+无锡	ns	S-Ns	Loc	2	SBV	2	B-start_city
+到	v	O	rAgt	5	ATT	5	O
+兰州	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+飞机票	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	5	WP	5	O
+
+查询	v	O	Root	1	HED	1	O
+杭州	ns	S-Ns	Datv	1	SBV	3	B-start_city
+到	v	O	eSucc	1	ATT	6	O
+长春	ns	S-Ns	Nmod	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+飞机	n	O	Lfin	3	VOB	1	O
+。	wp	O	mPunc	3	WP	1	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+订张	v	O	eSucc	1	VOB	1	O
+26	m	O	Seq	5	ATT	5	B-start_date
+号	q	O	Qp	7	ATT	7	I-start_date
+的	u	O	mAux	5	RAD	5	O
+机票	n	O	Cont	3	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+从	p	O	mPrep	2	ADV	3	O
+贵阳	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	dOrig	6	ATT	6	O
+深圳	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+机票	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	6	WP	6	O
+
+洛阳	ns	S-Ns	Loc	2	SBV	2	B-start_city
+到	v	O	rExp	5	ATT	5	O
+北京	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+机票	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	5	WP	5	O
+
+榆林	ns	S-Ns	Agt	2	SBV	2	B-start_city
+到	v	O	rLfin	5	ATT	5	O
+咸阳	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+飞机票	n	O	Exp	7	ATT	7	O
+多少	r	O	Quan	7	ATT	7	O
+钱	n	O	Root	1	HED	1	O
+？	wp	O	mPunc	7	WP	7	O
+
+榆林	ns	S-Ns	Agt	2	SBV	2	B-start_city
+到	v	O	rLfin	5	ATT	5	O
+西安	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+飞机票	n	O	Exp	7	ATT	7	O
+多少	r	O	Quan	7	ATT	7	O
+钱	n	O	Root	1	HED	1	O
+？	wp	O	mPunc	7	WP	7	O
+
+给	p	O	rAgt	11	ADV	3	O
+我	r	O	Datv	1	POB	1	O
+查	v	O	ePurp	1	HED	1	O
+一下	m	O	mDegr	3	CMP	3	O
+5月	nt	O	Tmod	6	ATT	6	B-start_date
+1号	nt	O	Time	8	ADV	8	I-start_date
+西安	ns	S-Ns	Loc	8	SBV	8	B-start_city
+到	v	O	dCont	3	ATT	11	O
+包头	ns	S-Ns	Lfin	8	POB	8	B-arrival_city
+的	u	O	mAux	8	RAD	8	O
+飞机票	n	O	Root	1	VOB	3	O
+。	wp	O	mPunc	11	WP	3	O
+
+西安	ns	S-Ns	Lini	2	ATT	4	B-start_city
+至	p	O	Root	1	ATT	4	O
+义乌	ns	S-Ns	Nmod	4	POB	2	B-arrival_city
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	4	O
+
+哈尔滨	ns	S-Ns	Lini	2	ADV	2	B-start_city
+到	v	O	dOrig	5	ATT	5	O
+北京	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+机票	n	O	Exp	7	ATT	7	O
+多少	r	O	Quan	7	ATT	7	O
+钱	n	O	Root	1	ATT	9	O
+一	m	O	Quan	9	ATT	9	O
+张	q	O	Qp	7	HED	1	O
+？	wp	O	mPunc	7	WP	9	O
+
+南昌	ns	S-Ns	Agt	2	SBV	2	B-start_city
+到	v	O	Root	1	HED	1	O
+上海	ns	S-Ns	Lfin	2	ATT	4	B-arrival_city
+飞机	n	O	Lfin	2	POB	2	O
+。	wp	O	mPunc	2	WP	2	O
+
+30	m	O	Seq	2	ATT	2	B-start_date
+号	q	O	Mann	4	ATT	3	I-start_date
+大连	ns	S-Ns	Lini	4	SBV	4	B-start_city
+到	v	O	Root	1	ATT	7	O
+哈尔滨	ns	S-Ns	Poss	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+机票	n	O	Agt	4	SBV	8	O
+有	v	O	eAban	4	HED	1	O
+没	d	O	eSelt	8	ADV	10	O
+有	v	O	eSelt	8	COO	8	O
+？	wp	O	mPunc	8	WP	8	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+找	v	O	eSucc	1	VOB	1	O
+一下	m	O	mDegr	3	CMP	3	O
+去	v	O	dCont	3	COO	3	O
+成都	ns	S-Ns	Lfin	5	VOB	5	B-arrival_city
+的	u	O	mTone	3	RAD	5	O
+，	wp	O	mPunc	3	WP	1	O
+机票	n	O	eSucc	3	COO	1	O
+。	wp	O	mPunc	9	WP	1	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+开	v	O	dCont	1	VOB	1	O
+一	m	O	Quan	5	ATT	5	O
+张	q	O	Qp	6	ATT	6	O
+机票	n	O	Prod	3	VOB	3	O
+，	wp	O	mPunc	1	WP	1	O
+明天	nt	O	Time	10	ATT	13	B-start_date
+郑州	ns	S-Ns	Loc	10	ADV	10	B-start_city
+到	p	O	eSucc	1	ATT	13	O
+昆明	ns	S-Ns	Orig	13	POB	10	B-arrival_city
+的	u	O	mAux	11	RAD	10	O
+机票	n	O	Lfin	10	COO	1	O
+。	wp	O	mPunc	10	WP	1	O
+
+广州	ns	S-Ns	Lini	2	SBV	2	B-start_city
+去	v	O	Root	1	ATT	5	O
+美国	ns	S-Ns	Poss	5	VOB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+查询	v	O	Desc	2	HED	1	O
+明天	nt	O	eEqu	3	ATT	7	B-start_date
+北京	ns	S-Ns	Loc	4	SBV	4	B-start_city
+到	v	O	Root	1	ATT	7	O
+货	n	O	Lfin	4	VOB	4	O
+四	m	O	Quan	7	ATT	7	O
+航班	n	O	Exp	4	VOB	1	O
+。	wp	O	mPunc	4	WP	1	O
+
+南京	ns	S-Ns	Lini	2	SBV	2	B-start_city
+到	v	O	rAgt	5	ATT	5	O
+成都	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+飞机票	n	O	Exp	8	SBV	6	O
+有	v	O	mVain	8	HED	1	O
+没	d	O	mNeg	8	ADV	8	O
+有	v	O	Root	1	COO	6	O
+？	wp	O	mPunc	8	WP	6	O
+
+我	r	O	Agt	3	SBV	6	O
+明天	nt	O	Time	3	ADV	6	B-start_date
+到	v	O	Root	1	ADV	6	O
+芝加哥	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+不	d	O	mNeg	6	ADV	6	O
+知道	v	O	eSucc	3	HED	1	O
+坐	v	O	dCont	6	ATT	11	O
+几	m	O	Quan	9	ATT	9	O
+点钟	q	O	TDur	7	CMP	7	O
+的	u	O	mAux	9	RAD	7	O
+飞机	n	O	eSucc	7	VOB	6	O
+？	wp	O	mPunc	6	WP	6	O
+
+从	p	O	mPrep	2	ADV	3	O
+成都	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	rAgt	6	ATT	6	O
+广元	ns	S-Ns	Lfin	3	POB	3	B-arrival_city
+的	u	O	mAux	3	RAD	3	O
+飞机票	n	O	Poss	7	SBV	7	O
+有	v	O	Root	1	HED	1	O
+没	d	O	mNeg	9	ADV	9	O
+有	v	O	eSelt	7	COO	7	O
+？	wp	O	mPunc	7	WP	7	O
+
+从	p	O	mPrep	2	ADV	3	O
+石家庄	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	Root	1	ATT	6	O
+北京	ns	S-Ns	Nmod	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+飞机	n	O	Lfin	3	HED	1	O
+。	wp	O	mPunc	3	WP	6	O
+
+南京	ns	S-Ns	Agt	2	ATT	5	B-start_city
+到	p	O	rLfin	5	ATT	5	O
+昆明	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+飞机票	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	5	WP	5	O
+
+从	p	O	mPrep	2	ADV	3	O
+北京	ns	S-Ns	Lini	3	POB	1	B-start_city
+坐	v	O	dMann	5	HED	1	O
+飞机	n	O	Tool	3	VOB	3	O
+到	v	O	Root	1	ADV	8	O
+英国	ns	B-Ns	Nmod	7	ATT	7	B-arrival_city
+伦敦	ns	E-Ns	Lfin	5	POB	5	I-arrival_city
+要	v	O	ePurp	5	COO	3	O
+多	d	O	mDegr	10	ADV	10	O
+长	a	O	Desc	11	ATT	11	O
+时间	n	O	Cont	8	VOB	8	O
+？	wp	O	mPunc	8	WP	3	O
+
+从	p	O	mPrep	4	ADV	5	O
+上海	ns	B-Ns	Nmod	3	ATT	3	B-start_city
+浦东	ns	I-Ns	Nmod	4	ATT	4	B-start_airport
+机场	n	E-Ns	Lini	5	POB	1	I-start_airport
+到	v	O	Root	1	HED	1	O
+四川	ns	S-Ns	Lfin	5	VOB	5	B-arrival_city
+。	wp	O	mPunc	5	WP	5	O
+
+福州	ns	S-Ns	Agt	2	ADV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+济南	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查询	v	O	eSucc	1	VOB	1	O
+到	v	O	mPrep	5	CMP	3	O
+北京	ns	S-Ns	Orig	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	3	O
+机票	n	O	Cont	3	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+有	v	O	mVain	3	HED	1	O
+没	d	O	mNeg	3	ADV	3	O
+有	v	O	Root	1	COO	1	O
+长沙	ns	S-Ns	Nmod	6	ATT	6	B-start_city
+自助	b	O	Desc	6	ATT	6	O
+重庆	ns	S-Ns	Poss	8	ATT	8	B-arrival_city
+的	u	O	mAux	6	RAD	6	O
+飞机	n	O	Exp	3	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+从	p	O	mPrep	2	ADV	3	O
+大连	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	Root	1	ATT	6	O
+厦门	ns	S-Ns	Nmod	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+飞机	n	O	Lfin	3	HED	1	O
+。	wp	O	mPunc	3	WP	6	O
+
+查询	v	O	Mann	3	HED	1	O
+温州	ns	S-Ns	Loc	3	SBV	3	B-start_city
+到	v	O	Root	1	ATT	6	O
+深圳	ns	S-Ns	Loc	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+飞机票	n	O	Exp	3	VOB	1	O
+。	wp	O	mPunc	3	WP	1	O
+
+查询	v	O	Root	1	HED	1	O
+万州	ns	S-Ns	Datv	1	SBV	3	B-start_city
+到	v	O	eSucc	1	ATT	6	O
+深圳	ns	S-Ns	Loc	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+飞机票	n	O	Lfin	3	VOB	1	O
+。	wp	O	mPunc	3	WP	1	O
+
+帮	v	O	Root	1	HED	1	O
+我	r	O	Datv	1	DBL	1	O
+查询	v	O	eSucc	1	VOB	1	O
+明天	nt	O	Time	5	ADV	5	B-start_date
+到	v	O	rExp	8	ATT	8	O
+上海	ns	S-Ns	Lfin	5	POB	5	B-arrival_city
+的	u	O	mAux	5	RAD	5	O
+航班	n	O	Cont	3	VOB	3	O
+。	wp	O	mPunc	3	WP	1	O
+
+从	p	O	mPrep	2	ADV	8	O
+成都	ns	S-Ns	Lini	3	POB	1	B-start_city
+到	p	O	rAgt	6	ADV	8	O
+广元	ns	S-Ns	Lfin	3	ATT	6	B-arrival_city
+的	u	O	mAux	3	RAD	4	O
+飞机票	n	O	Exp	8	POB	3	O
+明天	nt	O	Time	8	POB	3	B-start_date
+有	v	O	Root	1	HED	1	O
+没	d	O	mNeg	10	ADV	10	O
+有	v	O	eAdvt	8	COO	8	O
+。	wp	O	mPunc	8	WP	8	O
+
+明天	nt	O	Time	3	ATT	6	B-start_date
+济南	ns	S-Ns	Loc	3	ATT	6	B-start_city
+到	p	O	Root	1	ATT	6	O
+佳木斯	ns	S-Ns	Orig	6	POB	3	B-arrival_city
+的	u	O	mAux	4	RAD	3	O
+机票	n	O	Exp	3	HED	1	O
+。	wp	O	mPunc	3	WP	6	O
+
+长沙	ns	S-Ns	Lini	2	ADV	2	B-start_city
+到	v	O	Root	1	ATT	5	O
+成都	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+航班	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+上海市	ns	S-Ns	Agt	2	ADV	2	B-start_city
+到	v	O	dOrig	5	ATT	5	O
+北京	ns	S-Ns	Lfin	2	POB	2	B-arrival_city
+的	u	O	mAux	2	RAD	2	O
+机票	n	O	Root	1	HED	1	O
+。	wp	O	mPunc	5	WP	5	O
+
+请问	v	O	Root	1	HED	1	O
+有	v	O	mVain	7	VOB	1	O
+上海	ns	S-Ns	Lini	4	ATT	7	B-start_city
+到	p	O	dDesc	7	ATT	7	O
+温州	ns	S-Ns	Lfin	4	POB	4	B-arrival_city
+的	u	O	mAux	4	RAD	4	O
+航班	n	O	Cont	1	VOB	2	O
+吗	u	O	mTone	1	RAD	2	O
+？	wp	O	mPunc	1	WP	1	O
+谢谢	v	O	eSucc	1	COO	1	O
+！	wp	O	mPunc	10	WP	1	O
+
+重庆	ns	S-Ns	Lini	2	SBV	5	B-start_city
+到	v	O	Root	1	ADV	5	O
+天津	ns	S-Ns	Lfin	2	ATT	4	B-arrival_city
+飞机票	n	O	Mann	5	POB	2	O
+查询	v	O	eSucc	2	HED	1	O
+。	wp	O	mPunc	5	WP	5	O
+
+深圳	ns	S-Ns	Agt	2	ATT	5	B-start_city
+到	p	O	Root	1	ATT	5	O
+广元	ns	S-Ns	Nmod	5	POB	2	B-arrival_city
+的	u	O	mAux	3	RAD	2	O
+飞机	n	O	Lfin	2	HED	1	O
+。	wp	O	mPunc	2	WP	5	O
+
+看见	v	O	Root	1	HED	1	O
+凤岗	n	O	Loc	3	SBV	3	O
+有	v	O	dCont	1	VOB	1	O
+没	d	O	mNeg	5	ADV	5	O
+有	v	O	dExp	3	COO	3	O
+明天	nt	O	Time	8	ATT	8	B-start_date
+的	u	O	mAux	6	RAD	6	O
+飞机	n	O	Exp	3	VOB	5	O
+？	wp	O	mPunc	1	WP	1	O
+
+明天	nt	O	Time	4	ADV	10	B-start_date
+从	p	O	mPrep	3	ADV	4	O
+贵阳	ns	S-Ns	Lini	4	POB	2	B-start_city
+到	p	O	Root	1	ATT	7	O
+成都	ns	S-Ns	Loc	7	POB	4	B-arrival_city
+的	u	O	mAux	5	RAD	4	O
+飞机票	n	O	Lfin	4	SBV	10	O
+，	wp	O	mPunc	4	WP	7	O
+早上	nt	O	Time	10	ADV	10	B-start_time
+有	v	O	eSucc	4	HED	1	O
+没	d	O	mNeg	1	ADV	12	O
+有	v	O	eSelt	10	COO	10	O
+
+给	p	O	mPrep	2	ADV	3	O
+我	r	O	Datv	3	POB	1	O
+查	v	O	Root	1	HED	1	O
+一	m	O	mDegr	5	ADV	5	O
+查	v	O	dCont	3	COO	3	O
+明天	nt	O	Time	8	ADV	8	B-start_date
+北京	ns	S-Ns	Loc	8	SBV	8	B-start_city
+到	v	O	rAgt	11	ATT	11	O
+深圳	ns	S-Ns	Datv	11	POB	8	B-arrival_city
+的	u	O	mAux	9	RAD	8	O
+航班	n	O	Cont	5	VOB	5	O
+。	wp	O	mPunc	3	WP	3	O
+

@@ -34,13 +34,13 @@ I16
 sS'd'
 I10
 sS'i'
-I19
+I18
 sS'j'
 I17
 sS'm'
 I7
 sS'o'
-I18
+I19
 sS'n'
 I2
 sS'q'
@@ -53,4 +53,7 @@ sS'u'
 I4
 sS'v'
 I1
+sS'unk'
+p10
+I23
 s.

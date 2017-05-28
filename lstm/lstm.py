@@ -40,6 +40,8 @@ flags.DEFINE_integer('ran_emb',0,'add random variable embedding in training proc
 flags.DEFINE_integer('pos_emb_size',50,'pos_embedding_size')
 flags.DEFINE_integer('ner_emb_size',50,'ner_embedding_size')
 flags.DEFINE_integer('sdp_emb_size',50,'sdp_embedding_size')
+flags.DEFINE_integer('sdp_label_in_path',0,'sdp_label_in_path')
+flags.DEFINE_integer('dp_label_in_path',0,'dp_label_in_path')
 flags.DEFINE_integer('feature_emb_size',50,'pos and ner embedding size')
 flags.DEFINE_float('learning_rate',1e-3,'learning rate')
 flags.DEFINE_float('dropout',0,'dropout')
@@ -305,6 +307,7 @@ def dynamic_rnn(sentence_num = 0,max_len = 54):
     sdp_father_relation = tf.placeholder(tf.int32, [None,None])
     sdp_path_hash = tf.placeholder(tf.int32, [None])
     out_keep_prob = tf.placeholder(tf.float32)
+    sdp_padding_path = tf.placeholder(tf.float32, [None,None])
     batch_range = tf.placeholder(tf.int32,[None])
     sdp_seq_len = tf.placeholder(tf.int32,[None])
     seq_len = tf.cast(tf.reduce_sum(tf.sign(tf.abs(x_)), 1),tf.int32)
@@ -395,18 +398,13 @@ def dynamic_rnn(sentence_num = 0,max_len = 54):
             
                     encoder = Encoder()
                     encode_v = encoder.lstm_encoder(sdp_father_index,anc_feature,sdp_seq_len)
-                    #[batch_size*max_len,max_path_num*max_anc_len,hidden]
+                    #[path_num,encode_hidden]
 
                     '''
                     padding MAX_PATH_NUM-REAL_PATH_NUM条path
                     '''
-                    inf = float('-inf')
-                    #padding_path = np.ones([padding_path_num,FLAGS.encode_hidden],dtype = np.float32)
-                    #padding_path = tf.convert_to_tensor(padding_path*inf)
-                    global padding_path_num
-                    padding_path = tf.constant(inf,shape = [padding_path_num,FLAGS.encode_hidden])
-                    encode_v = tf.concat(0,[tf.reshape(encode_v,[-1,FLAGS.encode_hidden]),padding_path])
-                    '''
+                    encode_v = tf.concat(0,[encode_v,sdp_padding_path])
+                    
                     encode_v = tf.gather(encode_v,sdp_path_hash)
 
                     encode_vec = tf.reshape(encode_v,[FLAGS.batch_size*max_len,MAX_PATH_NUM,-1,1])
@@ -416,7 +414,7 @@ def dynamic_rnn(sentence_num = 0,max_len = 54):
                     sdp_encode_vec = tf.reshape(pool_input,[FLAGS.batch_size,max_len,FLAGS.encode_hidden])
                     #用-1报depth的错
                     x = tf.concat(2,[x,sdp_encode_vec])
-                    '''
+                    
 
     if FLAGS.add_sdp_anc == 1:
         cur_father_emb = tf.nn.embedding_lookup(embedding, cur_father_lookup(x_,cur_sdp_father))
@@ -490,6 +488,7 @@ def dynamic_rnn(sentence_num = 0,max_len = 54):
             best_F = 0
             sess.run(tf.global_variables_initializer())
             logConfig(FLAGS.log_path + file_tail)
+            inf = float("-inf")
             for step in range(FLAGS.epoch_step):
                 ave_cost = 0
                 for i in range(0, train_data.batch_num):
@@ -497,19 +496,16 @@ def dynamic_rnn(sentence_num = 0,max_len = 54):
                     path,cur_father,sdp_path,sdp_path_relation,dp_relation,sdp_f_hash_ind,\
                     dp_path_mask,sdp_seq_len_,batch_range_ = get_pad(train_data)
                     get_padding_path_num(sdp_path,sdp_f_hash_ind)
-                    print "padding_path_num",padding_path_num
+                    padding_path = inf*np.ones([padding_path_num,FLAGS.encode_hidden],dtype = np.float32)
                     #anc_feature_v,dp_mask_1_v = sess.run([dp_mask_1,anc_feature],
-                    print sdp_f_hash_ind
-                    print "\n",len(batch_range_),len(sdp_f_hash_ind)
-                    encode_v_v,padding_path_v= sess.run([encode_v,padding_path],\
-                    #loss,output_np,_ = sess.run([cost,outputs,optimizer],
+                    #encode_v_output_v,encode_vec_v,padding_path_v= sess.run([encode_v_output,encode_vec,sdp_padding_path],\
+                    loss,output_np,_ = sess.run([cost,outputs,optimizer],
                             feed_dict = {x_:x_pad, x_ran:ran_x_pad,y_:y_pad,pos_:pos_pad,dp_father_index:path,\
                             dp_father_relation:dp_relation,cur_sdp_father:cur_father,sdp_path_hash:sdp_f_hash_ind,\
                             sdp_father_relation:sdp_path_relation,sdp_father_index:sdp_path,\
+                            sdp_padding_path:padding_path,\
                             dp_mask:dp_path_mask,sdp_seq_len:sdp_seq_len_,batch_range:batch_range_,\
                         mask:mask_feed,ner_:ner_pad,sdp_:sdp_pad,out_keep_prob:1-FLAGS.dropout})
-                    print encode_v_v,padding_path_v,padding_path_v.shape
-                    return
                     ave_cost += loss
                 logging.info("step %d, training  loss : %g" % (step, ave_cost/train_data.batch_num))
                 num = 0
@@ -521,6 +517,7 @@ def dynamic_rnn(sentence_num = 0,max_len = 54):
                      path,cur_father,sdp_path,sdp_path_relation,dp_relation,sdp_f_hash_ind,\
                      dp_path_mask,sdp_seq_len_,batch_range_  = get_pad(dev_data)
                     get_padding_path_num(sdp_path,sdp_f_hash_ind)
+                    padding_path = inf*np.ones([padding_path_num,FLAGS.encode_hidden],dtype = np.float32)
                     if not FLAGS.CRF:
                         for yi in dev_y:
                             num += len(yi)
@@ -528,6 +525,7 @@ def dynamic_rnn(sentence_num = 0,max_len = 54):
                                 feed_dict = {x_:x_pad, x_ran:ran_x_pad,y_:y_pad,pos_:pos_pad,dp_father_index:path,\
                                 dp_father_relation:dp_relation,cur_sdp_father:cur_father,sdp_path_hash:sdp_f_hash_ind,\
                                 sdp_father_relation:sdp_path_relation,sdp_father_index:sdp_path,\
+                                sdp_padding_path:padding_path,\
                                 dp_mask:dp_path_mask,sdp_seq_len:sdp_seq_len_,batch_range:batch_range_,\
                             mask:mask_feed,ner_:ner_pad,sdp_:sdp_pad,out_keep_prob:1})
                         cor_num += correct_num
@@ -537,6 +535,7 @@ def dynamic_rnn(sentence_num = 0,max_len = 54):
                             feed_dict = {x_:x_pad, x_ran:ran_x_pad,y_:y_pad,pos_:pos_pad,dp_father_index:path,\
                             dp_father_relation:dp_relation,cur_sdp_father:cur_father,sdp_path_hash:sdp_f_hash_ind,\
                             sdp_father_relation:sdp_path_relation,sdp_father_index:sdp_path,\
+                            sdp_padding_path:padding_path,\
                             dp_mask:dp_path_mask,sdp_seq_len:sdp_seq_len_,batch_range:batch_range_,\
                             mask:mask_feed,ner_:ner_pad,sdp_:sdp_pad,out_keep_prob:1})
                         cor_label, label_num, _ = crf_evaluate(seq_length,tran_matrix,score,y_pad)
@@ -565,11 +564,13 @@ def dynamic_rnn(sentence_num = 0,max_len = 54):
             cor_num = 0
             ave_cost = 0
             best_F = 0
+            inf = float("-inf")
             for i in range(0, test_data.batch_num):
                 test_x,test_y,x_pad, ran_x_pad, y_pad, mask_feed, pos_pad, ner_pad, sdp_pad,\
                  path,cur_father,sdp_path,sdp_path_relation,dp_relation,sdp_f_hash_ind,\
                  dp_path_mask,sdp_seq_len_,batch_range_  = get_pad(test_data)
                 get_padding_path_num(sdp_path,sdp_f_hash_ind)
+                padding_path = inf*np.ones([padding_path_num,FLAGS.encode_hidden],dtype = np.float32)
                 if not FLAGS.CRF:
                     for yi in test_y:
                         num += len(yi)
@@ -577,6 +578,7 @@ def dynamic_rnn(sentence_num = 0,max_len = 54):
                             feed_dict = {x_:x_pad, x_ran:ran_x_pad,y_:y_pad,pos_:pos_pad,dp_father_index:path,\
                             dp_father_relation:dp_relation,cur_sdp_father:cur_father,sdp_path_hash:sdp_f_hash_ind,\
                             sdp_father_relation:sdp_path_relation,sdp_father_index:sdp_path,\
+                            sdp_padding_path:padding_path,\
                             dp_mask:dp_path_mask,sdp_seq_len:sdp_seq_len_,batch_range:batch_range_,\
                         mask:mask_feed,ner_:ner_pad,sdp_:sdp_pad,out_keep_prob:1})
                     cor_num += correct_num
@@ -587,6 +589,7 @@ def dynamic_rnn(sentence_num = 0,max_len = 54):
                         dp_father_relation:dp_relation,cur_sdp_father:cur_father,\
                         sdp_father_relation:sdp_path_relation,sdp_father_index:sdp_path,sdp_path_hash:sdp_f_hash_ind,\
                         dp_mask:dp_path_mask,sdp_seq_len:sdp_seq_len_,batch_range:batch_range_,\
+                        sdp_padding_path:padding_path,\
                         mask:mask_feed,ner_:ner_pad,sdp_:sdp_pad,out_keep_prob:1})
                     cor_label_num, label_num, ind = crf_evaluate(seq_length,tran_matrix,score,y_pad)
                     cor_num += cor_label_num

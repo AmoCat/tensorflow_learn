@@ -42,9 +42,9 @@ S'e'
 sI17
 S'j'
 sI18
-S'o'
-sI19
 S'i'
+sI19
+S'o'
 sI20
 S'ws'
 p8
@@ -53,4 +53,7 @@ S'nl'
 p9
 sI22
 S'b'
+sI23
+S'unk'
+p10
 s.

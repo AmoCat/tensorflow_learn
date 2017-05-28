@@ -1,0 +1,160 @@
+2017-05-27 Saturday 20:09:39  lstm.py : INFO  step 0, training  loss : 2.91671
+2017-05-27 Saturday 20:10:53  lstm.py : INFO  accuracy:  97.67%; precision:  92.38%; recall:  92.61%; FB1:  92.49
+
+2017-05-27 Saturday 20:11:02  lstm.py : INFO  step 0 , dev_loss: 0.690808,accuracy: , dev_F: 92.49
+2017-05-27 Saturday 20:19:55  lstm.py : INFO  step 1, training  loss : 0.491753
+2017-05-27 Saturday 20:21:03  lstm.py : INFO  accuracy:  98.18%; precision:  94.00%; recall:  94.68%; FB1:  94.34
+
+2017-05-27 Saturday 20:21:16  lstm.py : INFO  step 1 , dev_loss: 0.459924,accuracy: , dev_F: 94.34
+2017-05-27 Saturday 20:29:59  lstm.py : INFO  step 2, training  loss : 0.342731
+2017-05-27 Saturday 20:31:19  lstm.py : INFO  accuracy:  98.45%; precision:  95.64%; recall:  95.46%; FB1:  95.55
+
+2017-05-27 Saturday 20:31:25  lstm.py : INFO  step 2 , dev_loss: 0.380479,accuracy: , dev_F: 95.55
+2017-05-27 Saturday 20:40:06  lstm.py : INFO  step 3, training  loss : 0.262687
+2017-05-27 Saturday 20:41:25  lstm.py : INFO  accuracy:  98.55%; precision:  96.03%; recall:  95.80%; FB1:  95.91
+
+2017-05-27 Saturday 20:41:33  lstm.py : INFO  step 3 , dev_loss: 0.369348,accuracy: , dev_F: 95.91
+2017-05-27 Saturday 20:50:17  lstm.py : INFO  step 4, training  loss : 0.203946
+2017-05-27 Saturday 20:51:36  lstm.py : INFO  accuracy:  98.34%; precision:  95.86%; recall:  95.22%; FB1:  95.54
+
+2017-05-27 Saturday 20:51:36  lstm.py : INFO  step 4 , dev_loss: 0.394116,accuracy: , dev_F: 95.54
+2017-05-27 Saturday 21:00:25  lstm.py : INFO  step 5, training  loss : 0.156541
+2017-05-27 Saturday 21:01:48  lstm.py : INFO  accuracy:  98.35%; precision:  94.85%; recall:  95.31%; FB1:  95.08
+
+2017-05-27 Saturday 21:01:48  lstm.py : INFO  step 5 , dev_loss: 0.391051,accuracy: , dev_F: 95.08
+2017-05-27 Saturday 21:10:36  lstm.py : INFO  step 6, training  loss : 0.121995
+2017-05-27 Saturday 21:11:56  lstm.py : INFO  accuracy:  98.35%; precision:  96.43%; recall:  95.31%; FB1:  95.87
+
+2017-05-27 Saturday 21:11:56  lstm.py : INFO  step 6 , dev_loss: 0.472896,accuracy: , dev_F: 95.87
+2017-05-27 Saturday 21:20:44  lstm.py : INFO  step 7, training  loss : 0.10215
+2017-05-27 Saturday 21:22:03  lstm.py : INFO  accuracy:  98.54%; precision:  96.02%; recall:  95.55%; FB1:  95.78
+
+2017-05-27 Saturday 21:22:03  lstm.py : INFO  step 7 , dev_loss: 0.383433,accuracy: , dev_F: 95.78
+2017-05-27 Saturday 21:30:45  lstm.py : INFO  step 8, training  loss : 0.084751
+2017-05-27 Saturday 21:32:01  lstm.py : INFO  accuracy:  98.54%; precision:  96.27%; recall:  95.99%; FB1:  96.13
+
+2017-05-27 Saturday 21:32:07  lstm.py : INFO  step 8 , dev_loss: 0.466525,accuracy: , dev_F: 96.13
+2017-05-27 Saturday 21:40:55  lstm.py : INFO  step 9, training  loss : 0.0590016
+2017-05-27 Saturday 21:42:08  lstm.py : INFO  accuracy:  98.39%; precision:  94.97%; recall:  95.75%; FB1:  95.35
+
+2017-05-27 Saturday 21:42:08  lstm.py : INFO  step 9 , dev_loss: 0.416662,accuracy: , dev_F: 95.35
+2017-05-27 Saturday 21:50:58  lstm.py : INFO  step 10, training  loss : 0.0422982
+2017-05-27 Saturday 21:52:18  lstm.py : INFO  accuracy:  97.83%; precision:  94.82%; recall:  92.94%; FB1:  93.87
+
+2017-05-27 Saturday 21:52:18  lstm.py : INFO  step 10 , dev_loss: 0.656202,accuracy: , dev_F: 93.87
+2017-05-27 Saturday 22:01:11  lstm.py : INFO  step 11, training  loss : 0.0477586
+2017-05-27 Saturday 22:02:29  lstm.py : INFO  accuracy:  98.43%; precision:  95.38%; recall:  95.84%; FB1:  95.61
+
+2017-05-27 Saturday 22:02:29  lstm.py : INFO  step 11 , dev_loss: 0.491268,accuracy: , dev_F: 95.61
+2017-05-27 Saturday 22:11:18  lstm.py : INFO  step 12, training  loss : 0.0342515
+2017-05-27 Saturday 22:12:29  lstm.py : INFO  accuracy:  98.49%; precision:  96.31%; recall:  95.94%; FB1:  96.13
+
+2017-05-27 Saturday 22:12:35  lstm.py : INFO  step 12 , dev_loss: 0.536482,accuracy: , dev_F: 96.13
+2017-05-27 Saturday 22:21:13  lstm.py : INFO  step 13, training  loss : 0.028247
+2017-05-27 Saturday 22:22:28  lstm.py : INFO  accuracy:  98.30%; precision:  96.14%; recall:  95.07%; FB1:  95.60
+
+2017-05-27 Saturday 22:22:28  lstm.py : INFO  step 13 , dev_loss: 0.766706,accuracy: , dev_F: 95.6
+2017-05-27 Saturday 22:31:20  lstm.py : INFO  step 14, training  loss : 0.0231225
+2017-05-27 Saturday 22:32:34  lstm.py : INFO  accuracy:  98.47%; precision:  95.74%; recall:  95.70%; FB1:  95.72
+
+2017-05-27 Saturday 22:32:34  lstm.py : INFO  step 14 , dev_loss: 0.585282,accuracy: , dev_F: 95.72
+2017-05-27 Saturday 22:41:22  lstm.py : INFO  step 15, training  loss : 0.0411269
+2017-05-27 Saturday 22:42:42  lstm.py : INFO  accuracy:  98.22%; precision:  94.74%; recall:  94.93%; FB1:  94.83
+
+2017-05-27 Saturday 22:42:42  lstm.py : INFO  step 15 , dev_loss: 0.607182,accuracy: , dev_F: 94.83
+2017-05-27 Saturday 22:51:26  lstm.py : INFO  step 16, training  loss : 0.0325023
+2017-05-27 Saturday 22:52:42  lstm.py : INFO  accuracy:  98.54%; precision:  96.08%; recall:  95.89%; FB1:  95.98
+
+2017-05-27 Saturday 22:52:42  lstm.py : INFO  step 16 , dev_loss: 0.501134,accuracy: , dev_F: 95.98
+2017-05-27 Saturday 23:01:31  lstm.py : INFO  step 17, training  loss : 0.0122672
+2017-05-27 Saturday 23:02:52  lstm.py : INFO  accuracy:  98.49%; precision:  95.94%; recall:  95.99%; FB1:  95.97
+
+2017-05-27 Saturday 23:02:52  lstm.py : INFO  step 17 , dev_loss: 0.571255,accuracy: , dev_F: 95.97
+2017-05-27 Saturday 23:11:33  lstm.py : INFO  step 18, training  loss : 0.0562934
+2017-05-27 Saturday 23:12:54  lstm.py : INFO  accuracy:  98.32%; precision:  95.45%; recall:  95.31%; FB1:  95.38
+
+2017-05-27 Saturday 23:12:54  lstm.py : INFO  step 18 , dev_loss: 0.62311,accuracy: , dev_F: 95.38
+2017-05-27 Saturday 23:21:41  lstm.py : INFO  step 19, training  loss : 0.0330455
+2017-05-27 Saturday 23:22:59  lstm.py : INFO  accuracy:  98.24%; precision:  95.52%; recall:  94.78%; FB1:  95.15
+
+2017-05-27 Saturday 23:22:59  lstm.py : INFO  step 19 , dev_loss: 0.726928,accuracy: , dev_F: 95.15
+2017-05-27 Saturday 23:31:43  lstm.py : INFO  step 20, training  loss : 0.0169228
+2017-05-27 Saturday 23:32:58  lstm.py : INFO  accuracy:  98.52%; precision:  95.84%; recall:  95.84%; FB1:  95.84
+
+2017-05-27 Saturday 23:32:58  lstm.py : INFO  step 20 , dev_loss: 0.578523,accuracy: , dev_F: 95.84
+2017-05-27 Saturday 23:41:45  lstm.py : INFO  step 21, training  loss : 0.00504916
+2017-05-27 Saturday 23:43:04  lstm.py : INFO  accuracy:  98.58%; precision:  96.31%; recall:  95.99%; FB1:  96.15
+
+2017-05-27 Saturday 23:43:11  lstm.py : INFO  step 21 , dev_loss: 0.630177,accuracy: , dev_F: 96.15
+2017-05-27 Saturday 23:52:05  lstm.py : INFO  step 22, training  loss : 0.00525061
+2017-05-27 Saturday 23:53:20  lstm.py : INFO  accuracy:  98.59%; precision:  96.55%; recall:  95.99%; FB1:  96.27
+
+2017-05-27 Saturday 23:53:26  lstm.py : INFO  step 22 , dev_loss: 0.633075,accuracy: , dev_F: 96.27
+2017-05-28 Sunday 00:02:16  lstm.py : INFO  step 23, training  loss : 0.00341682
+2017-05-28 Sunday 00:03:31  lstm.py : INFO  accuracy:  98.60%; precision:  96.36%; recall:  96.09%; FB1:  96.22
+
+2017-05-28 Sunday 00:03:31  lstm.py : INFO  step 23 , dev_loss: 0.654505,accuracy: , dev_F: 96.22
+2017-05-28 Sunday 00:11:21  lstm.py : INFO  step 24, training  loss : 0.00247993
+2017-05-28 Sunday 00:12:20  lstm.py : INFO  accuracy:  98.60%; precision:  96.23%; recall:  96.13%; FB1:  96.18
+
+2017-05-28 Sunday 00:12:20  lstm.py : INFO  step 24 , dev_loss: 0.669358,accuracy: , dev_F: 96.18
+2017-05-28 Sunday 00:19:38  lstm.py : INFO  step 25, training  loss : 0.00340784
+2017-05-28 Sunday 00:20:37  lstm.py : INFO  accuracy:  98.64%; precision:  96.18%; recall:  96.04%; FB1:  96.11
+
+2017-05-28 Sunday 00:20:37  lstm.py : INFO  step 25 , dev_loss: 0.702716,accuracy: , dev_F: 96.11
+2017-05-28 Sunday 00:27:57  lstm.py : INFO  step 26, training  loss : 0.00179302
+2017-05-28 Sunday 00:28:55  lstm.py : INFO  accuracy:  98.56%; precision:  96.04%; recall:  96.04%; FB1:  96.04
+
+2017-05-28 Sunday 00:28:55  lstm.py : INFO  step 26 , dev_loss: 0.72824,accuracy: , dev_F: 96.04
+2017-05-28 Sunday 00:36:18  lstm.py : INFO  step 27, training  loss : 0.00155039
+2017-05-28 Sunday 00:37:19  lstm.py : INFO  accuracy:  98.56%; precision:  96.31%; recall:  95.84%; FB1:  96.08
+
+2017-05-28 Sunday 00:37:19  lstm.py : INFO  step 27 , dev_loss: 0.793362,accuracy: , dev_F: 96.08
+2017-05-28 Sunday 00:44:42  lstm.py : INFO  step 28, training  loss : 0.00157088
+2017-05-28 Sunday 00:45:42  lstm.py : INFO  accuracy:  98.55%; precision:  96.12%; recall:  95.75%; FB1:  95.93
+
+2017-05-28 Sunday 00:45:42  lstm.py : INFO  step 28 , dev_loss: 0.805678,accuracy: , dev_F: 95.93
+2017-05-28 Sunday 00:53:01  lstm.py : INFO  step 29, training  loss : 0.0722171
+2017-05-28 Sunday 00:54:05  lstm.py : INFO  accuracy:  98.24%; precision:  94.72%; recall:  95.46%; FB1:  95.09
+
+2017-05-28 Sunday 00:54:05  lstm.py : INFO  step 29 , dev_loss: 0.569496,accuracy: , dev_F: 95.09
+2017-05-28 Sunday 01:01:21  lstm.py : INFO  step 30, training  loss : 0.0588337
+2017-05-28 Sunday 01:02:25  lstm.py : INFO  accuracy:  98.53%; precision:  95.02%; recall:  95.84%; FB1:  95.43
+
+2017-05-28 Sunday 01:02:25  lstm.py : INFO  step 30 , dev_loss: 0.571728,accuracy: , dev_F: 95.43
+2017-05-28 Sunday 01:09:19  lstm.py : INFO  step 31, training  loss : 0.0318053
+2017-05-28 Sunday 01:10:13  lstm.py : INFO  accuracy:  98.36%; precision:  94.89%; recall:  95.17%; FB1:  95.03
+
+2017-05-28 Sunday 01:10:13  lstm.py : INFO  step 31 , dev_loss: 0.596298,accuracy: , dev_F: 95.03
+2017-05-28 Sunday 01:16:39  lstm.py : INFO  step 32, training  loss : 0.00836478
+2017-05-28 Sunday 01:17:31  lstm.py : INFO  accuracy:  98.39%; precision:  95.40%; recall:  95.12%; FB1:  95.26
+
+2017-05-28 Sunday 01:17:31  lstm.py : INFO  step 32 , dev_loss: 0.64338,accuracy: , dev_F: 95.26
+2017-05-28 Sunday 01:24:02  lstm.py : INFO  step 33, training  loss : 0.00395892
+2017-05-28 Sunday 01:24:57  lstm.py : INFO  accuracy:  98.51%; precision:  95.51%; recall:  95.65%; FB1:  95.58
+
+2017-05-28 Sunday 01:24:57  lstm.py : INFO  step 33 , dev_loss: 0.588423,accuracy: , dev_F: 95.58
+2017-05-28 Sunday 01:31:32  lstm.py : INFO  step 34, training  loss : 0.00263354
+2017-05-28 Sunday 01:32:24  lstm.py : INFO  accuracy:  98.42%; precision:  95.73%; recall:  95.46%; FB1:  95.60
+
+2017-05-28 Sunday 01:32:24  lstm.py : INFO  step 34 , dev_loss: 0.68837,accuracy: , dev_F: 95.6
+2017-05-28 Sunday 01:38:59  lstm.py : INFO  step 35, training  loss : 0.00193768
+2017-05-28 Sunday 01:39:52  lstm.py : INFO  accuracy:  98.43%; precision:  95.87%; recall:  95.41%; FB1:  95.64
+
+2017-05-28 Sunday 01:39:52  lstm.py : INFO  step 35 , dev_loss: 0.717673,accuracy: , dev_F: 95.64
+2017-05-28 Sunday 01:46:26  lstm.py : INFO  step 36, training  loss : 0.0017403
+2017-05-28 Sunday 01:47:20  lstm.py : INFO  accuracy:  98.39%; precision:  95.64%; recall:  95.36%; FB1:  95.50
+
+2017-05-28 Sunday 01:47:20  lstm.py : INFO  step 36 , dev_loss: 0.753307,accuracy: , dev_F: 95.5
+2017-05-28 Sunday 01:53:49  lstm.py : INFO  step 37, training  loss : 0.00161195
+2017-05-28 Sunday 01:54:43  lstm.py : INFO  accuracy:  98.39%; precision:  95.73%; recall:  95.31%; FB1:  95.52
+
+2017-05-28 Sunday 01:54:43  lstm.py : INFO  step 37 , dev_loss: 0.78852,accuracy: , dev_F: 95.52
+2017-05-28 Sunday 02:01:21  lstm.py : INFO  step 38, training  loss : 0.00146777
+2017-05-28 Sunday 02:02:11  lstm.py : INFO  accuracy:  98.36%; precision:  95.54%; recall:  95.26%; FB1:  95.40
+
+2017-05-28 Sunday 02:02:11  lstm.py : INFO  step 38 , dev_loss: 0.837777,accuracy: , dev_F: 95.4
+2017-05-28 Sunday 02:08:05  lstm.py : INFO  step 39, training  loss : 0.00138182
+2017-05-28 Sunday 02:08:39  lstm.py : INFO  accuracy:  98.39%; precision:  95.49%; recall:  95.26%; FB1:  95.38
+
+2017-05-28 Sunday 02:08:39  lstm.py : INFO  step 39 , dev_loss: 0.870635,accuracy: , dev_F: 95.38

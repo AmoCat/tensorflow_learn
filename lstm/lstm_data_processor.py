@@ -221,19 +221,51 @@ def test_word_to_id_dict(name):
 	dict = pkl.load(open(name, 'r'))
 	print len(dict)
 
+def test_structure(file_name1,file_name2):
+	print file_name1,file_name2
+	prefix = 'data/path_pkl/'
+	f1 = pkl.load(open(prefix + file_name1,'r'))
+	f2 = pkl.load(open(prefix + file_name2,'r'))
+	if len(f1) != len(f2):
+		print "different batch num!"
+		return
+	for i in range(len(f1)):
+		sen1 = f1[i]
+		sen2 = f2[i]
+		if len(sen1) != len(sen2):
+			print "different word num",sen1,sen2
+			return
+		for j in range(len(sen1)):
+			w1 = sen1[j]
+			w2 = sen2[j]
+			if len(w1) != len(w2):
+				print "dif path num",i,j,w1,w2
+				return
+			for k in range(len(w1)):
+				if len(w1[k]) != len(w2[k]):
+					print i,j,k
+					print "dif path len"
+					print w1[k],w2[k]
+					#while(len(f1[i][j][k])<len(f2[i][j][k])):
+					#	f2[i][j][k].pop()
+					#print len(f2[i][j][k]),len(f1[i][j][k])
+
 if __name__ == '__main__':
 	#words_num = minimize_words_size()
 	#print "word_num:",words_num
-	helper('train')
-	helper('test')
-	helper('dev')
-	feature_hash()
-	#gen_sdp_path_relationid(mode = 'train')
-	#gen_sdp_path_relationid(mode = 'test')
-	#gen_sdp_path_relationid(mode = 'dev')
-	gen_path_relationid(mode = 'train')
-	gen_path_relationid(mode = 'test')
-	gen_path_relationid(mode = 'dev')
+	#helper('train')
+	#helper('test')
+	#helper('dev')
+	#feature_hash()
+	gen_sdp_path_relationid(mode = 'train')
+	gen_sdp_path_relationid(mode = 'test')
+	gen_sdp_path_relationid(mode = 'dev')
+	test_structure("train_sdp_all_path_to_root","train_sdp_relation_all_path_to_root")
+	test_structure("test_sdp_all_path_to_root","test_sdp_relation_all_path_to_root")
+	test_structure("dev_sdp_all_path_to_root","dev_sdp_relation_all_path_to_root")
+	#gen_path_relationid(mode = 'train')
+	#gen_path_relationid(mode = 'test')
+	#gen_path_relationid(mode = 'dev')
 	#gen_word_id_dict(file_path = '../../embedding/embedding/baike-300.vec.txt')
 	#feature_hash()
     	#gen_ran_word2int()
