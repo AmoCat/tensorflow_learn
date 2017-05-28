@@ -30,7 +30,8 @@ flags.DEFINE_integer('emb_size',345823,'embedding size')
 flags.DEFINE_integer('word_dim',300,'word dim')
 flags.DEFINE_integer('PRF',0,'calculate PRF')
 flags.DEFINE_integer('L2',1,'add L2 regularizer')
-flags.DEFINE_integer('add_sdp_anc',0,'add sdp anc')
+flags.DEFINE_integer('add_dp_anc',0,'add sdp anc')
+flags.DEFINE_integer('add_dp_anc_in_crf',0,'add sdp anc in crf layer')
 flags.DEFINE_integer('add_sdp_anc_in_crf',0,'add sdp anc in crf layer')
 flags.DEFINE_integer('add_sdp',0,'add sdp feature')
 flags.DEFINE_integer('add_sdp_in_crf',0,'add sdp in crf layer')
@@ -57,8 +58,8 @@ flags.DEFINE_string('log_path','./anc/log/','log_path')
 flags.DEFINE_string('PRF_path','./anc/PRFresult/','PRF_path')
 
 SEED = 1
-POS_NUM = 24
-NER_NUM = 10
+POS_NUM = 25
+NER_NUM = 11
 SDP_NUM = 108
 DP_NUM = 16
 #WORD_NUM = 345823
@@ -274,11 +275,11 @@ def lookup_ancestors(x_,batch_len, pos_, ner_, hash_indices):
     anc_n = anc_lookup(batch_len, ner_, hash_indices)
     return anc_w, anc_p, anc_n
 
-def cur_father_lookup(x_, cur_father_index):
+def cur_father_lookup(x_, cur_father_index, start_index = 1):
     batch_size = tf.shape(x_)[0]
     max_seq_len = tf.shape(x_)[1]
     w_table = tf.reshape(x_, [-1])
-    anc_index_bias = tf.reshape(cur_father_index, [-1])-1
+    anc_index_bias = tf.reshape(cur_father_index, [-1])-start_index
     batch_range = tf.range(0,batch_size*max_seq_len)/(max_seq_len)
     hash_indices = batch_range*max_seq_len + anc_index_bias
     cur_father_w = anc_lookup(batch_size, w_table, hash_indices)

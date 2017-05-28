@@ -214,7 +214,7 @@ p72
 I14
 sS'start'
 p73
-I0
+I1
 sS'Poss'
 p74
 I20
@@ -274,7 +274,7 @@ p92
 I33
 sS'mPunc'
 p93
-I1
+I2
 sS'dStat'
 p94
 I95
@@ -307,7 +307,7 @@ p103
 I41
 sS'Root'
 p104
-I2
+I0
 sS'mDegr'
 p105
 I15

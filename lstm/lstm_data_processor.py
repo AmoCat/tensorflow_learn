@@ -187,9 +187,17 @@ def gen_label_id_dict(train_name = './dict/train_label',test_name = './dict/test
 
 	#convert label to id
 	label_to_id = dict()
+	if f != -1 and f !=5:#对于dp 加Root
+		label_to_id['Root'] = len(label_to_id)
+	if f == 5:
+		label_to_id['HED'] = len(label_to_id)
 	if f == 3 or f == 5:
 		label_to_id['start'] = len(label_to_id)
 	for label, _ in count:
+		if f == 3 and label == 'Root':
+			continue
+		if f == 5 and label == 'HED':
+			continue
 		label_to_id[label] = len(label_to_id)
 	if f >=1 and f <=5:
 		label_to_id['unk'] = len(label_to_id)
@@ -256,13 +264,13 @@ if __name__ == '__main__':
 	#helper('train')
 	#helper('test')
 	#helper('dev')
-	#feature_hash()
-	gen_sdp_path_relationid(mode = 'train')
-	gen_sdp_path_relationid(mode = 'test')
-	gen_sdp_path_relationid(mode = 'dev')
-	test_structure("train_sdp_all_path_to_root","train_sdp_relation_all_path_to_root")
-	test_structure("test_sdp_all_path_to_root","test_sdp_relation_all_path_to_root")
-	test_structure("dev_sdp_all_path_to_root","dev_sdp_relation_all_path_to_root")
+	feature_hash()
+	#gen_sdp_path_relationid(mode = 'train')
+	#gen_sdp_path_relationid(mode = 'test')
+	#gen_sdp_path_relationid(mode = 'dev')
+	#test_structure("train_sdp_all_path_to_root","train_sdp_relation_all_path_to_root")
+	#test_structure("test_sdp_all_path_to_root","test_sdp_relation_all_path_to_root")
+	#test_structure("dev_sdp_all_path_to_root","dev_sdp_relation_all_path_to_root")
 	#gen_path_relationid(mode = 'train')
 	#gen_path_relationid(mode = 'test')
 	#gen_path_relationid(mode = 'dev')

@@ -1,12 +1,12 @@
 (dp1
 I0
-S'start'
+S'Root'
 p2
 sI1
-S'mPunc'
+S'start'
 p3
 sI2
-S'Root'
+S'mPunc'
 p4
 sI3
 S'Lfin'
